@@ -38,7 +38,7 @@ const material = [
                 proyectoId: 1,
                 ruta: 'https://arcade-game-vercel.vercel.app',
                 anclaTexto: 'ArcadeGame',
-                img: '/root/Imagenes/capturas/Captura_arcade-game-vercel.vercel.app.jpeg',
+                img: './Imagenes/capturas/Captura_arcade-game-vercel.vercel.app.jpeg',
                 descripcion: 'Primera práctica con chatGPT, React.',
                 personal: true
             },
@@ -46,7 +46,7 @@ const material = [
                 proyectoId: 2,
                 ruta: 'https://api-football-omega.vercel.app',
                 anclaTexto: 'API-FOOTBALL',
-                img: '/root/Imagenes/capturas/Captura_api-football-omega.vercel.app.jpeg',
+                img: './Imagenes/capturas/Captura_api-football-omega.vercel.app.jpeg',
                 descripcion: 'Peticiones... React.',
                 personal: true
             }            
@@ -61,7 +61,7 @@ const material = [
                 proyectoId: 1,
                 ruta: 'https://githubfacu.github.io/f1_temporada_23/',
                 anclaTexto: 'F1-Temporada2023',
-                img: '/root/Imagenes/capturas/Captura_f1.jpeg',
+                img: './Imagenes/capturas/Captura_f1.jpeg',
                 descripcion: 'Probando ECMAScript6.',
                 personal: true
             },
@@ -69,7 +69,7 @@ const material = [
                 proyectoId: 2,
                 ruta: 'https://psycho-pass.vercel.app',
                 anclaTexto: 'TrabajoPráctico',
-                img: '/root/Imagenes/capturas/Captura_psycho-pass.vercel.app.jpeg',
+                img: './Imagenes/capturas/Captura_psycho-pass.vercel.app.jpeg',
                 descripcion: 'Trabajo práctico en dupla, React.',
                 personal: false
             }            
@@ -84,7 +84,7 @@ const material = [
                 proyectoId: 1,
                 ruta: 'https://githubfacu.github.io/reproductor_de_musica_js/',
                 anclaTexto: 'ReproductorDeMúsica',
-                img: '/root/Imagenes/capturas/Captura_reproductor_musica.jpeg',
+                img: './Imagenes/capturas/Captura_reproductor_musica.jpeg',
                 descripcion: 'Primer práctica personal, JavaScript vanilla.',
                 personal: true
             },
@@ -92,7 +92,7 @@ const material = [
                 proyectoId: 2,
                 ruta: 'https://githubfacu.github.io/interactive_magazine/',
                 anclaTexto: 'InteractiveMagazine',
-                img: '/root/Imagenes/capturas/Captura_magazine.jpeg',
+                img: './Imagenes/capturas/Captura_magazine.jpeg',
                 descripcion: 'Interactive Magazine, JavaScript vanilla.',
                 personal: true
             }
@@ -107,7 +107,7 @@ const material = [
                 proyectoId: 1,
                 ruta: 'https://githubfacu.github.io/frontend_uno_page/',
                 anclaTexto: 'TrabajoPráctico',
-                img: '/root/Imagenes/capturas/Captura_maquetacion_front1.jpeg',
+                img: './Imagenes/capturas/Captura_maquetacion_front1.jpeg',
                 descripcion: 'Maquetación básica sin funciones.',
                 personal: false
             }
