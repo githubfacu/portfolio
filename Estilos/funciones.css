@@ -1,0 +1,80 @@
+#lineaDeTiempo section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    border: 2px solid rgb(50, 50, 50);
+    padding: 4px 8px 6px;
+    border-radius: 3px;
+    gap: 2px;
+    width: 100%;
+    box-shadow: 0 0 5px 3px rgb(0, 0, 0, .2);
+
+}
+
+#lineaDeTiempo section:first-child{
+    height: 110px;
+    justify-content: space-between;
+}
+
+#lineaDeTiempo section h4{
+    font-weight: 500;
+}
+
+.linksDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 4px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.linksDiv a{
+    color: black;
+    background-color: rgb(237, 123, 16);
+    padding: 0px 4px 2px;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.practicaDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    height: 220px;
+    width: 285px;
+    background-color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+    box-shadow: 0 0 5px 3px rgb(0, 0, 0, .2);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.practicaDiv img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.practicaDiv p{
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: 25%;
+    margin: 0;
+    padding: 8px;
+    box-sizing: border-box;
+    align-content: flex-end;
+}
