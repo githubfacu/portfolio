@@ -10,11 +10,18 @@
     gap: 2px;
     width: 100%;
     box-shadow: 0 0 5px 3px rgb(0, 0, 0, .2);
-
+    /* background-color: #272b33; */
+    /* border-color: #7a828e; */
+    /* #272b33
+    #0a0c10
+    #272b33 
+    #525964*/
+    /* --color-project-header-bg: #0d1117;
+    --color-project-sidebar-bg: #161b22; */
 }
 
 #lineaDeTiempo section:first-child{
-    height: 110px;
+    min-height: 110px;
     justify-content: space-between;
 }
 

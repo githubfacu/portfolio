@@ -49,8 +49,8 @@ main{
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
-    max-width: 1580px;
-    gap: 48px;
+    max-width: 1280px;
+    gap: 24px;
     margin-bottom: 48px;
 }
 
@@ -93,6 +93,7 @@ main{
     gap: 8px;
     padding: 16px;
     max-width: 1024px;
+    margin-bottom: 16px;
 }
 
 #lineaDeTiempo{
@@ -138,6 +139,7 @@ main{
     width: 100%;
     max-width: 1024px;
     padding: 16px;
+    margin-bottom: 16px;
 }
 
 .formacionAcademica ul{
@@ -191,7 +193,6 @@ footer{
 @media (max-width: 768px) {
 
     main{
-        gap: 24px;
         margin-bottom: 24px;
     }
     
