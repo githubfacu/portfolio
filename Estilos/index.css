@@ -194,16 +194,21 @@ footer{
 
     main{
         margin-bottom: 24px;
+        gap: 12px;
     }
     
     .divMarcaPersonal{
         z-index: 1;
     }
 
+    .divTitulo{
+        padding-bottom: 0;
+    }
+
     .divTitulo img{
         position: absolute;
         top: 8px;
-        right: 6px;
+        right: 0px;
         opacity: .4;
         width: 100%;
         min-width: 300px;
@@ -211,4 +216,22 @@ footer{
         object-fit: cover;
         object-position: top;
     }
+
+    .cronologia{
+        padding: 16px 8px;
+    }
+
+    .cronologia h2{
+        padding-left: 8px;
+    }
+
+    #lineaDeTiempo{
+        gap: 12px;
+        column-gap: 8px;
+    }
+
+    .formacionAcademica ul{
+        padding-left: 24px;
+    }
+    
 }

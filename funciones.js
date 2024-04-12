@@ -9,7 +9,7 @@ const material = [
                 ruta: '',
                 anclaTexto: 'RecursosHumanosWebApp',
                 img: '',
-                descripcion: '4 sprints, 4 semanas, 10 integrantes. Rol personal Frontend QA',
+                descripcion: '4 sprints, 4 semanas, 10 integrantes. Rol Frontend QA',
                 personal: false
             }
         ]
@@ -23,8 +23,8 @@ const material = [
                 proyectoId: 1,
                 ruta: 'https://gitlab.com/mtimoxenko/integrador',
                 anclaTexto: 'BookingApp',
-                img: '',
-                descripcion: 'Proyecto fin de curso, 8 integrantes. Frontend junto a Amy y Mateo.',
+                img: './Imagenes/capturas/Captura-CarRental2.jpeg',
+                descripcion: 'Proyecto fin de curso, 8 integrantes. Rol Frontend junto a Amy y Mateo.',
                 personal: false
             }
         ]
