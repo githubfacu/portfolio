@@ -235,3 +235,10 @@ footer{
     }
     
 }
+
+@media (max-width: 355px) {
+
+    #lineaDeTiempo{
+        grid-template-columns: 1fr;
+    }
+}
