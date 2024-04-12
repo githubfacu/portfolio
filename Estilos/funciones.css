@@ -85,3 +85,18 @@
     box-sizing: border-box;
     align-content: flex-end;
 }
+
+
+@media (max-width: 768px){
+    
+    .linksDiv a{
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 355px) {
+
+    #lineaDeTiempo section h3{
+        text-align: center;
+    }
+}
