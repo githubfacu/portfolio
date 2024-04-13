@@ -110,10 +110,12 @@ main{
 .resaltadores{
     display: flex;
     align-items: flex-start;
+    /* justify-content: flex-end; */
     justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
     gap: 4px;
+    margin-top: 4px;
 }
 
 .resaltadores span{
@@ -234,6 +236,9 @@ footer{
         padding-left: 24px;
     }
     
+    .iconos{
+        gap: 16px;
+    }
 }
 
 @media (max-width: 355px) {
