@@ -48,7 +48,7 @@ const material = [
                 ruta: 'https://arcade-game-vercel.vercel.app',
                 anclaTexto: 'ArcadeGame',
                 img: './Imagenes/capturas/Captura_arcade-game-vercel.vercel.app.jpeg',
-                descripcion: 'Primera práctica con chatGPT. React.',
+                descripcion: 'Primera práctica incluyendo el uso de chatgpt. React.',
                 personal: true
             },
             {

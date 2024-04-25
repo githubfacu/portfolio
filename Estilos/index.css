@@ -12,6 +12,7 @@ body{
     margin: 0;
     user-select: none;
     background-color: var(--bgColor);
+    transition: background-color .3s ease, color .3s ease;
 }
 
 .dark{ 
@@ -45,6 +46,7 @@ header{
     padding: 1rem 1.8rem;
     border-bottom: 2px solid var(--textColor);
     background-color: var(--bgColor);
+    transition: background-color .3s ease, color .3s ease;
 }
 
 header a{
@@ -209,7 +211,6 @@ footer{
 
     main{
         margin-bottom: 24px;
-        gap: 16px;
     }
     
     .divMarcaPersonal{
@@ -234,7 +235,7 @@ footer{
 
     .cronologia{
         padding: 8px;
-        margin-bottom: 12px;
+        margin-bottom: 4px;
     }
 
     .cronologia h2{
