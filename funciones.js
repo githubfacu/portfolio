@@ -17,7 +17,7 @@ const material = [
                 proyectoId: 1,
                 ruta: '',
                 anclaTexto: 'RecursosHumanosWebApp',
-                img: '',
+                img: './Imagenes/capturas/Captura_rrhh.jpeg',
                 descripcion: '4 sprints, 4 semanas, 10 integrantes. Rol Frontend QA React + Tailwind',
                 personal: false
             }
@@ -71,7 +71,7 @@ const material = [
                 ruta: 'https://githubfacu.github.io/f1_temporada_23/',
                 anclaTexto: 'F1-Temporada2023',
                 img: './Imagenes/capturas/Captura_f1.jpeg',
-                descripcion: 'Probando ECMAScript6.',
+                descripcion: 'Probando ECMAScript6. API-Fetch 1',
                 personal: true
             },
             {
@@ -123,7 +123,6 @@ const material = [
         ]
     }
 ]
-
 
 const $lineadetiempo = document.getElementById('lineaDeTiempo')
 

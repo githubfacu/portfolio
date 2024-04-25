@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
-    border: 2px solid rgb(50, 50, 50);
+    border: 2px solid var(--textColor);
     padding: 4px 8px 6px;
     border-radius: 3px;
     gap: 2px;
@@ -41,19 +41,20 @@
 }
 
 .enCurso{
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
+    /* background-color: #e09b13; */
     background-color: rgb(255, 195, 0);
     position: absolute;
     top: 5px;
     left: 2px;
     border-radius: 50%;
-    box-shadow: 0 0 1px 2px rgb(255, 195, 0);
+    box-shadow: 0 0 1px 1px rgb(255, 195, 0);
 }
 
 .tituloCard h5{
-    background-color: rgb(0, 0, 0,.9);
-    color: white;
+    background-color: var(--textColor);
+    color: var(--bgColor);
     position: absolute;
     padding: 0 3px;
     border-radius: 1px;
@@ -93,7 +94,8 @@
     box-sizing: border-box;
     height: 220px;
     width: 285px;
-    background-color: white;
+    background-color: rgb(246 248 253);
+    color: rgb(27, 27, 27);
     position: absolute;
     bottom: 25px;
     left: 0px;
@@ -122,7 +124,6 @@
     box-sizing: border-box;
     align-content: flex-end;
 }
-
 
 @media (max-width: 768px){
     

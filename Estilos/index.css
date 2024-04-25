@@ -1,6 +1,8 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(27, 27, 27);
+    --bgColor: rgb(27, 27, 27); 
+    --textColor: rgb(246 248 253);
+    color: var(--textColor);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,7 +11,17 @@ body{
     width: 100vw;
     margin: 0;
     user-select: none;
-    background-color: rgb(246 248 253);
+    background-color: var(--bgColor);
+}
+
+.dark{ 
+    --bgColor: rgb(27, 27, 27); 
+    --textColor: rgb(246 248 253);
+}
+
+.light{ 
+    --bgColor: rgb(246 248 253); 
+    --textColor: rgb(27, 27, 27);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -31,12 +43,13 @@ header{
     box-sizing: border-box;
     width: 100%;
     padding: 1rem 1.8rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--textColor);
+    background-color: var(--bgColor);
 }
 
 header a{
     text-decoration: none;
-    color: black;
+    color: var(--textColor);
 }
 
 
@@ -151,7 +164,7 @@ main{
     align-items: flex-start;
     justify-content: flex-start;
     box-sizing: border-box;
-    gap: 8px;
+    gap: 10px;
 }
 
 .formacionAcademica ul li p{
@@ -168,7 +181,7 @@ footer{
     box-sizing: border-box;
     width: 100%;
     padding: 20px;
-    border-top: 2px solid black;
+    border-top: 2px solid var(--textColor);
 }
 
 .iconos{
@@ -180,7 +193,7 @@ footer{
 }
 
 .iconos a{
-    color: rgb(27, 27, 27);
+    color: var(--textColor);
     padding-top: 2px;
 }
 
@@ -196,7 +209,7 @@ footer{
 
     main{
         margin-bottom: 24px;
-        gap: 12px;
+        gap: 16px;
     }
     
     .divMarcaPersonal{
@@ -221,6 +234,7 @@ footer{
 
     .cronologia{
         padding: 8px;
+        margin-bottom: 12px;
     }
 
     .cronologia h2{
