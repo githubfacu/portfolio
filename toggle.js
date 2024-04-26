@@ -29,8 +29,6 @@ $header.addEventListener('mouseover', function(){
     if(!modoClaro){
         $header.classList.add('light')
     }
-
-    console.log(modoClaro);
 })
 
 
@@ -43,7 +41,4 @@ $header.addEventListener('mouseout', function(){
     if(!modoClaro){
         $header.classList.remove('light')
     }
-
-    console.log(modoClaro);
-
 })
