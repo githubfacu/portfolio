@@ -1,5 +1,5 @@
 body{
-    font-family: 'Trebuchet MS', 'Gill Sans MT', sans-serif;
+    font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     --bgColor: rgb(18, 18, 18);
     --textColor: rgb(243, 245, 250);
     color: var(--textColor);
