@@ -1,7 +1,7 @@
 const material = [
     {
         id: 7,
-        titulo: 'Next.js | Tailwind CSS',
+        titulo: '<span>Next.js <h4>+Tailwind CSS +TypeScript</h4> | Digital House</span>',
         fecha: 'Abril 2024',
         enCurso: true,
         proyectos: [
@@ -140,7 +140,6 @@ function agregarSeccion(){
     })
 }
 
-
 function agregarMaterial(){
 
     const $sectionDiv = document.querySelectorAll('#lineaDeTiempo section')
@@ -162,7 +161,7 @@ function agregarMaterial(){
                 enCursoMsj.innerText='En curso'
 
                 const titulo = document.createElement('h3')
-                titulo.innerText=`${materia.titulo}`
+                titulo.innerHTML=`${materia.titulo}`
 
                 if(materia.enCurso){
                     tituloCard.appendChild(enCursoIndice)
@@ -199,7 +198,6 @@ function hoverMsj(){
         })
     })
 }
-
 
 function agregarProyectos(){
 

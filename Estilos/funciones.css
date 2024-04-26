@@ -36,6 +36,10 @@
     position: relative;
 }
 
+.tituloCard span h4{
+    display: inline-block;
+}
+
 .tituloMargin::first-letter{
     margin-left: 20px;
 }
