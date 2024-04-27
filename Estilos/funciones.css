@@ -80,6 +80,7 @@
     gap: 4px;
     position: relative;
     flex-wrap: wrap;
+
 }
 
 .linksDiv a{
@@ -88,6 +89,7 @@
     padding: 0px 4px 2px;
     border-radius: 2px;
     font-size: 1rem;
+    z-index: 1;
 }
 
 .practicaDiv{
@@ -101,11 +103,11 @@
     background-color: rgb(246 248 253);
     color: rgb(27, 27, 27);
     position: absolute;
-    bottom: 25px;
-    left: 0px;
+    top: -225px;
     box-shadow: 0 0 5px 3px rgb(0, 0, 0, .2);
     border-radius: 7px;
     overflow: hidden;
+    z-index: 2;
 }
 
 .practicaDiv img{
@@ -133,6 +135,10 @@
     
     .linksDiv a{
         font-size: .9rem;
+    }
+
+    .mobileDiv{
+        right: 0px;
     }
 }
 

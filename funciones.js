@@ -130,6 +130,7 @@ agregarSeccion()
 agregarMaterial()
 agregarProyectos()
 hoverMsj()
+clasificarXIndex()
 
 
 function agregarSeccion(){
@@ -250,4 +251,40 @@ function agregarProyectos(){
             }
         })           
     })
+}
+
+function clasificarXIndex (){
+
+    const $sectionDiv = document.querySelectorAll('#lineaDeTiempo section')
+    const $practicaDiv = document.querySelectorAll('#lineaDeTiempo section .practicaDiv')
+
+
+    if ($sectionDiv.length%2 === 0) {
+        $sectionDiv.forEach(((seccion, index) =>{
+            if (index % 2 !== 0) {
+
+                const targetElement = seccion.querySelectorAll('.practicaDiv')
+                console.log(targetElement);
+
+                targetElement.forEach(div=>{
+                    div.classList.add('mobileDiv')
+                })
+            }
+        }))
+    }
+
+
+    if ($sectionDiv.length %2 !== 0) {
+
+        $sectionDiv.forEach(((seccion, index) =>{
+            if (index % 2 !== 0) {
+
+                const targetElement = seccion.querySelectorAll('.practicaDiv')
+
+                targetElement.forEach(div=>{
+                    div.classList.add('mobileDiv')
+                })
+            }
+        }))
+    }
 }
