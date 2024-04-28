@@ -80,16 +80,24 @@
     gap: 4px;
     position: relative;
     flex-wrap: wrap;
-
 }
 
 .linksDiv a{
     color: black;
     background-color: rgb(237, 123, 16);
-    padding: 0px 4px 2px;
+    padding: 0px 4px 1px;
     border-radius: 2px;
     font-size: 1rem;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 4px;
+}
+
+.linksDiv span{
+    padding-top: 2px;
 }
 
 .practicaDiv{

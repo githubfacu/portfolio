@@ -16,7 +16,7 @@ const material = [
             {
                 proyectoId: 1,
                 ruta: '',
-                anclaTexto: 'RecursosHumanosWebApp',
+                anclaTexto: 'RRHH-WebAppMobile',
                 img: './Imagenes/capturas/Captura_rrhh.jpeg',
                 descripcion: '4 sprints, 4 semanas, 10 integrantes. Rol Frontend QA React + Tailwind',
                 personal: false
@@ -69,7 +69,7 @@ const material = [
             {
                 proyectoId: 1,
                 ruta: 'https://githubfacu.github.io/f1_temporada_23/',
-                anclaTexto: 'F1-Temporada2023',
+                anclaTexto: 'F1-2023',
                 img: './Imagenes/capturas/Captura_f1.jpeg',
                 descripcion: 'Probando ECMAScript6. API-Fetch 1',
                 personal: true
@@ -214,14 +214,22 @@ function agregarProyectos(){
                     materia.proyectos.forEach(proyecto=>{
 
                         const ancla = document.createElement('a')
+                        const anclaTextContent = document.createElement('h4')
+
                         ancla.id = proyecto.proyectoId
                         ancla.href = proyecto.ruta
                         ancla.target = '_blank'
-                        ancla.textContent = proyecto.anclaTexto
+                        anclaTextContent.innerText= proyecto.anclaTexto
+                        ancla.appendChild(anclaTextContent)
 
                         if (!proyecto.personal) {
                             ancla.style.backgroundColor='rgb(255, 230, 0)'
                         }
+
+                        const spanLink = document.createElement('span')
+                        spanLink.innerHTML=`<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>`
+
+                        ancla.appendChild(spanLink)
 
                         linksDivHTML.appendChild(ancla)
 
