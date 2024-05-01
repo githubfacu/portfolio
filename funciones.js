@@ -5,6 +5,14 @@ const material = [
         fecha: 'Abril 2024',
         enCurso: true,
         proyectos: [
+            {
+                proyectoId: 1,
+                ruta: 'https://github.com/githubfacu/Red_Social_Next.js',
+                anclaTexto: 'RedSocial',
+                img: '',
+                descripcion: 'WebApp dictada en el curso asincrónico Next.js. Tailwind + TypeScript',
+                personal: false
+            }
         ]
     },
     {
@@ -15,7 +23,7 @@ const material = [
         proyectos: [
             {
                 proyectoId: 1,
-                ruta: '',
+                ruta: 'https://gestion-de-recursos-humanos-en-la-nube-facundodevs-projects.vercel.app',
                 anclaTexto: 'RRHH-WebAppMobile',
                 img: './Imagenes/capturas/Captura_rrhh.jpeg',
                 descripcion: '4 sprints, 4 semanas, 10 integrantes. Rol Frontend QA React + Tailwind',
@@ -175,7 +183,7 @@ function agregarMaterial(){
                 sectionHTML.appendChild(tituloCard)
 
                 return sectionHTML.innerHTML+=`
-                <h4>${materia.fecha}</h4>
+                <h4 class='fecha'>${materia.fecha}</h4>
                 <div class='linksDiv' id='${materia.id}'></div>`
             }
         })
@@ -239,6 +247,7 @@ function agregarProyectos(){
 
                         practicaDescripcion.innerText= proyecto.descripcion
                         practicaImg.setAttribute('src', proyecto.img)
+                        practicaImg.setAttribute('alt', 'vista del proyecto en mini.')
                         practicaDiv.appendChild(practicaImg)                        
                         practicaDiv.appendChild(practicaDescripcion)
 
@@ -266,7 +275,6 @@ function clasificarXIndex (){
     const $sectionDiv = document.querySelectorAll('#lineaDeTiempo section')
     const $practicaDiv = document.querySelectorAll('#lineaDeTiempo section .practicaDiv')
 
-
     if ($sectionDiv.length%2 === 0) {
         $sectionDiv.forEach(((seccion, index) =>{
             if (index % 2 !== 0) {
@@ -280,7 +288,6 @@ function clasificarXIndex (){
             }
         }))
     }
-
 
     if ($sectionDiv.length %2 !== 0) {
 

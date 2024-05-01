@@ -71,6 +71,10 @@
     font-weight: 500;
 }
 
+.fecha{
+    padding: 2px;
+}
+
 .linksDiv{
     display: flex;
     align-items: center;
