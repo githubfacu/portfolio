@@ -1,7 +1,7 @@
 const material = [
     {
         id: 7,
-        titulo: '<span>Next.js <h4>+Tailwind CSS +TypeScript</h4> | Digital House</span>',
+        titulo: '<span>Next.js <h4>+TypeScript +Tailwind CSS</h4> | Digital House</span>',
         fecha: 'Abril 2024',
         enCurso: true,
         proyectos: [
@@ -9,8 +9,8 @@ const material = [
                 proyectoId: 1,
                 ruta: 'https://github.com/githubfacu/Red_Social_Next.js',
                 anclaTexto: 'RedSocial',
-                img: '',
-                descripcion: 'WebApp dictada en el curso asincrónico Next.js. Tailwind + TypeScript',
+                img: './Imagenes/capturas/fondo_negro.png',
+                descripcion: 'WebApp dictada en el curso asincrónico Next.js + TypeScript + Tailwind CSS',
                 personal: false
             }
         ]
@@ -19,7 +19,7 @@ const material = [
         id: 6,
         titulo: 'Simulación Laboral | No Country',
         fecha: 'Abril 2024',
-        enCurso: true,
+        enCurso: false,
         proyectos: [
             {
                 proyectoId: 1,
@@ -253,13 +253,20 @@ function agregarProyectos(){
 
                         practicaDiv.id = proyecto.proyectoId
                         practicaDiv.classList.add('practicaDiv')
-                        practicaDiv.style.display='none'
+                        practicaDiv.classList.add('hidden')
 
                         ancla.addEventListener('mouseover',function(){
-                            practicaDiv.style.display='flex'
+                            practicaDiv.classList.remove('hidden')
+
+                            setTimeout(() => {
+                                practicaDiv.style.opacity='1'
+                            }, 200);
                         })
                         ancla.addEventListener('mouseout',function(){
-                            practicaDiv.style.display='none'
+                            practicaDiv.classList.add('hidden')
+                            setTimeout(() => {
+                                practicaDiv.style.opacity='0'
+                            }, 200);
                         })
 
                         return linksDivHTML.appendChild(practicaDiv)

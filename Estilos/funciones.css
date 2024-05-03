@@ -11,24 +11,12 @@
     width: 100%;
     box-shadow: 0 0 5px 3px rgb(0, 0, 0, .2);
     position: relative;
-    /* background-color: #272b33; */
-    /* border-color: #7a828e; */
-    /* #272b33
-    #0a0c10
-    #272b33 
-    #525964*/
-    /* --color-project-header-bg: #0d1117;
-    --color-project-sidebar-bg: #161b22; */
 }
 
 #lineaDeTiempo section:first-child{
     min-height: 110px;
     justify-content: space-between;
 }
-
-/* #lineaDeTiempo section:last-child{
-    grid-column: 2/3;
-} */
 
 .tituloCard{
     width: 100%;
@@ -47,7 +35,6 @@
 .enCurso{
     width: 9px;
     height: 9px;
-    /* background-color: #e09b13; */
     background-color: rgb(255, 195, 0);
     position: absolute;
     top: 5px;
@@ -120,6 +107,8 @@
     border-radius: 7px;
     overflow: hidden;
     z-index: 2;
+    opacity: 0;
+    transition: opacity .2s ease-out;
 }
 
 .practicaDiv img{
@@ -141,6 +130,17 @@
     padding: 8px;
     box-sizing: border-box;
     align-content: flex-end;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width: 899px){
+
+    .practicaDiv{
+        display: none;
+    }    
 }
 
 @media (max-width: 768px){
