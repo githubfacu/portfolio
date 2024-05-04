@@ -10,7 +10,7 @@ const material = [
                 ruta: 'https://github.com/githubfacu/Red_Social_Next.js',
                 anclaTexto: 'RedSocial',
                 img: './Imagenes/capturas/fondo_negro.png',
-                descripcion: 'WebApp dictada en el curso asincrónico Next.js + TypeScript + Tailwind CSS',
+                descripcion: 'WebApp dictada. Next.js + TypeScript + Tailwind CSS.',
                 personal: false
             }
         ]
@@ -26,7 +26,7 @@ const material = [
                 ruta: 'https://gestion-de-recursos-humanos-en-la-nube-facundodevs-projects.vercel.app',
                 anclaTexto: 'RRHH-WebAppMobile',
                 img: './Imagenes/capturas/Captura_rrhh.jpeg',
-                descripcion: '4 sprints, 4 semanas, 10 integrantes. Rol Frontend QA React + Tailwind',
+                descripcion: '4 sprints, 4 semanas, 10 integrantes. Frontend QA. React + Tailwind.',
                 personal: false
             }
         ]
@@ -41,7 +41,7 @@ const material = [
                 ruta: 'https://gitlab.com/mtimoxenko/integrador',
                 anclaTexto: 'BookingApp',
                 img: './Imagenes/capturas/Captura-CarRental2.jpeg',
-                descripcion: 'Proyecto fin de curso, 8 integrantes. Rol Frontend junto a Amy y Mateo.',
+                descripcion: 'Proyecto fin de curso, 8 integrantes. Frontend junto a Amy y Mateo.',
                 personal: false
             }
         ]
@@ -56,7 +56,7 @@ const material = [
                 ruta: 'https://arcade-game-vercel.vercel.app',
                 anclaTexto: 'ArcadeGame',
                 img: './Imagenes/capturas/Captura_arcade-game-vercel.vercel.app.jpeg',
-                descripcion: 'Primera práctica incluyendo el uso de chatgpt. React. Responsive',
+                descripcion: 'Práctica de React. Responsive.',
                 personal: true
             },
             {
@@ -79,7 +79,7 @@ const material = [
                 ruta: 'https://githubfacu.github.io/f1_temporada_23/',
                 anclaTexto: 'F1-2023',
                 img: './Imagenes/capturas/Captura_f1.jpeg',
-                descripcion: 'Probando ECMAScript6. API-Fetch 1',
+                descripcion: 'Probando ECMAScript6. API-Fetch 1.',
                 personal: true
             },
             {
