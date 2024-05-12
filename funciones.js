@@ -11,7 +11,17 @@ const material = [
                 anclaTexto: 'RedSocial',
                 img: './Imagenes/capturas/fondo_negro.png',
                 descripcion: 'WebApp dictada. Next.js + TypeScript + Tailwind CSS.',
-                personal: false
+                personal: false,
+                typescript: true
+            },
+            {
+                proyectoId: 2,
+                ruta: 'https://lector-transcripcion-de-llamadas.vercel.app/',
+                anclaTexto: 'LectorTrancripcion',
+                img: './Imagenes/capturas/Captura_lector-transcripcion-de-llamadas.vercel.app.jpeg',
+                descripcion: 'Prueba técnica. Next.js + TypeScript + Tailwind CSS.',
+                personal: false,
+                typescript: true
             }
         ]
     },
@@ -228,10 +238,14 @@ function agregarProyectos(){
                         ancla.href = proyecto.ruta
                         ancla.target = '_blank'
                         anclaTextContent.innerText= proyecto.anclaTexto
+                        
                         ancla.appendChild(anclaTextContent)
 
                         if (!proyecto.personal) {
                             ancla.style.backgroundColor='rgb(255, 230, 0)'
+                        }
+                        if(proyecto.typescript){
+                            ancla.style.backgroundColor='#3178c6'
                         }
 
                         const spanLink = document.createElement('span')

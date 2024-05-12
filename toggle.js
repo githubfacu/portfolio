@@ -1,5 +1,8 @@
 const $body = document.querySelector('body')
 const $header = document.querySelector('header')
+const $seccionFormulario = document.querySelector('.contacto')
+const $star = document.querySelector('.fa-star')
+
 
 let modoClaro = false
 
@@ -9,9 +12,13 @@ function temaSitio(){
     if(modoClaro){
         $header.classList.add('dark')
         $header.classList.remove('light')
+        // $seccionFormulario.style.backgroundColor='rgb(230,230,230)'
+        $star.style.color='rgb(237, 123, 16)'
     }
     if(!modoClaro){
         $header.classList.add('light')
+        // $seccionFormulario.style.backgroundColor='black'
+        $star.style.color='rgb(255, 230, 0)'
     }
 }
 
