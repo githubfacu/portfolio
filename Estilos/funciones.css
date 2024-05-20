@@ -7,7 +7,7 @@
     border: 2px solid var(--textColor);
     padding: 4px 8px 6px;
     border-radius: 3px;
-    gap: 2px;
+    gap: 4px;
     width: 100%;
     position: relative;
 }

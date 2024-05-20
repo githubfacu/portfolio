@@ -178,6 +178,10 @@ main{
     gap: 10px;
 }
 
+.formacionAcademica ul li h4{
+    font-weight: 400;
+}
+
 .formacionAcademica ul li p{
     margin: 0;
 }
@@ -321,7 +325,7 @@ footer{
 }
 
 .iconos span:hover{
-    color: rgb(49, 120, 198);
+    color: #3178c6;
 }
 
 .iconos h5{

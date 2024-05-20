@@ -134,12 +134,12 @@ function confirmarEnvio(validaciones) {
 }
 
 
-formulario.addEventListener('submit', function(event){
-    event.preventDefault()
+// formulario.addEventListener('submit', function(event){
+//     event.preventDefault()
 
-    return alert('Envio de mensajes en mantenimiento, discupe las molestias.')
+//     return alert('Envio de mensajes en mantenimiento, discupe las molestias.')
 
-    confirmarEnvio(validar(capturaValues()))
+//     confirmarEnvio(validar(capturaValues()))
 
-})
+// })
 

@@ -1,9 +1,18 @@
 const material = [
     {
-        id: 7,
-        titulo: '<span>Next.js <h4>+TypeScript +Tailwind CSS</h4> | Digital House</span>',
-        fecha: 'Abril 2024',
+        id: 8,
+        titulo: '<span>React Advanced | <h4>Rolling Code</h4></span>',
+        fecha: 'Mayo 2024',
         enCurso: true,
+        proyectos: [
+
+        ]
+    },
+    {
+        id: 7,
+        titulo: '<span>Next.js <h4>+TypeScript +Tailwind</h4> | <h4>Digital House</h4></span>',
+        fecha: 'Abril 2024',
+        enCurso: false,
         proyectos: [
             {
                 proyectoId: 1,
@@ -27,7 +36,7 @@ const material = [
     },
     {
         id: 6,
-        titulo: 'Simulación Laboral | No Country',
+        titulo: '<span>Simulación Laboral | <h4>No Country</h4></span>',
         fecha: 'Abril 2024',
         enCurso: false,
         proyectos: [
@@ -43,7 +52,7 @@ const material = [
     },
     {
         id: 5,
-        titulo: 'Proyecto Integrador | Digital House',
+        titulo: '<span>Proyecto Integrador | <h4>Digital House</h4></span>',
         fecha: 'Febrero 2024',
         proyectos: [
             {
@@ -81,7 +90,7 @@ const material = [
     },
     {
         id: 3,
-        titulo: 'React',
+        titulo: '<span>React | <h4>Digital House</h4></span>',
         fecha: 'Octubre 2023',
         proyectos: [
             {
@@ -104,7 +113,7 @@ const material = [
     },
     {
         id: 2,
-        titulo: 'JavaScript',
+        titulo: '<span>JavaScript | <h4>Digital House</h4></span>',
         fecha: 'Abril 2023',
         proyectos: [
             {
@@ -127,7 +136,7 @@ const material = [
     },
     {
         id: 1,
-        titulo: 'HTML | CSS',
+        titulo: '<span>HTML CSS | <h4>Digital House</h4></span>',
         fecha: 'Agosto 2022',
         proyectos: [
             {
@@ -301,7 +310,6 @@ function clasificarXIndex (){
             if (index % 2 !== 0) {
 
                 const targetElement = seccion.querySelectorAll('.practicaDiv')
-                console.log(targetElement);
 
                 targetElement.forEach(div=>{
                     div.classList.add('mobileDiv')
