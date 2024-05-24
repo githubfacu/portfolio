@@ -5,7 +5,15 @@ const material = [
         fecha: 'Mayo 2024',
         enCurso: true,
         proyectos: [
-
+            {
+                proyectoId: 1,
+                ruta: 'https://rolling-code-nav-cards.vercel.app/',
+                anclaTexto: 'HeroCardsNav',
+                img: './Imagenes/capturas/Captura_rolling-code-nav-cards.jpeg',
+                descripcion: 'Práctica en grupo. React + Ant Design UI components',
+                personal: false,
+                typescript: false
+            },
         ]
     },
     {
