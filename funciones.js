@@ -1,4 +1,38 @@
 const material = [
+    // {
+    //     id: 10,
+    //     titulo: '<span>Next.js | <h4>Udemy</h4></span>',
+    //     fecha: 'Junio 2024',
+    //     enCurso: true,
+    //     proyectos: [
+    //         {
+    //             proyectoId: 1,
+    //             ruta: '',
+    //             anclaTexto: 'E-commerce',
+    //             img: './Imagenes/capturas/fondo_negro.png',
+    //             descripcion: 'NextJS 14. Guía completa con E-commerce',
+    //             personal: false,
+    //             typescript: true
+    //         }
+    //     ]
+    // },
+    {
+        id: 9,
+        titulo: '<span>Next.js App Router course | <h4>NEXT.js (Vercel)</h4></span>',
+        fecha: 'Mayo 2024',
+        enCurso: true,
+        proyectos: [
+            {
+                proyectoId: 1,
+                ruta: 'https://github.com/githubfacu/Learn_Next.js',
+                anclaTexto: 'Learn_Next.js',
+                img: './Imagenes/capturas/fondo_negro.png',
+                descripcion: 'React Foundations Course (+vitest) & Financial Dashboard',
+                personal: false,
+                typescript: true
+            }
+        ]
+    },
     {
         id: 8,
         titulo: '<span>React Advanced | <h4>Rolling Code</h4></span>',
