@@ -20,7 +20,7 @@ const material = [
         id: 9,
         titulo: '<span>Next.js App Router course | <h4>NEXT.js (Vercel)</h4></span>',
         fecha: 'Mayo 2024',
-        enCurso: true,
+        enCurso: false,
         proyectos: [
             {
                 proyectoId: 1,
@@ -48,6 +48,15 @@ const material = [
                 personal: false,
                 typescript: false
             },
+            {
+                proyectoId: 2,
+                ruta: 'https://reducer-nine.vercel.app/',
+                anclaTexto: 'ReducerPalet',
+                img: './Imagenes/capturas/Captura_Reducer.jpeg',
+                descripcion: 'useReducer, Ant design +Tailwind +TypeScript',
+                personal: true,
+                typescript: false
+            },
         ]
     },
     {
@@ -61,7 +70,7 @@ const material = [
                 ruta: 'https://github.com/githubfacu/Red_Social_Next.js',
                 anclaTexto: 'RedSocial',
                 img: './Imagenes/capturas/fondo_negro.png',
-                descripcion: 'WebApp dictada. Next.js + TypeScript + Tailwind CSS.',
+                descripcion: 'WebApp dictada. Next.js +Tailwind +TypeScript',
                 personal: false,
                 typescript: true
             },
@@ -70,7 +79,7 @@ const material = [
                 ruta: 'https://lector-transcripcion-de-llamadas.vercel.app/',
                 anclaTexto: 'LectorTrancripcion',
                 img: './Imagenes/capturas/Captura_lector-transcripcion-de-llamadas.vercel.app.jpeg',
-                descripcion: 'Prueba técnica. Next.js + TypeScript + Tailwind CSS.',
+                descripcion: 'Prueba técnica. Next.js +Tailwind +TypeScript',
                 personal: false,
                 typescript: true
             }
