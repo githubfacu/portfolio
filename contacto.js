@@ -12,7 +12,7 @@ vinculos.style.display='none'
 miMail.innerText='elorzfacundo@gmail.com'
 miMail.style.display='none'
 
-copiedMessage.innerText='✔ Copied'
+copiedMessage.innerText='✔ Copiado'
 copiedMessage.style.display='none'
 
 divIcons.appendChild(miMail)
@@ -33,6 +33,8 @@ mailIcon.addEventListener('click', function() {
     navigator.clipboard.writeText(miMail.innerText)
 
     copiedMessage.style.display='block'
+    copiedMessage.style.width='90px'
+    copiedMessage.style.textAlign='center'
 
     const timer = setTimeout(() => {
         copiedMessage.style.display='none'

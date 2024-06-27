@@ -18,7 +18,7 @@ export const material = [
     // },
     {
         id: 9,
-        titulo: '<span>React Advanced | <h4>Rolling Code</h4></span>',
+        titulo: '<span>React Avanzado <h4>(Redux)</h4> | <h4>Rolling Code</h4></span>',
         fecha: 'Mayo 2024',
         enCurso: true,
         proyectos: [
