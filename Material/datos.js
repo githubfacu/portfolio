@@ -1,21 +1,12 @@
 export const material = [
-    // {
-    //     id: 10,
-    //     titulo: '<span>Next.js | <h4>Udemy</h4></span>',
-    //     fecha: 'Junio 2024',
-    //     enCurso: true,
-    //     proyectos: [
-    //         {
-    //             proyectoId: 1,
-    //             ruta: '',
-    //             anclaTexto: 'E-commerce',
-    //             img: './Imagenes/capturas/fondo_negro.png',
-    //             descripcion: 'NextJS 14. Guía completa con E-commerce',
-    //             personal: false,
-    //             typescript: true
-    //         }
-    //     ]
-    // },
+    {
+        id: 10,
+        titulo: '<span>Sistemas | <h4>inkuA</h4></span>',
+        fecha: 'Junio 2024',
+        enCurso: true,
+        proyectos: [
+        ]
+    },
     {
         id: 9,
         titulo: '<span>React Avanzado <h4>(Redux)</h4> | <h4>Rolling Code</h4></span>',
@@ -39,6 +30,15 @@ export const material = [
                 descripcion: 'useReducer, Ant design +Tailwind +TypeScript',
                 personal: true,
                 typescript: true
+            },
+            {
+                proyectoId: 3,
+                ruta: 'https://tp-redux.vercel.app/',
+                anclaTexto: 'Administración',
+                img: './Imagenes/capturas/Captura-tp-redux.jpeg',
+                descripcion: 'Práctica Redux',
+                personal: false,
+                typescript: false
             },
         ]
     },
