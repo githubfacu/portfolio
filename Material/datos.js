@@ -73,15 +73,6 @@ export const material = [
                 descripcion: 'WebApp dictada. Next.js +Tailwind +TypeScript',
                 personal: false,
                 typescript: true
-            },
-            {
-                proyectoId: 2,
-                ruta: 'https://lector-transcripcion-de-llamadas.vercel.app/',
-                anclaTexto: 'LectorTrancripcion',
-                img: './Imagenes/capturas/Captura_lector-transcripcion-de-llamadas.vercel.app.jpeg',
-                descripcion: 'Prueba técnica. Next.js +Tailwind +TypeScript',
-                personal: false,
-                typescript: true
             }
         ]
     },
