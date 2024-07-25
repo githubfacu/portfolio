@@ -29,7 +29,7 @@ export const material = [
                 img: './Imagenes/capturas/Captura_Reducer.jpeg',
                 descripcion: 'useReducer, Ant design +Tailwind +TypeScript',
                 personal: true,
-                typescript: true
+                typescript: false
             },
             {
                 proyectoId: 3,
