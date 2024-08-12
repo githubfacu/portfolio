@@ -5,6 +5,15 @@ export const material = [
         fecha: 'Junio 2024',
         enCurso: true,
         proyectos: [
+            {
+                proyectoId: 1,
+                ruta: 'https://select-input-accesible.vercel.app/',
+                anclaTexto: 'selectInput',
+                img: './Imagenes/capturas/fondo_negro.png',
+                descripcion: 'Componente editable, reutilizable',
+                personal: true,
+                typescript: false
+            },
         ]
     },
     {
