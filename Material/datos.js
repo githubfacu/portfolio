@@ -7,7 +7,7 @@ export const material = [
         proyectos: [
             {
                 proyectoId: 1,
-                ruta: 'https://select-input-accesible.vercel.app/',
+                ruta: 'https://github.com/githubfacu/select-input-accesible',
                 anclaTexto: 'selectInput',
                 img: './Imagenes/capturas/fondo_negro.png',
                 descripcion: 'Componente editable, reutilizable',
