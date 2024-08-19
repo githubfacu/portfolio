@@ -34,12 +34,12 @@
 .enCurso{
     width: 9px;
     height: 9px;
-    background-color: rgb(255, 195, 0);
+    background-color: var(--orange);
     position: absolute;
     top: 5px;
     left: 2px;
     border-radius: 50%;
-    box-shadow: 0 0 1px 1px rgb(255, 195, 0);
+    box-shadow: 0 0 1px 1px var(--orange);
 }
 
 .tituloCard h5{
@@ -74,7 +74,7 @@
 
 .linksDiv a{
     color: black;
-    background-color: rgb(237, 123, 16);
+    background-color: var(--orangeLight);
     padding: 0px 4px 1px;
     border-radius: 2px;
     font-size: 1rem;

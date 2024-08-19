@@ -49,6 +49,15 @@ export const material = [
                 personal: false,
                 typescript: false
             },
+            {
+                proyectoId: 4,
+                ruta: 'https://foro-mania.vercel.app/',
+                anclaTexto: 'Foromanía',
+                img: './Imagenes/capturas/Captura_foro-mania.jpeg',
+                descripcion: 'Foro interactivo. Trabajo integrador 4 integrantes.',
+                personal: false,
+                typescript: false
+            },
         ]
     },
     {

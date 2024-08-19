@@ -87,7 +87,7 @@ function agregarProyectos(){
             if (materia.proyectos.length > 0) {
                 if (parseInt(linksDivHTML.id) === materia.id) {
 
-                    materia.proyectos.forEach(proyecto=>{
+                    materia.proyectos.slice().reverse().forEach(proyecto=>{
 
                         const ancla = document.createElement('a')
                         const anclaTextContent = document.createElement('h4')
@@ -100,10 +100,10 @@ function agregarProyectos(){
                         ancla.appendChild(anclaTextContent)
 
                         if (!proyecto.personal) {
-                            ancla.style.backgroundColor='rgb(255, 230, 0)'
+                            ancla.style.backgroundColor='#ffdd1c'
                         }
                         if(proyecto.typescript){
-                            ancla.style.backgroundColor='#3178c6'
+                            ancla.style.backgroundColor='#5faaa7'
                         }
 
                         const spanLink = document.createElement('span')
