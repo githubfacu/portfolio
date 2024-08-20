@@ -38,7 +38,7 @@ mailIcon.addEventListener('click', function() {
 
     const timer = setTimeout(() => {
         copiedMessage.style.display='none'
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer)
 })
