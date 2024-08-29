@@ -23,6 +23,10 @@
     position: relative;
 }
 
+.tituloCard span{
+    font-size: 1.1rem;
+}
+
 .tituloCard span h4{
     display: inline-block;
 }
@@ -77,7 +81,7 @@
     background-color: var(--orangeLight);
     padding: 0px 4px 1px;
     border-radius: 2px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     z-index: 1;
     display: flex;
     align-items: center;
