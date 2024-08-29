@@ -54,7 +54,7 @@ export const material = [
                 ruta: 'https://foro-mania.vercel.app/',
                 anclaTexto: 'Foromanía',
                 img: './Imagenes/capturas/Captura_foro-mania.jpeg',
-                descripcion: 'Foro interactivo. Trabajo integrador 4 integrantes.',
+                descripcion: 'Foro interactivo. Trabajo integrador 4 integrantes. Redux',
                 personal: false,
                 typescript: false
             },
