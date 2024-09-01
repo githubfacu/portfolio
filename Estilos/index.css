@@ -70,8 +70,9 @@ main{
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1420px;
     gap: 64px;
+    padding: 1.5rem;
 }
 
 .divPresentacion{
@@ -100,24 +101,12 @@ main{
 
 .divMarcaPersonal p{
     text-wrap: pretty;
+    font-size: 1.1rem;
 }
 
 .divPresentacion figure{
     margin: 0;
-    position: relative;
 }
-
-/* .divPresentacion figure::before{
-    content: '';
-    background-color: var(--orange);
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    clip-path: polygon(5% 0, 96% 2%, 98% 98%, 0 100%);
-
-} */
 
 .divPresentacion img{
     clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
@@ -134,8 +123,6 @@ main{
     justify-content: center;
     box-sizing: border-box;
     gap: 8px;
-    padding: 16px;
-    max-width: 1024px;
     /* background-color: var(--orangeLight);
     color: var(--textColor); */
 }
@@ -150,8 +137,6 @@ main{
     justify-content: center;
     box-sizing: border-box;
     gap: 8px;
-    padding: 16px;
-    max-width: 1024px;
     margin-bottom: 16px;
 }
 
@@ -208,8 +193,6 @@ main{
     justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
-    max-width: 1024px;
-    padding: 16px;
     margin-bottom: 16px;
 }
 
@@ -301,6 +284,7 @@ footer{
     main{
         margin-bottom: 24px;
         gap: 32px;
+        padding: 0;
     }
     
     .divMarcaPersonal{
@@ -338,6 +322,10 @@ footer{
     #lineaDeTiempo{
         gap: 12px;
         column-gap: 8px;
+    }
+
+    .formacionAcademica{
+        padding: 16px;        
     }
 
     .formacionAcademica ul{
