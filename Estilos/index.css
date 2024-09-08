@@ -299,7 +299,7 @@ footer{
 }
 
 .iconos a:hover{
-    color: var(--lightBlue);
+    color: var(--orange);
 }
 
 .iconos span{
@@ -309,7 +309,7 @@ footer{
 }
 
 .iconos span:hover{
-    color: var(--lightBlue);
+    color: var(--orange);
 }
 
 .iconos h5{

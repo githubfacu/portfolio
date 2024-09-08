@@ -1,7 +1,15 @@
 export const material = [
     {
+        id: 11,
+        titulo: '<span>FULL Authentication <h4>(REACT NEXT & TypeScript)</h4> | <h4>Udemy</h4></span>',
+        fecha: 'Septiembre 2024',
+        enCurso: true,
+        proyectos: [
+        ]
+    },
+    {
         id: 10,
-        titulo: '<span>Sistemas | <h4>inkuA</h4></span>',
+        titulo: '<span>Sistemas <h4>(Pasantía)</h4> | <h4>inkuA</h4></span>',
         fecha: 'Junio 2024',
         enCurso: true,
         proyectos: [
@@ -20,7 +28,7 @@ export const material = [
         id: 9,
         titulo: '<span>React Avanzado <h4>(Redux)</h4> | <h4>Rolling Code</h4></span>',
         fecha: 'Mayo 2024',
-        enCurso: true,
+        enCurso: false,
         proyectos: [
             {
                 proyectoId: 1,
@@ -79,7 +87,7 @@ export const material = [
     },
     {
         id: 7,
-        titulo: '<span>Next.js <h4>+TypeScript +Tailwind</h4> | <h4>Digital House</h4></span>',
+        titulo: '<span>NEXT.js <h4>+TypeScript +Tailwind</h4> | <h4>Digital House</h4></span>',
         fecha: 'Abril 2024',
         enCurso: false,
         proyectos: [
