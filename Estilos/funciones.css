@@ -5,9 +5,9 @@
     justify-content: space-between;
     box-sizing: border-box;
     border: 2px solid var(--textColor);
-    padding: 4px 8px 6px;
+    padding: 12px;
     border-radius: 3px;
-    gap: 8px;
+    gap: 9px;
     width: 100%;
     position: relative;
 }
@@ -78,7 +78,7 @@
 
 .linksDiv a{
     color: black;
-    background-color: var(--orangeLight);
+    background-color: rgb(243, 245, 250);
     padding: 0px 4px 1px;
     border-radius: 2px;
     font-size: 1.2rem;
@@ -88,6 +88,10 @@
     justify-content: center;
     box-sizing: border-box;
     gap: 4px;
+}
+
+.linksDiv h4{
+    font-weight: 400;
 }
 
 .linksDiv span{
