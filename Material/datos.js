@@ -42,11 +42,11 @@ export const material = [
             {
                 proyectoId: 2,
                 ruta: 'https://reducer-nine.vercel.app/',
-                anclaTexto: 'ReducerPalet',
+                anclaTexto: 'ReducerPallete',
                 img: './Imagenes/capturas/Captura_Reducer.jpeg',
                 descripcion: 'useReducer, Ant design +Tailwind +TypeScript',
                 personal: true,
-                typescript: false
+                typescript: true
             },
             {
                 proyectoId: 3,
