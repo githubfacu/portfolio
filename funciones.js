@@ -95,7 +95,7 @@ function agregarProyectos(){
                         ancla.id = proyecto.proyectoId
                         ancla.href = proyecto.ruta
                         ancla.target = '_blank'
-                        ancla.style.backgroundColor='#FF8C42'
+                        ancla.style.backgroundColor='#fc4628'
                         anclaTextContent.innerText= proyecto.anclaTexto
                         
                         ancla.appendChild(anclaTextContent)

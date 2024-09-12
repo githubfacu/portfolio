@@ -245,7 +245,7 @@ main{
 .resaltadores span{
     width: 15px;
     height: 15px;
-    background-color: var(--orangeLight);
+    background-color: var(--orange);
 }
 
 #amarillo{

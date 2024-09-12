@@ -13,6 +13,28 @@
     height: 100%;
 }
 
+.enCurso{
+    width: 9px;
+    height: 9px;
+    background-color: var(--orange);
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px var(--orange);
+}
+
+.tituloCard h5{
+    background-color: var(--textColor);
+    color: var(--bgColor);
+    position: absolute;
+    padding: 0 3px;
+    border-radius: 1px;
+    top: -15px;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
 #lineaDeTiempo section:first-child{
     min-height: 110px;
     justify-content: space-between;
@@ -33,30 +55,9 @@
 }
 
 .tituloMargin::first-letter{
-    margin-left: 20px;
+    margin-left: 18px;
 }
 
-.enCurso{
-    width: 9px;
-    height: 9px;
-    background-color: var(--orange);
-    position: absolute;
-    top: 5px;
-    left: 2px;
-    border-radius: 50%;
-    box-shadow: 0 0 1px 1px var(--orange);
-}
-
-.tituloCard h5{
-    background-color: var(--textColor);
-    color: var(--bgColor);
-    position: absolute;
-    padding: 0 3px;
-    border-radius: 1px;
-    top: -15px;
-    opacity: 0;
-    transition: opacity .3s ease;
-}
 
 #lineaDeTiempo section h4{
     font-weight: 500;
