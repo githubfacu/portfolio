@@ -8,7 +8,6 @@ agregarProyectos()
 hoverMsj()
 clasificarXIndex()
 
-
 function agregarSeccion(){
 
     material.forEach(materia => {
@@ -66,7 +65,7 @@ function hoverMsj(){
         enCursoMsj.forEach(msj=>{
             if(msj.id === elemento.id){
                 elemento.addEventListener('mouseover',function(){
-                msj.style.opacity='1'
+                    msj.style.opacity='1'
                 })
                 elemento.addEventListener('mouseout',function(){
                     msj.style.opacity='0'
