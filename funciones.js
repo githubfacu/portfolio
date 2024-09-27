@@ -89,6 +89,11 @@ function agregarProyectos(){
 
                     materia.proyectos.slice().reverse().forEach(proyecto=>{
 
+                        const anclaContainer = document.createElement('div')
+                        anclaContainer.classList.add('anclaContainer')
+
+                        linksDivHTML.appendChild(anclaContainer)
+
                         const ancla = document.createElement('a')
                         const anclaTextContent = document.createElement('h4')
 
@@ -112,7 +117,7 @@ function agregarProyectos(){
 
                         ancla.appendChild(spanLink)
 
-                        linksDivHTML.appendChild(ancla)
+                        anclaContainer.appendChild(ancla)
 
                         const practicaDiv = document.createElement('div')
                         const practicaDescripcion = document.createElement('p')
@@ -142,7 +147,7 @@ function agregarProyectos(){
                             }, 200);
                         })
 
-                        return linksDivHTML.appendChild(practicaDiv)
+                        return anclaContainer.appendChild(practicaDiv)
                     })
                 }
             }

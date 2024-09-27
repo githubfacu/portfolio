@@ -17,7 +17,7 @@ export const material = [
                 proyectoId: 1,
                 ruta: 'https://github.com/githubfacu/select-input-accesible',
                 anclaTexto: 'selectInput',
-                img: './Imagenes/capturas/fondo_negro.png',
+                img: './Imagenes/capturas/github-white.jpg',
                 descripcion: 'Componente editable, reutilizable',
                 personal: true,
                 typescript: false
@@ -95,7 +95,7 @@ export const material = [
                 proyectoId: 1,
                 ruta: 'https://github.com/githubfacu/Red_Social_Next.js',
                 anclaTexto: 'RedSocial',
-                img: './Imagenes/capturas/fondo_negro.png',
+                img: './Imagenes/capturas/github-white.jpg',
                 descripcion: 'WebApp dictada. Next.js +Tailwind +TypeScript',
                 personal: false,
                 typescript: true
