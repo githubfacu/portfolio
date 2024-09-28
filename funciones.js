@@ -146,6 +146,21 @@ function agregarProyectos(){
                             ocultarElemento(practicaDiv);
                         });
 
+                        ancla.addEventListener('keydown', function(event) {
+                            if (event.key === 'Enter') {
+                                setTimeout(() => {
+                                    this.blur()
+                                }, 100)
+                            }
+                        });
+
+                        ancla.addEventListener('click', function(event) {
+                            anclaContainer.focus()
+                            setTimeout(() => {
+                                this.blur()
+                            }, 100)
+                        });
+
                         return anclaContainer.appendChild(practicaDiv)
                     })
                 }
