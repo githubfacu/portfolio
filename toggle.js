@@ -3,7 +3,6 @@ const $header = document.querySelector('header')
 const $seccionFormulario = document.querySelector('.contacto')
 const $star = document.querySelector('.fa-star')
 
-
 let modoClaro = false
 
 function temaSitio(){
@@ -26,6 +25,11 @@ $header.addEventListener('click', function(){
     temaSitio()        
 })
 
+$header.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        temaSitio();
+    }
+});
 
 $header.addEventListener('mouseover', function(){
 
@@ -38,8 +42,18 @@ $header.addEventListener('mouseover', function(){
     }
 })
 
-
 $header.addEventListener('mouseout', function(){
+
+    if(modoClaro){
+        $header.classList.add('light')
+    }
+
+    if(!modoClaro){
+        $header.classList.remove('light')
+    }
+})
+
+$header.addEventListener('blur', function(){
 
     if(modoClaro){
         $header.classList.add('light')

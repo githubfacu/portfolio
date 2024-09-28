@@ -54,6 +54,11 @@ header{
     transition: background-color .3s ease, color .3s ease;
 }
 
+header:focus {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+}
+
 header a{
     text-decoration: none;
     color: var(--textColor);
@@ -170,6 +175,11 @@ main{
     border: 2px solid var(--textColor);
     background-color: var(--blue);
     color: white;
+}
+
+.cardProyectoContent:focus {
+    outline: 2px solid var(--orange);
+    outline-offset: 2px;
 }
 
 .cardProyectoContent figure{

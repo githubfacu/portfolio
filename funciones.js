@@ -12,7 +12,7 @@ function agregarSeccion(){
 
     material.forEach(materia => {
         return $lineadetiempo.innerHTML+=`
-        <section id='${materia.id}'></section>`
+        <section id='${materia.id}' class='lineaDeTiempo-section' aria-labelledby='titulo-${materia.id}' tabindex="0" role="region"></section>`
     })
 }
 
@@ -35,9 +35,11 @@ function agregarMaterial(){
                 const enCursoMsj = document.createElement('h5')
                 enCursoMsj.setAttribute('id', materia.id)
                 enCursoMsj.innerText='En curso'
+                enCursoMsj.setAttribute('aria-live', 'polite')
 
                 const titulo = document.createElement('h3')
                 titulo.innerHTML=`${materia.titulo}`
+                titulo.setAttribute('id', `titulo-${materia.id}`)
 
                 if(materia.enCurso){
                     tituloCard.appendChild(enCursoIndice)
@@ -46,7 +48,6 @@ function agregarMaterial(){
                 }
 
                 tituloCard.appendChild(titulo)
-
                 sectionHTML.appendChild(tituloCard)
 
                 return sectionHTML.innerHTML+=`
@@ -76,16 +77,12 @@ function hoverMsj(){
 }
 
 function agregarProyectos(){
-
     const $linksDiv = document.querySelectorAll('.linksDiv') 
 
     $linksDiv.forEach(linksDivHTML=>{
-
         material.forEach(materia => {
-
             if (materia.proyectos.length > 0) {
                 if (parseInt(linksDivHTML.id) === materia.id) {
-
                     materia.proyectos.slice().reverse().forEach(proyecto=>{
 
                         const anclaContainer = document.createElement('div')
@@ -101,6 +98,7 @@ function agregarProyectos(){
                         ancla.target = '_blank'
                         ancla.style.backgroundColor='#fc4628'
                         anclaTextContent.innerText= proyecto.anclaTexto
+                        ancla.setAttribute('aria-label', `Ver proyecto: ${proyecto.anclaTexto}`)
                         
                         ancla.appendChild(anclaTextContent)
 
@@ -112,10 +110,10 @@ function agregarProyectos(){
                         }
 
                         const spanLink = document.createElement('span')
+                        spanLink.setAttribute('aria-hidden', 'true')
                         spanLink.innerHTML=`<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>`
 
                         ancla.appendChild(spanLink)
-
                         anclaContainer.appendChild(ancla)
 
                         const practicaDiv = document.createElement('div')
@@ -124,7 +122,7 @@ function agregarProyectos(){
 
                         practicaDescripcion.innerText= proyecto.descripcion
                         practicaImg.setAttribute('src', proyecto.img)
-                        practicaImg.setAttribute('alt', 'vista del proyecto en mini.')
+                        practicaImg.setAttribute('alt', 'vista del proyecto en miniatura.')
                         practicaDiv.appendChild(practicaImg)                        
                         practicaDiv.appendChild(practicaDescripcion)
 
@@ -132,19 +130,21 @@ function agregarProyectos(){
                         practicaDiv.classList.add('practicaDiv')
                         practicaDiv.classList.add('hidden')
 
-                        ancla.addEventListener('mouseover',function(){
-                            practicaDiv.classList.remove('hidden')
+                        ancla.addEventListener('mouseover', function () {
+                            mostrarElemento(practicaDiv);
+                        });
 
-                            setTimeout(() => {
-                                practicaDiv.style.opacity='1'
-                            }, 200);
-                        })
-                        ancla.addEventListener('mouseout',function(){
-                            practicaDiv.classList.add('hidden')
-                            setTimeout(() => {
-                                practicaDiv.style.opacity='0'
-                            }, 200);
-                        })
+                        ancla.addEventListener('focus', function () {
+                            mostrarElemento(practicaDiv);
+                        });
+
+                        ancla.addEventListener('mouseout', function () {
+                            ocultarElemento(practicaDiv);
+                        });
+
+                        ancla.addEventListener('blur', function () {
+                            ocultarElemento(practicaDiv);
+                        });
 
                         return anclaContainer.appendChild(practicaDiv)
                     })
@@ -185,4 +185,18 @@ function clasificarXIndex (){
             }
         }))
     }
+}
+
+function mostrarElemento(elemento) {
+    elemento.classList.remove('hidden');
+    setTimeout(() => {
+        elemento.style.opacity = '1';
+    }, 200);
+}
+
+function ocultarElemento(elemento) {
+    elemento.classList.add('hidden');
+    setTimeout(() => {
+        elemento.style.opacity = '0';
+    }, 200);
 }

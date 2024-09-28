@@ -5,39 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Facu Elorz Portfolio" />
     <meta property="og:description" content="Desarrollo web y producto." />
-    <meta property="og:image" content="https://githubfacu.github.io/portfolio/Imagenes/capturas/Captura-portafolio.jpeg" />
+    <meta property="og:image" content="https://githubfacu.github.io/portfolio/Imagenes/capturas/portada-portafolio.jpeg" />
     <meta property="og:url" content="https://githubfacu.github.io/portfolio/index.html" />
     <title>Facu Elorz Portfolio</title>
     <link rel="stylesheet" href="./Estilos/index.css">
     <link rel="stylesheet" href="./Estilos/funciones.css">
     <script src="https://kit.fontawesome.com/661bc9cd16.js" crossorigin="anonymous"></script>
-
 </head>
-
 <body class="dark">
-    <header>
-        <a href="./Paginas/presentaciones.html">PRESENTACIONES</a>
+    <header tabindex="0">
+        <a href="./Paginas/presentaciones.html"  aria-label="Ver presentaciones de proyectos">PRESENTACIONES</a>
     </header>
 
     <main>
-        <div class="divPresentacion" role="presentation">
+        <div class="divPresentacion" role="region" aria-labelledby="titulo-presentacion">
             <div class="divMarcaPersonal">
-                <h1>Facundo Elorz</h1>
+                <h1 id="titulo-presentacion">Facundo Elorz</h1>
                 <span><strong>Estudiante Desarrollador Frontend</strong></span>
                 <p>Será una virtud o simplemente pasar el tiempo, es un gusto maquetar un sitio web desde el lenguaje HTML combinarlo con las bases de CSS y soltarse en las interacciones que se abren con JavaScript.</p>
             </div>
             <figure>
-                <img src="./Imagenes/Screenshot_20240201-074922~2.png" alt="">                
+                <img src="./Imagenes/Screenshot_20240201-074922~2.png" alt="Foto de perfil personal de Facundo Elorz">                
             </figure>
         </div>
 
-        <div class="proyectos">
-            <h2>Proyectos</h2>
+        <div class="proyectos" aria-labelledby="titulo-proyectos">
+            <h2 id="titulo-proyectos">Proyectos</h2>
 
-            <div class="proyectoPubliContainer">
+            <div class="proyectoPubliContainer" role="article" aria-labelledby="titulo-budget-generator">
                 <section class="cardProyecto">
-                    <h3 lang="en">Budget Generator</h3>
-                    <div class="cardProyectoContent">
+                    <h3  id="titulo-budget-generator" lang="en">Budget Generator</h3>
+                    <div class="cardProyectoContent" tabindex="0">
                         <figure class="desktop">
                             <img src="./Imagenes/img/budget-app-globe-icon.jpg" alt="Vista miniatura de la pagina inicio de Budget Generator">
                         </figure>
@@ -45,19 +43,19 @@
                         <div class="cardProyectoTextContent">
                             <p>Genera un Presupuesto de página simple y descarga el archivo en formato pdf.</p>
                             <div class="linksDiv">
-                                <a href="https://budget-generator-ten.vercel.app/" target="_blank">
+                                <a href="https://budget-generator-ten.vercel.app/" target="_blank" aria-label="Ir a la página Budget Generator en una nueva pestaña">
                                     <h4>
                                         https://budget-generator-ten.vercel.app/
                                     </h4>
                                     <span>
-                                        <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                                        <i class="fa-solid fa-arrow-up-right-from-square fa-sm" aria-hidden="true"></i>
                                     </span>
                                 </a>
                             </div>   
                         </div>
 
                         <figure class="mobile">
-                            <img src="./Imagenes/img/budget-app-globe-icon.jpg" alt="Vista miniatura de la pagina inicio de Budget Generator">
+                            <img src="./Imagenes/img/budget-app-globe-icon.jpg" alt="Vista miniatura de la pagina inicio de Budget Generator en móvil">
                         </figure>
                     </div>
                   
@@ -65,8 +63,8 @@
             </div>
         </div>
 
-        <div class="cronologia">
-            <h2>Cronología de estudio</h2>
+        <div class="cronologia" aria-labelledby="titulo-cronologia">
+            <h2 id="titulo-cronologia">Cronología de estudio</h2>
 
             <div id="lineaDeTiempo">
             </div>
@@ -86,9 +84,9 @@
             </div>
         </div>
 
-        <div class="formacionAcademica">
-            <h2>Formación Académica</h2>
-            <ul>
+        <div class="formacionAcademica" aria-labelledby="titulo-formacion-academica">
+            <h2 id="titulo-formacion-academica">Formación Académica</h2>
+            <ul role="list">
                 <li>
                     <h3>Pasantía en área de Sistemas</h3>
                     <h4>InkuA (2024)</h4>
@@ -112,17 +110,19 @@
                 </li>
             </ul>
         </div>
-
-        <div>
-            <p></p>
-        </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="iconos">
-            <a href="https://github.com/githubfacu" target="_blank" id="fa-github"><i class="fa-brands fa-github fa-xl"></i></a>
-            <span tabindex="0"><i class="fa-regular fa-envelope fa-xl"></i></span>
-            <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="https://github.com/githubfacu" target="_blank" id="fa-github" aria-label="Ir al perfil de GitHub de Facu Elorz en una nueva pestaña">
+                <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+            <span tabindex="0">
+                <i class="fa-regular fa-envelope fa-xl" aria-label="Copiar en portapapeles la dirección de correo electrónico de Facundo Elorz" aria-hidden="true"></i>
+            </span>
+            <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin" aria-label="Ir al perfil de LinkedIn de Facu Elorz en una nueva pestaña">
+                <i class="fa-brands fa-linkedin fa-xl" aria-hidden="true"></i>
+            </a>
         </div>
     </footer>
     
