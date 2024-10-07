@@ -110,7 +110,7 @@ export const material = [
         proyectos: [
             {
                 proyectoId: 1,
-                ruta: 'https://gestion-de-recursos-humanos-en-la-nube-facundodevs-projects.vercel.app',
+                ruta: 'https://rrhh-n-country.vercel.app/',
                 anclaTexto: 'RRHH-WebAppMobile',
                 img: './Imagenes/capturas/Captura_rrhh.jpeg',
                 descripcion: '4 sprints, 4 semanas, 10 integrantes. Frontend QA. React + Tailwind.',
