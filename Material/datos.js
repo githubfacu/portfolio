@@ -15,11 +15,11 @@ export const material = [
         proyectos: [
             {
                 proyectoId: 1,
-                ruta: 'https://github.com/githubfacu/select-input-accesible',
-                anclaTexto: 'selectInput',
+                ruta: 'https://github.com/inkua/conversor-v2',
+                anclaTexto: 'Conversor-v2',
                 img: './Imagenes/capturas/github-white.jpg',
-                descripcion: 'Componente editable, reutilizable',
-                personal: true,
+                descripcion: 'Convierte rápida y fácilmente entre diferentes zonas horarias.',
+                personal: false,
                 typescript: false
             },
         ]
