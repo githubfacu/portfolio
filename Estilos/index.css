@@ -325,7 +325,7 @@ footer{
     padding-top: 2px;
 }
 
-.iconos a:hover{
+.iconos a:hover, .iconos a:focus{
     color: var(--orange);
 }
 
@@ -335,7 +335,7 @@ footer{
     cursor: pointer;
 }
 
-.iconos span:hover{
+.iconos span:hover, .iconos span:focus{
     color: var(--orange);
 }
 

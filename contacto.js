@@ -24,7 +24,17 @@ mailIcon.addEventListener('mouseover', function() {
     miMail.style.opacity='1'
 })
 
+mailIcon.addEventListener('focus', function() {
+    miMail.style.display='flex'
+    miMail.style.opacity='1'
+})
+
 mailIcon.addEventListener('mouseout', function() {
+    miMail.style.opacity='0'
+    miMail.style.display='none'
+})
+
+mailIcon.addEventListener('focusout', function() {
     miMail.style.opacity='0'
     miMail.style.display='none'
 })
@@ -41,4 +51,20 @@ mailIcon.addEventListener('click', function() {
     }, 2000);
 
     return () => clearTimeout(timer)
+})
+
+mailIcon.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        navigator.clipboard.writeText(miMail.innerText)
+
+        copiedMessage.style.display='block'
+        copiedMessage.style.width='90px'
+        copiedMessage.style.textAlign='center'
+
+        const timer = setTimeout(() => {
+            copiedMessage.style.display='none'
+        }, 2000);
+
+        return () => clearTimeout(timer)        
+    }
 })
