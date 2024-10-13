@@ -32,7 +32,8 @@ function agregarMaterial(){
                 enCursoIndice.setAttribute('id', materia.id)
                 enCursoIndice.classList.add('enCurso')
 
-                const enCursoMsj = document.createElement('h5')
+                const enCursoMsj = document.createElement('div')
+                enCursoMsj.classList.add('enCursoMsj')
                 enCursoMsj.setAttribute('id', materia.id)
                 enCursoMsj.innerText='En curso'
                 enCursoMsj.setAttribute('aria-live', 'polite')
@@ -60,7 +61,7 @@ function agregarMaterial(){
 
 function hoverMsj(){
     const $msjDiv = document.querySelectorAll('.enCurso')
-    const enCursoMsj = document.querySelectorAll('.tituloCard h5')
+    const enCursoMsj = document.querySelectorAll('.enCursoMsj')
 
     $msjDiv.forEach(elemento=>{
         enCursoMsj.forEach(msj=>{
