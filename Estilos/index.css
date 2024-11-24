@@ -1,6 +1,6 @@
 body{
-    font-family:sans-serif;
-    --bgColor: rgb(10,10,10);
+    font-family: "Poppins",sans-serif;
+    --bgColor: rgb(0,0,0);
     --textColor: rgb(243, 245, 250);
     --lightBlue: #5faaa7;
     --orange: #fc4628;
@@ -21,13 +21,13 @@ body{
 }
 
 .dark{ 
-    --bgColor: rgb(10,10,10); 
+    --bgColor: rgb(0,0,0); 
     --textColor: rgb(243, 245, 250);
 }
 
 .light{ 
     --bgColor: rgb(243, 245, 250); 
-    --textColor: rgb(10,10,10);
+    --textColor: rgb(0,0,0);
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -35,11 +35,20 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 h1{
-    font-size: 2.9rem;
+    font-family: "Cormorant Garamond";
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    word-spacing: -4px;
 }
 
 h2{
-    font-size: 1.6rem;
+    font-family: "Cormorant Garamond";
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 header{
@@ -62,7 +71,8 @@ header:focus {
 header a{
     text-decoration: none;
     color: var(--textColor);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 
@@ -78,6 +88,7 @@ main{
     max-width: 1420px;
     gap: 64px;
     padding: 1.5rem;
+    margin-bottom: 24px;
 }
 
 .divPresentacion{
@@ -102,17 +113,17 @@ main{
     color: rgb(243, 245, 250);
     clip-path: polygon(0 0, 99% 3%, 97% 93%, 1% 100%);
     padding: 1.2rem;
-    padding-bottom: 1rem;
 }
 
 .divMarcaPersonal span{
-    font-size: 1.2rem;
+    font-family: "Cormorant Garamond";
+    font-size: 2.1rem;
 }
 
 .divMarcaPersonal p{
     text-wrap: pretty;
-    font-size: 1.1rem;
-    margin: 1rem 0;
+    font-size: 1rem;
+    margin: .5rem 0;
 }
 
 .divPresentacion figure{
@@ -161,10 +172,6 @@ main{
     gap: 8px;
 }
 
-.cardProyecto h3{
-    font-size: 1.2rem;
-}
-
 .cardProyectoContent{
     width: 100%;
     display: flex;
@@ -206,8 +213,7 @@ main{
 
 .cardProyectoTextContent p{
     text-wrap: pretty;
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1rem;
 }
 
 /************************* CRONOLOGIA *************************/
@@ -247,7 +253,7 @@ main{
 
 .resaltadoresDiv{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
     gap: 4px;
@@ -257,6 +263,10 @@ main{
     width: 15px;
     height: 15px;
     background-color: var(--orange);
+}
+
+.resaltadores small{
+    font-size: .9rem;
 }
 
 #amarillo{
@@ -289,13 +299,17 @@ main{
     gap: 10px;
 }
 
-.formacionAcademica ul li h4{
+
+
+.formacionAcademica ul li span{
     font-weight: 400;
     font-size: 1.2rem;
 }
 
-.formacionAcademica ul li p{
+.formacionAcademica ul li small{
+    font-size: .9rem;
     margin: 0;
+    display: block;
 }
 
 
@@ -366,13 +380,13 @@ footer{
 @media (max-width: 768px) {
 
     main{
-        margin-bottom: 24px;
         gap: 32px;
         padding: 0;
     }
 
-    h1{
-        line-height: 2.9rem;
+    h2{
+        font-size: 3.8rem;
+        line-height: 4.2rem;
     }
     
     .divMarcaPersonal{
@@ -421,10 +435,6 @@ footer{
     .cronologia{
         padding: 1rem;
         margin-bottom: 4px;
-    }
-
-    .cronologia h2, .proyectos h2 {
-        padding-left: 8px;
     }
 
     #lineaDeTiempo{

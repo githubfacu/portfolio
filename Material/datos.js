@@ -1,9 +1,9 @@
 export const material = [
     {
         id: 11,
-        titulo: '<span>FULL Authentication <h4>(REACT NEXT & TypeScript)</h4> | <h4>Udemy</h4></span>',
+        titulo: '<span>FULL Authentication <h4>(React NEXT & TypeScript)</h4> | <h4>Udemy</h4></span>',
         fecha: 'Septiembre 2024',
-        enCurso: true,
+        enCurso: false,
         proyectos: [
         ]
     },

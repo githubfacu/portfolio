@@ -52,7 +52,7 @@ function agregarMaterial(){
                 sectionHTML.appendChild(tituloCard)
 
                 return sectionHTML.innerHTML+=`
-                <h4 class='fecha'>${materia.fecha}</h4>
+                <span class='fecha'>${materia.fecha}</span>
                 <div class='linksDiv' id='${materia.id}'></div>`
             }
         })

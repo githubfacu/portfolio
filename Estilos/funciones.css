@@ -55,7 +55,8 @@
 }
 
 .tituloCard span{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .tituloCard span h4{
@@ -72,6 +73,8 @@
 }
 
 .fecha{
+    font-weight: 400;
+    font-size: 1rem;
     padding: 2px;
 }
 
@@ -95,7 +98,7 @@
     background-color: rgb(243, 245, 250);
     padding: 0px 4px 1px;
     border-radius: 2px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     z-index: 1;
     display: flex;
     align-items: center;
