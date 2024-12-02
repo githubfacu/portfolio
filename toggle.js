@@ -1,9 +1,12 @@
 const $body = document.querySelector('body')
 const $header = document.querySelector('header')
-const $seccionFormulario = document.querySelector('.contacto')
-const $star = document.querySelector('.fa-star')
+const $cardProyecto = document.querySelector('.cardProyectoContent')
+const $divMarcaPersonal = document.querySelector('.divMarcaPersonal')
+const $linksDivID = document.getElementById('linksDivID')
 
-let modoClaro = false
+let modoClaro = $body.classList.contains('light')
+$linksDivID.style.backgroundColor='#383134'
+$linksDivID.style.color='rgb(243, 245, 250)'
 
 function temaSitio(){
     $body.classList.toggle('light')
@@ -11,13 +14,21 @@ function temaSitio(){
     if(modoClaro){
         $header.classList.add('dark')
         $header.classList.remove('light')
-        // $seccionFormulario.style.backgroundColor='rgb(230,230,230)'
-        $star.style.color='rgb(237, 123, 16)'
+        $cardProyecto.style.backgroundColor='rgb(243, 245, 250)'
+        $cardProyecto.style.color='black'
+        $divMarcaPersonal.style.backgroundColor='rgb(243, 245, 250)'
+        $divMarcaPersonal.style.color='black'
+        $linksDivID.style.backgroundColor='#383134'
+        $linksDivID.style.color='rgb(243, 245, 250)'
     }
     if(!modoClaro){
         $header.classList.add('light')
-        // $seccionFormulario.style.backgroundColor='black'
-        $star.style.color='rgb(255, 230, 0)'
+        $cardProyecto.style.backgroundColor='#383134'
+        $cardProyecto.style.color='rgb(243, 245, 250)'
+        $divMarcaPersonal.style.backgroundColor='#383134'
+        $divMarcaPersonal.style.color='rgb(243, 245, 250)'
+        $linksDivID.style.backgroundColor='rgb(243, 245, 250)'
+        $linksDivID.style.color='black'
     }
 }
 
@@ -35,6 +46,7 @@ $header.addEventListener('mouseover', function(){
 
     if(modoClaro){
         $header.classList.remove('light')
+        $header.classList.add('dark')
     }
 
     if(!modoClaro){
