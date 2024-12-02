@@ -1,5 +1,13 @@
 export const material = [
     {
+        id: 12,
+        titulo: '<span>NEXT.js: El framework de React para producción | <h4>Udemy</h4></span>',
+        fecha: 'Diciembre 2024',
+        enCurso: true,
+        proyectos: [
+        ]
+    },
+    {
         id: 11,
         titulo: '<span>FULL Authentication <h4>(React NEXT & TypeScript)</h4> | <h4>Udemy</h4></span>',
         fecha: 'Septiembre 2024',

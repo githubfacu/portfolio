@@ -2,6 +2,7 @@ body{
     font-family: "Poppins",sans-serif;
     --bgColor: rgb(0,0,0);
     --textColor: rgb(243, 245, 250);
+    --deep: #CEE7E6;
     --lightBlue: #5faaa7;
     --orange: #fc4628;
     --orangeLight: #FF8C42;
@@ -26,7 +27,7 @@ body{
 }
 
 .light{ 
-    --bgColor: rgb(243, 245, 250); 
+    --bgColor: rgb(210, 212, 216); 
     --textColor: rgb(0,0,0);
 }
 
