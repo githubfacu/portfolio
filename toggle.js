@@ -25,7 +25,7 @@ function temaSitio(){
         $header.classList.add('light')
         $cardProyecto.style.backgroundColor='#383134'
         $cardProyecto.style.color='rgb(243, 245, 250)'
-        $divMarcaPersonal.style.backgroundColor='#383134'
+        $divMarcaPersonal.style.backgroundColor='rgba(243, 245, 250,.1)'
         $divMarcaPersonal.style.color='rgb(243, 245, 250)'
         $linksDivID.style.backgroundColor='rgb(243, 245, 250)'
         $linksDivID.style.color='black'
