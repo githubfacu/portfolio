@@ -103,10 +103,10 @@ function agregarProyectos(){
                         ancla.appendChild(anclaTextContent)
 
                         if (!proyecto.personal) {
-                            ancla.style.backgroundColor='#ffdd1c'
+                            ancla.style.backgroundColor='#F3B61F'
                         }
                         if(proyecto.typescript){
-                            ancla.style.backgroundColor='#5faaa7'
+                            ancla.style.backgroundColor='#6C91C2'
                         }
 
                         const spanLink = document.createElement('span')
