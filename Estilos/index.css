@@ -28,11 +28,11 @@ body{
 
 .dark{ 
     --bgColor: rgb(0,0,0); 
-    --textColor: rgb(243, 245, 250);
+    --textColor: rgb(210, 210, 216);
 }
 
 .light{ 
-    --bgColor: rgb(216, 210, 213); 
+    --bgColor: rgb(210, 210, 216); 
     --textColor: var(--grey);
     --arternative-hover: var(--grey);
     --arternative-border: var(--grey);
