@@ -174,7 +174,7 @@ export const material = [
                 ruta: 'https://githubfacu.github.io/f1_temporada_23/',
                 anclaTexto: 'F1-2023',
                 img: './Imagenes/capturas/Captura_f1.jpeg',
-                descripcion: 'Probando ECMAScript6. API-Fetch 1.',
+                descripcion: 'Prueba en ES6, API-fetch',
                 personal: true
             },
             {
