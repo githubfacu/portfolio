@@ -1,9 +1,17 @@
 export const material = [
     {
+        id: 13,
+        titulo: '<span>Élite Frontend Developer | <h4>Level Up</h4></span>',
+        fecha: 'Febrero 2025',
+        enCurso: true,
+        proyectos: [
+        ]
+    },
+    {
         id: 12,
         titulo: '<span>NEXT.js: El framework de React para producción | <h4>Udemy</h4></span>',
         fecha: 'Diciembre 2024',
-        enCurso: true,
+        enCurso: false,
         proyectos: [
         ]
     },

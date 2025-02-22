@@ -1,7 +1,7 @@
 body{
     font-family: "Poppins",sans-serif;
-    --bgColor: #000000;
-    --textColor: #f3f5fa;
+    --bgColor: #090909;
+    --textColor: #F7F7F7;
     --lightBlue: #6C91C2;
     --lightBlue-b: #5faaa7;
     --green: #A29F15;
@@ -27,16 +27,16 @@ body{
 }
 
 .dark{ 
-    --bgColor: rgb(0,0,0); 
-    --textColor: rgb(220, 220, 228);
+    --bgColor: #090909; 
+    --textColor: #F7F7F7;
 }
 
 .light{ 
-    --bgColor: rgb(220, 220, 228); 
+    --bgColor: #F7F7F7; 
     --textColor: var(--grey);
     --arternative-hover: var(--grey);
     --arternative-border: var(--grey);
-    --white-dark: black;
+    --white-dark: #090909;
 }
 
 h1, h2, h3, h4, h5, h6, p{
