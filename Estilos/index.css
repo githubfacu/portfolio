@@ -276,7 +276,7 @@ main{
 .resaltadores span{
     width: 15px;
     height: 15px;
-    background-color: var(--green);
+    background-color: #D95D39;
 }
 
 .resaltadores small{

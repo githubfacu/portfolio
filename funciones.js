@@ -101,7 +101,7 @@ function agregarProyectos(){
                         ancla.setAttribute('aria-label', `Ver proyecto: ${proyecto.anclaTexto}`)
                         
                         ancla.appendChild(anclaTextContent)
-                        ancla.style.backgroundColor='#72A276'
+                        ancla.style.backgroundColor='#D95D39'
 
                         if (!proyecto.personal) {
                             ancla.style.backgroundColor='#F3B61F'
