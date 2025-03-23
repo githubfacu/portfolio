@@ -1,11 +1,13 @@
 const $body = document.querySelector('body')
 const $header = document.querySelector('header')
 const $cardProyecto = document.querySelector('.cardProyectoContent')
-const $linksDivID = document.getElementById('linksDivID')
+const $linksDivID = document.querySelectorAll('.linksDivID')
 
 let modoClaro = $body.classList.contains('light')
-$linksDivID.style.backgroundColor='#383134'
-$linksDivID.style.color='rgb(243, 245, 250)'
+$linksDivID.forEach(link => {
+    link.style.backgroundColor = 'rgb(243, 245, 250)';
+    link.style.color = '#383134';
+});
 
 function temaSitio(){
     $body.classList.toggle('light')

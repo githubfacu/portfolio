@@ -1,7 +1,7 @@
 export const material = [
     {
         id: 13,
-        titulo: '<span>Élite Frontend Developer | <h4>Level Up</h4></span>',
+        titulo: '<span>Élite Frontend Developer | <h4>Level Up Tech Academy</h4></span>',
         fecha: 'Febrero 2025',
         enCurso: true,
         proyectos: [
