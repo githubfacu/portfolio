@@ -107,7 +107,7 @@ main{
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     position: relative;
     gap: 12px;
 }
@@ -418,6 +418,7 @@ footer{
     }
 
     .divPresentacion{
+        padding: 1rem;
         padding-bottom: 0;
     }
 
@@ -427,6 +428,8 @@ footer{
         color: var(--textColor);
         border: none;
         padding: 1rem;
+        padding-bottom: 0;
+        min-height: 40vh;
         padding-left: .25rem;
     }
 
