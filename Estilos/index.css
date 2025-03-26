@@ -124,6 +124,7 @@ main{
     clip-path: polygon(0 0, 99% 3%, 97% 93%, 1% 100%);
     padding: 1.2rem;
     border: 5px solid var(--arternative-border);
+    min-height: 50vh;
 }
 
 .divMarcaPersonal span{
@@ -139,10 +140,12 @@ main{
 
 .divPresentacion figure{
     margin: 0;
+    width: 50%;
 }
 
 .divPresentacion img{
     clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+    position: relative;
 }
 
 .mobile{
@@ -181,10 +184,12 @@ main{
     justify-content: center;
     box-sizing: border-box;
     gap: 8px;
+    height: 100%;
 }
 
 .cardProyectoContent{
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -213,6 +218,7 @@ main{
     width: 200px;
     height: 200px;
     object-fit: contain;
+    aspect-ratio: 1/1;
 }
 
 .cardProyectoTextContent{
@@ -228,6 +234,9 @@ main{
 .cardProyectoTextContent p{
     text-wrap: pretty;
     font-size: 1rem;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid white;
 }
 
 /************************* CRONOLOGIA *************************/
@@ -398,20 +407,33 @@ footer{
         padding: 0;
     }
 
+    h1{
+        font-size: 5rem;
+        line-height: 5rem;
+        word-spacing: -4px;
+    }
+
     h2{
         font-size: 3.8rem;
         line-height: 4.2rem;
     }
-    
+
+    .divPresentacion{
+        padding-bottom: 0;
+    }
+
     .divMarcaPersonal{
         z-index: 1;
         background-color: transparent;
         color: var(--textColor);
         border: none;
+        padding: 1rem;
+        padding-left: .25rem;
     }
 
-    .divPresentacion{
-        padding-bottom: 0;
+    .divPresentacion figure {
+        height: 100%;
+        width: 100%;
     }
 
     .divPresentacion img{
