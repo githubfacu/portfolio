@@ -107,7 +107,7 @@ main{
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     position: relative;
     gap: 12px;
 }
