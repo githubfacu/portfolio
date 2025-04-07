@@ -104,7 +104,7 @@ function agregarProyectos(){
                         ancla.style.backgroundColor='#72A276'
 
                         if (!proyecto.personal) {
-                            ancla.style.backgroundColor='#F3B61F'
+                            ancla.style.backgroundColor='#EFD0CA'
                         }
                         if(proyecto.typescript){
                             ancla.style.backgroundColor='#6C91C2'

@@ -4,7 +4,8 @@ body{
     --textColor: #f7f7f7;
     --lightBlue: #6C91C2;
     --green: #72A276;
-    /* #5B5F97 */
+    /* #EFD0CA */
+    --piel: #EFD0CA;
     --violet: #5B5F97;
     --orange: #fc4628;
     --orangeLight: #FF8C42;
@@ -194,7 +195,7 @@ main{
     box-sizing: border-box;
     gap: 8px;
     padding: 12px;
-    border: 2px solid var(--textColor);
+    border: 2px solid var(--piel);
     background-color: var(--violet);
     color: white;
 }
