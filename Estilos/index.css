@@ -12,7 +12,7 @@ body{
     --yellow-b: #ffdd1c;
     --blue: #066781;
     --grey: #383134;
-    --arternative-hover: var(--yellow);
+    --arternative-hover: var(--green);
     --arternative-border: var(--textColor);
     --white-dark: rgb(243, 245, 250);
     color: var(--textColor);
@@ -35,7 +35,6 @@ body{
 .light{ 
     --bgColor: #F7F7F7; 
     --textColor: var(--grey);
-    --arternative-hover: var(--grey);
     --arternative-border: var(--grey);
     --white-dark: #090909;
 }
@@ -284,7 +283,7 @@ main{
 .resaltadores span{
     width: 15px;
     height: 15px;
-    background-color: #D95D39;
+    background-color: var(--green);
 }
 
 .resaltadores small{

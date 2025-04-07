@@ -5,6 +5,15 @@ export const material = [
         fecha: 'Febrero 2025',
         enCurso: true,
         proyectos: [
+            {
+                proyectoId: 1,
+                ruta: 'https://www.npmjs.com/package/lvlup-utils-lib',
+                anclaTexto: 'utils-lib',
+                img: './Imagenes/capturas/npm-logo.jpg',
+                descripcion: 'Libreria de utilidades.',
+                personal: false,
+                typescript: false
+            },
         ]
     },
     {
