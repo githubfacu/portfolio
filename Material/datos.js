@@ -94,23 +94,6 @@ export const material = [
         ]
     },
     {
-        id: 8,
-        titulo: '<span>Next.js App Router course | <h4>NEXT.js (Vercel)</h4></span>',
-        fecha: 'Mayo 2024',
-        enCurso: false,
-        proyectos: [
-            {
-                proyectoId: 1,
-                ruta: 'https://github.com/githubfacu/Learn_Next.js',
-                anclaTexto: 'Learn_Next.js',
-                img: './Imagenes/capturas/Captura_Next-dashboard.jpeg',
-                descripcion: 'React Foundations Course (+vitest) & Financial Dashboard',
-                personal: false,
-                typescript: true
-            }
-        ]
-    },
-    {
         id: 7,
         titulo: '<span>NEXT.js <h4>+TypeScript +Tailwind</h4> | <h4>Digital House</h4></span>',
         fecha: 'Abril 2024',
