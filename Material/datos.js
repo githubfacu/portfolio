@@ -12,7 +12,7 @@ export const material = [
                 img: './Imagenes/capturas/npm-logo.jpg',
                 descripcion: 'Libreria de utilidades.',
                 personal: false,
-                typescript: false
+                typescript: true
             },
         ]
     },
