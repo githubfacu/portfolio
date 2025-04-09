@@ -5,7 +5,7 @@ body{
     --lightBlue: #6C91C2;
     --green: #72A276;
     /* #EFD0CA */
-    --piel: #EFD0CA;
+    --rose: #EFD0CA;
     --violet: #5B5F97;
     --orange: #fc4628;
     --orangeLight: #FF8C42;
@@ -195,7 +195,7 @@ main{
     box-sizing: border-box;
     gap: 8px;
     padding: 12px;
-    border: 2px solid var(--piel);
+    border: 2px solid var(--rose);
     background-color: var(--violet);
     color: white;
 }
@@ -291,8 +291,8 @@ main{
     font-size: .9rem;
 }
 
-#amarillo{
-    background-color: var(--yellow);
+#rose{
+    background-color: var(--rose);
 }
 
 #azul-typescript{
