@@ -5,7 +5,7 @@ const $lineadetiempo = document.getElementById('lineaDeTiempo')
 agregarSeccion()
 agregarMaterial()
 agregarProyectos()
-hoverMsj()
+// hoverMsj()
 clasificarXIndex()
 
 function agregarSeccion(){
@@ -31,6 +31,7 @@ function agregarMaterial(){
                 const enCursoIndice = document.createElement('div')
                 enCursoIndice.setAttribute('id', materia.id)
                 enCursoIndice.classList.add('enCurso')
+                enCursoIndice.setAttribute('title', 'En curso')
 
                 const enCursoMsj = document.createElement('div')
                 enCursoMsj.classList.add('enCursoMsj')
@@ -59,23 +60,23 @@ function agregarMaterial(){
     })
 }
 
-function hoverMsj(){
-    const $msjDiv = document.querySelectorAll('.enCurso')
-    const enCursoMsj = document.querySelectorAll('.enCursoMsj')
+// function hoverMsj(){
+//     const $msjDiv = document.querySelectorAll('.enCurso')
+//     const enCursoMsj = document.querySelectorAll('.enCursoMsj')
 
-    $msjDiv.forEach(elemento=>{
-        enCursoMsj.forEach(msj=>{
-            if(msj.id === elemento.id){
-                elemento.addEventListener('mouseover',function(){
-                    msj.style.opacity='1'
-                })
-                elemento.addEventListener('mouseout',function(){
-                    msj.style.opacity='0'
-                })                
-            }
-        })
-    })
-}
+//     $msjDiv.forEach(elemento=>{
+//         enCursoMsj.forEach(msj=>{
+//             if(msj.id === elemento.id){
+//                 elemento.addEventListener('mouseover',function(){
+//                     msj.style.opacity='1'
+//                 })
+//                 elemento.addEventListener('mouseout',function(){
+//                     msj.style.opacity='0'
+//                 })                
+//             }
+//         })
+//     })
+// }
 
 function agregarProyectos(){
     const $linksDiv = document.querySelectorAll('.linksDiv') 
