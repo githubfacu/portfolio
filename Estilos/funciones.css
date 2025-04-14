@@ -7,7 +7,7 @@
     border: 1px solid var(--white-dark);
     /* box-shadow: 0px 0px 10px 0px var(--textColor); */
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 6px;
     gap: 9px;
     width: 100%;
     position: relative;
@@ -76,15 +76,17 @@
     font-weight: 400;
     font-size: 1rem;
     padding: 2px;
+    margin-left: auto;
+    margin-bottom: 8px;
 }
 
 .linksDiv{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
-    gap: 4px;
+    gap: 6px;
     flex-wrap: wrap;
     min-height: 1.6rem;
 }
@@ -96,7 +98,7 @@
 .linksDiv a{
     color: black;
     background-color: rgb(243, 245, 250);
-    padding: 0px 4px 1px;
+    padding: 0px 5px;
     border-radius: 2px;
     font-size: 1.1rem;
     z-index: 1;
@@ -105,6 +107,8 @@
     justify-content: center;
     box-sizing: border-box;
     gap: 4px;
+    border-radius: 3px;
+    text-decoration: none;
 }
 
 .linksDiv h4{
@@ -129,7 +133,7 @@
     position: absolute;
     top: -225px;
     box-shadow: 0 0 5px 3px rgb(0, 0, 0, .2);
-    border-radius: 7px;
+    border-radius: 6px;
     overflow: hidden;
     z-index: 2;
     opacity: 0;
@@ -171,11 +175,15 @@
 @media (max-width: 768px){
     
     .linksDiv a{
-        font-size: .9rem;
+        font-size: 14px;
     }
 
     .mobileDiv{
         right: 0px;
+    }
+
+    .tituloCard span{
+        font-size: 1.1rem;
     }
 }
 

@@ -1,6 +1,6 @@
 export const material = [
     {
-        id: 13,
+        id: 11,
         titulo: '<span>Élite Frontend Developer | <h4>Level Up Tech Academy</h4></span>',
         fecha: 'Febrero 2025',
         enCurso: true,
@@ -17,26 +17,10 @@ export const material = [
         ]
     },
     {
-        id: 12,
-        titulo: '<span>NEXT.js: El framework de React para producción | <h4>Udemy</h4></span>',
-        fecha: 'Diciembre 2024',
-        enCurso: false,
-        proyectos: [
-        ]
-    },
-    {
-        id: 11,
-        titulo: '<span>FULL Authentication <h4>(React NEXT & TypeScript)</h4> | <h4>Udemy</h4></span>',
-        fecha: 'Septiembre 2024',
-        enCurso: false,
-        proyectos: [
-        ]
-    },
-    {
         id: 10,
         titulo: '<span>Sistemas <h4>(Pasantía)</h4> | <h4>inkuA</h4></span>',
         fecha: 'Junio 2024',
-        enCurso: true,
+        enCurso: false,
         proyectos: [
             {
                 proyectoId: 1,
