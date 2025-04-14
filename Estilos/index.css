@@ -504,6 +504,10 @@ footer{
         font-size: 14px;
     }
 
+    .linksDivID{
+        margin-left: 0;
+    }
+
     .cronologia{
         padding: 1rem;
         margin-bottom: 4px;
