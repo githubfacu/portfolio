@@ -102,18 +102,21 @@ function agregarProyectos(){
                         ancla.setAttribute('aria-label', `Ver proyecto: ${proyecto.anclaTexto}`)
                         
                         ancla.appendChild(anclaTextContent)
-                        ancla.style.backgroundColor='#9EBC9E'
+                        // ancla.style.color='#9EBC9E'
+                        ancla.classList.add('badge-blue')
 
-                        if (!proyecto.personal) {
-                            ancla.style.backgroundColor='#EFD0CA'
-                        }
-                        if(proyecto.typescript){
-                            ancla.style.backgroundColor='#6C91C2'
-                        }
+                        // if (!proyecto.personal) {
+                        //     // ancla.style.color='#EFD0CA'
+                        //     ancla.classList.add('badge-yellow')
+                        // }
+                        // if(proyecto.typescript){
+                        //     // ancla.style.color='#6C91C2'
+                        //     ancla.classList.add('badge-blue')
+                        // }
 
                         const spanLink = document.createElement('span')
                         spanLink.setAttribute('aria-hidden', 'true')
-                        spanLink.innerHTML=`<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>`
+                        spanLink.innerHTML=`<i class="fa-solid fa-arrow-right fa-sm"></i>`
 
                         ancla.appendChild(spanLink)
                         anclaContainer.appendChild(ancla)

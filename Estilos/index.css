@@ -2,18 +2,19 @@ body{
     font-family: "Poppins",sans-serif;
     --bgColor: #090909;
     --textColor: #f7f7f7;
-    --lightBlue: #6C91C2;
-    --green: #9EBC9E;
+    --lightBlue: #1572B6;
+    --green: #339933;
     --rose: #EFD0CA;
     --orange: #fc4628;
     --orangeLight: #FF8C42;
-    --yellow: #F3B61F;
+    --yellow: #F7DF1E;
     --yellow-b: #ffdd1c;
     --blue: #066781;
     --grey: #383134;
     --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
-    --arternative-hover: var(--green);
-    --arternative-border: var(--textColor);
+    --hover-blue: #7DD3FC;
+    --arternative-hover: var(--lightBlue);
+    --arternative-border: var(--lightBlue);
     --white-dark: rgb(243, 245, 250);
     color: var(--textColor);
     display: flex;
@@ -23,13 +24,21 @@ body{
     box-sizing: border-box;
     width: 100vw;
     margin: 0;
-    background-color: var(--bgColor);
+    background-color: var(--Fondo);
     transition: background-color .3s ease, color .3s ease;
 }
 
 .dark{ 
     --bgColor: #090909; 
+    --Fondo: var(--bgColor);
     --textColor: #F7F7F7;
+    --textColorB: #7DD3FC;
+    --hover-blue: var(--lightBlue);
+    --badgeGreenColor: var(--green);
+    --badgeYellowColor: var(--yellow);
+    --badgeBlueColor: #7DD3FC;
+    --badgeBlueColorB: var(--lightBlue);    
+    --badgeBorderBlue: var(--lightBlue);
     --gradient: linear-gradient(135deg, #090909, #0c0f1a, #090909);
     background-image: var(--gradient);
     background-blend-mode: overlay;
@@ -42,8 +51,15 @@ body{
 
 .light{ 
     --bgColor: #F7F7F7; 
+    --Fondo: linear-gradient(180deg, #f9fafb 0%, #eef1f5 100%);
     --textColor: #090909;
-    --arternative-border: #090909;
+    --textColorB: var(--lightBlue);
+    --hover-blue: #7DD3FC;
+    --badgeGreenColor: #1E4D1E;
+    --badgeYellowColor: #6B5E00;
+    --badgeBlueColor: #0D3B5E;
+    --badgeBlueColorB: #0D3B5E;
+    --badgeBorderBlue: rgba(21, 114, 182, 0.3);
     --white-dark: #090909;
     --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
 }
@@ -77,8 +93,8 @@ header{
     box-sizing: border-box;
     width: 100%;
     padding: 1rem 1.8rem;
-    border-bottom: 2px solid var(--arternative-border);
-    background-color: var(--bgColor);
+    border-bottom: 1px solid var(--textColor);
+    background-color: var(--Fondo);
     background-image: var(--gradient);
     background-blend-mode: overlay;
     background-size: cover;
@@ -117,13 +133,13 @@ main{
 
 .divPresentacion{
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
-    min-height: 70vh;
     position: relative;
     gap: 12px;
+    padding-top: 4rem;
 }
 
 .divMarcaPersonal{
@@ -135,21 +151,22 @@ main{
     box-sizing: border-box;
     background-color: transparent;
     color: var(--textColor);
-    clip-path: polygon(0 0, 99% 3%, 97% 93%, 1% 100%);
-    padding: 1.2rem;
-    border: 5px solid var(--arternative-border);
-    min-height: 50vh;
+    clip-path: polygon(.25% 0%, 99% 0%, 99% 99%, .25% 100%);
+    padding: 2.65rem 2rem 3rem;
+    border: 5px solid var(--textColor);
 }
 
 .divMarcaPersonal span{
     font-family: "Cormorant Garamond";
     font-size: 2.1rem;
+    color: var(--badgeBlueColorB);
 }
 
 .divMarcaPersonal p{
     text-wrap: pretty;
-    font-size: 1rem;
-    margin: .5rem 0;
+    font-size: .9rem;
+    margin: 1rem 0;
+    max-width: 50%;
 }
 
 .divPresentacion figure{
@@ -177,6 +194,7 @@ main{
     justify-content: center;
     box-sizing: border-box;
     gap: 8px;
+
 }
 
 .proyectoPubliContainer{
@@ -186,7 +204,7 @@ main{
     align-items: flex-end;
     grid-template-columns: 1fr 1fr;
     grid-row: auto;
-    gap: 16px;
+    gap: 32px;
 }
 
 .cardProyecto{
@@ -196,7 +214,7 @@ main{
     align-items: flex-start;
     justify-content: center;
     box-sizing: border-box;
-    gap: 8px;
+    gap: 16px;
     height: 100%;
 }
 
@@ -209,27 +227,36 @@ main{
     align-items: start;
     justify-content: center;
     box-sizing: border-box;
-    gap: 8px;
-    padding: 12px;
-    border: 1px solid var(--white-dark);
+    gap: 16px;
+    padding: 10px;
     background: var(--gradient);
     border-radius: 6px;
-    /* outline: 2px solid var(--lightBlue);
-    outline-offset: 2px; */
+    transition: box-shadow 0.4s ease, transform .4s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+/* .cardProyectoContent:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0px 80px 60px rgba(0, 0, 0, 0.1);
+} */
+
+.cardProyectoContent:focus{
+    outline: 2px solid var(--lightBlue);
+    outline-offset: 2px;
 }
 
 .cardProyectoContent figure{
     margin: 0;
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    width: 180px;
+    height: 180px;
     background: linear-gradient(135deg, #1a1a1a, #2e2e2e, #3c3c3c);
     border-radius: 6px;
 }
 
 .cardProyectoContent img{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     object-fit: contain;
     aspect-ratio: 1/1;
     border-radius: 6px;
@@ -283,6 +310,10 @@ main{
     margin-left: auto;
 }
 
+.linksDivID:hover span {
+    transform: translateX(4px);
+}
+
 /************************* CRONOLOGIA *************************/
 
 .cronologia{
@@ -334,8 +365,8 @@ main{
     font-size: .9rem;
 }
 
-#rose{
-    background-color: var(--rose);
+#yellow{
+    background-color: var(--yellow);
 }
 
 #azul-typescript{
@@ -387,7 +418,7 @@ footer{
     box-sizing: border-box;
     width: 100%;
     padding: 1rem;
-    border-top: 2px solid var(--textColor);
+    border-top: 1px solid var(--textColorB);
 }
 
 .iconos{
@@ -400,26 +431,26 @@ footer{
 }
 
 .iconos a{
-    color: var(--textColor);
+    color: var(--badgeBlueColor);
     padding: 4px;
 }
 
 .iconos a:hover, .iconos a:focus{
-    color: var(--arternative-hover);
+    color: var(--lightBlue);
 }
 
 .iconos span{
-    color: var(--textColor);
+    color: var(--badgeBlueColor);
     padding-top: 2px;
     cursor: pointer;
 }
 
 .iconos span:hover, .iconos span:focus{
-    color: var(--arternative-hover);
+    color: var(--lightBlue);
 }
 
 .iconos h5{
-    background-color: var(--textColor);
+    background-color: var(--badgeBlueColor);
     color: var(--bgColor);
     position: absolute;
     padding: 1px 4px 2px;
@@ -534,8 +565,6 @@ footer{
     }
 
     .proyectoPubliContainer{
-        gap: 16px;
-        column-gap: 8px;
         grid-template-columns: 1fr;
     }
 

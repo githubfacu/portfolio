@@ -20,14 +20,14 @@
 }
 
 .enCurso{
-    width: 9px;
-    height: 9px;
-    background-color: var(--textColor);
+    width: 10px;
+    height: 10px;
+    background-color: var(--lightBlue);
     position: absolute;
-    top: 6px;
+    top: 10px;
     left: 0px;
     border-radius: 50%;
-    box-shadow: 0 0 1px 1px var(--textColor);
+    box-shadow: 0 0 2px 2px var(--badgeBorderBlue);
 }
 
 .enCursoMsj{
@@ -86,7 +86,7 @@
     justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
-    gap: 6px;
+    gap: 7px;
     flex-wrap: wrap;
     min-height: 1.6rem;
 }
@@ -96,28 +96,56 @@
 }
 
 .linksDiv a{
-    color: black;
-    background-color: rgb(243, 245, 250);
-    padding: 0px 5px;
-    border-radius: 2px;
-    font-size: 1.1rem;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    gap: 4px;
-    border-radius: 3px;
-    text-decoration: none;
+    gap: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+    border-radius: .375rem;
+    /* background-color: #f5f5f5;
+    color: var(--textColor);
+    border: 1px inset rgba(0, 0, 0, 0.2); */
 }
 
+
+.badge-green {
+    color: var(--badgeGreenColor);
+    background-color: rgba(51, 153, 51, 0.1);
+    border: 2px inset rgba(51, 153, 51, 0.3);
+}
+
+.badge-yellow {
+    color: var(--badgeYellowColor);
+    background-color: rgba(247, 223, 30, 0.2);
+    border: 2px inset rgba(247, 223, 30, 0.4);
+}
+
+.badge-blue {
+    color: var(--badgeBlueColor);
+    background-color: rgba(21, 114, 182, 0.1);
+    border: 2px inset var(--badgeBorderBlue);
+}
+
+.badge-red {
+    color: var(--badgeYellowColor);
+    background-color: rgba(247, 223, 30, 0.2);
+    border: 2px inset rgba(247, 223, 30, 0.4);
+}
+  
 .linksDiv h4{
     font-weight: 400;
 }
 
 .linksDiv span{
-    padding-top: 2px;
-    align-self: flex-start;
+    transition: transform .2s ease;
+}
+
+.anclaContainer a:hover span {
+    transform: translateX(4px);
 }
 
 .practicaDiv{
@@ -160,6 +188,11 @@
     box-sizing: border-box;
     align-content: flex-end;
 }
+.badge-bw a{
+    background-color: transparent;
+    color: var(--textColor);
+
+}
 
 .hidden{
     display: none;
@@ -177,9 +210,6 @@
     .lineaDeTiempo-section{
         padding: 10px;
     }
-    .linksDiv a{
-        font-size: 14px;
-    }
 
     .mobileDiv{
         right: 0px;
@@ -190,9 +220,3 @@
     }
 }
 
-@media (max-width: 355px) {
-
-    /* #lineaDeTiempo section h3{
-        text-align: center;
-    } */
-}

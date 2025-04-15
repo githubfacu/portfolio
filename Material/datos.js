@@ -88,7 +88,7 @@ export const material = [
                 ruta: 'https://github.com/githubfacu/Red_Social_Next.js',
                 anclaTexto: 'RedSocial',
                 img: './Imagenes/capturas/github-white.jpg',
-                descripcion: 'WebApp dictada. Next.js +Tailwind +TypeScript',
+                descripcion: 'WebApp dictada.',
                 personal: false,
                 typescript: true
             }
@@ -120,7 +120,7 @@ export const material = [
                 ruta: 'https://gitlab.com/mtimoxenko/integrador',
                 anclaTexto: 'BookingApp',
                 img: './Imagenes/capturas/Captura-CarRental2.jpeg',
-                descripcion: 'Proyecto fin de curso, 8 integrantes. Frontend junto a Amy y Mateo.',
+                descripcion: 'BookingApp fin de curso, 8 integrantes. Frontend junto a Amy y Mateo.',
                 personal: false
             }
         ]
@@ -143,7 +143,7 @@ export const material = [
                 ruta: 'https://api-football-omega.vercel.app',
                 anclaTexto: 'API-FOOTBALL',
                 img: './Imagenes/capturas/Captura_api-football-omega.vercel.app.jpeg',
-                descripcion: 'Peticiones... React.',
+                descripcion: 'Peticiones con React.',
                 personal: true
             }            
         ]
@@ -181,7 +181,7 @@ export const material = [
                 ruta: 'https://githubfacu.github.io/reproductor_de_musica_js/',
                 anclaTexto: 'ReproductorDeMúsica',
                 img: './Imagenes/capturas/Captura_reproductor_musica.jpeg',
-                descripcion: 'Primer práctica personal, JavaScript vanilla.',
+                descripcion: 'Práctica personal, JavaScript vanilla.',
                 personal: true
             },
             {
