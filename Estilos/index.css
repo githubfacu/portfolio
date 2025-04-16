@@ -460,9 +460,9 @@ footer{
     color: var(--badgeYellowColor);
 }
 
-.fa-github{
+/* .fa-github{
     transform: scale(1.15);
-}
+} */
 
 .fa-envelope{
     /* transform: scale(1.05); */
