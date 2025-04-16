@@ -33,6 +33,7 @@ body{
     --Fondo: var(--bgColor);
     --textColor: #F7F7F7;
     --textColorB: #7DD3FC;
+    --textColorC: #F7F7F7;
     --hover-blue: var(--lightBlue);
     --badgeGreenColor: var(--green);
     --badgeYellowColor: var(--yellow);
@@ -54,6 +55,7 @@ body{
     --Fondo: linear-gradient(180deg, #f9fafb 0%, #eef1f5 100%);
     --textColor: #090909;
     --textColorB: var(--lightBlue);
+    --textColorC: var(--lightBlue);
     --hover-blue: #7DD3FC;
     --badgeGreenColor: #1E4D1E;
     --badgeYellowColor: #6B5E00;
@@ -93,7 +95,7 @@ header{
     box-sizing: border-box;
     width: 100%;
     padding: 3rem 1.8rem;
-    border-bottom: 1px solid var(--textColor);
+    border-bottom: 2px solid var(--textColor);
     background-color: var(--Fondo);
     background-image: var(--gradient);
     background-blend-mode: overlay;
@@ -402,8 +404,9 @@ main{
     font-size: 1.2rem;
 }
 
-.formacionAcademica ul li small{
-    font-size: .9rem;
+.grupo{
+    font-size: 1.1rem;
+    font-weight: 500;
     margin: 0;
     display: block;
 }
@@ -418,7 +421,7 @@ footer{
     box-sizing: border-box;
     width: 100%;
     padding: 4rem;
-    border-top: 1px solid var(--textColor);
+    border-top: 2px solid var(--textColor);
 }
 
 .iconos{
@@ -440,7 +443,7 @@ footer{
 }
 
 .iconos span{
-    color: var(--textColor);
+    color: var(--textColorC);
     padding-top: 2px;
     cursor: pointer;
 }
