@@ -1,3 +1,5 @@
+const footer = document.querySelector('footer')
+
 const divIcons = document.querySelector('.iconos')
 const mailIcon = document.querySelector('.iconos span')
 const githubIcon = document.getElementById('fa-github')
@@ -43,8 +45,6 @@ mailIcon.addEventListener('click', function() {
     navigator.clipboard.writeText(miMail.innerText)
 
     copiedMessage.style.display='block'
-    copiedMessage.style.width='90px'
-    copiedMessage.style.textAlign='center'
 
     const timer = setTimeout(() => {
         copiedMessage.style.display='none'

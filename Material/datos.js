@@ -23,6 +23,15 @@ export const material = [
         enCurso: false,
         proyectos: [
             {
+                proyectoId: 2,
+                ruta: 'https://www.caballosenlibertad.org/',
+                anclaTexto: 'CaballosEnLibertad',
+                img: './Imagenes/img/logoBigCaballos.png',
+                descripcion: 'Organización sin fines de lucro, encargada de la protección, cuidado y rescate de equinos.',
+                personal: false,
+                typescript: false
+            },
+            {
                 proyectoId: 1,
                 ruta: 'https://github.com/inkua/conversor-v2',
                 anclaTexto: 'Conversor-v2',
@@ -31,6 +40,7 @@ export const material = [
                 personal: false,
                 typescript: false
             },
+
         ]
     },
     {
@@ -40,11 +50,20 @@ export const material = [
         enCurso: false,
         proyectos: [
             {
-                proyectoId: 1,
-                ruta: 'https://rolling-code-nav-cards.vercel.app/',
-                anclaTexto: 'HeroCardsNav',
-                img: './Imagenes/capturas/Captura_rolling-code-nav-cards.jpeg',
-                descripcion: 'Práctica en grupo. React + Ant Design UI components',
+                proyectoId: 4,
+                ruta: 'https://foro-mania.vercel.app/',
+                anclaTexto: 'Foromanía',
+                img: './Imagenes/capturas/Captura_foro-mania.jpeg',
+                descripcion: 'Foro interactivo. Trabajo integrador 4 integrantes. Redux',
+                personal: false,
+                typescript: false
+            },
+            {
+                proyectoId: 3,
+                ruta: 'https://tp-redux.vercel.app/',
+                anclaTexto: 'Administración',
+                img: './Imagenes/capturas/Captura-tp-redux.jpeg',
+                descripcion: 'Práctica Redux',
                 personal: false,
                 typescript: false
             },
@@ -58,20 +77,11 @@ export const material = [
                 typescript: true
             },
             {
-                proyectoId: 3,
-                ruta: 'https://tp-redux.vercel.app/',
-                anclaTexto: 'Administración',
-                img: './Imagenes/capturas/Captura-tp-redux.jpeg',
-                descripcion: 'Práctica Redux',
-                personal: false,
-                typescript: false
-            },
-            {
-                proyectoId: 4,
-                ruta: 'https://foro-mania.vercel.app/',
-                anclaTexto: 'Foromanía',
-                img: './Imagenes/capturas/Captura_foro-mania.jpeg',
-                descripcion: 'Foro interactivo. Trabajo integrador 4 integrantes. Redux',
+                proyectoId: 1,
+                ruta: 'https://rolling-code-nav-cards.vercel.app/',
+                anclaTexto: 'HeroCardsNav',
+                img: './Imagenes/capturas/Captura_rolling-code-nav-cards.jpeg',
+                descripcion: 'Práctica en grupo. React + Ant Design UI components',
                 personal: false,
                 typescript: false
             },
@@ -131,21 +141,21 @@ export const material = [
         fecha: 'Enero 2024',
         proyectos: [
             {
-                proyectoId: 1,
-                ruta: 'https://arcade-game-vercel.vercel.app',
-                anclaTexto: 'ArcadeGame',
-                img: './Imagenes/capturas/Captura_arcade-game-vercel.vercel.app.jpeg',
-                descripcion: 'Práctica de React. Responsive.',
-                personal: true
-            },
-            {
                 proyectoId: 2,
                 ruta: 'https://api-football-omega.vercel.app',
                 anclaTexto: 'API-FOOTBALL',
                 img: './Imagenes/capturas/Captura_api-football-omega.vercel.app.jpeg',
                 descripcion: 'Peticiones con React.',
                 personal: true
-            }            
+            },
+            {
+                proyectoId: 1,
+                ruta: 'https://arcade-game-vercel.vercel.app',
+                anclaTexto: 'ArcadeGame',
+                img: './Imagenes/capturas/Captura_arcade-game-vercel.vercel.app.jpeg',
+                descripcion: 'Práctica de React. Responsive.',
+                personal: true
+            },       
         ]
     },
     {
@@ -154,6 +164,14 @@ export const material = [
         fecha: 'Octubre 2023',
         proyectos: [
             {
+                proyectoId: 2,
+                ruta: 'https://psycho-pass.vercel.app',
+                anclaTexto: 'TrabajoPráctico',
+                img: './Imagenes/capturas/Captura_psycho-pass.vercel.app.jpeg',
+                descripcion: 'Trabajo práctico en dupla. React.',
+                personal: false
+            },
+            {
                 proyectoId: 1,
                 ruta: 'https://githubfacu.github.io/f1_temporada_23/',
                 anclaTexto: 'F1-2023',
@@ -161,14 +179,6 @@ export const material = [
                 descripcion: 'Prueba en ES6, API-fetch',
                 personal: true
             },
-            {
-                proyectoId: 2,
-                ruta: 'https://psycho-pass.vercel.app',
-                anclaTexto: 'TrabajoPráctico',
-                img: './Imagenes/capturas/Captura_psycho-pass.vercel.app.jpeg',
-                descripcion: 'Trabajo práctico en dupla. React.',
-                personal: false
-            }            
         ]
     },
     {
@@ -177,6 +187,14 @@ export const material = [
         fecha: 'Abril 2023',
         proyectos: [
             {
+                proyectoId: 2,
+                ruta: 'https://githubfacu.github.io/interactive_magazine/',
+                anclaTexto: 'InteractiveMagazine',
+                img: './Imagenes/capturas/Captura_magazine.jpeg',
+                descripcion: 'Interactive Magazine, JavaScript vanilla.',
+                personal: true
+            },
+            {
                 proyectoId: 1,
                 ruta: 'https://githubfacu.github.io/reproductor_de_musica_js/',
                 anclaTexto: 'ReproductorDeMúsica',
@@ -184,14 +202,6 @@ export const material = [
                 descripcion: 'Práctica personal, JavaScript vanilla.',
                 personal: true
             },
-            {
-                proyectoId: 2,
-                ruta: 'https://githubfacu.github.io/interactive_magazine/',
-                anclaTexto: 'InteractiveMagazine',
-                img: './Imagenes/capturas/Captura_magazine.jpeg',
-                descripcion: 'Interactive Magazine, JavaScript vanilla.',
-                personal: true
-            }
         ]
     },
     {

@@ -170,6 +170,7 @@
 
 .practicaDiv img{
     position: absolute;
+    background: linear-gradient(135deg, #1a1a1a, #2e2e2e, #3c3c3c);
     top: 0;
     left: 0;
     width: 100%;
