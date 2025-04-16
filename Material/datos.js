@@ -27,7 +27,7 @@ export const material = [
                 ruta: 'https://www.caballosenlibertad.org/',
                 anclaTexto: 'CaballosEnLibertad',
                 img: './Imagenes/img/logoBigCaballos.png',
-                descripcion: 'Organización sin fines de lucro, encargada de la protección, cuidado y rescate de equinos.',
+                descripcion: 'Organización sin fines de lucro. Rescate de equinos.',
                 personal: false,
                 typescript: false
             },
