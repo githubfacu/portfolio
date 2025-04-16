@@ -71,18 +71,19 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 h1{
-    font-family: "Cormorant Garamond";
+    /* font-family: "Cormorant Garamond"; */
     font-size: 5.5rem;
     line-height: 5.5rem;
     word-spacing: -4px;
-    font-weight:600;
+    font-weight:500;
+    color: var(--gradient);
 }
 
 h2{
-    font-family: "Cormorant Garamond";
+    /* font-family: "Cormorant Garamond"; */
     font-size: 3.0rem;
     margin-bottom: 2rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h3{
@@ -161,7 +162,7 @@ main{
 }
 
 .divMarcaPersonal span{
-    font-family: "Cormorant Garamond";
+    /* font-family: "Cormorant Garamond"; */
     font-size: 2.1rem;
     font-weight: 500;
     color: var(--badgeBlueColorB);
