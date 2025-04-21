@@ -1,6 +1,5 @@
 const $body = document.querySelector('body')
 const $header = document.querySelector('header')
-const $cardProyecto = document.querySelector('.cardProyectoContent')
 
 let modoClaro = $body.classList.contains('light')
 

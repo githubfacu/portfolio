@@ -1,22 +1,19 @@
 body{
     font-family: "Poppins",sans-serif;
-    --bgColor: #090909;
-    --textColor: #f7f7f7;
+    --bgColor: #F7F7F7;
+    --textColor: #090909;
     --lightBlue: #1572B6;
     --green: #339933;
     --rose: #EFD0CA;
-    --orange: #fc4628;
-    --orangeLight: #FF8C42;
     --yellow: #F7DF1E;
     --yellow-b: #ffdd1c;
     --blue: #066781;
     --blueBadget: #0D3B5E;
-    --grey: #383134;
     --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
     --hover-blue: #7DD3FC;
     --arternative-hover: var(--lightBlue);
     --arternative-border: var(--lightBlue);
-    --white-dark: rgb(243, 245, 250);
+    --white-dark: #090909;
     color: var(--textColor);
     display: flex;
     flex-direction: column;
@@ -31,7 +28,7 @@ body{
 
 .dark{ 
     --bgColor: #090909; 
-    --Fondo: var(--bgColor);
+    --Fondo: #090909;
     --textColor: #F7F7F7;
     --textColorB: #7DD3FC;
     --textColorC: #F7F7F7;
@@ -42,6 +39,7 @@ body{
     --badgeBlueColor: #7DD3FC;
     --badgeBlueColorB: var(--lightBlue);    
     --badgeBorderBlue: var(--lightBlue);
+    --white-dark: rgb(243, 245, 250);
     --gradient: linear-gradient(135deg, #090909, #0c0f1a, #090909);
     background-image: var(--gradient);
     background-blend-mode: overlay;
@@ -50,21 +48,21 @@ body{
     background-attachment: fixed;
 }
 
-
-
 .light{ 
     --bgColor: #F7F7F7; 
     --Fondo: linear-gradient(180deg, #f9fafb 0%, #eef1f5 100%);
     --textColor: #090909;
     --textColorB: var(--lightBlue);
     --textColorC: var(--lightBlue);
-    --hover-blue: #7DD3FC;
+
+    --hover-blue: var(--hover-blue);
     --blueBadget: #0D3B5E;
     --badgeGreenColor: #1E4D1E;
     --badgeYellowColor: #6B5E00;
     --badgeBlueColor: #0D3B5E;
     --badgeBlueColorB: #0D3B5E;
     --badgeBorderBlue: rgba(21, 114, 182, 0.3);
+
     --white-dark: #090909;
     --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
 }
@@ -75,7 +73,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 h1{
     /* font-family: "Cormorant Garamond"; */
-    font-size: 5.2rem;
+    font-size: 5.4rem;
     line-height: 6rem;
     word-spacing: -4px;
     font-weight: 500;
