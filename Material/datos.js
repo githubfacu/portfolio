@@ -6,6 +6,15 @@ export const material = [
         enCurso: true,
         proyectos: [
             {
+                proyectoId: 2,
+                ruta: 'https://www.npmjs.com/package/react-hooks-lib-facuekl',
+                anclaTexto: 'hooks-lib',
+                img: './Imagenes/capturas/npm-logo.jpg',
+                descripcion: 'Libreria de hooks.',
+                personal: false,
+                typescript: true
+            },
+            {
                 proyectoId: 1,
                 ruta: 'https://www.npmjs.com/package/lvlup-utils-lib',
                 anclaTexto: 'utils-lib',

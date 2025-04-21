@@ -177,7 +177,6 @@ function agregarProyectos(){
 function clasificarXIndex (){
 
     const $sectionDiv = document.querySelectorAll('#lineaDeTiempo section')
-    const $practicaDiv = document.querySelectorAll('#lineaDeTiempo section .practicaDiv')
 
     if ($sectionDiv.length%2 === 0) {
         $sectionDiv.forEach(((seccion, index) =>{

@@ -10,6 +10,7 @@ body{
     --yellow: #F7DF1E;
     --yellow-b: #ffdd1c;
     --blue: #066781;
+    --blueBadget: #0D3B5E;
     --grey: #383134;
     --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
     --hover-blue: #7DD3FC;
@@ -35,6 +36,7 @@ body{
     --textColorB: #7DD3FC;
     --textColorC: #F7F7F7;
     --hover-blue: var(--lightBlue);
+    --blueBadget: #F7F7F7;
     --badgeGreenColor: var(--green);
     --badgeYellowColor: var(--yellow-b);
     --badgeBlueColor: #7DD3FC;
@@ -57,6 +59,7 @@ body{
     --textColorB: var(--lightBlue);
     --textColorC: var(--lightBlue);
     --hover-blue: #7DD3FC;
+    --blueBadget: #0D3B5E;
     --badgeGreenColor: #1E4D1E;
     --badgeYellowColor: #6B5E00;
     --badgeBlueColor: #0D3B5E;
@@ -72,10 +75,10 @@ h1, h2, h3, h4, h5, h6, p{
 
 h1{
     /* font-family: "Cormorant Garamond"; */
-    font-size: 4.8rem;
-    line-height: 5rem;
+    font-size: 5.2rem;
+    line-height: 6rem;
     word-spacing: -4px;
-    font-weight:500;
+    font-weight: 500;
     color: var(--gradient);
 }
 
@@ -97,7 +100,7 @@ header{
     justify-content: flex-end;
     box-sizing: border-box;
     width: 100%;
-    padding: 1.6rem 3rem;
+    padding: 1.5rem 2.5rem;
     border-bottom: 2px solid var(--textColor);
     background-color: var(--Fondo);
     background-image: var(--gradient);
@@ -116,7 +119,7 @@ header:focus {
 header a{
     text-decoration: none;
     color: var(--textColor);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -166,16 +169,17 @@ main{
 
 .divMarcaPersonal span{
     /* font-family: "Cormorant Garamond"; */
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--badgeBlueColorB);
 }
 
 .divMarcaPersonal p{
     text-wrap: pretty;
-    font-size: .9rem;
+    font-size: .95rem;
     margin-top: 1rem;
     max-width: 50%;
+    opacity: .9;
 }
 
 .divPresentacion figure{
@@ -345,42 +349,6 @@ main{
     gap: 16px;
 }
 
-.resaltadores{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 100%;
-    margin-top: 4px;
-    gap: 6px;
-}
-
-.resaltadoresDiv{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    gap: 4px;
-}
-
-.resaltadores span{
-    width: 15px;
-    height: 15px;
-    background-color: var(--green);
-}
-
-.resaltadores small{
-    font-size: .9rem;
-}
-
-#yellow{
-    background-color: var(--yellow);
-}
-
-#azul-typescript{
-    background-color: var(--lightBlue);
-}
 
 /****************** Formacion Academica *************************/
 
@@ -437,30 +405,30 @@ footer{
     align-items: center;
     justify-content: flex-end;
     box-sizing: border-box;
-    gap: 36px;
+    gap: 48px;
     position: relative;
     list-style-type: none;
 }
 
 .iconos a{
-    color: var(--badgeBlueColor);
+    color: var(--blueBadget);
     padding: 4px;
-
+    transform: scale(1.3);
 }
 
-.iconos a:hover, .iconos a:focus{
-    color: var(--lightBlue);
+.iconos a:hover, .iconos a:active{
+    opacity: .8;
 }
 
 .iconos span{
-    color: var(--textColorC);
-    padding-top: 2px;
+    color: var(--blueBadget);
     cursor: pointer;
-
+    transform: scale(1.3);
+    
 }
 
-.iconos span:hover, .iconos span:focus{
-    color: var(--badgeYellowColor);
+.iconos span:hover, .iconos span:active{
+    opacity: .8;
 }
 
 /* .fa-github{
@@ -472,8 +440,8 @@ footer{
 }
 
 .iconos h5{
-    background-color: var(--badgeBlueColor);
-    color: var(--bgColor);
+    background-color: #cccccc;
+    color: #090909;
     position: absolute;
     padding: 3px 6px;
     border-radius: 1px;
@@ -502,6 +470,10 @@ footer{
 /************************ Queries **************************/
 
 @media (max-width: 1024px) {
+    header{
+        padding: 1.2rem;
+    }
+
     .cardProyectoContent figure{
         width: 100px;
         height: 100px;
@@ -541,10 +513,15 @@ footer{
         font-size: 1.2rem;
         font-weight: 500;
     }
+
+    header{
+        padding: 1rem .5rem;
+    }
     
     .divPresentacion{
         padding: 1rem;
         padding-bottom: 0;
+        padding-right: 0;
         align-items: flex-start;
     }
 
@@ -562,13 +539,10 @@ footer{
     }
 
     .divMarcaPersonal span{
-        font-size: 1.7rem;
+        margin-top: 12px;
     }
-
-    .divMarcaPersonal p{
-        font-size: 14px;
-    }
-
+    
+/* 
     .divPresentacion figure {
         height: 100%;
         width: 100%;
@@ -585,7 +559,7 @@ footer{
         object-fit: cover;
         object-position: top;
         clip-path: none;
-    }
+    } */
 
     .proyectos{
         padding: 1rem;
@@ -635,19 +609,24 @@ footer{
     }
     
     footer{
-        justify-content: center;        
+        justify-content: center;
+        padding: 1rem;
     }
-    /* .iconos{
-        gap: 36px;
-    } */
+    .iconos{
+        justify-content: center;
+        padding: 0;
+    }
+
+    .iconos span, .iconos a{
+        transform: scale(1.2);
+    }
 
     .iconos h5{
-        left: -10px;
+        right: 0px;
     }
 
     .iconos h4{
         top: -100px;
-        right: 12px;
     }
 
     .desktop{
