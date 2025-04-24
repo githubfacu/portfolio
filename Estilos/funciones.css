@@ -55,8 +55,8 @@
 }
 
 .tituloCard span{
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .tituloCard span h4{
@@ -69,7 +69,7 @@
 
 
 #lineaDeTiempo section h4{
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .fecha{
@@ -191,8 +191,7 @@
 }
 .badge-bw a{
     background-color: transparent;
-    color: var(--textColor);
-
+    color: var(--badgeBlueColor);
 }
 
 .hidden{
