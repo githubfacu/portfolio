@@ -64,3 +64,7 @@ $header.addEventListener('blur', function(){
 $headerAncla.addEventListener('mouseover', function(e){
     e.stopPropagation()
 })
+
+$headerAncla.addEventListener('click', function(e){
+    e.stopPropagation()
+})
