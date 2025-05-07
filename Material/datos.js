@@ -9,7 +9,7 @@ export const material = [
                 proyectoId: 3,
                 ruta: 'https://storybook-beige-eight.vercel.app',
                 anclaTexto: 'storybook-demo',
-                img: '/Imagenes/capturas/storybook-icon.svg',
+                img: './Imagenes/capturas/storybook-icon.svg',
                 descripcion: 'Componente UI demo',
                 personal: false,
                 typescript: true
