@@ -6,6 +6,15 @@ export const material = [
         enCurso: true,
         proyectos: [
             {
+                proyectoId: 3,
+                ruta: 'https://storybook-beige-eight.vercel.app',
+                anclaTexto: 'storybook-demo',
+                img: '/Imagenes/capturas/storybook-icon.svg',
+                descripcion: 'Componente UI demo',
+                personal: false,
+                typescript: true
+            },
+            {
                 proyectoId: 2,
                 ruta: 'https://www.npmjs.com/package/react-hooks-lib-facuekl',
                 anclaTexto: 'hooks-lib',
@@ -162,7 +171,7 @@ export const material = [
                 ruta: 'https://arcade-game-vercel.vercel.app',
                 anclaTexto: 'ArcadeGame',
                 img: './Imagenes/capturas/Captura_arcade-game-vercel.vercel.app.jpeg',
-                descripcion: 'Práctica de React. Responsive.',
+                descripcion: 'Desarrollo de funciones de los hooks de react cGPT Vibe Code',
                 personal: true
             },       
         ]

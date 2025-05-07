@@ -1,5 +1,6 @@
 const $body = document.querySelector('body')
 const $header = document.querySelector('header')
+const $headerAncla = document.querySelector('header a')
 
 let modoClaro = $body.classList.contains('light')
 
@@ -58,4 +59,8 @@ $header.addEventListener('blur', function(){
     if(!modoClaro){
         $header.classList.remove('light')
     }
+})
+
+$headerAncla.addEventListener('mouseover', function(e){
+    e.stopPropagation()
 })
