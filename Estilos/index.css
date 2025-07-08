@@ -1,5 +1,9 @@
+@view-transition {
+    navigation: auto;
+}
+
 body{
-    font-family: "Poppins",sans-serif;
+    font-family: "Rubik",sans-serif;
     --bgColor: #F7F7F7;
     --textColor: #090909;
     --lightBlue: #1572B6;
@@ -73,7 +77,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 h1{
     font-family: "Cormorant Garamond";
-    font-size: 9.8rem;
+    font-size: 9rem;
     line-height: 10.8rem;
     font-weight: 600;
     color: var(--gradient);
@@ -81,7 +85,7 @@ h1{
 
 h2{
     font-family: "Cormorant Garamond";
-    font-size: 5rem;
+    font-size: 4.2rem;
     margin-bottom: 2rem;
     font-weight: 600;
 }
@@ -133,7 +137,7 @@ main{
     box-sizing: border-box;
     width: 100%;
     max-width: 1420px;
-    gap: 180px;
+    gap: 175px;
     padding: 1.5rem;
     margin-bottom: 24px;
 }
@@ -144,7 +148,7 @@ main{
     justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     position: relative;
     gap: 12px;
     padding-top: 4rem;
@@ -168,23 +172,20 @@ main{
 
 .divMarcaPersonal span{
     font-family: "Cormorant Garamond";
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 600;
     color: var(--badgeBlueColorB);
     text-wrap: pretty;
-    margin-left: 0.1em;
 }
 
 .divMarcaPersonal p{
     text-wrap: pretty;
-    font-size: 1.1rem;
-    margin-top: 1rem;
+    font-size: 1rem;
+    margin-top: .5rem;
     max-width: 50%;
-    opacity: .9;
-    margin-left: 0.4em;
 }
 
-.divPresentacion figure{
+.divPresentacion picture{
     margin: 0;
     width: 50%;
 }
@@ -261,7 +262,7 @@ main{
     outline-offset: 2px;
 } */
 
-.cardProyectoContent figure{
+.cardProyectoContent picture{
     margin: 0;
     width: 180px;
     height: 180px;
@@ -375,16 +376,12 @@ main{
     gap: 10px;
 }
 
-
-
 .formacionAcademica ul li span{
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-.grupo{
-    font-size: 1.1rem;
-    font-weight: 500;
+.formacionAcademica small{
     margin: 0;
     display: block;
 }
@@ -477,7 +474,7 @@ footer{
         padding: 1.2rem;
     }
 
-    .cardProyectoContent figure{
+    .cardProyectoContent picture{
         width: 100px;
         height: 100px;
     }
@@ -549,7 +546,7 @@ footer{
         margin-left: .25em;
     }
 /* 
-    .divPresentacion figure {
+    .divPresentacion picture {
         height: 100%;
         width: 100%;
     }

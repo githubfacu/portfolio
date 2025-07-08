@@ -224,7 +224,7 @@ export const material = [
     },
     {
         id: 1,
-        titulo: '<span>HTML CSS | <h4>Digital House</h4></span>',
+        titulo: '<span>HTML & CSS | <h4>Digital House</h4></span>',
         fecha: 'Agosto 2022',
         proyectos: [
             {
