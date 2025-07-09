@@ -176,12 +176,13 @@ main{
     font-weight: 600;
     color: var(--badgeBlueColorB);
     text-wrap: pretty;
+    margin-top: -1rem;
 }
 
 .divMarcaPersonal p{
     text-wrap: pretty;
     font-size: 1rem;
-    margin-top: .5rem;
+    margin-top: 1rem;
     max-width: 50%;
 }
 
@@ -386,7 +387,6 @@ main{
     display: block;
 }
 
-
 /************************ Footer ****************************/
 
 footer{
@@ -537,13 +537,13 @@ footer{
     }
 
     .divMarcaPersonal span{
-        margin-top: 12px;
+        margin-top: 0px;
         font-size: 2.2rem;
         line-height: 2.8rem;
         margin-left: .05em;
     }
     .divMarcaPersonal p{
-        margin-left: .25em;
+        margin-top: .5rem;
     }
 /* 
     .divPresentacion picture {
