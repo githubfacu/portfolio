@@ -10,7 +10,7 @@ export const material = [
                 ruta: 'https://storybook-beige-eight.vercel.app',
                 anclaTexto: 'storybook-demo',
                 img: './Imagenes/capturas/storybook-icon.svg',
-                descripcion: 'Componente UI demo',
+                descripcion: 'Componentes UI demo',
                 personal: false,
                 typescript: true
             },
@@ -72,7 +72,7 @@ export const material = [
                 ruta: 'https://foro-mania.vercel.app/',
                 anclaTexto: 'Foromanía',
                 img: './Imagenes/capturas/Captura_foro-mania.jpeg',
-                descripcion: 'Foro interactivo. Trabajo integrador 4 integrantes. Redux',
+                descripcion: 'Foro interactivo. Trabajo final 4 integrantes. Redux + Firebase.',
                 personal: false,
                 typescript: false
             },
@@ -90,7 +90,7 @@ export const material = [
                 ruta: 'https://reducer-nine.vercel.app/',
                 anclaTexto: 'ReducerPallete',
                 img: './Imagenes/capturas/Captura_Reducer.jpeg',
-                descripcion: 'useReducer, Ant design +Tailwind +TypeScript',
+                descripcion: 'useReducer, Ant design + Tailwind + TypeScript.',
                 personal: true,
                 typescript: true
             },
@@ -133,7 +133,7 @@ export const material = [
                 ruta: 'https://rrhh-n-country.vercel.app/',
                 anclaTexto: 'RRHH-WebAppMobile',
                 img: './Imagenes/capturas/Captura_rrhh.jpeg',
-                descripcion: '4 sprints, 4 semanas, 10 integrantes. Frontend QA. React + Tailwind.',
+                descripcion: '4 sprints, 10 integrantes. Frontend QA. React + Tailwind.',
                 personal: false
             }
         ]
@@ -148,7 +148,7 @@ export const material = [
                 ruta: 'https://gitlab.com/mtimoxenko/integrador',
                 anclaTexto: 'BookingApp',
                 img: './Imagenes/capturas/Captura-CarRental2.jpeg',
-                descripcion: 'BookingApp fin de curso, 8 integrantes. Frontend junto a Amy y Mateo.',
+                descripcion: 'BookingApp fin de curso, 8 integrantes. Frontend con React.',
                 personal: false
             }
         ]
@@ -171,7 +171,7 @@ export const material = [
                 ruta: 'https://arcade-game-vercel.vercel.app',
                 anclaTexto: 'ArcadeGame',
                 img: './Imagenes/capturas/Captura_arcade-game-vercel.vercel.app.jpeg',
-                descripcion: 'Desarrollo de funciones de los hooks de react cGPT Vibe Code',
+                descripcion: 'Juego Arcade hecho en React chatGPT Vibe Coding',
                 personal: true
             },       
         ]
@@ -194,7 +194,7 @@ export const material = [
                 ruta: 'https://githubfacu.github.io/f1_temporada_23/',
                 anclaTexto: 'F1-2023',
                 img: './Imagenes/capturas/Captura_f1.jpeg',
-                descripcion: 'Prueba en ES6, API-fetch',
+                descripcion: 'Pruebas en ES6, API-fetch',
                 personal: true
             },
         ]
@@ -217,7 +217,7 @@ export const material = [
                 ruta: 'https://githubfacu.github.io/reproductor_de_musica_js/',
                 anclaTexto: 'ReproductorDeMúsica',
                 img: './Imagenes/capturas/Captura_reproductor_musica.jpeg',
-                descripcion: 'Práctica personal, JavaScript vanilla.',
+                descripcion: 'Práctica con JavaScript vanilla.',
                 personal: true
             },
         ]
