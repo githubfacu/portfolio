@@ -473,11 +473,11 @@ footer{
     color: white;
     position: absolute;
     top: -50px;
-    right: 0px;
-    padding: 6px;
-    border-radius: 1px;
+    right: 50px;
+    padding: 8px;
+    border-radius: 4px;
     transition: opacity .3s ease;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     text-wrap: nowrap;
 }
@@ -644,7 +644,6 @@ footer{
     }
 
     .iconos h4{
-        top: -100px;
     }
 
     .desktop{
