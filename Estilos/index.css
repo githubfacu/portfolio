@@ -473,7 +473,7 @@ footer{
     color: white;
     position: absolute;
     top: -50px;
-    right: 40px;
+    right: 0px;
     padding: 6px;
     border-radius: 1px;
     transition: opacity .3s ease;

@@ -17,7 +17,7 @@ vinculos.style.display='none'
 miMail.innerText='elorzfacundo@gmail.com'
 miMail.style.display='none'
 
-copiedMessage.innerText='✔ Copiado'
+copiedMessage.innerText='Copiado en portapapeles'
 copiedMessage.style.display='none'
 
 // divIcons.appendChild(miMail)
