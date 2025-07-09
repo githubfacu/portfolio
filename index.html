@@ -18,16 +18,18 @@
     <meta name="twitter:image" content="https://githubfacu.github.io/portfolio/Imagenes/img/code.svg">
     <link rel="stylesheet" href="./Estilos/index.css">
     <link rel="stylesheet" href="./Estilos/funciones.css">
-    <script src="https://kit.fontawesome.com/661bc9cd16.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/661bc9cd16.js" crossorigin="anonymous"></script>
 </head>
-<body class="dark">
+<body>
     <header tabindex="0">
         <a href="./Paginas/presentaciones.html" aria-label="Ver presentaciones de proyectos">Presentaciones</a>
+        <button id="toggle" aria-label="Cambiar entre modo claro y oscuro">
+            <i class="fa-solid fa-circle-half-stroke fa-xl"></i>
+        </button>
     </header>
 
     <main>
@@ -37,9 +39,6 @@
                 <span>Desarrollador Frontend | <mark>HTML CSS TypeScript React</mark></span>
                 <p>Enfocado en lo que pueda mejorar el código.</p>
             </div>
-            <!-- <picture>
-                <img src="./Imagenes/Screenshot_20240201-074922~2.webp" alt="Foto de perfil personal">                
-            </picture> -->
         </div>
 
         <div class="proyectos" aria-labelledby="titulo-proyectos">
@@ -118,14 +117,14 @@
         </div>
 
         <div class="cronologia" aria-labelledby="titulo-cronologia">
-            <h2 id="titulo-cronologia">Progreso</h2>
+            <h2 id="titulo-cronologia">Progreso y prácticas</h2>
 
             <div id="lineaDeTiempo">
             </div>
         </div>
 
         <div class="formacionAcademica" aria-labelledby="titulo-formacion-academica">
-            <h2 id="titulo-formacion-academica">Formación</h2>
+            <h2 id="titulo-formacion-academica">Formación académica</h2>
             <ul role="list">
                 <li>
                     <h3>Élite Frontend Developer</h3>

@@ -3,7 +3,7 @@ export const material = [
         id: 11,
         titulo: '<span>Élite Frontend Developer | <h4>Level Up Tech Academy</h4></span>',
         fecha: 'Febrero 2025',
-        enCurso: true,
+        enCurso: false,
         proyectos: [
             {
                 proyectoId: 3,
@@ -19,7 +19,7 @@ export const material = [
                 ruta: 'https://www.npmjs.com/package/react-hooks-lib-facuekl',
                 anclaTexto: 'hooks-lib',
                 img: './Imagenes/capturas/npm-logo.jpg',
-                descripcion: 'Libreria de hooks.',
+                descripcion: 'Libreria de hooks. React',
                 personal: false,
                 typescript: true
             },
@@ -63,7 +63,7 @@ export const material = [
     },
     {
         id: 9,
-        titulo: '<span>React Avanzado <h4>(Redux)</h4> | <h4>Rolling Code</h4></span>',
+        titulo: '<span>React Avanzado | <h4>Rolling Code</h4></span>',
         fecha: 'Mayo 2024',
         enCurso: false,
         proyectos: [
@@ -90,7 +90,7 @@ export const material = [
                 ruta: 'https://reducer-nine.vercel.app/',
                 anclaTexto: 'ReducerPallete',
                 img: './Imagenes/capturas/Captura_Reducer.jpeg',
-                descripcion: 'useReducer, Ant design + Tailwind + TypeScript.',
+                descripcion: 'useReducer, Ant design + Tailwind',
                 personal: true,
                 typescript: true
             },
@@ -107,7 +107,7 @@ export const material = [
     },
     {
         id: 7,
-        titulo: '<span>NEXT.js <h4>+TypeScript +Tailwind</h4> | <h4>Digital House</h4></span>',
+        titulo: '<span>NEXT.js | <h4>Digital House</h4></span>',
         fecha: 'Abril 2024',
         enCurso: false,
         proyectos: [
@@ -133,7 +133,7 @@ export const material = [
                 ruta: 'https://rrhh-n-country.vercel.app/',
                 anclaTexto: 'RRHH-WebAppMobile',
                 img: './Imagenes/capturas/Captura_rrhh.jpeg',
-                descripcion: '4 sprints, 10 integrantes. Frontend QA. React + Tailwind.',
+                descripcion: '4 sprints, 10 integrantes. Rol Frontend QA. React + Tailwind.',
                 personal: false
             }
         ]
@@ -148,7 +148,7 @@ export const material = [
                 ruta: 'https://gitlab.com/mtimoxenko/integrador',
                 anclaTexto: 'BookingApp',
                 img: './Imagenes/capturas/Captura-CarRental2.jpeg',
-                descripcion: 'BookingApp fin de curso, 8 integrantes. Frontend con React.',
+                descripcion: 'BookingApp, 8 integrantes. Rol Frontend con React.',
                 personal: false
             }
         ]

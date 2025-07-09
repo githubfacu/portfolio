@@ -1,64 +1,32 @@
 const $body = document.querySelector('body')
-const $header = document.querySelector('header')
+const $toggle = document.getElementById('toggle')
 const $headerAncla = document.querySelector('header a')
 
-let modoClaro = $body.classList.contains('light')
+const theme = localStorage.getItem('tema')
+if (theme === 'light') {
+    $body.classList.remove('dark')
+    $body.classList.add('light')
+}   else if (theme === 'dark') {
+    $body.classList.remove('light')
+    $body.classList.add('dark')
+}   else {
+    $body.classList.add('dark')
+}
 
-function temaSitio(){
-    $body.classList.toggle('light')
-    modoClaro = !modoClaro
-    if(modoClaro){
-        $header.classList.add('dark')
-        $header.classList.remove('light')
-    }
-    if(!modoClaro){
-        $header.classList.add('light')
-        $header.classList.remove('dark')
+function toggleTema(){
+    if ($body.classList.contains('dark')) {
+        $body.classList.remove('dark')
+        $body.classList.add('light')
+        return localStorage.setItem('tema', 'light')
+    } else {
+        $body.classList.remove('light')
+        $body.classList.add('dark')
+        return localStorage.setItem('tema', 'dark')
     }
 }
 
-$header.addEventListener('click', function(){
-    temaSitio()        
-})
-
-$header.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        temaSitio();
-    }
-});
-
-$header.addEventListener('mouseover', function(){
-
-    if(modoClaro){
-        $header.classList.remove('light')
-        $header.classList.add('dark')
-    }
-
-    if(!modoClaro){
-        $header.classList.add('light')
-    }
-})
-
-$header.addEventListener('mouseout', function(){
-
-    if(modoClaro){
-        $header.classList.add('light')
-    }
-
-    if(!modoClaro){
-        $header.classList.remove('light')
-    }
-})
-
-$header.addEventListener('blur', function(){
-
-    if(modoClaro){
-        $header.classList.add('light')
-    }
-
-    if(!modoClaro){
-        $header.classList.remove('light')
-    }
+$toggle.addEventListener('click', function(){
+    toggleTema()
 })
 
 $headerAncla.addEventListener('mouseover', function(e){
