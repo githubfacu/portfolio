@@ -5,6 +5,9 @@ const mailIcon = document.querySelector('.iconos span')
 const githubIcon = document.getElementById('fa-github')
 const linkedinIcon = document.getElementById('fa-linkedin')
 
+githubIcon.setAttribute('title', 'ir a github.com/githubfacu')
+linkedinIcon.setAttribute('title', 'ir a in/facundo-elorz')
+
 const vinculos = document.createElement('h5')
 const miMail = document.createElement('h5')
 const copiedMessage = document.createElement('h4')
@@ -17,29 +20,29 @@ miMail.style.display='none'
 copiedMessage.innerText='✔ Copiado'
 copiedMessage.style.display='none'
 
-divIcons.appendChild(miMail)
+// divIcons.appendChild(miMail)
 divIcons.appendChild(copiedMessage)
 divIcons.appendChild(vinculos)
 
-mailIcon.addEventListener('mouseover', function() {
-    miMail.style.display='flex'
-    miMail.style.opacity='1'
-})
+// mailIcon.addEventListener('mouseover', function() {
+//     miMail.style.display='flex'
+//     miMail.style.opacity='1'
+// })
 
-mailIcon.addEventListener('focus', function() {
-    miMail.style.display='flex'
-    miMail.style.opacity='1'
-})
+// mailIcon.addEventListener('focus', function() {
+//     miMail.style.display='flex'
+//     miMail.style.opacity='1'
+// })
 
-mailIcon.addEventListener('mouseout', function() {
-    miMail.style.opacity='0'
-    miMail.style.display='none'
-})
+// mailIcon.addEventListener('mouseout', function() {
+//     miMail.style.opacity='0'
+//     miMail.style.display='none'
+// })
 
-mailIcon.addEventListener('focusout', function() {
-    miMail.style.opacity='0'
-    miMail.style.display='none'
-})
+// mailIcon.addEventListener('focusout', function() {
+//     miMail.style.opacity='0'
+//     miMail.style.display='none'
+// })
 
 mailIcon.addEventListener('click', function() {
     navigator.clipboard.writeText(miMail.innerText)

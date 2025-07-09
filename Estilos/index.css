@@ -18,6 +18,7 @@ body{
     --arternative-hover: var(--lightBlue);
     --arternative-border: var(--lightBlue);
     --white-dark: #090909;
+    --blueGradient: linear-gradient(90deg, rgb(10, 98, 182) 0%, rgb(7, 76, 131) 20%, rgb(5, 47, 130) 50%, rgb(9, 12, 83) 80%, rgb(3, 4, 41) 100%);
     color: var(--textColor);
     display: flex;
     flex-direction: column;
@@ -102,7 +103,7 @@ header{
     box-sizing: border-box;
     width: 100%;
     height: 75px;
-    border-bottom: 2px solid var(--textColor);
+    border-bottom: 1px solid var(--textColor);
     background-color: var(--Fondo);
     background-image: var(--gradient);
     background-blend-mode: overlay;
@@ -124,6 +125,13 @@ header a{
     font-weight: 600;
     font-family: "Cormorant Garamond";
     padding: 1.5rem 2.5rem;
+}
+
+header a:hover, header a:focus{
+    background: var(--blueGradient);
+    color: white;
+    border-radius: 4px;
+    transition: background-color .3s ease, color .3s ease;
 }
 
 
@@ -177,6 +185,13 @@ main{
     color: var(--badgeBlueColorB);
     text-wrap: pretty;
     margin-top: -1rem;
+}
+
+.divMarcaPersonal mark{
+    background: var(--blueGradient);
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
 }
 
 .divMarcaPersonal p{
@@ -424,11 +439,11 @@ footer{
     color: var(--blueBadget);
     cursor: pointer;
     transform: scale(1.2);
-    
 }
 
 .iconos span:hover, .iconos span:active{
     opacity: .8;
+    background: var(--blueGradient);
 }
 
 /* .fa-github{
@@ -454,11 +469,11 @@ footer{
 }
 
 .iconos h4{
-    background-color: var(--textColor);
-    color: var(--bgColor);
+    background: var(--blueGradient);
+    color: white;
     position: absolute;
-    top: -100px;
-    right: 5px;
+    top: -50px;
+    right: 40px;
     padding: 6px;
     border-radius: 1px;
     transition: opacity .3s ease;
