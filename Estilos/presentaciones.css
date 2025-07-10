@@ -1,12 +1,48 @@
 main{
     align-items: flex-start;
-    max-width: 1580px;
-    gap: 24px;
+    max-width: 1420px;
+    gap: 40px;
     margin-bottom: 24px;
-    padding: 1rem;
+    padding: 1.5rem;
+}
+
+.presentacionesTituloDiv{
+    min-height: 75vh;
+}
+
+.presentacionesTituloDiv h1{
+    margin-bottom: 1rem;
 }
 
 video{
     width: 100%;
     max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1280px) {
+    .presentacionesTituloDiv{
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .presentacionesTituloDiv{
+        min-height: auto;
+    }
+    .presentacionesTitulo{
+        font-size: 6.5rem;
+        line-height: 8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .presentacionesTitulo{
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+    .presentacionesTituloDiv p{
+        font-size: .9rem;
+    }
 }

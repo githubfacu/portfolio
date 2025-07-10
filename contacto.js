@@ -17,32 +17,11 @@ vinculos.style.display='none'
 miMail.innerText='elorzfacundo@gmail.com'
 miMail.style.display='none'
 
-copiedMessage.innerText='COPIADO'
+copiedMessage.innerText='Copiado en portapapeles'
 copiedMessage.style.display='none'
 
-// divIcons.appendChild(miMail)
 divIcons.appendChild(copiedMessage)
 divIcons.appendChild(vinculos)
-
-// mailIcon.addEventListener('mouseover', function() {
-//     miMail.style.display='flex'
-//     miMail.style.opacity='1'
-// })
-
-// mailIcon.addEventListener('focus', function() {
-//     miMail.style.display='flex'
-//     miMail.style.opacity='1'
-// })
-
-// mailIcon.addEventListener('mouseout', function() {
-//     miMail.style.opacity='0'
-//     miMail.style.display='none'
-// })
-
-// mailIcon.addEventListener('focusout', function() {
-//     miMail.style.opacity='0'
-//     miMail.style.display='none'
-// })
 
 mailIcon.addEventListener('click', function() {
     navigator.clipboard.writeText(miMail.innerText)

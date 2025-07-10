@@ -14,22 +14,24 @@
 <body>
     <header tabindex="0">
         <a href="../index.html">Regresar</a>
-        <button id="toggle" aria-label="Cambiar entre modo claro y oscuro">
+        <button id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
             <i class="fa-solid fa-circle-half-stroke fa-xl"></i>
         </button>
     </header>
 
     <main>
-        <h1>Presentaciones de Proyectos</h1>
-        <p>En esta sección encontrarás las presentaciones de los proyectos realizados durante el curso.</p>
-        <video controls>
-            <source src="./videos/Presentacion-No-Country.mp4" type="video/mp4">
-        </video>
+        <div role="region" aria-labelledby="titulo-presentacion" class="presentacionesTituloDiv">
+            <h1 class="presentacionesTitulo">Presentaciones de Proyectos</h1>
+            <p>En esta sección encontrarás las presentaciones de los proyectos realizados durante el curso.</p>            
+        </div>
         <video controls>
             <source src="./videos/Output_3_optimizado.mp4" type="video/mp4">
         </video>        
         <video controls>
             <source src="./videos/Output_2_optimizado.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="./videos/Presentacion-No-Country.mp4" type="video/mp4">
         </video>
     </main>
     

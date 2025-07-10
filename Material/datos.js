@@ -189,14 +189,14 @@ export const material = [
                 descripcion: 'Trabajo práctico en dupla. React.',
                 personal: false
             },
-            {
-                proyectoId: 1,
-                ruta: 'https://githubfacu.github.io/f1_temporada_23/',
-                anclaTexto: 'F1-2023',
-                img: './Imagenes/capturas/Captura_f1.jpeg',
-                descripcion: 'Pruebas en ES6, API-fetch',
-                personal: true
-            },
+            // {
+            //     proyectoId: 1,
+            //     ruta: 'https://githubfacu.github.io/f1_temporada_23/',
+            //     anclaTexto: 'F1-2023',
+            //     img: './Imagenes/capturas/Captura_f1.jpeg',
+            //     descripcion: 'Pruebas en ES6, API-fetch',
+            //     personal: true
+            // },
         ]
     },
     {
