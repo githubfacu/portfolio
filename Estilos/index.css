@@ -29,7 +29,7 @@ body{
     box-sizing: border-box;
     width: 100%;
     margin: 0;
-    transition: background-color .3s ease, color .3s ease;
+    transition: background-color .2s ease, color .2s ease;
 }
 
 .dark{ 
@@ -129,7 +129,7 @@ header{
 
 #toggle:hover, #toggle:active{
     background-color: rgba(128, 128, 128, 0.25);
-    transition: background-color .3s ease, color .3s ease;
+    transition: background-color .2s ease, color .2s ease;
 }
 
 header a{
@@ -139,13 +139,33 @@ header a{
     font-weight: 600;
     font-family: "Cormorant Garamond";
     padding: 1.5rem 2.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 header a:hover, header a:focus{
-    background: var(--blueGradient);
     color: white;
     border-radius: 4px;
-    transition: background-color .3s ease, color .3s ease;
+    transition: color .2s ease;
+}
+
+header a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--blueGradient);
+    border-radius: 4px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.2s ease;
+}
+
+header a:hover::before,
+header a:focus::before {
+    opacity: 1;
 }
 
 /************************* MAIN *************************/
