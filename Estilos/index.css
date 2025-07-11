@@ -511,6 +511,11 @@ footer{
         padding: .675rem .5rem;
     }
 
+    h1{
+        font-size: 6.5rem;
+        line-height: 8rem;
+    }
+
     .cardProyectoContent picture{
         width: 100px;
         height: 100px;
