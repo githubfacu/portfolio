@@ -48,6 +48,7 @@ body{
     --badgeBorderBlue: var(--lightBlue);
     --white-dark: rgb(243, 245, 250);
     --gradient: linear-gradient(135deg, #090909, #0c0f1a, #090909);
+    --gradientB: linear-gradient(135deg, #090909, #0c0f1a, #090909);
     background-image: var(--gradient);
     background-blend-mode: overlay;
     background-size: cover;
@@ -71,6 +72,7 @@ body{
     --badgeBorderBlue: rgba(21, 114, 182, 0.3);
     --white-dark: #090909;
     --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
+    --gradientB: linear-gradient(135deg, #ececec, #e0e0e0, #ececec);
     background-image: var(--Fondo);
     background-blend-mode: overlay;
     background-size: cover;
@@ -292,7 +294,7 @@ main{
     background: var(--gradient);
     border-radius: 6px;
     transition: box-shadow 0.4s ease, transform .4s ease;
-    
+    box-shadow: 0px 0px 10px var(--shadowColor);
 }
 
 .cardProyectoContent picture{
@@ -399,13 +401,12 @@ main{
   box-sizing: border-box;
   width: max-content;
   margin-bottom: 180px;
-  background-color: rgba(128, 128, 128, 0.1);
-  border: 1px solid rgba(128, 128, 128, 0.15);
+  background: linear-gradient(135deg, rgba(128, 128, 128, 0.05), rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.05));
+
   color: var(--textColor);
-  box-shadow: 0px 0px 23px 2px var(--shadowColor);
-  padding: 45px;
-  border-radius: 6px;
-  z-index: 1;
+  padding: 55px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px var(--shadowColor);
 }
 
 .formacionAcademica ul{
