@@ -92,9 +92,9 @@ h1{
 
 h2{
     font-family: "Cormorant Garamond";
-    font-size: 4.2rem;
-    margin-bottom: 2rem;
-    font-weight: 600;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 h3{
@@ -206,7 +206,6 @@ main{
     box-sizing: border-box;
     background-color: transparent;
     color: var(--textColor);
-    text-align: center;
 }
 
 .divMarcaPersonal span{
@@ -390,14 +389,23 @@ main{
 
 /****************** Formacion Academica *************************/
 
-.formacionAcademica{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    width: 100%;
-    margin-bottom: 180px;
+.formacionAcademica {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: start;
+  box-sizing: border-box;
+  width: max-content;
+  margin-bottom: 180px;
+  background-color: rgba(128, 128, 128, 0.1);
+  border: 1px solid rgba(128, 128, 128, 0.15);
+  color: var(--textColor);
+  box-shadow: 0px 0px 23px 2px var(--shadowColor);
+  padding: 45px;
+  border-radius: 6px;
+  z-index: 1;
 }
 
 .formacionAcademica ul{
@@ -411,13 +419,45 @@ main{
 }
 
 .formacionAcademica ul li span{
-    font-weight: 400;
+    display: flex;
     font-size: 1.1rem;
 }
 
+.formacionAcademica ul li strong{
+    font-weight: 600;
+}
+
 .formacionAcademica small{
+    font-size: .95rem;
     margin: 0;
     display: block;
+}
+
+.badge-months{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 2px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--textColor);
+    margin-left: 8px;
+    opacity: .6;
+}
+
+.total-months{
+    align-self: flex-end;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--textColor);
+    opacity: .9;
 }
 
 /************************ Footer ****************************/
@@ -516,6 +556,33 @@ footer{
         line-height: 8rem;
     }
 
+    .divPresentacion{
+        padding: 1rem;
+        padding-bottom: 0;
+        padding-right: 0;
+        min-height: 40vh;
+    }
+
+    .divMarcaPersonal{
+        z-index: 1;
+        padding: 1rem;
+        padding-bottom: 0;
+        padding-left: .25rem;
+        text-align: start;
+        align-items: flex-start;
+    }
+
+    .divMarcaPersonal span{
+        margin-top: 0px;
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+        margin-left: .05em;
+    }
+
+    .divMarcaPersonal p{
+        margin-top: .5rem;
+    }
+
     .cardProyectoContent picture{
         width: 100px;
         height: 100px;
@@ -553,35 +620,6 @@ footer{
     h3{
         font-size: 1.2rem;
         font-weight: 500;
-    }
-    
-    .divPresentacion{
-        padding: 1rem;
-        padding-bottom: 0;
-        padding-right: 0;
-        min-height: 40vh;
-    }
-
-    .divMarcaPersonal{
-        z-index: 1;
-        background-color: transparent;
-        color: var(--textColor);
-        border: none;
-        padding: 1rem;
-        padding-bottom: 0;
-        padding-left: .25rem;
-        text-align: start;
-        align-items: flex-start;
-    }
-
-    .divMarcaPersonal span{
-        margin-top: 0px;
-        font-size: 2.2rem;
-        line-height: 2.8rem;
-        margin-left: .05em;
-    }
-    .divMarcaPersonal p{
-        margin-top: .5rem;
     }
 
     .proyectos{
@@ -627,8 +665,12 @@ footer{
         padding-left: 24px;
     }
 
-    .formacionAcademica ul span{
-        font-size: 14px;
+    .formacionAcademica ul li span{
+        font-size: .95rem;
+    }
+
+    .formacionAcademica ul li small{
+        font-size: .9rem;
     }
     
     footer{

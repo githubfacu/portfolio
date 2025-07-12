@@ -2,7 +2,7 @@ export const material = [
     {
         id: 11,
         titulo: '<span>Élite Frontend Developer | <h4>Level Up Tech Academy</h4></span>',
-        fecha: 'Febrero 2025',
+        fecha: 'Feb 2025',
         enCurso: false,
         proyectos: [
             {
@@ -37,7 +37,7 @@ export const material = [
     {
         id: 10,
         titulo: '<span>Sistemas <h4>(Pasantía)</h4> | <h4>inkuA</h4></span>',
-        fecha: 'Junio 2024',
+        fecha: 'Jun 2024',
         enCurso: false,
         proyectos: [
             {
@@ -64,7 +64,7 @@ export const material = [
     {
         id: 9,
         titulo: '<span>React Avanzado | <h4>Rolling Code</h4></span>',
-        fecha: 'Mayo 2024',
+        fecha: 'May 2024',
         enCurso: false,
         proyectos: [
             {
@@ -108,7 +108,7 @@ export const material = [
     {
         id: 7,
         titulo: '<span>NEXT.js | <h4>Digital House</h4></span>',
-        fecha: 'Abril 2024',
+        fecha: 'Abr 2024',
         enCurso: false,
         proyectos: [
             {
@@ -125,7 +125,7 @@ export const material = [
     {
         id: 6,
         titulo: '<span>Simulación Laboral | <h4>No Country</h4></span>',
-        fecha: 'Abril 2024',
+        fecha: 'Abr 2024',
         enCurso: false,
         proyectos: [
             {
@@ -141,7 +141,7 @@ export const material = [
     {
         id: 5,
         titulo: '<span>Proyecto Integrador | <h4>Digital House</h4></span>',
-        fecha: 'Febrero 2024',
+        fecha: 'Feb 2024',
         proyectos: [
             {
                 proyectoId: 1,
@@ -156,7 +156,7 @@ export const material = [
     {
         id: 4,
         titulo: '< / >',
-        fecha: 'Enero 2024',
+        fecha: 'Ene 2024',
         proyectos: [
             {
                 proyectoId: 2,
@@ -179,7 +179,7 @@ export const material = [
     {
         id: 3,
         titulo: '<span>React | <h4>Digital House</h4></span>',
-        fecha: 'Octubre 2023',
+        fecha: 'Oct 2023',
         proyectos: [
             {
                 proyectoId: 2,
@@ -202,7 +202,7 @@ export const material = [
     {
         id: 2,
         titulo: '<span>JavaScript | <h4>Digital House</h4></span>',
-        fecha: 'Abril 2023',
+        fecha: 'Abr 2023',
         proyectos: [
             {
                 proyectoId: 2,
@@ -225,7 +225,7 @@ export const material = [
     {
         id: 1,
         titulo: '<span>HTML & CSS | <h4>Digital House</h4></span>',
-        fecha: 'Agosto 2022',
+        fecha: 'Ago 2022',
         proyectos: [
             {
                 proyectoId: 1,
