@@ -133,7 +133,7 @@ header{
     user-select: none;
 }
 
-#toggle:hover, #toggle:active{
+#toggle:hover{
     background-color: rgba(128, 128, 128, 0.25);
     box-shadow: 0px 0px 3px 3px var(--shadowColor);
     transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
@@ -150,7 +150,7 @@ header a{
     z-index: 1;
 }
 
-header a:hover, header a:focus{
+header a:hover{
     color: white;
     border-radius: 4px;
     transition: color .2s ease;
@@ -513,7 +513,7 @@ footer{
     opacity: .9;
 }
 
-.iconos a:hover, .iconos a:active, .iconos span:hover, .iconos span:active{
+.iconos a:hover, .iconos span:hover{
     background-color: rgba(128, 128, 128, 0.25);
     box-shadow: 0px 0px 3px 3px var(--shadowColor);
     transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
