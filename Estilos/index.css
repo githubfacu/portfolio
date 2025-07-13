@@ -221,6 +221,11 @@ main{
 }
 
 .divMarcaPersonal mark{
+    color: var(--textColor);
+    background-color: transparent;
+}
+
+body.loaded .divMarcaPersonal mark {
     background: var(--blueGradient);
     color: white;
     padding: 2px 4px;

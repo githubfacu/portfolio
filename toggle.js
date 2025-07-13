@@ -2,6 +2,8 @@ const $body = document.querySelector('body')
 const $toggle = document.getElementById('toggle')
 const $headerAncla = document.querySelector('header a')
 
+$body.classList.add('loaded');
+
 const theme = localStorage.getItem('tema')
 if (theme === 'light') {
     $body.classList.remove('dark')
