@@ -29,7 +29,7 @@ body{
     box-sizing: border-box;
     width: 100%;
     margin: 0;
-    transition: background-color .4s ease, color .2s ease;
+    transition: background-color .3s ease, color .3s ease;
 }
 
 .dark{ 
@@ -131,12 +131,12 @@ header{
     border: 1px solid rgba(128, 128, 128, 0.15);
     color: var(--textColor);
     user-select: none;
+    transition: background-color .3s ease, color .3s ease, box-shadow .3s ease;
 }
 
 #toggle:hover{
     background-color: rgba(128, 128, 128, 0.25);
     box-shadow: 0px 0px 3px 3px var(--shadowColor);
-    transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
 }
 
 header a{
@@ -221,11 +221,6 @@ main{
 }
 
 .divMarcaPersonal mark{
-    color: var(--textColor);
-    background-color: transparent;
-}
-
-body.loaded .divMarcaPersonal mark {
     background: var(--blueGradient);
     color: white;
     padding: 2px 4px;
@@ -508,6 +503,7 @@ footer{
     border: 1px solid rgba(128, 128, 128, 0.15);
     color: var(--textColor);
     position: relative;
+    transition: background-color .3s ease, color .3s ease, box-shadow .3s ease;
 }
 
 .iconos i{
@@ -521,7 +517,6 @@ footer{
 .iconos a:hover, .iconos span:hover{
     background-color: rgba(128, 128, 128, 0.25);
     box-shadow: 0px 0px 3px 3px var(--shadowColor);
-    transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
 }
 
 /* .iconos span{
