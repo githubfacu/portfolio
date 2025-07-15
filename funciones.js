@@ -5,7 +5,6 @@ const $lineadetiempo = document.getElementById('lineaDeTiempo')
 agregarSeccion()
 agregarMaterial()
 agregarProyectos()
-// hoverMsj()
 clasificarXIndex()
 
 function agregarSeccion(){
