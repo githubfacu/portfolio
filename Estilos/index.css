@@ -231,7 +231,8 @@ main{
     text-wrap: pretty;
     font-size: 1rem;
     margin-top: 1rem;
-    max-width: 50%;
+    /* max-width: 50%; */
+    opacity: .9;
 }
 
 .divPresentacion picture{
@@ -584,7 +585,7 @@ footer{
     }
 
     .divMarcaPersonal p{
-        margin-top: .5rem;
+        margin-top: 1.5rem;
     }
 
     .cardProyectoContent picture{
@@ -618,7 +619,7 @@ footer{
 
     h2{
         font-size: 2.5rem;
-        line-height: 3.2rem;
+        line-height: 3rem;
     }
 
     h3{
@@ -664,6 +665,10 @@ footer{
     .formacionAcademica{
         padding: 2rem;
         max-width: 90%;
+    }
+
+    #titulo-formacion-academica{
+        text-align: center;
     }
 
     .formacionAcademica ul{
