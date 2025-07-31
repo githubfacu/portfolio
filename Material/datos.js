@@ -68,7 +68,7 @@ export const material = [
         enCurso: false,
         proyectos: [
             {
-                proyectoId: 4,
+                proyectoId: 1,
                 ruta: 'https://foro-mania.vercel.app/',
                 anclaTexto: 'Foromanía',
                 img: './Imagenes/capturas/Captura_foro-mania.jpeg',
@@ -76,33 +76,15 @@ export const material = [
                 personal: false,
                 typescript: false
             },
-            {
-                proyectoId: 3,
-                ruta: 'https://tp-redux.vercel.app/',
-                anclaTexto: 'Administración',
-                img: './Imagenes/capturas/Captura-tp-redux.jpeg',
-                descripcion: 'Práctica Redux',
-                personal: false,
-                typescript: false
-            },
-            {
-                proyectoId: 2,
-                ruta: 'https://reducer-nine.vercel.app/',
-                anclaTexto: 'ReducerPallete',
-                img: './Imagenes/capturas/Captura_Reducer.jpeg',
-                descripcion: 'useReducer, Ant design + Tailwind',
-                personal: true,
-                typescript: true
-            },
-            {
-                proyectoId: 1,
-                ruta: 'https://rolling-code-nav-cards.vercel.app/',
-                anclaTexto: 'HeroCardsNav',
-                img: './Imagenes/capturas/Captura_rolling-code-nav-cards.jpeg',
-                descripcion: 'Práctica en grupo. React + Ant Design UI components',
-                personal: false,
-                typescript: false
-            },
+            // {
+            //     proyectoId: 1,
+            //     ruta: 'https://tp-redux.vercel.app/',
+            //     anclaTexto: 'Administración',
+            //     img: './Imagenes/capturas/Captura-tp-redux.jpeg',
+            //     descripcion: 'Práctica Redux',
+            //     personal: false,
+            //     typescript: false
+            // },
         ]
     },
     {
@@ -131,7 +113,7 @@ export const material = [
             {
                 proyectoId: 1,
                 ruta: 'https://rrhh-n-country.vercel.app/',
-                anclaTexto: 'RRHH-WebAppMobile',
+                anclaTexto: 'RRHH-WebApp',
                 img: './Imagenes/capturas/Captura_rrhh.jpeg',
                 descripcion: '4 sprints, 10 integrantes. Rol Frontend QA. React + Tailwind.',
                 personal: false
@@ -153,29 +135,29 @@ export const material = [
             }
         ]
     },
-    {
-        id: 4,
-        titulo: '< / >',
-        fecha: 'Ene 2024',
-        proyectos: [
-            {
-                proyectoId: 2,
-                ruta: 'https://api-football-omega.vercel.app',
-                anclaTexto: 'API-FOOTBALL',
-                img: './Imagenes/capturas/Captura_api-football-omega.vercel.app.jpeg',
-                descripcion: 'Peticiones con React.',
-                personal: true
-            },
-            {
-                proyectoId: 1,
-                ruta: 'https://arcade-game-vercel.vercel.app',
-                anclaTexto: 'ArcadeGame',
-                img: './Imagenes/capturas/Captura_arcade-game-vercel.vercel.app.jpeg',
-                descripcion: 'Juego Arcade hecho en React chatGPT Vibe Coding',
-                personal: true
-            },       
-        ]
-    },
+    // {
+    //     id: 4,
+    //     titulo: '< / >',
+    //     fecha: 'Ene 2024',
+    //     proyectos: [
+    //         {
+    //             proyectoId: 2,
+    //             ruta: 'https://api-football-omega.vercel.app',
+    //             anclaTexto: 'API-FOOTBALL',
+    //             img: './Imagenes/capturas/Captura_api-football-omega.vercel.app.jpeg',
+    //             descripcion: 'Peticiones con React.',
+    //             personal: true
+    //         },
+    //         {
+    //             proyectoId: 1,
+    //             ruta: 'https://arcade-game-vercel.vercel.app',
+    //             anclaTexto: 'ArcadeGame',
+    //             img: './Imagenes/capturas/Captura_arcade-game-vercel.vercel.app.jpeg',
+    //             descripcion: 'Juego Arcade hecho en React chatGPT Vibe Coding',
+    //             personal: true
+    //         },       
+    //     ]
+    // },
     {
         id: 3,
         titulo: '<span>React | <h4>Digital House</h4></span>',

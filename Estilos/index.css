@@ -2,24 +2,27 @@
     navigation: auto;
 }
 
+:root {
+  --bgColor: #090909;
+  --textColor: #F7F7F7;
+  --Fondo: #000000;
+  --lightBlue: #1572B6;
+  --green: #339933;
+  --rose: #EFD0CA;
+  --yellow: #F7DF1E;
+  --yellow-b: #ffdd1c;
+  --blue: #066781;
+  --blueBadget: #F7F7F7;
+  --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
+  --hover-blue: #7DD3FC;
+  --arternative-hover: var(--lightBlue);
+  --arternative-border: var(--lightBlue);
+  --white-dark: #090909;
+  --blueGradient: linear-gradient(90deg, rgb(10, 98, 182) 0%, rgb(7, 76, 131) 20%, rgb(5, 47, 130) 50%, rgb(9, 12, 83) 80%, rgb(3, 4, 41) 100%);
+}
+
 body{
     font-family: "Rubik",sans-serif;
-    --bgColor: #090909;
-    --textColor: #F7F7F7;
-    --Fondo: #000000;
-    --lightBlue: #1572B6;
-    --green: #339933;
-    --rose: #EFD0CA;
-    --yellow: #F7DF1E;
-    --yellow-b: #ffdd1c;
-    --blue: #066781;
-    --blueBadget: #F7F7F7;
-    --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
-    --hover-blue: #7DD3FC;
-    --arternative-hover: var(--lightBlue);
-    --arternative-border: var(--lightBlue);
-    --white-dark: #090909;
-    --blueGradient: linear-gradient(90deg, rgb(10, 98, 182) 0%, rgb(7, 76, 131) 20%, rgb(5, 47, 130) 50%, rgb(9, 12, 83) 80%, rgb(3, 4, 41) 100%);
     color: var(--textColor);
     background: var(--Fondo);
     display: flex;
@@ -32,55 +35,62 @@ body{
     transition: background-color .3s ease, color .3s ease;
 }
 
-.dark{ 
-    --bgColor: #090909; 
-    --Fondo: #000000;
-    --shadowColor: rgba(247, 247, 247, 0.15); 
-    --textColor: #F7F7F7;
-    --textColorB: #7DD3FC;
-    --textColorC: #F7F7F7;
-    --hover-blue: var(--lightBlue);
-    --blueBadget: #F7F7F7;
-    --badgeGreenColor: var(--green);
-    --badgeYellowColor: var(--yellow-b);
-    --badgeBlueColor: #7DD3FC;
-    --badgeBlueColorB: var(--lightBlue);    
-    --badgeBorderBlue: var(--lightBlue);
-    --white-dark: rgb(243, 245, 250);
-    --gradient: linear-gradient(135deg, #090909, #0c0f1a, #090909);
-    --gradientB: linear-gradient(135deg, #090909, #0c0f1a, #090909);
-    --borderOpacity: rgba(255, 255, 255, 0.6);
-    background-image: var(--gradient);
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body.dark {
+  --bgColor: #090909;
+  --Fondo: #000000;
+  --shadowColor: rgba(247, 247, 247, 0.15);
+  --textColor: #F7F7F7;
+  --textColorB: #7DD3FC;
+  --textColorC: #F7F7F7;
+  --hover-blue: var(--lightBlue);
+  --blueBadget: #F7F7F7;
+  --badgeGreenColor: var(--green);
+  --badgeYellowColor: var(--yellow-b);
+  --badgeBlueColor: #7DD3FC;
+  --badgeBlueColorB: var(--lightBlue);
+  --badgeBorderBlue: var(--lightBlue);
+  --white-dark: rgb(243, 245, 250);
+  --gradient: linear-gradient(135deg, #090909, #0c0f1a, #090909);
+  --gradientB: linear-gradient(135deg, #090909, #0c0f1a, #090909);
+  --borderOpacity: rgba(255, 255, 255, 0.6);
+  --aVisited: rgba(167, 139, 250, 1);
+  --aNotVisited: #7DD3FC;
+
+  background-image: var(--gradient);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.light{ 
-    --bgColor: #F7F7F7; 
-    --Fondo: #eef1f5;
-    --shadowColor: rgba(0, 0, 0, 0.15);
-    --textColor: #090909;
-    --textColorB: var(--lightBlue);
-    --textColorC: var(--lightBlue);
-    --hover-blue: var(--hover-blue);
-    --blueBadget: #0D3B5E;
-    --badgeGreenColor: #1E4D1E;
-    --badgeYellowColor: #6B5E00;
-    --badgeBlueColor: #0D3B5E;
-    --badgeBlueColorB: #0D3B5E;
-    --badgeBorderBlue: rgba(21, 114, 182, 0.3);
-    --white-dark: #090909;
-    --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
-    --gradientB: linear-gradient(135deg, #ececec, #e0e0e0, #ececec);
-    --borderOpacity: rgba(0, 0, 0, 0.6);
-    background-image: var(--Fondo);
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body.light {
+  --bgColor: #F7F7F7;
+  --Fondo: #eef1f5;
+  --shadowColor: rgba(0, 0, 0, 0.15);
+  --textColor: #090909;
+  --textColorB: var(--lightBlue);
+  --textColorC: var(--lightBlue);
+  --hover-blue: var(--hover-blue);
+  --blueBadget: #0D3B5E;
+  --badgeGreenColor: #1E4D1E;
+  --badgeYellowColor: #6B5E00;
+  --badgeBlueColor: #0D3B5E;
+  --badgeBlueColorB: #0D3B5E;
+  --badgeBorderBlue: rgba(21, 114, 182, 0.3);
+  --white-dark: #090909;
+  --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
+  --gradientB: linear-gradient(135deg, #ececec, #e0e0e0, #ececec);
+  --borderOpacity: rgba(0, 0, 0, 0.6);
+  --aVisited: #3c0b6d;
+  --aNotVisited: #0D3B5E;
+
+  background-image: var(--Fondo);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
 
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
@@ -91,7 +101,6 @@ h1{
     font-size: 9rem;
     line-height: 10.8rem;
     font-weight: 600;
-    color: var(--textColor);
 }
 
 h2{
@@ -185,7 +194,7 @@ main{
     box-sizing: border-box;
     width: 100%;
     max-width: 1420px;
-    gap: 175px;
+    gap: 180px;
     padding: 1.5rem;
 }
 
@@ -230,9 +239,8 @@ main{
 .divMarcaPersonal p{
     text-wrap: pretty;
     font-size: 1rem;
-    margin-top: 1rem;
-    /* max-width: 50%; */
-    opacity: .9;
+    margin-top: 1.3rem;
+    opacity: .8;
 }
 
 .divPresentacion picture{
@@ -401,13 +409,13 @@ main{
     align-self: center;
     box-sizing: border-box;
     width: fit-content;
-    margin-bottom: 180px;
     background: linear-gradient(135deg, rgba(128, 128, 128, 0.05), rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.05));
     color: var(--textColor);
     padding: 55px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px var(--shadowColor);
     border: 1px solid rgba(128, 128, 128, 0.25);
+    margin-bottom: 180px;
 }
 
 .formacionAcademica ul{
@@ -424,13 +432,20 @@ main{
     display: flex;
     flex-wrap: wrap;
     font-size: 1.1rem;
-
-
 }
 
 .formacionAcademica ul li strong{
     font-weight: 600;
 }
+
+.formacionAcademica a{
+    color: var(--aNotVisited);
+}
+
+.formacionAcademica  a:visited{
+    color: var(--aVisited);
+}
+
 
 .formacionAcademica small{
     font-size: .95rem;
@@ -561,6 +576,11 @@ footer{
         line-height: 8rem;
     }
 
+    #titulo-vibe-code{
+        font-size: 5.5rem;
+        line-height: 7.5rem;
+    }
+
     .divPresentacion{
         padding: 1rem;
         padding-bottom: 0;
@@ -583,9 +603,10 @@ footer{
         line-height: 2.8rem;
         margin-left: .05em;
     }
-
-    .divMarcaPersonal p{
-        margin-top: 1.5rem;
+    
+    .divMarcaPersonal mark{
+        line-height: 3.4rem;
+        
     }
 
     .cardProyectoContent picture{
@@ -626,6 +647,12 @@ footer{
         font-size: 1.2rem;
         font-weight: 500;
     }
+    
+    .divMarcaPersonal p{
+        margin-top: 1rem;
+        line-height: 1.3rem;
+        font-size: .95rem;
+    }
 
     .proyectos{
         padding: 1rem;
@@ -664,7 +691,9 @@ footer{
 
     .formacionAcademica{
         padding: 2rem;
+        padding-left: 1rem;
         max-width: 90%;
+        margin-top: 0;
     }
 
     #titulo-formacion-academica{
@@ -673,10 +702,6 @@ footer{
 
     .formacionAcademica ul{
         padding-left: 2rem;
-    }
-
-    .formacionAcademica ul li{
-        
     }
 
     .formacionAcademica ul li span{
