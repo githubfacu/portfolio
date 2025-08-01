@@ -17,20 +17,52 @@
     <meta name="twitter:description" content="Web Developer - HTML, CSS & JavaScript.">
     <meta name="twitter:image" content="https://githubfacu.github.io/portfolio/Imagenes/img/code.svg">
     <link rel="stylesheet" href="./Estilos/index.css">
+    <link rel="stylesheet" href="./Estilos/header.css">
     <link rel="stylesheet" href="./Estilos/funciones.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/661bc9cd16.js" crossorigin="anonymous" defer></script>
 </head>
+
 <body>
-    <header tabindex="0">
-        <a href="./Paginas/vibecode.html" aria-label="Ver Vibe Code">Vibe Code</a>
-        <a href="./Paginas/presentaciones.html" aria-label="Ver presentaciones de proyectos">Presentaciones</a>
-        <button id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
-            <i class="fa-solid fa-circle-half-stroke fa-xl"></i>
-        </button>
+    <header>
+        <div class="mobile-menu">
+            <span class="open-menu" tabindex="0">Menu</span>
+            <div class="mobile-menu-content">
+                <ul>
+                    <li>
+                        <a href="index.html" aria-label="Ir a la página de inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="Paginas/vibecode.html" aria-label="Ir a Vibe Code">Vibe Code</a>
+                    </li>
+                    <li>
+                        <a href="Paginas/presentaciones.html" aria-label="Ir a Presentaciones">Presentaciones</a>
+                    </li>
+                </ul>
+                <button class="mobile-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
+                    Cambiar tema
+                </button>
+            </div>
+        </div>
+
+        <div class="desktop-nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./Paginas/vibecode.html" aria-label="Ir a Vibe Code">Vibe Code</a>
+                    </li>
+                    <li>
+                        <a href="./Paginas/presentaciones.html" aria-label="Ir a Presentaciones">Presentaciones</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="desktop-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
+                <i class="fa-solid fa-circle-half-stroke fa-xl"></i>
+            </button>            
+        </div>
     </header>
 
     <main>
@@ -257,6 +289,6 @@
     
     <script type="module" src="./funciones.js"></script>
     <script src="./contacto.js"></script>
-    <script src="./toggle.js"></script>
+    <script src="./header.js"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+main{
+    align-items: flex-start;
+    max-width: 1420px;
+    gap: 40px;
+    margin-bottom: 24px;
+    padding: 1.5rem;
+}
+
+.presentacionesTituloDiv{
+    min-height: 40vh;
+    padding-top: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+.presentacionesTituloDiv h1{
+    margin-bottom: 1rem;
+    font-size: 7.5rem;
+    line-height: 8.8rem;
+}
+
+.presentacionesTituloDiv p{
+    text-wrap: pretty;
+    font-size: 1rem;
+    opacity: .8;
+}
+
+@media (max-width: 1024px) {
+    .presentacionesTituloDiv{
+        min-height: 30vh;
+    }
+    .presentacionesTituloDiv h1{
+        font-size: 5.5rem;
+        line-height: 7.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .presentacionesTituloDiv{
+        padding-top: 1rem;
+        min-height: 20vh;
+    }
+    
+    .presentacionesTituloDiv h1{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .presentacionesTituloDiv p{
+        font-size: .9rem;
+    }
+}

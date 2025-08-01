@@ -32,7 +32,7 @@ body{
     box-sizing: border-box;
     width: 100%;
     margin: 0;
-    transition: background-color .3s ease, color .3s ease;
+    transition: background-color .2s ease, color .2s ease;
 }
 
 body.dark {
@@ -113,77 +113,6 @@ h2{
 h3{
     font-size: 1.2rem;
     font-weight: 400;
-}
-
-header{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 30px;
-    padding: 0 1.5rem;
-    box-sizing: border-box;
-    width: 100%;
-    height: 85px;
-    border-bottom: 1px solid var(--borderOpacity);
-}
-
-#toggle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    background-color: transparent;
-    border-radius: 50%;
-    width: 45px;
-    min-width: 45px;
-    height: 45px;
-    background-color: rgba(128, 128, 128, 0.1);
-    border: 1px solid rgba(128, 128, 128, 0.15);
-    color: var(--textColor);
-    user-select: none;
-    transition: background-color .3s ease, color .3s ease, box-shadow .3s ease;
-}
-
-#toggle:hover{
-    background-color: rgba(128, 128, 128, 0.25);
-    box-shadow: 0px 0px 3px 3px var(--shadowColor);
-}
-
-header a{
-    text-decoration: none;
-    color: var(--textColor);
-    font-size: 1.6rem;
-    font-weight: 600;
-    font-family: "Cormorant Garamond";
-    padding: .675rem .5rem;
-    position: relative;
-    z-index: 1;
-    text-wrap: nowrap;
-}
-
-header a:hover{
-    color: white;
-    border-radius: 4px;
-    transition: color .2s ease;
-}
-
-header a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--blueGradient);
-    border-radius: 4px;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 0.2s ease;
-}
-
-header a:hover::before,
-header a:focus::before {
-    opacity: 1;
 }
 
 /************************* MAIN *************************/
@@ -537,22 +466,11 @@ footer{
     box-shadow: 0px 0px 3px 3px var(--shadowColor);
 }
 
-/* .iconos span{
-    color: var(--blueBadget);
-    cursor: pointer;
-}
-
-.iconos span:hover, .iconos span:active{
-    opacity: .8;
-    background: var(--blueGradient);
-} */
-
 .iconos h4{
     background: var(--bgColor);
     color: var(--textColor);
     position: absolute;
     top: -40px;
-    right: 0px;
     padding: 7px;
     border-radius: 4px;
     transition: opacity .3s ease;
@@ -564,24 +482,9 @@ footer{
 /************************ Queries **************************/
 
 @media (max-width: 1024px) {
-    header{
-        height: 70px;
-        padding: 0 1rem;
-    }
-
-    header a{
-        padding: .675rem .5rem;
-        font-size: 1.4rem;
-    }
-
     h1{
         font-size: 6.5rem;
         line-height: 8rem;
-    }
-
-    #titulo-vibe-code{
-        font-size: 5.5rem;
-        line-height: 7.5rem;
     }
 
     .divPresentacion{
@@ -609,7 +512,6 @@ footer{
     
     .divMarcaPersonal mark{
         line-height: 3.4rem;
-        
     }
 
     .cardProyectoContent picture{
@@ -630,27 +532,18 @@ footer{
 }
 
 @media (max-width: 768px) {
-
-    header{
-        gap: 20px;
-    }
-
-    header a{
-        font-size: 1.3rem;
-    }
-
     main{
         padding: 0;
         gap: 140px;
     }
 
     h1{
-        font-size: 4.6rem;
+        font-size: 4.5rem;
         line-height: 5rem;
     }
 
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 3rem;
     }
 
@@ -662,7 +555,7 @@ footer{
     .divMarcaPersonal p{
         margin-top: 1rem;
         line-height: 1.3rem;
-        font-size: .95rem;
+        font-size: .9rem;
     }
 
     .proyectos{

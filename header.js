@@ -1,6 +1,7 @@
 const $body = document.querySelector('body')
-const $toggle = document.getElementById('toggle')
-const $headerAncla = document.querySelector('header a')
+const $toggle = document.querySelectorAll('#toggle')
+const $openMenu = document.querySelector('.open-menu')
+const $mobileMenuContent = document.querySelector('.mobile-menu-content')
 
 const theme = localStorage.getItem('tema')
 if (theme === 'light') {
@@ -25,14 +26,20 @@ function toggleTema(){
     }
 }
 
-$toggle.addEventListener('click', function(){
-    toggleTema()
+$toggle.forEach(toggle => {
+    toggle.addEventListener('click', function(){
+        toggleTema()
+    })
+    toggle.addEventListener('onkeypress', function(event){
+        if (event.key === 'Enter' || event.key === ' ') {
+            toggleTema()
+        }
+    })    
 })
 
-$headerAncla.addEventListener('mouseover', function(e){
-    e.stopPropagation()
-})
-
-$headerAncla.addEventListener('click', function(e){
-    e.stopPropagation()
+$openMenu.addEventListener('click', function(){
+    $mobileMenuContent.classList.toggle('open')
+    if (event.key === 'Enter' || event.key === ' ') {
+        $mobileMenuContent.classList.toggle('open')
+    }    
 })
