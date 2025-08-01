@@ -59,24 +59,6 @@ function agregarMaterial(){
     })
 }
 
-// function hoverMsj(){
-//     const $msjDiv = document.querySelectorAll('.enCurso')
-//     const enCursoMsj = document.querySelectorAll('.enCursoMsj')
-
-//     $msjDiv.forEach(elemento=>{
-//         enCursoMsj.forEach(msj=>{
-//             if(msj.id === elemento.id){
-//                 elemento.addEventListener('mouseover',function(){
-//                     msj.style.opacity='1'
-//                 })
-//                 elemento.addEventListener('mouseout',function(){
-//                     msj.style.opacity='0'
-//                 })                
-//             }
-//         })
-//     })
-// }
-
 function agregarProyectos(){
     const $linksDiv = document.querySelectorAll('.linksDiv') 
 

@@ -1,17 +1,8 @@
-const footer = document.querySelector('footer')
-const divIcons = document.querySelector('.iconos')
-const mailIcon = document.querySelector('.iconos span')
-const githubIcon = document.getElementById('fa-github')
-const linkedinIcon = document.getElementById('fa-linkedin')
+const $divIcons = document.querySelector('.iconos')
+const $mailIcon = document.querySelector('.iconos span')
 
-githubIcon.setAttribute('title', 'ir a github.com/githubfacu')
-linkedinIcon.setAttribute('title', 'ir a in/facundo-elorz')
-
-const vinculos = document.createElement('h5')
 const miMail = document.createElement('h5')
 const copiedMessage = document.createElement('h4')
-
-vinculos.style.display='none'
 
 miMail.innerText='elorzfacundo@gmail.com'
 miMail.style.display='none'
@@ -19,10 +10,9 @@ miMail.style.display='none'
 copiedMessage.innerText='Copiado en portapapeles'
 copiedMessage.style.display='none'
 
-divIcons.appendChild(copiedMessage)
-divIcons.appendChild(vinculos)
+$divIcons.appendChild(copiedMessage)
 
-mailIcon.addEventListener('click', function() {
+$mailIcon.addEventListener('click', function() {
     navigator.clipboard.writeText(miMail.innerText)
 
     copiedMessage.style.display='block'
@@ -34,7 +24,7 @@ mailIcon.addEventListener('click', function() {
     return () => clearTimeout(timer)
 })
 
-mailIcon.addEventListener('keydown', function(event) {
+$mailIcon.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         navigator.clipboard.writeText(miMail.innerText)
 

@@ -1,6 +1,6 @@
 export const material = [
     {
-        id: 11,
+        id: 9,
         titulo: '<span>Élite Frontend Developer | <h4>Level Up Tech Academy</h4></span>',
         fecha: 'Feb 2025',
         enCurso: false,
@@ -35,7 +35,7 @@ export const material = [
         ]
     },
     {
-        id: 10,
+        id: 8,
         titulo: '<span>Sistemas <h4>(Pasantía)</h4> | <h4>inkuA</h4></span>',
         fecha: 'Jun 2024',
         enCurso: false,
@@ -62,7 +62,7 @@ export const material = [
         ]
     },
     {
-        id: 9,
+        id: 7,
         titulo: '<span>React Avanzado | <h4>Rolling Code</h4></span>',
         fecha: 'May 2024',
         enCurso: false,
@@ -88,7 +88,7 @@ export const material = [
         ]
     },
     {
-        id: 7,
+        id: 6,
         titulo: '<span>NEXT.js | <h4>Digital House</h4></span>',
         fecha: 'Abr 2024',
         enCurso: false,
@@ -105,7 +105,7 @@ export const material = [
         ]
     },
     {
-        id: 6,
+        id: 5,
         titulo: '<span>Simulación Laboral | <h4>No Country</h4></span>',
         fecha: 'Abr 2024',
         enCurso: false,
@@ -121,7 +121,7 @@ export const material = [
         ]
     },
     {
-        id: 5,
+        id: 4,
         titulo: '<span>Proyecto Integrador | <h4>Digital House</h4></span>',
         fecha: 'Feb 2024',
         proyectos: [
@@ -135,29 +135,6 @@ export const material = [
             }
         ]
     },
-    // {
-    //     id: 4,
-    //     titulo: '< / >',
-    //     fecha: 'Ene 2024',
-    //     proyectos: [
-    //         {
-    //             proyectoId: 2,
-    //             ruta: 'https://api-football-omega.vercel.app',
-    //             anclaTexto: 'API-FOOTBALL',
-    //             img: './Imagenes/capturas/Captura_api-football-omega.vercel.app.jpeg',
-    //             descripcion: 'Peticiones con React.',
-    //             personal: true
-    //         },
-    //         {
-    //             proyectoId: 1,
-    //             ruta: 'https://arcade-game-vercel.vercel.app',
-    //             anclaTexto: 'ArcadeGame',
-    //             img: './Imagenes/capturas/Captura_arcade-game-vercel.vercel.app.jpeg',
-    //             descripcion: 'Juego Arcade hecho en React chatGPT Vibe Coding',
-    //             personal: true
-    //         },       
-    //     ]
-    // },
     {
         id: 3,
         titulo: '<span>React | <h4>Digital House</h4></span>',
