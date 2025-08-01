@@ -52,7 +52,7 @@ header{
     border: 1px solid rgba(128, 128, 128, 0.15);
     color: var(--textColor);
     user-select: none;
-    transition: background-color .3s ease, color .3s ease, box-shadow .3s ease;
+    transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
 }
 
 .desktop-toggle:hover{
