@@ -348,6 +348,10 @@ main{
     margin-bottom: 180px;
 }
 
+#titulo-formacion-academica{
+    align-self: center;
+}
+
 .formacionAcademica ul{
     list-style-type: square;
     display: flex;
@@ -592,17 +596,12 @@ footer{
 
     .formacionAcademica{
         padding: 2rem;
-        padding-left: 1rem;
         max-width: 90%;
         margin-top: 0;
     }
 
-    #titulo-formacion-academica{
-        text-align: center;
-    }
-
     .formacionAcademica ul{
-        padding-left: 2rem;
+        padding-left: 1.5rem;
     }
 
     .formacionAcademica ul li span{
