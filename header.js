@@ -37,9 +37,14 @@ $toggle.forEach(toggle => {
     })    
 })
 
-$openMenu.addEventListener('click', function(){
-    $mobileMenuContent.classList.toggle('open')
+$openMenu.addEventListener('click', function (event) {
+    const isOpen = $mobileMenuContent.classList.contains('open');
+
+    $openMenu.classList.toggle('x-icon', !isOpen);
+    $mobileMenuContent.classList.toggle('open');
+
     if (event.key === 'Enter' || event.key === ' ') {
-        $mobileMenuContent.classList.toggle('open')
-    }    
-})
+        $openMenu.classList.toggle('x-icon', !isOpen);
+        $mobileMenuContent.classList.toggle('open');
+    }
+});
