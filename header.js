@@ -48,3 +48,7 @@ $openMenu.addEventListener('click', function (event) {
         $mobileMenuContent.classList.toggle('open');
     }
 });
+
+$mobileMenuContent.addEventListener('mouseover', function (event) {
+    event.stopPropagation();
+});
