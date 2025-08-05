@@ -16,7 +16,7 @@
   align-items: center;
   background-color: var(--bgColor);
   padding: .5rem;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   transition: background-color 0.2s ease, color 0.2s ease;
 }
