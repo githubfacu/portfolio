@@ -1,54 +1,57 @@
-const $body = document.querySelector('body')
-const $toggle = document.querySelectorAll('#toggle')
-const $openMenu = document.querySelector('.open-menu')
-const $mobileMenuContent = document.querySelector('.mobile-menu-content')
+document.addEventListener("DOMContentLoaded", () => {
+    const headerContent = document.getElementById("header-content");
 
-const theme = localStorage.getItem('tema')
-if (theme === 'light') {
-    $body.classList.remove('dark')
-    $body.classList.add('light')
-}   else if (theme === 'dark') {
-    $body.classList.remove('light')
-    $body.classList.add('dark')
-}   else {
-    $body.classList.add('dark')
-}
-
-function toggleTema(){
-    if ($body.classList.contains('dark')) {
-        $body.classList.remove('dark')
-        $body.classList.add('light')
-        return localStorage.setItem('tema', 'light')
-    } else {
-        $body.classList.remove('light')
-        $body.classList.add('dark')
-        return localStorage.setItem('tema', 'dark')
+    if (headerContent) {
+        fetch("/root/Componentes/header-content.html")
+            .then(response => {
+                if (!response.ok) throw new Error("No se pudo cargar el header");
+                return response.text();
+            })
+            .then(html => {
+                headerContent.innerHTML = html;
+                inicializarNav();
+            })
+            .catch(err => console.error(err));
     }
-}
 
-$toggle.forEach(toggle => {
-    toggle.addEventListener('click', function(){
-        toggleTema()
-    })
-    toggle.addEventListener('onkeypress', function(event){
-        if (event.key === 'Enter' || event.key === ' ') {
-            toggleTema()
+    function inicializarNav() {
+        const $body = document.body;
+        const $toggle = document.querySelectorAll('#toggle');
+        const $openMenu = document.querySelector('.open-menu');
+        const $mobileMenuContent = document.querySelector('.mobile-menu-content');
+
+        const theme = localStorage.getItem('tema');
+        if (theme === 'light') {
+            $body.classList.remove('dark');
+            $body.classList.add('light');
+        } else if (theme === 'dark') {
+            $body.classList.remove('light');
+            $body.classList.add('dark');
+        } else {
+            $body.classList.add('dark');
         }
-    })    
-})
 
-$openMenu.addEventListener('click', function (event) {
-    const isOpen = $mobileMenuContent.classList.contains('open');
+        function toggleTema() {
+            if ($body.classList.contains('dark')) {
+                $body.classList.replace('dark', 'light');
+                localStorage.setItem('tema', 'light');
+            } else {
+                $body.classList.replace('light', 'dark');
+                localStorage.setItem('tema', 'dark');
+            }
+        }
 
-    $openMenu.classList.toggle('x-icon', !isOpen);
-    $mobileMenuContent.classList.toggle('open');
+        $toggle.forEach(btn => {
+            btn.addEventListener('click', toggleTema);
+            btn.addEventListener('keypress', e => {
+                if (e.key === 'Enter' || e.key === ' ') toggleTema();
+            });
+        });
 
-    if (event.key === 'Enter' || event.key === ' ') {
-        $openMenu.classList.toggle('x-icon', !isOpen);
-        $mobileMenuContent.classList.toggle('open');
+        $openMenu.addEventListener('click', () => {
+            const isOpen = $mobileMenuContent.classList.contains('open');
+            $openMenu.classList.toggle('x-icon', !isOpen);
+            $mobileMenuContent.classList.toggle('open');
+        });
     }
-});
-
-$mobileMenuContent.addEventListener('mouseover', function (event) {
-    event.stopPropagation();
 });

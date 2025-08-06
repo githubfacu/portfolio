@@ -89,7 +89,7 @@ export const material = [
     },
     {
         id: 6,
-        titulo: '<span>NEXT.js | <h4>Digital House</h4></span>',
+        titulo: '<span>Next.js | <h4>Digital House</h4></span>',
         fecha: 'Abr 2024',
         enCurso: false,
         proyectos: [

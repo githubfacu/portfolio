@@ -91,7 +91,6 @@ body.light {
   background-attachment: fixed;
 }
 
-
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
@@ -118,15 +117,27 @@ h3{
 /************************* MAIN *************************/
 
 main{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1580px;
+    gap: 180px;
+    padding: 1.5rem; */
+    padding: 1.5rem;
+}
+
+.max-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1280px;
     gap: 180px;
-    padding: 1.5rem;
 }
 
 .divPresentacion{
@@ -135,18 +146,18 @@ main{
     justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
-    min-height: 55vh;
+    min-height: calc(85vh - 85px);
     position: relative;
     gap: 12px;
-    padding-top: 4rem;
+    margin-bottom: 3rem;
 }
 
 .divMarcaPersonal{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     background-color: transparent;
     color: var(--textColor);
@@ -172,6 +183,7 @@ main{
     font-size: 1rem;
     margin-top: 1.3rem;
     opacity: .8;
+    text-align: center;
 }
 
 .divPresentacion picture{
@@ -341,7 +353,7 @@ main{
     width: fit-content;
     background: linear-gradient(135deg, rgba(128, 128, 128, 0.05), rgba(128, 128, 128, 0.1), rgba(128, 128, 128, 0.05));
     color: var(--textColor);
-    padding: 55px 65px;
+    padding: 45px 55px;
     border-radius: 6px;
     box-shadow: 0px 0px 10px var(--shadowColor);
     /* border: 1px solid rgba(128, 128, 128, 0.25); */
@@ -361,6 +373,11 @@ main{
     justify-content: flex-start;
     box-sizing: border-box;
     gap: 10px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.formacionAcademica li{
 }
 
 .formacionAcademica ul li span{
@@ -491,15 +508,11 @@ footer{
     }
 
     .divPresentacion{
-        padding: 1rem;
-        padding-bottom: 0;
-        padding-right: 0;
-        min-height: 40vh;
+        min-height: 65vh;
     }
 
     .divMarcaPersonal{
         z-index: 1;
-        padding: 1rem;
         padding-bottom: 0;
         padding-left: .25rem;
         text-align: start;
@@ -515,6 +528,10 @@ footer{
     
     .divMarcaPersonal mark{
         line-height: 3.4rem;
+    }
+
+    .divMarcaPersonal p{
+        text-align: start;
     }
 
     .cardProyectoContent picture{
@@ -537,7 +554,10 @@ footer{
 @media (max-width: 768px) {
     main{
         padding: 0;
-        gap: 140px;
+    }
+
+    .max-content{
+        gap: 90px;
     }
 
     h1{
@@ -552,6 +572,10 @@ footer{
 
     h3{
         font-size: 1.1rem;
+    }
+
+    .divMarcaPersonal{
+        padding: 1rem;
     }
     
     .divMarcaPersonal p{
@@ -599,10 +623,12 @@ footer{
         padding: 2rem;
         max-width: 90%;
         margin-top: 0;
+        margin-bottom: 90px;
     }
 
     .formacionAcademica ul{
-        padding-left: 1.5rem;
+        padding-left: 1rem;
+        list-style-type: square;
     }
 
     .formacionAcademica ul li span{

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facundo Elorz | Web Developer</title>
     <meta name="description" content="Web Developer - HTML, CSS & JavaScript.">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/root/favicon.ico" type="image/x-icon">
     <meta property="og:title" content="Facundo Elorz Portfolio" />
     <meta property="og:description" content="Web Developer - HTML, CSS & JavaScript." />
     <meta property="og:image" content="https://githubfacu.github.io/portfolio/Imagenes/img/code.svg" />
@@ -27,50 +27,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-background"></div>
-        <div class="mobile-menu">
-            <button class="open-menu" tabindex="0" id="openMenu" aria-label="Abrir menú móvil" style="view-transition-name: openMenu;">
-                <div></div>
-                <div></div>
-            </button>
-            <div class="mobile-menu-content">
-                <div class="fadetop"></div>
-                <div class="onScroll">
-                    <ul>
-                        <li>
-                            <a href="index.html" aria-label="Ir a la página de inicio">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="Paginas/vibecode.html" aria-label="Ir a Vibe Code">Vibe Code</a>
-                        </li>
-                        <li>
-                            <a href="Paginas/presentaciones.html" aria-label="Ir a Presentaciones">Presentaciones</a>
-                        </li>
-                    </ul>
-                    <button class="mobile-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
-                        Cambiar tema
-                    </button>                    
-                </div>
-            </div>
-        </div>
-
-        <div class="desktop-nav">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./Paginas/vibecode.html" aria-label="Ir a Vibe Code">Vibe Code</a>
-                    </li>
-                    <li>
-                        <a href="./Paginas/presentaciones.html" aria-label="Ir a Presentaciones">Presentaciones</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="desktop-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
-                <i class="fa-solid fa-circle-half-stroke fa-xl"></i>
-            </button>            
-        </div>
-    </header>
+    <div id="header-content"></div>
 
     <main>
         <div class="divPresentacion" role="region" aria-labelledby="titulo-presentacion">
@@ -81,206 +38,209 @@
             </div>
         </div>
 
-        <div class="proyectos" aria-labelledby="titulo-proyectos">
-            <h2 id="titulo-proyectos">Proyectos</h2>
+        <div class="max-content">
+            <div class="proyectos" aria-labelledby="titulo-proyectos">
+                <h2 id="titulo-proyectos">Proyectos</h2>
 
-            <div class="proyectoPubliContainer" role="article" aria-labelledby="grilla de proyectos">
+                <div class="proyectoPubliContainer" role="article" aria-labelledby="grilla de proyectos">
 
-                <section class="cardProyecto">
-                    <h3 id="titulo-mi-tratamiento">Mi Tratamiento</h3>
-                    <div class="cardProyectoContent" tabindex="0">
-                        <picture class="desktop">
-                            <img src="./Imagenes/img/MT-logoweb.webp"
-                            width="180" height="180"
-                            loading="lazy"
-                            alt="Vista miniatura del logo de la plataforma Mi Tratamiento">
-                        </picture>
+                    <section class="cardProyecto">
+                        <h3 id="titulo-mi-tratamiento">Mi Tratamiento</h3>
+                        <div class="cardProyectoContent" tabindex="0">
+                            <picture class="desktop">
+                                <img src="./Imagenes/img/MT-logoweb.webp"
+                                width="180" height="180"
+                                loading="lazy"
+                                alt="Vista miniatura del logo de la plataforma Mi Tratamiento">
+                            </picture>
 
-                        <div class="cardProyectoTextContent">
-                            <p>Plataforma para la gestión de Tratamientos y Terapias de Salud Mental</p>
-                            <div class="tech-tools">
-                                <div class="next">
-                                    <img src="./Imagenes/tech-logos/Next.js.svg" title="NEXT.js" alt="" >
+                            <div class="cardProyectoTextContent">
+                                <p>Plataforma para la gestión de Tratamientos y Terapias de Salud Mental</p>
+                                <div class="tech-tools">
+                                    <div class="next">
+                                        <img src="./Imagenes/tech-logos/Next.js.svg" title="NEXT.js" alt="" >
+                                    </div>
+                                    <img src="./Imagenes/tech-logos/TypeScript.svg" title="TypeScript" alt="">
+                                    <img src="./Imagenes/tech-logos/TailwindCSS.svg" title="Tailwind CSS" alt="">
+                                    <img src="./Imagenes/tech-logos/HTML5.svg" title="HTML" alt="">
+                                    <img src="./Imagenes/tech-logos/Redux.svg" title="Redux" alt="">
+                                    <img src="./Imagenes/tech-logos/React.svg" title="React" alt="">
+                                    <img src="./Imagenes/tech-logos/GitLab.svg" title="GitLab" alt="">
                                 </div>
-                                <img src="./Imagenes/tech-logos/TypeScript.svg" title="TypeScript" alt="">
-                                <img src="./Imagenes/tech-logos/TailwindCSS.svg" title="Tailwind CSS" alt="">
-                                <img src="./Imagenes/tech-logos/HTML5.svg" title="HTML" alt="">
-                                <img src="./Imagenes/tech-logos/Redux.svg" title="Redux" alt="">
-                                <img src="./Imagenes/tech-logos/React.svg" title="React" alt="">
-                                <img src="./Imagenes/tech-logos/GitLab.svg" title="GitLab" alt="">
-                            </div>
-                            <div class="linksDiv badge-bw">
-                                <a class="linksDivID" href="http://3.239.119.108:3000/" target="_blank" aria-label="Ir a la página Mi Tratamiento en una nueva pestaña" title="Ir a la página Mi Tratamiento en una nueva pestaña">
-                                    <h4>Ir al sitio</h4>
-                                    <span>
-                                        <i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <picture class="mobile">
-                            <img src="./Imagenes/img/MT-logoweb.webp" 
-                            width="100" height="100"
-                            loading="lazy"
-                            alt="Vista miniatura del logo de la plataforma Mi Tratamiento">
-                        </picture>
-                    </div>
-                </section>
-                <section class="cardProyecto">
-                    <h3  id="titulo-budget-generator" lang="en">Budget Generator</h3>
-                    <div class="cardProyectoContent" tabindex="0">
-                        <picture class="desktop">
-                            <img src="./Imagenes/img/budget-app-globe-icon.jpg"
-                            width="180" height="180"
-                            loading="lazy"
-                            alt="Vista miniatura de la pagina inicio de Budget Generator">
-                        </picture>
-
-                        <div class="cardProyectoTextContent">
-                            <p>Genera un Presupuesto de página simple y descarga el archivo en formato pdf.</p>
-                            <div class="tech-tools">
-                                <img src="./Imagenes/tech-logos/TypeScript.svg" title="TypeScript" alt="">
-                                <img src="./Imagenes/tech-logos/CSS3.svg" title="CSS" alt="">
-                                <img src="./Imagenes/tech-logos/HTML5.svg" title="HTML" alt="">
-                                <img src="./Imagenes/tech-logos/React.svg" title="React" alt="">
-                                <div class="next">
-                                    <img src="./Imagenes/tech-logos/GitHub.svg" title="GitHub" alt="" >
+                                <div class="linksDiv badge-bw">
+                                    <a class="linksDivID" href="http://3.239.119.108:3000/" target="_blank" aria-label="Ir a la página Mi Tratamiento en una nueva pestaña" title="Ir a la página Mi Tratamiento en una nueva pestaña">
+                                        <h4>Ir al sitio</h4>
+                                        <span>
+                                            <i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="linksDiv badge-bw">
-                                <a class="linksDivID" href="https://budget-generator-ten.vercel.app/" target="_blank" aria-label="Ir a la página Budget Generator en una nueva pestaña" title="Ir a la página Budget Generator en una nueva pestaña">
-                                    <h4>Ir al sitio</h4>
-                                    <span>
-                                        <i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i>
-                                    </span>
-                                </a>
+
+                            <picture class="mobile">
+                                <img src="./Imagenes/img/MT-logoweb.webp" 
+                                width="100" height="100"
+                                loading="lazy"
+                                alt="Vista miniatura del logo de la plataforma Mi Tratamiento">
+                            </picture>
+                        </div>
+                    </section>
+                    <section class="cardProyecto">
+                        <h3  id="titulo-budget-generator" lang="en">Budget Generator</h3>
+                        <div class="cardProyectoContent" tabindex="0">
+                            <picture class="desktop">
+                                <img src="./Imagenes/img/budget-app-globe-icon.jpg"
+                                width="180" height="180"
+                                loading="lazy"
+                                alt="Vista miniatura de la pagina inicio de Budget Generator">
+                            </picture>
+
+                            <div class="cardProyectoTextContent">
+                                <p>Genera un Presupuesto de página simple y descarga el archivo en formato pdf.</p>
+                                <div class="tech-tools">
+                                    <img src="./Imagenes/tech-logos/TypeScript.svg" title="TypeScript" alt="">
+                                    <img src="./Imagenes/tech-logos/CSS3.svg" title="CSS" alt="">
+                                    <img src="./Imagenes/tech-logos/HTML5.svg" title="HTML" alt="">
+                                    <img src="./Imagenes/tech-logos/React.svg" title="React" alt="">
+                                    <div class="next">
+                                        <img src="./Imagenes/tech-logos/GitHub.svg" title="GitHub" alt="" >
+                                    </div>
+                                </div>
+                                <div class="linksDiv badge-bw">
+                                    <a class="linksDivID" href="https://budget-generator-ten.vercel.app/" target="_blank" aria-label="Ir a la página Budget Generator en una nueva pestaña" title="Ir a la página Budget Generator en una nueva pestaña">
+                                        <h4>Ir al sitio</h4>
+                                        <span>
+                                            <i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
+
+                            <picture class="mobile">
+                                <img src="./Imagenes/img/budget-app-globe-icon.jpg" 
+                                width="100" height="100"
+                                loading="lazy"
+                                alt="Vista miniatura de la pagina inicio de Budget Generator en móvil">
+                            </picture>
                         </div>
+                    </section>
 
-                        <picture class="mobile">
-                            <img src="./Imagenes/img/budget-app-globe-icon.jpg" 
-                            width="100" height="100"
-                            loading="lazy"
-                            alt="Vista miniatura de la pagina inicio de Budget Generator en móvil">
-                        </picture>
-                    </div>
-                </section>
+                </div>
+            </div>
 
+            <div class="cronologia" aria-labelledby="titulo-cronologia">
+                <h2 id="titulo-cronologia">Progreso y prácticas</h2>
+
+                <div id="lineaDeTiempo">
+                </div>
+            </div>
+
+            <div class="formacionAcademica" aria-labelledby="titulo-formacion-academica">
+                <h2 id="titulo-formacion-academica">Formación académica</h2>
+                <ul role="list">
+                    <li>
+                        <span>
+                            <strong>Certified Tech Developer (2022 - 2024)</strong>
+                            &nbsp;
+                            <a 
+                                href="https://www.digitalhouse.com/ar" target="_blank" 
+                                rel="noopener noreferrer"
+                                aria-label="Digital House, se abre en una nueva pestaña">
+                                Digital House
+                            </a>
+                            <div class="badge-months">
+                                +
+                                <i class="fa-solid fa-2"></i>
+                                <i class="fa-solid fa-1"></i>
+                            </div>
+                        </span>
+                        <small>Carrera de Professional Developer</small>
+                    </li>
+                    <li>
+                        <span>
+                            <strong>Simulación laboral (2024)</strong>
+                            &nbsp;
+                            <a 
+                                href="https://nocountry.tech/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                aria-label="No Country, se abre en una nueva pestaña">
+                                No Country
+                            </a>
+                            <div class="badge-months">
+                                +
+                                <i class="fa-solid fa-1"></i>
+                            </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <strong>Next.js (2024)</strong>
+                            &nbsp;<a href="https://www.digitalhouse.com/ar" target="_blank" rel="noopener noreferrer" aria-label="Digital House, se abre en una nueva pestaña">Digital House</a>
+                            <div class="badge-months">
+                                +
+                                <i class="fa-solid fa-1"></i>
+                            </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <strong>Especialización Frontend con React (2024)</strong>
+                            &nbsp;<a href="https://web.rollingcodeschool.com/" target="_blank" rel="noopener noreferrer" aria-label="Rolling Code School, se abre en una nueva pestaña">Rolling Code School</a>
+                            <div class="badge-months">
+                                +
+                                <i class="fa-solid fa-3"></i>
+                            </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <strong>Next.js: El framework de React para producción (2024)</strong>
+                            &nbsp;<a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer" aria-label="Udemy, se abre en una nueva pestaña">Udemy</a>
+                            <div class="badge-months">
+                                +
+                                <i class="fa-solid fa-1"></i>
+                            </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <strong>Pasantía en área de Sistemas (2024 - 2025)</strong>
+                            &nbsp;<a href="https://inkua.de/" target="_blank" rel="noopener noreferrer" aria-label="InkuA, se abre en una nueva pestaña">InkuA</a>
+                            <div class="badge-months">
+                                +
+                                <i class="fa-solid fa-1"></i>
+                                <i class="fa-solid fa-0"></i>
+                            </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <strong>Élite Frontend Developer (2025)</strong>
+                            &nbsp;<a href="https://levelup1.tiendup.com/" target="_blank" rel="noopener noreferrer" aria-label="Level Up Tech Academy, se abre en una nueva pestaña">Level Up Tech Academy</a>
+                            <div class="badge-months">
+                                +
+                                <i class="fa-solid fa-3"></i>
+                            </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <strong>Micro-Frontend: Arquitectura de Aplicaciones Web Escalables (2025)</strong>
+                            &nbsp;<a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer" aria-label="Udemy, se abre en una nueva pestaña">Udemy</a>
+                            <div class="badge-months">
+                                +
+                                <i class="fa-solid fa-1"></i>
+                            </div>
+                        </span>
+                    </li>
+                </ul>
+                <div class="total-months">
+                    + 40 MESES
+                </div>
             </div>
         </div>
 
-        <div class="cronologia" aria-labelledby="titulo-cronologia">
-            <h2 id="titulo-cronologia">Progreso y prácticas</h2>
-
-            <div id="lineaDeTiempo">
-            </div>
-        </div>
-
-        <div class="formacionAcademica" aria-labelledby="titulo-formacion-academica">
-            <h2 id="titulo-formacion-academica">Formación académica</h2>
-            <ul role="list">
-                <li>
-                    <span>
-                        <strong>Certified Tech Developer (2022 - 2024)</strong>
-                        &nbsp;
-                        <a 
-                            href="https://www.digitalhouse.com/ar" target="_blank" 
-                            rel="noopener noreferrer"
-                            aria-label="Digital House, se abre en una nueva pestaña">
-                            Digital House
-                        </a>
-                        <div class="badge-months">
-                            +
-                            <i class="fa-solid fa-2"></i>
-                            <i class="fa-solid fa-1"></i>
-                        </div>
-                    </span>
-                    <small>Carrera de Professional Developer</small>
-                </li>
-                <li>
-                    <span>
-                        <strong>Simulación laboral (2024)</strong>
-                        &nbsp;
-                        <a 
-                            href="https://nocountry.tech/" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            aria-label="No Country, se abre en una nueva pestaña">
-                            No Country
-                        </a>
-                        <div class="badge-months">
-                            +
-                            <i class="fa-solid fa-1"></i>
-                        </div>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <strong>NEXT.js (2024)</strong>
-                        &nbsp;<a href="https://www.digitalhouse.com/ar" target="_blank" rel="noopener noreferrer" aria-label="Digital House, se abre en una nueva pestaña">Digital House</a>
-                        <div class="badge-months">
-                            +
-                            <i class="fa-solid fa-1"></i>
-                        </div>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <strong>Especialización Frontend con React (2024)</strong>
-                        &nbsp;<a href="https://web.rollingcodeschool.com/" target="_blank" rel="noopener noreferrer" aria-label="Rolling Code School, se abre en una nueva pestaña">Rolling Code School</a>
-                        <div class="badge-months">
-                            +
-                            <i class="fa-solid fa-3"></i>
-                        </div>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <strong>NEXT.js: El framework de React para producción (2024)</strong>
-                        &nbsp;<a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer" aria-label="Udemy, se abre en una nueva pestaña">Udemy</a>
-                        <div class="badge-months">
-                            +
-                            <i class="fa-solid fa-1"></i>
-                        </div>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <strong>Pasantía en área de Sistemas (2024 - 2025)</strong>
-                        &nbsp;<a href="https://inkua.de/" target="_blank" rel="noopener noreferrer" aria-label="InkuA, se abre en una nueva pestaña">InkuA</a>
-                        <div class="badge-months">
-                            +
-                            <i class="fa-solid fa-1"></i>
-                            <i class="fa-solid fa-0"></i>
-                        </div>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <strong>Élite Frontend Developer (2025)</strong>
-                        &nbsp;<a href="https://levelup1.tiendup.com/" target="_blank" rel="noopener noreferrer" aria-label="Level Up Tech Academy, se abre en una nueva pestaña">Level Up Tech Academy</a>
-                        <div class="badge-months">
-                            +
-                            <i class="fa-solid fa-3"></i>
-                        </div>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <strong>Micro-Frontend: Arquitectura de Aplicaciones Web Escalables (2025)</strong>
-                        &nbsp;<a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer" aria-label="Udemy, se abre en una nueva pestaña">Udemy</a>
-                        <div class="badge-months">
-                            +
-                            <i class="fa-solid fa-1"></i>
-                        </div>
-                    </span>
-                </li>
-            </ul>
-            <div class="total-months">
-                + 40 MESES
-            </div>
-        </div>
     </main>
 
     <footer role="contentinfo">
