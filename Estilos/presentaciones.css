@@ -1,7 +1,15 @@
+.videoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
 video{
     width: 100%;
     max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     border-radius: 6px;
 }
