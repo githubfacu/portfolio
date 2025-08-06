@@ -1,7 +1,6 @@
 .libros-section {
     display: grid;
     gap: 2rem;
-    padding: 1rem 0;
     width: 100%;
     grid-template-columns: 1fr;
 }
