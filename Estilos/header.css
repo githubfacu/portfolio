@@ -76,7 +76,7 @@ header{
 .desktop-nav a{
     text-decoration: none;
     color: var(--textColor);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
     padding: .675rem .5rem;
     position: relative;
