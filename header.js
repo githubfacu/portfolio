@@ -1,57 +1,38 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const headerContent = document.getElementById("header-content");
+const $body = document.body;
+const $toggle = document.querySelectorAll('#toggle');
+const $openMenu = document.querySelector('.open-menu');
+const $mobileMenuContent = document.querySelector('.mobile-menu-content');
 
-    if (headerContent) {
-        fetch("/root/Componentes/header-content.html")
-            .then(response => {
-                if (!response.ok) throw new Error("No se pudo cargar el header");
-                return response.text();
-            })
-            .then(html => {
-                headerContent.innerHTML = html;
-                inicializarNav();
-            })
-            .catch(err => console.error(err));
+const theme = localStorage.getItem('tema');
+if (theme === 'light') {
+    $body.classList.remove('dark');
+    $body.classList.add('light');
+} else if (theme === 'dark') {
+    $body.classList.remove('light');
+    $body.classList.add('dark');
+} else {
+    $body.classList.add('dark');
+}
+
+function toggleTema() {
+    if ($body.classList.contains('dark')) {
+        $body.classList.replace('dark', 'light');
+        localStorage.setItem('tema', 'light');
+    } else {
+        $body.classList.replace('light', 'dark');
+        localStorage.setItem('tema', 'dark');
     }
+}
 
-    function inicializarNav() {
-        const $body = document.body;
-        const $toggle = document.querySelectorAll('#toggle');
-        const $openMenu = document.querySelector('.open-menu');
-        const $mobileMenuContent = document.querySelector('.mobile-menu-content');
+$toggle.forEach(btn => {
+    btn.addEventListener('click', toggleTema);
+    btn.addEventListener('keypress', e => {
+        if (e.key === 'Enter' || e.key === ' ') toggleTema();
+    });
+});
 
-        const theme = localStorage.getItem('tema');
-        if (theme === 'light') {
-            $body.classList.remove('dark');
-            $body.classList.add('light');
-        } else if (theme === 'dark') {
-            $body.classList.remove('light');
-            $body.classList.add('dark');
-        } else {
-            $body.classList.add('dark');
-        }
-
-        function toggleTema() {
-            if ($body.classList.contains('dark')) {
-                $body.classList.replace('dark', 'light');
-                localStorage.setItem('tema', 'light');
-            } else {
-                $body.classList.replace('light', 'dark');
-                localStorage.setItem('tema', 'dark');
-            }
-        }
-
-        $toggle.forEach(btn => {
-            btn.addEventListener('click', toggleTema);
-            btn.addEventListener('keypress', e => {
-                if (e.key === 'Enter' || e.key === ' ') toggleTema();
-            });
-        });
-
-        $openMenu.addEventListener('click', () => {
-            const isOpen = $mobileMenuContent.classList.contains('open');
-            $openMenu.classList.toggle('x-icon', !isOpen);
-            $mobileMenuContent.classList.toggle('open');
-        });
-    }
+$openMenu.addEventListener('click', () => {
+    const isOpen = $mobileMenuContent.classList.contains('open');
+    $openMenu.classList.toggle('x-icon', !isOpen);
+    $mobileMenuContent.classList.toggle('open');
 });

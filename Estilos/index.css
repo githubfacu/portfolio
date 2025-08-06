@@ -377,9 +377,6 @@ main{
     list-style-type: none;
 }
 
-.formacionAcademica li{
-}
-
 .formacionAcademica ul li span{
     display: flex;
     flex-wrap: wrap;
