@@ -1,6 +1,6 @@
 main{
     align-items: flex-start;
-    max-width: 1420px;
+    max-width: 1280px;
     gap: 40px;
     margin-bottom: 24px;
     padding: 1.5rem;
@@ -14,6 +14,7 @@ main{
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
+    margin-bottom: 3rem;
 }
 
 .presentacionesTituloDiv h1{
@@ -40,13 +41,13 @@ main{
 
 @media (max-width: 768px) {
     .presentacionesTituloDiv{
-        padding-top: 1rem;
-        min-height: 20vh;
+        min-height: 0;
+        align-items: flex-start;
     }
     
     .presentacionesTituloDiv h1{
         font-size: 3rem;
-        line-height: 4rem;
+        line-height: 3.75rem;
     }
     .presentacionesTituloDiv p{
         font-size: .9rem;

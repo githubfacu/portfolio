@@ -511,7 +511,6 @@ footer{
     .divMarcaPersonal{
         z-index: 1;
         padding-bottom: 0;
-        padding-left: .25rem;
         text-align: start;
         align-items: flex-start;
     }

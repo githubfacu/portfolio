@@ -1,4 +1,4 @@
-.mobile-menu {
+.mobile-menu{
     display: none;
 }
 
@@ -123,6 +123,10 @@ header{
         opacity: 1;
         z-index: -1;
         transition: background-color .2s ease, color .2s ease;
+    }
+
+    .pages-nav {
+        display: flex;
     }
 
     .mobile-menu {
