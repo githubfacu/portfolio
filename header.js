@@ -47,7 +47,7 @@ const htmlContent = `
             </ul>
         </nav>
         <button class="desktop-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
-            <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+            <i class="fa-solid fa-moon fa-lg"></i>
         </button>            
     </div>
 `;
@@ -60,6 +60,7 @@ const $body = document.body;
 const $toggle = document.querySelectorAll('#toggle');
 const $openMenu = document.querySelector('.open-menu');
 const $mobileMenuContent = document.querySelector('.mobile-menu-content');
+const $navItems = document.querySelectorAll('.desktop-nav a')
 
 const theme = localStorage.getItem('tema');
 if (theme === 'light') {
@@ -94,3 +95,22 @@ $openMenu.addEventListener('click', () => {
     $openMenu.classList.toggle('x-icon', !isOpen);
     $mobileMenuContent.classList.toggle('open');
 });
+
+
+const currentUrl = window.location.href;
+
+// Función para comparar y agregar la clase activa
+function setActiveNavItem() {
+    $navItems.forEach(item => {
+        const itemUrl = item.href;
+
+        // Comparar si la URL del elemento coincide con la URL actual
+        if (currentUrl === itemUrl) {
+            item.classList.add('onActive'); // Agregar la clase 'active' al elemento
+        } else {
+            item.classList.remove('onActive'); // Asegurarse de quitar la clase 'active' si no coincide
+        }
+    });
+}
+
+setActiveNavItem()
