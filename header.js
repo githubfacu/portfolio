@@ -96,19 +96,16 @@ $openMenu.addEventListener('click', () => {
     $mobileMenuContent.classList.toggle('open');
 });
 
-
 const currentUrl = window.location.href;
 
-// Función para comparar y agregar la clase activa
 function setActiveNavItem() {
     $navItems.forEach(item => {
         const itemUrl = item.href;
 
-        // Comparar si la URL del elemento coincide con la URL actual
         if (currentUrl === itemUrl) {
-            item.classList.add('onActive'); // Agregar la clase 'active' al elemento
+            item.classList.add('onActive');
         } else {
-            item.classList.remove('onActive'); // Asegurarse de quitar la clase 'active' si no coincide
+            item.classList.remove('onActive');
         }
     });
 }
