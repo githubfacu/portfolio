@@ -47,7 +47,7 @@ const htmlContent = `
             </ul>
         </nav>
         <button class="desktop-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
-            <i class="fa-solid fa-circle-half-stroke fa-xl"></i>
+            <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
         </button>            
     </div>
 `;

@@ -129,7 +129,7 @@ export const material = [
                 proyectoId: 1,
                 ruta: 'https://gitlab.com/mtimoxenko/integrador',
                 anclaTexto: 'BookingApp',
-                img: './Imagenes/capturas/Captura-CarRental2.jpeg',
+                img: './Imagenes/img/gitlab.webp',
                 descripcion: 'BookingApp, 8 integrantes. Rol Frontend con React.',
                 personal: false
             }
