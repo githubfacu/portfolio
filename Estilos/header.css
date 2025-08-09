@@ -110,9 +110,25 @@ header{
     transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
 }
 
-.fa-circle-half-stroke, .fa-moon{
+.fa-sun, .fa-moon{
     /* scale: 1.1; */
     opacity: .95;
+}
+
+.icon-transition i {
+    opacity: 0;
+    animation: iconFadeIn 0.5s forwards;
+}
+
+@keyframes iconFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .desktop-toggle:hover{

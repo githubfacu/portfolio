@@ -47,7 +47,6 @@ const htmlContent = `
             </ul>
         </nav>
         <button class="desktop-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
-            <i class="fa-solid fa-moon fa-lg"></i>
         </button>            
     </div>
 `;
@@ -62,6 +61,16 @@ const $openMenu = document.querySelector('.open-menu');
 const $mobileMenuContent = document.querySelector('.mobile-menu-content');
 const $navItems = document.querySelectorAll('.desktop-nav a')
 
+function setToggleIcon() {
+    const isDark = $body.classList.contains('dark');
+    $toggle.forEach(btn => {
+        btn.classList.add('icon-transition');
+        btn.innerHTML = isDark 
+            ? '<i class="fa-solid fa-sun fa-lg"></i>' 
+            : '<i class="fa-solid fa-moon fa-lg"></i>';
+    });
+}
+
 const theme = localStorage.getItem('tema');
 if (theme === 'light') {
     $body.classList.remove('dark');
@@ -73,6 +82,8 @@ if (theme === 'light') {
     $body.classList.add('dark');
 }
 
+setToggleIcon();
+
 function toggleTema() {
     if ($body.classList.contains('dark')) {
         $body.classList.replace('dark', 'light');
@@ -81,6 +92,7 @@ function toggleTema() {
         $body.classList.replace('light', 'dark');
         localStorage.setItem('tema', 'dark');
     }
+    setToggleIcon();
 }
 
 $toggle.forEach(btn => {
