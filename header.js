@@ -57,13 +57,14 @@ if (pagesMobileNav) {
 
 const $body = document.body;
 const $toggle = document.querySelectorAll('#toggle');
+const $desktopToggle = document.querySelectorAll('.desktop-nav #toggle')
 const $openMenu = document.querySelector('.open-menu');
 const $mobileMenuContent = document.querySelector('.mobile-menu-content');
 const $navItems = document.querySelectorAll('.desktop-nav a')
 
 function setToggleIcon() {
     const isDark = $body.classList.contains('dark');
-    $toggle.forEach(btn => {
+    $desktopToggle.forEach(btn => {
         btn.classList.add('icon-transition');
         btn.innerHTML = isDark 
             ? '<i class="fa-solid fa-sun fa-lg"></i>' 
