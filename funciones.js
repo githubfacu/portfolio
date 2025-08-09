@@ -60,7 +60,7 @@ function agregarMaterial(){
 }
 
 function agregarProyectos(){
-    const $linksDiv = document.querySelectorAll('.linksDiv') 
+    const $linksDiv = document.querySelectorAll('#lineaDeTiempo .linksDiv') 
 
     $linksDiv.forEach(linksDivHTML=>{
         material.forEach(materia => {

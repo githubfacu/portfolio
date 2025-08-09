@@ -1,6 +1,6 @@
 export const material = [
     {
-        id: 9,
+        id: 8,
         titulo: '<span>Élite Frontend Developer | <h4>Level Up Tech Academy</h4></span>',
         fecha: 'Feb 2025',
         enCurso: false,
@@ -35,33 +35,6 @@ export const material = [
         ]
     },
     {
-        id: 8,
-        titulo: '<span>Sistemas <h4>(Pasantía)</h4> | <h4>inkuA</h4></span>',
-        fecha: 'Jun 2024',
-        enCurso: false,
-        proyectos: [
-            {
-                proyectoId: 2,
-                ruta: 'https://www.caballosenlibertad.org/',
-                anclaTexto: 'CaballosEnLibertad',
-                img: './Imagenes/img/logoBigCaballos.png',
-                descripcion: 'Organización sin fines de lucro. Rescate de equinos.',
-                personal: false,
-                typescript: false
-            },
-            {
-                proyectoId: 1,
-                ruta: 'https://github.com/inkua/conversor-v2',
-                anclaTexto: 'Conversor-v2',
-                img: './Imagenes/capturas/github-white.jpg',
-                descripcion: 'Convierte rápida y fácilmente entre diferentes zonas horarias.',
-                personal: false,
-                typescript: false
-            },
-
-        ]
-    },
-    {
         id: 7,
         titulo: '<span>React Avanzado | <h4>Rolling Code</h4></span>',
         fecha: 'May 2024',
@@ -76,15 +49,6 @@ export const material = [
                 personal: false,
                 typescript: false
             },
-            // {
-            //     proyectoId: 1,
-            //     ruta: 'https://tp-redux.vercel.app/',
-            //     anclaTexto: 'Administración',
-            //     img: './Imagenes/capturas/Captura-tp-redux.jpeg',
-            //     descripcion: 'Práctica Redux',
-            //     personal: false,
-            //     typescript: false
-            // },
         ]
     },
     {
@@ -148,14 +112,6 @@ export const material = [
                 descripcion: 'Trabajo práctico en dupla. React.',
                 personal: false
             },
-            // {
-            //     proyectoId: 1,
-            //     ruta: 'https://githubfacu.github.io/f1_temporada_23/',
-            //     anclaTexto: 'F1-2023',
-            //     img: './Imagenes/capturas/Captura_f1.jpeg',
-            //     descripcion: 'Pruebas en ES6, API-fetch',
-            //     personal: true
-            // },
         ]
     },
     {
