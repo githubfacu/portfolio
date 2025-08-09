@@ -65,7 +65,6 @@ const $navItems = document.querySelectorAll('.desktop-nav a')
 function setToggleIcon() {
     const isDark = $body.classList.contains('dark');
     $desktopToggle.forEach(btn => {
-        btn.classList.add('icon-transition');
         btn.innerHTML = isDark 
             ? '<i class="fa-solid fa-sun fa-lg"></i>' 
             : '<i class="fa-solid fa-moon fa-lg"></i>';
@@ -86,6 +85,10 @@ if (theme === 'light') {
 setToggleIcon();
 
 function toggleTema() {
+    $desktopToggle.forEach(btn => {
+        btn.classList.add('icon-transition');
+    });
+
     if ($body.classList.contains('dark')) {
         $body.classList.replace('dark', 'light');
         localStorage.setItem('tema', 'light');
