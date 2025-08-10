@@ -105,14 +105,17 @@ header{
     height: 36px;
     background-color: rgba(128, 128, 128, 0.1);
     border: 1px solid rgba(128, 128, 128, 0.15);
-    color: var(--textColor);
     user-select: none;
     transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
-    opacity: .9;
 }
 
-.fa-sun, .fa-moon{
-    scale: 1.1;
+.fa-moon{
+    /* scale: 1.1; */
+    color: rgb(9, 9, 9, .9);
+}
+
+.fa-sun{
+    color:var(--iconLight);
 }
 
 .icon-transition i {
@@ -133,7 +136,7 @@ header{
 
 .desktop-toggle:hover{
     background-color: rgba(128, 128, 128, 0.2);
-    box-shadow: 0px 0px 2px 2px var(--shadowColor);
+    box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1);
 }
 
 @media (max-width: 1024px){

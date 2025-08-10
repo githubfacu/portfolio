@@ -7,6 +7,7 @@
   --textColor: #F7F7F7;
   --Fondo: #000000;
   --lightBlue: #1572B6;
+  --iconLight: rgba(244, 241, 255, .8);
   --green: #339933;
   --rose: #EFD0CA;
   --yellow: #F7DF1E;
@@ -527,9 +528,14 @@ footer{
     justify-content: center;
     background-color: rgba(128, 128, 128, 0.1);
     border: 1px solid rgba(128, 128, 128, 0.15);
-    color: var(--textColor);
+    color: rgb(9, 9, 9, .9);
     position: relative;
     transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
+}
+
+body.dark .iconos a,
+body.dark .iconos span {
+    color: var(--iconLight);
 }
 
 .iconos i{
@@ -540,7 +546,8 @@ footer{
 
 .iconos a:hover, .iconos span:hover{
     background-color: rgba(128, 128, 128, 0.25);
-    box-shadow: 0px 0px 3px 3px var(--shadowColor);
+    box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1);
+
 }
 
 .iconos h4{
