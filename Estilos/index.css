@@ -7,7 +7,7 @@
   --textColor: #F7F7F7;
   --Fondo: #000000;
   --lightBlue: #1572B6;
-  --iconLight: rgba(244, 241, 255, .8);
+  --iconLight: rgba(244, 241, 255, .85);
   --green: #339933;
   --rose: #EFD0CA;
   --yellow: #F7DF1E;
@@ -73,6 +73,7 @@ body.light {
   --textColorC: var(--lightBlue);
   --hover-blue: var(--hover-blue);
   --blueBadget: #0D3B5E;
+  --iconLight: rgba(9, 9, 9, .9);
   --badgeGreenColor: #1E4D1E;
   --badgeYellowColor: #6B5E00;
   --badgeBlueColor: #0D3B5E;
@@ -98,7 +99,6 @@ h1, h2, h3, h4, h5, h6, p{
 
 h1{
     font-family: "Cormorant Garamond";
-    margin-bottom: 1rem;
     font-size: 7.5rem;
     line-height: 8.8rem;
 }
@@ -159,7 +159,6 @@ main{
     font-size: 2.3rem;
     font-weight: 600;
     text-wrap: pretty;
-    margin-top: -1rem;
 }
 
 .divMarcaPersonal mark{
@@ -172,19 +171,10 @@ main{
 .divMarcaPersonal p{
     text-wrap: pretty;
     font-size: 1rem;
-    margin-top: 1.3rem;
-    opacity: .8;
+    margin-top: 1rem;
     text-align: center;
-}
-
-.divPresentacion picture{
-    margin: 0;
-    width: 50%;
-}
-
-.divPresentacion img{
-    clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
-    position: relative;
+    color: var(--textColor);
+    opacity: .9;
 }
 
 .mobile{
@@ -446,11 +436,12 @@ main{
 }
 
 .formacionAcademica a{
-    color: var(--aNotVisited);
+    color: var(--iconLight);
 }
 
 .formacionAcademica  a:visited{
-    color: var(--aVisited);
+    /* color: var(--iconLight); */
+
 }
 
 .formacionAcademica small{
@@ -467,9 +458,8 @@ main{
     gap: 2px;
     font-size: .8rem;
     font-weight: 600;
-    color: var(--textColor);
+    color: var(--iconLight);
     margin-left: 8px;
-    opacity: .6;
 }
 
 .total-months{
@@ -482,9 +472,9 @@ main{
     gap: 2px;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--textColor);
-    opacity: .9;
+    color: var(--iconLight);
 }
+
 
 /************************ Footer ****************************/
 
@@ -528,14 +518,9 @@ footer{
     justify-content: center;
     background-color: rgba(128, 128, 128, 0.1);
     border: 1px solid rgba(128, 128, 128, 0.15);
-    color: rgb(9, 9, 9, .9);
+    color: var(--iconLight);
     position: relative;
     transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
-}
-
-body.dark .iconos a,
-body.dark .iconos span {
-    color: var(--iconLight);
 }
 
 .iconos i{

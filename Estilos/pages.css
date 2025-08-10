@@ -18,15 +18,16 @@ main{
 }
 
 .presentacionesTituloDiv h1{
-    margin-bottom: 1rem;
     font-size: 7.5rem;
     line-height: 8.8rem;
 }
 
 .presentacionesTituloDiv p{
+    margin-top: .75rem;
     text-wrap: pretty;
     font-size: 1rem;
-    opacity: .8;
+    color: var(--textColor);
+    opacity: .9;
 }
 
 @media (max-width: 1024px) {
