@@ -9,7 +9,7 @@ const htmlContent = `
         <div class="mobile-menu-content">
             <div class="fadetop"></div>
             <div class="onScroll">
-                <ul>
+                <ul class="navUl">
                     <li>
                         <a href="../index.html" aria-label="Ir a la página de inicio">Inicio</a>
                     </li>
@@ -25,7 +25,24 @@ const htmlContent = `
                 </ul>
                 <button class="mobile-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
                     Cambiar tema
-                </button>                    
+                </button>
+                <ul class="social-iconos">
+                    <li>
+                        <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin" aria-label="Ir al perfil de LinkedIn de Facu Elorz en una nueva pestaña" title="ir a in/facundo-elorz">
+                            <i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/githubfacu" target="_blank" id="fa-github" aria-label="Ir al perfil de GitHub de Facu Elorz en una nueva pestaña" title="ir a github.com/githubfacu">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <span tabindex="0" title="elorzfacundo@gmail.com">
+                            <i class="fa-regular fa-envelope fa-2xl" aria-label="Copiar en portapapeles la dirección de correo electrónico de Facundo Elorz" aria-hidden="true"></i>
+                        </span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

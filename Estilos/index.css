@@ -54,6 +54,7 @@ body.dark {
   --gradient: linear-gradient(135deg, #090909, #0c0f1a, #090909);
   --gradientB: linear-gradient(135deg, #090909, #0c0f1a, #090909);
   --borderOpacity: rgba(255, 255, 255, 0.4);
+  --borderOpacityHard: rgba(255, 255, 255, 0.6);
   --aVisited: rgba(167, 139, 250, 1);
   --aNotVisited: #7DD3FC;
 
@@ -83,6 +84,7 @@ body.light {
   --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
   --gradientB: linear-gradient(135deg, #ececec, #e0e0e0, #ececec);
   --borderOpacity: rgba(0, 0, 0, 0.4);
+  --borderOpacityHard: rgba(0, 0, 0, 0.6);
   --aVisited: #3c0b6d;
   --aNotVisited: #0D3B5E;
 
@@ -490,7 +492,7 @@ footer{
     border-top: 1px solid var(--borderOpacity);
 }
 
-.iconos{
+.social-iconos{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -500,15 +502,14 @@ footer{
     list-style-type: none;
 }
 
-.iconos li{
+.social-iconos li{
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-
 }
 
-.iconos a, .iconos span{
+.social-iconos a, .social-iconos span{
     border-radius: 50%;
     width: 36px;
     min-width: 36px;
@@ -523,19 +524,18 @@ footer{
     transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
 }
 
-.iconos i{
+.social-iconos i{
     position: absolute;
     margin: auto;
     opacity: .9;
 }
 
-.iconos a:hover, .iconos span:hover{
+.social-iconos a:hover, .social-iconos span:hover{
     background-color: rgba(128, 128, 128, 0.25);
     box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1);
-
 }
 
-.iconos h4{
+.social-iconos h4{
     background: var(--bgColor);
     color: var(--textColor);
     position: absolute;
@@ -551,6 +551,10 @@ footer{
 /************************ Queries **************************/
 
 @media (max-width: 1024px) {
+    .desktop{
+        display: none;
+    }
+
     h1{
         font-size: 5.5rem;
         line-height: 7rem;
@@ -598,6 +602,11 @@ footer{
       width: 20px;
       height: 20px;
     }
+
+    .formacionAcademica{
+        margin-bottom: 3rem;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -680,7 +689,6 @@ footer{
         padding: 2rem;
         max-width: 90%;
         margin-top: 0;
-        margin-bottom: 90px;
     }
 
     .formacionAcademica ul{
@@ -694,22 +702,6 @@ footer{
 
     .formacionAcademica ul li small{
         font-size: .9rem;
-    }
-    
-    footer{
-        height: 70px;
-        justify-content: center;
-        padding: 0 1rem;
-    }
-
-    .iconos{
-        justify-content: center;
-        padding: 0;
-    }
-
-    .iconos h4{
-        top: -50px;
-        right: auto;
     }
 
     .desktop{

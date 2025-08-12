@@ -1,5 +1,5 @@
-const $divIcons = document.querySelector('.iconos')
-const $mailIcon = document.querySelector('.iconos span')
+const $divIcons = document.querySelector('.social-iconos')
+const $mailIcon = document.querySelector('.social-iconos span')
 
 const miMail = document.createElement('h5')
 const copiedMessage = document.createElement('h4')
