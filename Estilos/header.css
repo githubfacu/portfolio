@@ -281,11 +281,23 @@ header{
     }
 
     .social-iconos{
-        width: 100%;
+        display: flex;
+        align-items: center;
         justify-content: flex-start;
+        box-sizing: border-box;
+        position: relative;
+        list-style-type: none;
+        width: 100%;
         gap: 4rem;
         margin: 2rem;
         padding-left: 1rem;
+    }
+
+    .social-iconos li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
     }
 
     .social-iconos a, .social-iconos span{
@@ -296,27 +308,30 @@ header{
         border-radius: 0;
         padding-bottom: 8px;
         border-bottom: 2px solid var(--iconLight);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--iconLight);
+        position: relative;
+        transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
     }
 
     .social-iconos i{
+        position: absolute;
+        margin: auto;
+        opacity: .9;
         scale: 1.3;
-        /* text-decoration: underline;
-        text-underline-offset: 10px;
-        text-decoration-thickness: 2px;
-        text-decoration-color: rgba(167, 139, 250, 1); */
     }
 
-    .social-iconos a:hover, .social-iconos span:hover{
-        background-color: transparent;
-        box-shadow: none;
+    .social-iconos h4{
+        font-size: 16px;
     }
-
 }
 
 @media (max-width: 768px) {
 
     .open-menu {
-        scale: .8;
+        scale: .85;
     }
 
     .mobile-menu-content .onScroll {
@@ -346,5 +361,9 @@ header{
 
     .social-iconos i{
         scale: 1;
+    }
+
+    .social-iconos h4{
+        font-size: 12px;
     }
 }
