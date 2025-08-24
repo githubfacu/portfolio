@@ -109,11 +109,11 @@ header{
     transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
 }
 
-.fa-sun, .fa-moon{
+.lucide-sun, .fa-moon{
     color:var(--iconLight);
 }
 
-.icon-transition i {
+.icon-transition i, .icon-transition svg {
     opacity: 0;
     animation: iconFadeIn 0.5s forwards;
 }
