@@ -22,10 +22,10 @@ main{
     line-height: 8.8rem;
 }
 
-.presentacionesTituloDiv p{
+.sobre-mi{
     margin-top: .75rem;
     text-wrap: pretty;
-    font-size: 1rem;
+    font-size: .95rem;
     color: var(--textColor);
     opacity: .9;
 }
@@ -50,7 +50,7 @@ main{
         font-size: 3rem;
         line-height: 3.75rem;
     }
-    .presentacionesTituloDiv p{
+    .sobre-mi{
         font-size: .9rem;
     }
 }

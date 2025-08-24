@@ -55,7 +55,7 @@ header{
     color: var(--textColor);
     font-size: 1.4rem;
     font-weight: 600;
-    padding: .55rem 1rem;
+    padding: .5rem 1rem;
     position: relative;
     z-index: 1;
     text-wrap: nowrap;

@@ -11,7 +11,7 @@
   --green: #339933;
   --rose: #EFD0CA;
   --yellow: #F7DF1E;
-  --yellow-b: #ffdd1c;
+  --yellow-b: #FFD700;
   --blue: #066781;
   --blueBadget: #F7F7F7;
   --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
@@ -130,8 +130,13 @@ main{
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
+    margin: 0 auto;
     max-width: 1280px;
     gap: 180px;
+}
+
+.max-content:last-child{
+    margin-bottom: 180px;
 }
 
 .divPresentacion{
@@ -170,10 +175,10 @@ main{
     border-radius: 4px;
 }
 
-.divMarcaPersonal p{
+.sobre-mi{
     text-wrap: pretty;
-    font-size: 1rem;
-    margin-top: 1rem;
+    font-size: .95rem;
+    margin-top: 1.4rem;
     text-align: center;
     color: var(--textColor);
     opacity: .9;
@@ -359,11 +364,43 @@ main{
     border: 1px solid #f5f5f5;
 }
 
-.linksDivID{
-    margin-left: auto;
+.cardLinksDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 7px;
+    flex-wrap: wrap;
+    min-height: 1.6rem;
+    font-weight: 500;
+
 }
 
-.linksDivID:hover span {
+.cardLinksDiv a{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 5px;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: .375rem;
+    position: relative;
+    color: var(--badgeBlueColor);
+}
+
+.cardLinksDiv h4{
+    font-weight: 400;
+
+}
+
+.cardLinksDiv span{
+    transition: transform .2s ease;
+}
+
+.cardLinksDiv a:hover span {
     transform: translateX(4px);
 }
 
@@ -407,7 +444,6 @@ main{
     border-radius: 6px;
     box-shadow: 0px 0px 10px var(--shadowColor);
     /* border: 1px solid rgba(128, 128, 128, 0.25); */
-    margin-bottom: 180px;
 }
 
 #titulo-formacion-academica{
@@ -477,74 +513,33 @@ main{
 }
 
 
-/************************ Footer ****************************/
+/************************ Habilidades ****************************/
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 1rem;
-    padding: 0 1.5rem;
-    box-sizing: border-box;
+.habilidades{
     width: 100%;
-    height: 85px;
-    border-top: 1px solid var(--borderOpacity);
-}
-
-.social-iconos-on-desktop{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    gap: 30px;
-    position: relative;
+    gap: 8px;
+}
+
+.habilidades ul{
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
 }
 
-.social-iconos-on-desktop li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-.social-iconos-on-desktop a, .social-iconos-on-desktop span{
-    border-radius: 50%;
-    width: 36px;
-    min-width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(128, 128, 128, 0.1);
+.habilidades ul li{
+    background: rgba(128, 128, 128, 0.1);
     border: 1px solid rgba(128, 128, 128, 0.15);
-    color: var(--iconLight);
-    position: relative;
-    transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
-}
-
-.social-iconos-on-desktop i{
-    position: absolute;
-    margin: auto;
-    opacity: .9;
-}
-
-.social-iconos-on-desktop a:hover, .social-iconos-on-desktop span:hover{
-    background-color: rgba(128, 128, 128, 0.25);
-    box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1);
-}
-
-.social-iconos-on-desktop h4{
-    background: var(--bgColor);
-    color: var(--textColor);
-    position: absolute;
-    top: -40px;
-    padding: 7px;
     border-radius: 4px;
-    transition: opacity .3s ease;
-    font-size: 13px;
-    font-weight: 400;
-    text-wrap: nowrap;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    color: var(--textColor);
 }
 
 /************************ Queries **************************/
@@ -582,7 +577,7 @@ footer{
         line-height: 3.4rem;
     }
 
-    .divMarcaPersonal p{
+    .sobre-mi{
         text-align: start;
     }
 
@@ -602,7 +597,7 @@ footer{
       height: 20px;
     }
 
-    .formacionAcademica{
+    .max-content:last-child{
         margin-bottom: 3rem;
     }
 
@@ -639,7 +634,7 @@ footer{
         padding: 1rem;
     }
     
-    .divMarcaPersonal p{
+    .sobre-mi{
         margin-top: 1rem;
         line-height: 1.3rem;
         font-size: .9rem;
@@ -667,10 +662,6 @@ footer{
 
     .tech-tools{
         justify-content: flex-start;
-    }
-
-    .linksDivID{
-        margin-left: 0;
     }
 
     .cronologia{

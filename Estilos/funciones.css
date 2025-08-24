@@ -105,13 +105,14 @@
     font-weight: 500;
     padding: 0.2rem 0.6rem;
     border-radius: .375rem;
+    /* text-decoration: none; */
     /* background-color: #f5f5f5;
     color: var(--textColor);
     border: 1px inset rgba(0, 0, 0, 0.2); */
 }
 
 .badge-text {
-    color: var(--iconLight);
+    color: var(--textColor);
     background-color: rgba(126, 126, 126, 0.1);
     border: 2px inset var(--borderOpacity);
 }
@@ -130,8 +131,8 @@
 
 .badge-blue {
     color: var(--badgeBlueColor);
-    background-color: rgba(21, 114, 182, 0.1);
-    border: 2px inset var(--badgeBorderBlue);
+    background: rgba(21, 114, 182, 0.1);
+    border: 1px inset var(--badgeBorderBlue);
 }
 
 .badge-red {
@@ -193,6 +194,7 @@
     box-sizing: border-box;
     align-content: flex-end;
 }
+
 .badge-bw a{
     background-color: transparent;
     color: var(--badgeBlueColor);

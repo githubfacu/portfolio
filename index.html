@@ -18,6 +18,7 @@
     <meta name="twitter:image" content="https://githubfacu.github.io/portfolio/Imagenes/img/code.svg">
     <link rel="stylesheet" href="./Estilos/index.css">
     <link rel="stylesheet" href="./Estilos/header.css">
+    <link rel="stylesheet" href="./Estilos/footer.css">
     <link rel="stylesheet" href="./Estilos/funciones.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,7 +104,9 @@
             <div class="divMarcaPersonal">
                 <h1 id="titulo-presentacion">Facundo Elorz</h1>
                 <span>Desarrollador Frontend | <mark>HTML CSS TypeScript React</mark></span>
-                <p>Incorporo IA como proceso creativo y técnico, me ayuda a probar ideas más rápido, resolver bugs y escribir mejor documentación.</p>
+                <p class="sobre-mi">
+                    Incorporo IA como proceso creativo y técnico, me ayuda a probar ideas más rápido, resolver bugs y escribir mejor documentación; soy autodidacta y estoy profundizando en temas de Frontend y arquitectura.
+                </p>
             </div>
         </div>
 
@@ -169,7 +172,7 @@
                                     <img src="./Imagenes/tech-logos/GitLab.svg" title="GitLab" alt="">
                                 </div>
                                 <div class="linksDiv badge-bw">
-                                    <a class="linksDivID" href="http://3.239.119.108:3000/" target="_blank" aria-label="Ir a la página Mi Tratamiento en una nueva pestaña" title="Ir a la página Mi Tratamiento en una nueva pestaña">
+                                    <a class="cardLinksDivID" href="http://3.239.119.108:3000/" target="_blank" aria-label="Ir a la página Mi Tratamiento en una nueva pestaña" title="Ir a la página Mi Tratamiento en una nueva pestaña">
                                         <h4>Ir al sitio</h4>
                                         <span>
                                             <i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i>
@@ -196,7 +199,7 @@
                                 alt="Vista miniatura de la pagina inicio de Budget Generator">
                             </picture>
 
-                            <div class="cardProyectoTextContent">
+                            <div class="cardProyectoTextContent hover-none">
                                 <p>Genera un Presupuesto de página simple y descarga el archivo en formato pdf.</p>
                                 <div class="tech-tools">
                                     <img src="./Imagenes/tech-logos/TypeScript.svg" title="TypeScript" alt="">
@@ -207,8 +210,8 @@
                                         <img src="./Imagenes/tech-logos/GitHub.svg" title="GitHub" alt="" >
                                     </div>
                                 </div>
-                                <div class="linksDiv badge-bw">
-                                    <a class="linksDivID" href="https://budget-generator-ten.vercel.app/" target="_blank" aria-label="Ir a la página Budget Generator en una nueva pestaña" title="Ir a la página Budget Generator en una nueva pestaña">
+                                <div class="cardLinksDiv">
+                                    <a class="cardLinksDivID" href="https://budget-generator-ten.vercel.app/" target="_blank" aria-label="Ir a la página Budget Generator en una nueva pestaña" title="Ir a la página Budget Generator en una nueva pestaña">
                                         <h4>Ir al sitio</h4>
                                         <span>
                                             <i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i>
@@ -350,8 +353,29 @@
                     + 33 MESES
                 </div>
             </div>
-        </div>
 
+            <div class="habilidades" aria-labelledby="titulo-habilidades">
+                <h2 id="titulo-habilidades">Habilidades</h2>
+                <ul role="list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>TypeScript</li>
+                    <li>React.js</li>
+                    <li>Next.js</li>
+                    <li>Git y GitHub</li>
+                    <li>GitLab</li>
+                    <li>Tailwind CSS</li>
+                    <li>Storybook</li>
+                    <li>Redux Toolkit</li>
+                    <li>Zustand</li>
+                    <li>Vitest</li>
+                    <li>Accesibilidad web</li>
+                    <li>Figma (básico)</li>
+                    <li>Inglés (intermedio)</li>
+                </ul>
+            </div>
+        </div>
     </main>
 
     <footer role="contentinfo" class="desktop">
