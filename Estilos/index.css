@@ -117,6 +117,11 @@ h3{
     font-weight: 400;
 }
 
+p{
+    font-size: .95rem;
+    line-height: 1.25rem;
+}
+
 /************************* MAIN *************************/
 
 main{
@@ -176,8 +181,8 @@ main{
 }
 
 .sobre-mi{
+    max-width: 1280px;
     text-wrap: pretty;
-    font-size: .95rem;
     margin-top: 1.4rem;
     text-align: center;
     color: var(--textColor);
@@ -190,12 +195,8 @@ main{
 
 /************************* EXPERIENCIA *************************/
 
-.experiencia {
-
-}
-
 .cardExperiencia {
-    background: var(--white-dark);
+    background-color: var(--bgColor);
     border-radius: 6px;
     padding: 1.5rem;
     display: flex;
@@ -333,7 +334,6 @@ main{
 
 .cardProyectoTextContent p{
     text-wrap: pretty;
-    font-size: 1rem;
     padding-bottom: .5rem;
     border-bottom: 1px solid var(--textColor);
 }
@@ -626,6 +626,11 @@ main{
         font-size: 1.1rem;
     }
 
+    p{
+        font-size: .9rem;
+        line-height: 1.25rem;
+    }
+
     .divPresentacion{
         min-height: 0;
     }
@@ -636,8 +641,6 @@ main{
     
     .sobre-mi{
         margin-top: 1rem;
-        line-height: 1.3rem;
-        font-size: .9rem;
     }
 
     .experiencia{
@@ -654,10 +657,6 @@ main{
 
     .proyectoPubliContainer{
         grid-template-columns: 1fr;
-    }
-
-    .cardProyectoTextContent p{
-        font-size: 14px;
     }
 
     .tech-tools{
@@ -692,6 +691,10 @@ main{
 
     .formacionAcademica ul li small{
         font-size: .9rem;
+    }
+
+    .habilidades{
+        padding: 1rem;
     }
 
     .desktop{
