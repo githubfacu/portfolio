@@ -469,10 +469,6 @@ main{
     font-size: 1.1rem;
 }
 
-.formacionAcademica ul li strong{
-    font-weight: 600;
-}
-
 .formacionAcademica a{
     color: var(--iconLight);
 }
