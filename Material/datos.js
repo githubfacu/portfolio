@@ -106,7 +106,7 @@ export const material = [
         proyectos: [
             {
                 proyectoId: 2,
-                ruta: 'https://psycho-pass.vercel.app',
+                ruta: 'https://fe3-final-orpin.vercel.app/',
                 anclaTexto: 'TrabajoPráctico',
                 img: './Imagenes/capturas/Captura_psycho-pass.vercel.app.jpeg',
                 descripcion: 'Trabajo práctico en dupla. React.',

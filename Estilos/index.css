@@ -593,6 +593,10 @@ main{
       height: 20px;
     }
 
+    .habilidades ul{
+        justify-content: center;
+    }
+
     .max-content:last-child{
         margin-bottom: 3rem;
     }
