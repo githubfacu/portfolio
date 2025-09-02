@@ -65,11 +65,17 @@
 
 .badge {
   font-size: 0.8rem;
-  background-color: #222;
+  background-color: #262c36;
   color: #fff;
   padding: 0.3rem 0.6rem;
   border-radius: 9999px;
   font-family: 'Poppins', sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body.light .badge {
+  background-color: #e0e0e0;
+  color: #333;
 }
 
 @media (min-width: 768px) {
