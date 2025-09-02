@@ -109,7 +109,7 @@ header{
     transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
 }
 
-.lucide-sun, .lucide-moon{
+.lucide-sun, .lucide-moon, .fa-moon{
     color:var(--iconLight);
 }
 

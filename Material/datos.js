@@ -6,6 +6,15 @@ export const material = [
         enCurso: false,
         proyectos: [
             {
+                proyectoId: 4,
+                ruta: 'https://www.npmjs.com/package/accessible-search-select',
+                anclaTexto: 'accessible-search-select',
+                img: './Imagenes/capturas/npm-logo.jpg',
+                descripcion: 'Componente de selección accesible',
+                personal: true,
+                typescript: true
+            },
+            {
                 proyectoId: 3,
                 ruta: 'https://storybook-beige-eight.vercel.app',
                 anclaTexto: 'storybook-demo',
@@ -14,24 +23,24 @@ export const material = [
                 personal: false,
                 typescript: true
             },
-            {
-                proyectoId: 2,
-                ruta: 'https://www.npmjs.com/package/react-hooks-lib-facuekl',
-                anclaTexto: 'hooks-lib',
-                img: './Imagenes/capturas/npm-logo.jpg',
-                descripcion: 'Libreria de hooks. React',
-                personal: false,
-                typescript: true
-            },
-            {
-                proyectoId: 1,
-                ruta: 'https://www.npmjs.com/package/lvlup-utils-lib',
-                anclaTexto: 'utils-lib',
-                img: './Imagenes/capturas/npm-logo.jpg',
-                descripcion: 'Libreria de utilidades.',
-                personal: false,
-                typescript: true
-            },
+            // {
+            //     proyectoId: 2,
+            //     ruta: 'https://www.npmjs.com/package/react-hooks-lib-facuekl',
+            //     anclaTexto: 'hooks-lib',
+            //     img: './Imagenes/capturas/npm-logo.jpg',
+            //     descripcion: 'Libreria de hooks. React',
+            //     personal: false,
+            //     typescript: true
+            // },
+            // {
+            //     proyectoId: 1,
+            //     ruta: 'https://www.npmjs.com/package/lvlup-utils-lib',
+            //     anclaTexto: 'utils-lib',
+            //     img: './Imagenes/capturas/npm-logo.jpg',
+            //     descripcion: 'Libreria de utilidades.',
+            //     personal: false,
+            //     typescript: true
+            // },
         ]
     },
     {
