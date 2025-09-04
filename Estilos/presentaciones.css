@@ -4,12 +4,11 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 40px;
 }
 
-video{
+.videoIframe, video{
     width: 100%;
-    max-width: 1280px;
+    max-width: 977px;
     margin: auto;
     border-radius: 6px;
 }

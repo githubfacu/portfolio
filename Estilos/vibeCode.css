@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 40px;
 }
 
 .vibeCodeItem {
@@ -24,8 +23,10 @@
 .vibeCodeItem img {
   border-radius: 15px;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  object-position: top;
+  aspect-ratio: 16 / 9;
 }
 
 .vibeCodeInfo {
@@ -92,11 +93,12 @@ body.light .badge {
   .vibeCodeItem {
     flex-direction: row;
     align-items: flex-start;
-    max-width: 1280px;
+    max-width: 977px;
   }
 
   .vibeCodeItem a{
     width: 70%;
+    height: 100%;
   }
 
   .vibeCodeInfo {

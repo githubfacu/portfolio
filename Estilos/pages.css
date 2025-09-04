@@ -1,9 +1,14 @@
 main{
-    align-items: flex-start;
-    max-width: 1280px;
-    gap: 40px;
-    margin-bottom: 24px;
     padding: 1.5rem;
+}
+
+.max-content-pages{
+    max-width: 1280px;
+    gap: 60px;
+}
+
+.max-content-pages:last-child{
+    margin-bottom: 120px;
 }
 
 .presentacionesTituloDiv{
@@ -31,6 +36,9 @@ main{
 }
 
 @media (max-width: 1024px) {
+    .max-content-pages:last-child{
+        margin-bottom: 3rem;
+    }
     .presentacionesTituloDiv{
         min-height: 30vh;
     }
