@@ -1,0 +1,24 @@
+
+#scrollToTopBtn{
+    position: fixed;
+    bottom: 32px;
+    right: 26px;
+    z-index: 1000;
+    background-color: rgba(128, 128, 128, 0.1);
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    color: var(--iconLight);
+    border-radius: 50%;
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: opacity 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, bottom 0.25s ease;
+}
+
+#scrollToTopBtn:hover{
+    background-color: rgba(128, 128, 128, 0.25);
+    box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1);
+}
