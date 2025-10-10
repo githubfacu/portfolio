@@ -14,7 +14,7 @@
     gap: 1rem;
     padding: 1rem;
     align-items: center;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color .07s ease, color .07s ease;
 }
 
 .libro img {

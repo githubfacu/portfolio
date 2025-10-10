@@ -17,7 +17,7 @@
   padding: .5rem;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color .07s ease, color .07s ease;
 }
 
 .vibeCodeItem img {
@@ -71,7 +71,7 @@
   padding: 0.3rem 0.6rem;
   border-radius: 9999px;
   font-family: 'Poppins', sans-serif;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color .07s ease, color .07s ease;
 }
 
 body.light .badge {

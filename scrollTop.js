@@ -25,7 +25,7 @@ function toggleScrollBtn() {
     }, 300);
   }
 
-  if (footerDesktop && isDesktop) {
+  if (footerDesktop) {
     if (scrollPosition >= pageHeight - footerDesktop.offsetHeight) {
       scrollBtn.style.bottom = footerDesktop.offsetHeight + 24 + "px"; 
     } else {
@@ -42,6 +42,6 @@ window.addEventListener("resize", toggleScrollBtn);
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    // behavior: "smooth"
   });
 });

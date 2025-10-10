@@ -30,7 +30,7 @@ main{
 .sobre-mi{
     margin-top: .75rem;
     text-wrap: pretty;
-    font-size: .95rem;
+    font-size: 1rem;
     color: var(--textColor);
     opacity: .9;
 }
@@ -59,6 +59,6 @@ main{
         line-height: 3.75rem;
     }
     .sobre-mi{
-        font-size: .9rem;
+        font-size: .95rem;
     }
 }

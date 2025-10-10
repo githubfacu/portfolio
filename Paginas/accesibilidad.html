@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesibilidad</title>
+  <link rel="stylesheet" href="../Estilos/index.css">
+  <link rel="stylesheet" href="../Estilos/header.css">
+  <link rel="stylesheet" href="../Estilos/pages.css">
+  <link rel="stylesheet" href="../Estilos/accesibilidad.css">
+  <link rel="stylesheet" href="../Estilos/scrollTop.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/661bc9cd16.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  <header>
+    <div class="header-background"></div>
+    <div class="pages-nav"></div>
+  </header>
+
+  <main id="main-content">
+    <div role="region" aria-labelledby="titulo-presentacion" class="presentacionesTituloDiv">
+      <h1 id="titulo-presentacion" class="presentacionesTitulo">Accesibilidad</h1>
+      <p class="sobre-mi">Listado de cursos y certificaciones en accesibilidad web.</p>
+    </div>
+
+    <section aria-labelledby="titulo-cursos" class="accesibilidad-div max-content-pages">
+      <h2 id="titulo-cursos" class="section-title">Cursos completados</h2>
+
+      <ul class="lista-cursos">
+        <li>
+          <article class="curso">
+            <h3 class="curso-titulo" lang="en">Introduction to WAI-ARIA for Beginners</h3>
+            <p class="curso-institucion">Udemy | 2025</p>
+            <a 
+              href="/Imagenes/accesibilidad/introduction-to-WAI-ARIA for-beginners.pdf" 
+              class="certificado-link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Ver certificado del curso Introduction to WAI-ARIA for Beginners (PDF)">
+              <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Ver certificado
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="curso">
+            <h3 class="curso-titulo" lang="en">Practical Accessibility for Web Developers: Form Controls</h3>
+            <p class="curso-institucion">Udemy | 2025</p>
+            <a 
+              href="/Imagenes/accesibilidad/Practical-Accessibility-for-Web-Developers-Form-Controls.pdf" 
+              class="certificado-link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Ver certificado del curso Practical Accessibility for Web Developers: Form Controls (PDF)">
+              <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Ver certificado
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="curso">
+            <h3 class="curso-titulo" lang="en">WCAG 2.1 / 2.2 Simplified With Examples</h3>
+            <p class="curso-institucion">Udemy | 2025</p>
+            <a 
+              href="/Imagenes/accesibilidad/WCAG-2.1-2.2-Simplified-With-Examples.pdf" 
+              class="certificado-link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Ver certificado del curso WCAG 2.1 / 2.2 Simplified With Examples (PDF)">
+              <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Ver certificado
+            </a>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="../header.js"></script>
+  <script src="../scrollTop.js"></script>
+</body>
+</html>

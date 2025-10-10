@@ -39,7 +39,7 @@ footer{
     border: 1px solid rgba(128, 128, 128, 0.15);
     color: var(--iconLight);
     position: relative;
-    transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
+    transition: background-color .07s ease, color .07s ease, box-shadow .07s ease;
 }
 
 .social-iconos-on-desktop i{
@@ -50,7 +50,7 @@ footer{
 
 .social-iconos-on-desktop a:hover, .social-iconos-on-desktop span:hover{
     background-color: rgba(128, 128, 128, 0.25);
-    box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1);
+    /* box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1); */
 }
 
 .social-iconos-on-desktop h4{
@@ -60,8 +60,8 @@ footer{
     top: -40px;
     padding: 7px;
     border-radius: 4px;
-    transition: opacity .3s ease;
-    font-size: 13px;
+    transition: opacity .07s ease;
+    font-size: 1rem;
     font-weight: 400;
     text-wrap: nowrap;
 }

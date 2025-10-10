@@ -17,7 +17,7 @@ header{
     font-family: "Cormorant Garamond";
     backdrop-filter: blur(10px);
     /* background-color: var(--Fondo);*/
-    /* transition: background-color .2s ease, color .2s ease; */
+    /* transition: background-color .07s ease, color .07s ease; */
 }
 
 .header-background{
@@ -29,7 +29,7 @@ header{
     background-color: var(--Fondo);
     opacity: 0.8;
     z-index: -1;
-    transition: background-color .2s ease, color .2s ease;
+    transition: background-color .07s ease, color .07s ease;
 }
 
 .desktop-nav{
@@ -69,7 +69,7 @@ header{
 .desktop-nav a:hover,
 .desktop-nav a:focus {
     color: white;
-    transition: color .2s ease;
+    transition: color .07s ease;
 }
 
 .desktop-nav a::before {
@@ -83,7 +83,7 @@ header{
     border-radius: 6px;
     opacity: 0;
     z-index: -1;
-    transition: opacity 0.2s ease;
+    transition: opacity .07s ease;
 }
 
 .desktop-nav a:hover::before,
@@ -106,16 +106,16 @@ header{
     background-color: rgba(128, 128, 128, 0.1);
     border: 1px solid rgba(128, 128, 128, 0.15);
     user-select: none;
-    transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
+    transition: background-color .07s ease, color .07s ease, box-shadow .07s ease;
 }
 
 .lucide-sun, .lucide-moon, .fa-moon{
     color:var(--iconLight);
 }
 
-.icon-transition i, .icon-transition svg {
+/* .icon-transition i, .icon-transition svg {
     opacity: 0;
-    animation: iconFadeIn 0.5s forwards;
+    animation: iconFadeIn .07s forwards;
 }
 
 @keyframes iconFadeIn {
@@ -127,11 +127,11 @@ header{
         opacity: 1;
         transform: translateX(0);
     }
-}
+} */
 
 .desktop-toggle:hover{
-    background-color: rgba(128, 128, 128, 0.2);
-    box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1);
+    background-color: rgba(128, 128, 128, 0.25);
+    /* box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1); */
 }
 
 @media (max-width: 1024px){    
@@ -150,7 +150,7 @@ header{
         background-color: var(--Fondo);
         opacity: 1;
         z-index: -1;
-        transition: background-color .2s ease, color .2s ease;
+        transition: background-color .07s ease, color .07s ease;
     }
 
     .pages-nav {
@@ -181,7 +181,7 @@ header{
         background: var(--textColor);
         opacity: 0.8;
         border-radius: 2px;
-        transition: all .250s ease;
+        /* transition: all .250s ease; */
         transform-origin: left;
     }
 
@@ -213,7 +213,7 @@ header{
         justify-content: flex-start;
         transform: translateX(-100%);
         pointer-events: none;
-        transition: transform 0.6s ease, background-color 0.2s ease, color 0.2s ease;
+        transition: transform 0.6s ease, background-color 0.07 ease, color 0.07 ease;
         z-index: 10;
         overflow-y: auto;
     }
@@ -313,7 +313,7 @@ header{
         justify-content: center;
         color: var(--iconLight);
         position: relative;
-        transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
+        transition: background-color .07s ease, color .07s ease, box-shadow .07s ease;
     }
 
     .social-iconos i{

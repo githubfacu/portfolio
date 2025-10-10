@@ -37,7 +37,7 @@
     border-radius: 1px;
     top: -15px;
     opacity: 0;
-    transition: opacity .3s ease;
+    transition: opacity .07s ease;
     font-weight: 700;
     font-size: .9rem;
 }
@@ -170,7 +170,7 @@
     overflow: hidden;
     z-index: 2;
     opacity: 0;
-    transition: opacity .2s ease-out;
+    transition: opacity .07s ease-out;
 }
 
 .practicaDiv img{

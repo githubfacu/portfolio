@@ -2,52 +2,59 @@ const pagesMobileNav = document.querySelector('.pages-nav');
 
 const htmlContent = `
     <div class="mobile-menu">
-        <button class="open-menu" tabindex="0" id="openMenu" aria-label="Abrir menú móvil" style="view-transition-name: openMenu;">
+        <button class="open-menu" tabindex="0" id="openMenu" aria-label="Menu" aria-expanded="false" style="view-transition-name: openMenu;">
             <div></div>
             <div></div>
         </button>
         <div class="mobile-menu-content">
             <div class="fadetop"></div>
             <div class="onScroll">
-                <ul class="navUl">
-                    <li>
-                        <a href="../index.html" aria-label="Ir a la página de inicio">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="./vibecode.html" aria-label="Ir a Vibe Code">Vibe Code</a>
-                    </li>
-                    <li>
-                        <a href="./presentaciones.html" aria-label="Ir a Presentaciones">Presentaciones</a>
-                    </li>
-                    <li>
-                        <a href="./libros.html" aria-label="Ir a Libros">Libros</a>
-                    </li>
-                </ul>
+                <nav aria-label="Navegación principal">
+                    <ul class="navUl">
+                        <li>
+                            <a href="../index.html" aria-label="Ir a la página de inicio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./vibecode.html" aria-label="Ir a Vibe Code">Vibe Code</a>
+                        </li>
+                        <li>
+                            <a href="./presentaciones.html" aria-label="Ir a Presentaciones">Presentaciones</a>
+                        </li>
+                        <li>
+                            <a href="./libros.html" aria-label="Ir a Libros">Libros</a>
+                        </li>
+                        <li>
+                            <a href="./accesibilidad.html" aria-label="Ir a Accesibilidad">Accesibilidad</a>
+                        </li>
+                    </ul>
+                </nav>
                 <button class="mobile-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
                     Cambiar tema
                 </button>
-                <ul class="social-iconos">
-                    <li>
-                        <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin" aria-label="Ir al perfil de LinkedIn de Facu Elorz en una nueva pestaña" title="ir a in/facundo-elorz">
-                            <i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/githubfacu" target="_blank" id="fa-github" aria-label="Ir al perfil de GitHub de Facu Elorz en una nueva pestaña" title="ir a github.com/githubfacu">
-                            <i class="fa-brands fa-github fa-2xl"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <span tabindex="0" title="elorzfacundo@gmail.com">
-                            <i class="fa-regular fa-envelope fa-2xl" aria-label="Copiar en portapapeles la dirección de correo electrónico de Facundo Elorz" aria-hidden="true"></i>
-                        </span>
-                    </li>
-                </ul>
+                <nav aria-label="Redes sociales">
+                    <ul class="social-iconos">
+                        <li>
+                            <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin" aria-label="Ir al perfil de LinkedIn de Facu Elorz en una nueva pestaña" title="ir a in/facundo-elorz">
+                                <i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/githubfacu" target="_blank" id="fa-github" aria-label="Ir al perfil de GitHub de Facu Elorz en una nueva pestaña" title="ir a github.com/githubfacu">
+                                <i class="fa-brands fa-github fa-2xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <span tabindex="0" title="elorzfacundo@gmail.com">
+                                <i class="fa-regular fa-envelope fa-2xl" aria-label="Copiar en portapapeles la dirección de correo electrónico de Facundo Elorz" aria-hidden="true"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
     <div class="desktop-nav">
-        <nav>
+        <nav aria-label="Navegación principal">
             <ul>
                 <li>
                     <a href="../index.html" aria-label="Ir a la página de inicio">Inicio</a>
@@ -60,6 +67,9 @@ const htmlContent = `
                 </li>
                 <li>
                     <a href="./libros.html" aria-label="Ir a Libros">Libros</a>
+                </li>
+                <li>
+                    <a href="./accesibilidad.html" aria-label="Ir a Accesibilidad">Accesibilidad</a>
                 </li>
             </ul>
         </nav>
@@ -123,9 +133,12 @@ $toggle.forEach(btn => {
 });
 
 $openMenu.addEventListener('click', () => {
-    const isOpen = $mobileMenuContent.classList.contains('open');
-    $openMenu.classList.toggle('x-icon', !isOpen);
-    $mobileMenuContent.classList.toggle('open');
+  const isOpen = $mobileMenuContent.classList.contains('open');
+
+  $openMenu.classList.toggle('x-icon', !isOpen);
+  $mobileMenuContent.classList.toggle('open');
+
+  $openMenu.setAttribute('aria-expanded', String(!isOpen));
 });
 
 const currentUrl = window.location.href;
