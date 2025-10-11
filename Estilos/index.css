@@ -539,11 +539,14 @@ main{
 }
 
 .formacionAcademica a{
-    color: var(--iconLight);
+    color: var(--textColor);
+    text-underline-offset: 2px;
+    transition: background-color .07s ease, color .07s ease;
 }
 
-.formacionAcademica  a:visited{
-    /* color: var(--iconLight); */
+.formacionAcademica a:hover, .formacionAcademica a:focus{
+    color: var(--bgColor);
+    background-color: var(--textColor);
 }
 
 .formacionAcademica small{
