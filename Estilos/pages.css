@@ -1,3 +1,7 @@
+body{
+  transition: background-color .07s ease, color .07s ease;
+}
+
 main{
     padding: 1.5rem;
 }

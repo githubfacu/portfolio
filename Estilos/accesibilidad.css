@@ -9,12 +9,13 @@
 }
 
 .curso {
-  border: 1px solid rgba(128, 128, 128, 0.15);
+  border: 1px solid var(--borderNeutral);
   border-radius: 6px;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  background-color: #cccccc;
-  color: black;
+  background-color: var(--bgArticle);
+  color: var(--textColor);
+  transition: background-color .07s ease, color .07s ease;
 }
 
 .curso-titulo {

@@ -2,8 +2,17 @@
     navigation: auto;
 }
 
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .07s;
+  animation-timing-function: ease-in-out;
+}
+
 :root {
   --bgColor: #090909;
+  --bgArticle: #151b23;
+  --bgNeutral: rgba(128, 128, 128, 0.1);
+  --borderNeutral: rgba(128, 128, 128, 0.15);
   --textColor: #F7F7F7;
   --Fondo: #000000;
   --lightBlue: #1572B6;
@@ -39,6 +48,7 @@ body{
 
 body.dark {
   --bgColor: #151b23;
+  --bgArticle: var(--bgNeutral);
   --Fondo: #010409;
   --shadowColor: rgba(247, 247, 247, 0.15);
   --textColor: #F7F7F7;
@@ -68,6 +78,7 @@ body.dark {
 
 body.light {
   --bgColor: #F7F7F7;
+  --bgArticle: #cccccc;
   --Fondo: #eef1f5;
   --shadowColor: rgba(0, 0, 0, 0.2);
   --textColor: #090909;
@@ -257,8 +268,8 @@ main{
     border-radius: 6px;
     padding: 1.5rem;
     gap: 1rem;    
-    background: var(--cardGradient);
-    border: 1px solid rgba(128, 128, 128, 0.15);
+    background-color: var(--bgNeutral);
+    border: 1px solid var(--borderNeutral);
     transition: background-color .07s ease, color .07s ease;
 }
 
@@ -349,7 +360,7 @@ main{
 .cardProyectoContent{
     width: 100%;
     height: 100%;
-    color: var(--textColor);    
+    color: var(--textColor);
     display: flex;
     align-items: start;
     justify-content: center;
@@ -494,11 +505,12 @@ main{
     align-self: center;
     box-sizing: border-box;
     width: fit-content;
-    background: var(--cardGradient);
+    background-color: var(--bgNeutral);
     color: var(--textColor);
     padding: 45px 55px;
     border-radius: 6px;
     border: 1px solid rgba(128, 128, 128, 0.15);
+    transition: background-color .07s ease, color .07s ease;
 
     /* border: 1px solid rgba(128, 128, 128, 0.25); */
 }
@@ -587,8 +599,8 @@ main{
 }
 
 .habilidades ul li{
-    background: rgba(128, 128, 128, 0.1);
-    border: 1px solid rgba(128, 128, 128, 0.15);
+    background: var(--bgNeutral);
+    border: var(--borderOpacity);
     border-radius: 4px;
     padding: 4px 8px;
     font-size: 0.9rem;

@@ -13,15 +13,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--bgColor);
+  background-color: var(--bgNeutral);
   padding: .5rem;
-  border-radius: 15px;
+  border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   transition: background-color .07s ease, color .07s ease;
 }
 
 .vibeCodeItem img {
-  border-radius: 15px;
+  border-radius: 6px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -46,7 +46,6 @@
   font-size: 0.85rem;
   margin-bottom: 1rem;
   font-family: 'Rubik', sans-serif;
-  opacity: 0.7;
 }
 
 .vibeCodeInfo p {
@@ -66,17 +65,13 @@
 
 .badge {
   font-size: 0.8rem;
-  background-color: #262c36;
-  color: #fff;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  border: 1px solid var(--borderNeutral);
   padding: 0.3rem 0.6rem;
   border-radius: 9999px;
   font-family: 'Poppins', sans-serif;
   transition: background-color .07s ease, color .07s ease;
-}
-
-body.light .badge {
-  background-color: #e0e0e0;
-  color: #333;
 }
 
 @media (min-width: 768px) {
