@@ -74,7 +74,8 @@ function agregarProyectos(){
                         linksDivHTML.appendChild(anclaContainer)
 
                         const ancla = document.createElement('a')
-                        const anclaTextContent = document.createElement('h4')
+                        const anclaTextContent = document.createElement('span')
+                        anclaTextContent.classList.add('anclaProject')
 
                         ancla.id = proyecto.proyectoId
                         ancla.href = proyecto.ruta

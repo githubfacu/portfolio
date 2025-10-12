@@ -6,9 +6,44 @@
     width: 100%;
 }
 
-.videoIframe, video{
+.video-accesible {
+    margin: auto;
     width: 100%;
     max-width: 977px;
+}
+
+.videoIframe, video{
+    max-width: 977px;
+    width: 100%;
     margin: auto;
     border-radius: 4px;
+}
+
+.video-accesible figcaption {
+  padding: 1rem;
+  background-color: var(--bgArticle);
+  color: var(--textColor);
+}
+
+.video-accesible details {
+  margin-top: 0.75rem;
+}
+
+.video-accesible summary {
+  cursor: default;
+  font-weight: 600;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  padding: 2px;
+}
+
+.video-accesible summary:focus {
+  outline: 2px solid var(--textColor);
+  outline-offset: 2px;
+}
+
+.video-accesible details p {
+  margin-top: 0.5rem;
+  line-height: 1.5;
 }

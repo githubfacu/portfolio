@@ -12,19 +12,19 @@ const htmlContent = `
                 <nav aria-label="Navegación principal">
                     <ul class="navUl">
                         <li>
-                            <a href="../index.html" aria-label="Ir a la página de inicio">Inicio</a>
+                            <a href="../index.html">Inicio</a>
                         </li>
                         <li>
-                            <a href="./vibecode.html" aria-label="Ir a Vibe Code">Vibe Code</a>
+                            <a href="./vibecode.html">Vibe Code</a>
                         </li>
                         <li>
-                            <a href="./presentaciones.html" aria-label="Ir a Presentaciones">Presentaciones</a>
+                            <a href="./presentaciones.html">Presentaciones</a>
                         </li>
                         <li>
-                            <a href="./libros.html" aria-label="Ir a Libros">Libros</a>
+                            <a href="./libros.html">Libros</a>
                         </li>
                         <li>
-                            <a href="./accesibilidad.html" aria-label="Ir a Accesibilidad">Accesibilidad</a>
+                            <a href="./accesibilidad.html">Accesibilidad</a>
                         </li>
                     </ul>
                 </nav>
@@ -34,12 +34,12 @@ const htmlContent = `
                 <nav aria-label="Redes sociales">
                     <ul class="social-iconos">
                         <li>
-                            <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin" aria-label="Ir al perfil de LinkedIn de Facu Elorz en una nueva pestaña" title="ir a in/facundo-elorz">
+                            <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin" aria-label="LinkedIn de Facu Elorz en una nueva pestaña" title="ir a in/facundo-elorz">
                                 <i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/githubfacu" target="_blank" id="fa-github" aria-label="Ir al perfil de GitHub de Facu Elorz en una nueva pestaña" title="ir a github.com/githubfacu">
+                            <a href="https://github.com/githubfacu" target="_blank" id="fa-github" aria-label="GitHub de Facu Elorz en una nueva pestaña" title="ir a github.com/githubfacu">
                                 <i class="fa-brands fa-github fa-2xl"></i>
                             </a>
                         </li>
@@ -57,19 +57,19 @@ const htmlContent = `
         <nav aria-label="Navegación principal">
             <ul>
                 <li>
-                    <a href="../index.html" aria-label="Ir a la página de inicio">Inicio</a>
+                    <a href="../index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="./vibecode.html" aria-label="Ir a Vibe Code">Vibe Code</a>
+                    <a href="./vibecode.html">Vibe Code</a>
                 </li>
                 <li>
-                    <a href="./presentaciones.html" aria-label="Ir a Presentaciones">Presentaciones</a>
+                    <a href="./presentaciones.html">Presentaciones</a>
                 </li>
                 <li>
-                    <a href="./libros.html" aria-label="Ir a Libros">Libros</a>
+                    <a href="./libros.html">Libros</a>
                 </li>
                 <li>
-                    <a href="./accesibilidad.html" aria-label="Ir a Accesibilidad">Accesibilidad</a>
+                    <a href="./accesibilidad.html">Accesibilidad</a>
                 </li>
             </ul>
         </nav>
@@ -93,7 +93,7 @@ function setToggleIcon() {
     const isDark = $body.classList.contains('dark');
     $desktopToggle.forEach(btn => {
         btn.innerHTML = isDark 
-            ? '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>' : '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>';
+            ? '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>' : '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>';
     });
 }
 

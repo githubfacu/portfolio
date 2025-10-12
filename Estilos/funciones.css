@@ -53,12 +53,12 @@
     position: relative;
 }
 
-.tituloCard span{
+.tituloCard h3{
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
-.tituloCard span h4{
+.tituloCard span{
     display: inline-block;
 }
 
@@ -66,8 +66,7 @@
     margin-left: 18px;
 }
 
-
-#lineaDeTiempo section h4{
+.anclaProject {
     font-weight: 400;
 }
 
@@ -145,11 +144,11 @@
     font-weight: 400;
 }
 
-.linksDiv span{
+.linksDiv i{
     transition: transform .2s ease;
 }
 
-.anclaContainer a:hover span {
+.anclaContainer a:hover i {
     transform: translateX(4px);
 }
 

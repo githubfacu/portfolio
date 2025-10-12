@@ -1,7 +1,7 @@
 export const material = [
     {
         id: 8,
-        titulo: '<span>Élite Frontend Developer | <h4>Level Up Tech Academy</h4></span>',
+        titulo: 'Élite Frontend Developer | <span>Level Up Tech Academy</span>',
         fecha: 'Feb 2025',
         enCurso: false,
         proyectos: [
@@ -45,7 +45,7 @@ export const material = [
     },
     {
         id: 7,
-        titulo: '<span>React Avanzado | <h4>Rolling Code</h4></span>',
+        titulo: 'React Avanzado | <span>Rolling Code</span>',
         fecha: 'May 2024',
         enCurso: false,
         proyectos: [
@@ -62,7 +62,7 @@ export const material = [
     },
     {
         id: 6,
-        titulo: '<span>Next.js | <h4>Digital House</h4></span>',
+        titulo: 'Next.js | <span>Digital House</span>',
         fecha: 'Abr 2024',
         enCurso: false,
         proyectos: [
@@ -79,7 +79,7 @@ export const material = [
     },
     {
         id: 5,
-        titulo: '<span>Simulación Laboral | <h4>No Country</h4></span>',
+        titulo: 'Simulación Laboral | <span>No Country</span>',
         fecha: 'Abr 2024',
         enCurso: false,
         proyectos: [
@@ -95,7 +95,7 @@ export const material = [
     },
     {
         id: 4,
-        titulo: '<span>Proyecto Integrador | <h4>Digital House</h4></span>',
+        titulo: 'Proyecto Integrador | <span>Digital House</span>',
         fecha: 'Feb 2024',
         proyectos: [
             {
@@ -110,7 +110,7 @@ export const material = [
     },
     {
         id: 3,
-        titulo: '<span>React | <h4>Digital House</h4></span>',
+        titulo: 'React | <span>Digital House</span>',
         fecha: 'Oct 2023',
         proyectos: [
             {
@@ -125,7 +125,7 @@ export const material = [
     },
     {
         id: 2,
-        titulo: '<span>JavaScript | <h4>Digital House</h4></span>',
+        titulo: 'JavaScript | <span>Digital House</span>',
         fecha: 'Abr 2023',
         proyectos: [
             {
@@ -148,7 +148,7 @@ export const material = [
     },
     {
         id: 1,
-        titulo: '<span>HTML & CSS | <h4>Digital House</h4></span>',
+        titulo: 'HTML & CSS | <span>Digital House</span>',
         fecha: 'Ago 2022',
         proyectos: [
             {
