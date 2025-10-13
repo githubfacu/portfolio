@@ -35,8 +35,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.1);
-    border: 1px solid rgba(128, 128, 128, 0.15);
+    background-color: var(--bgNeutral);
+    border: 1px solid var(--borderNeutral);
     color: var(--iconLight);
     position: relative;
     transition: background-color .07s ease, color .07s ease, box-shadow .07s ease;
@@ -53,7 +53,7 @@ footer{
     /* box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1); */
 }
 
-.social-iconos-on-desktop h4{
+.social-iconos-on-desktop p{
     background: var(--bgColor);
     color: var(--textColor);
     position: absolute;
@@ -64,4 +64,5 @@ footer{
     font-size: 1rem;
     font-weight: 400;
     text-wrap: nowrap;
+    font-size: 0.9rem;
 }

@@ -4,11 +4,11 @@ const $divIconsMobile = document.querySelector('.social-iconos')
 const $mailIcon = document.querySelector('.social-iconos-on-desktop span')
 const $mailIconMobile = document.querySelector('.social-iconos span')
 
-const miMail = document.createElement('h5')
+const miMail = document.createElement('p')
 miMail.innerText = 'elorzfacundo@gmail.com'
 miMail.style.display = 'none'
 
-const copiedMessage = document.createElement('h4')
+const copiedMessage = document.createElement('p')
 copiedMessage.innerText = 'Copiado en portapapeles'
 copiedMessage.style.display = 'none'
 

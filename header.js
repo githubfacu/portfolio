@@ -10,7 +10,7 @@ const htmlContent = `
             <div class="fadetop"></div>
             <div class="onScroll">
                 <nav aria-label="Navegación principal">
-                    <ul class="navUl">
+                    <ul id="mobileNavUl" class="navUl">
                         <li>
                             <a href="../index.html">Inicio</a>
                         </li>
@@ -87,6 +87,7 @@ const $toggle = document.querySelectorAll('#toggle');
 const $desktopToggle = document.querySelectorAll('.desktop-nav #toggle')
 const $openMenu = document.querySelector('.open-menu');
 const $mobileMenuContent = document.querySelector('.mobile-menu-content');
+const $navItemsMobileMenuContent = document.querySelectorAll('#mobileNavUl a');
 const $navItems = document.querySelectorAll('.desktop-nav a')
 
 function setToggleIcon() {
@@ -149,8 +150,20 @@ function setActiveNavItem() {
 
         if (currentUrl === itemUrl) {
             item.classList.add('onActive');
+            item.setAttribute('aria-current', 'page');
         } else {
             item.classList.remove('onActive');
+            item.removeAttribute('aria-current')
+        }
+    });
+    
+    $navItemsMobileMenuContent.forEach(item => {
+        const itemUrl = item.href;
+
+        if (currentUrl === itemUrl) {
+            item.setAttribute('aria-current', 'page');
+        } else {
+            item.removeAttribute('aria-current')
         }
     });
 }

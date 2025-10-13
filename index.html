@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facundo Elorz | Desarrollador Web</title>
+    <title>Desarrollador Web | Facundo Elorz | Portafolio</title>
     <meta name="description" content="Desarrollador Web - HTML, CSS y JavaScript.">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta property="og:title" content="Facundo Elorz Portfolio" />
@@ -131,9 +131,9 @@
         </div>
 
         <div class="max-content">
-            <div class="experiencia" aria-labelledby="titulo-experiencia">
+            <section class="experiencia" aria-labelledby="titulo-experiencia">
                 <h2 id="titulo-experiencia">Experiencia</h2>
-                <section class="cardExperiencia" role="article" aria-labelledby="titulo-inkua">
+                <article class="cardExperiencia" role="article" aria-labelledby="titulo-inkua">
                     <h3 id="titulo-inkua">Pasantía en área de Sistemas</h3>
                     <div class="cardExperienciaContent">
                         <a href="https://inkua.de/" target="_blank">
@@ -160,17 +160,15 @@
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </article>
+            </section>
 
-            <div class="proyectos" aria-labelledby="titulo-proyectos">
+            <section class="proyectos" aria-labelledby="titulo-proyectos">
                 <h2 id="titulo-proyectos">Proyectos</h2>
-
-                <div class="proyectoPubliContainer" role="article" aria-labelledby="grilla de proyectos">
-
-                    <!-- <section class="cardProyecto">
+                <div class="proyectoPubliContainer">
+                    <!-- <article class="cardProyecto">
                         <h3 id="titulo-mi-tratamiento">Mi Tratamiento</h3>
-                        <div class="cardProyectoContent" tabindex="0">
+                        <div class="cardProyectoContent">
                             <picture class="desktop">
                                 <img src="./Imagenes/img/MT-logoweb.webp"
                                 width="180" height="180"
@@ -208,10 +206,10 @@
                                 alt="Vista miniatura del logo de la plataforma Mi Tratamiento">
                             </picture>
                         </div>
-                    </section> -->
-                    <section class="cardProyecto">
+                    </article> -->
+                    <article class="cardProyecto">
                         <h3  id="titulo-budget-generator" lang="en">Budget Generator</h3>
-                        <div class="cardProyectoContent" tabindex="0">
+                        <div class="cardProyectoContent">
                             <picture class="desktop">
                                 <img src="./Imagenes/img/budget-app-globe-icon.jpg"
                                 width="180" height="180"
@@ -247,19 +245,18 @@
                                 alt="Vista miniatura de la pagina inicio de Budget Generator">
                             </picture>
                         </div>
-                    </section>
-
+                    </article>
                 </div>
-            </div>
+            </section>
 
-            <div class="cronologia" aria-labelledby="titulo-cronologia">
+            <section class="cronologia" aria-labelledby="titulo-cronologia">
                 <h2 id="titulo-cronologia">Progreso y prácticas</h2>
 
                 <div id="lineaDeTiempo">
                 </div>
-            </div>
+            </section>
 
-            <div class="formacionAcademica" aria-labelledby="titulo-formacion-academica">
+            <section class="formacionAcademica" aria-labelledby="titulo-formacion-academica">
                 <h2 id="titulo-formacion-academica">Formación académica</h2>
                 <ul>
                     <li>
@@ -362,11 +359,11 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="habilidades" aria-labelledby="titulo-habilidades">
+            <section class="habilidades" aria-labelledby="titulo-habilidades">
                 <h2 id="titulo-habilidades">Habilidades</h2>
-                <ul role="list">
+                <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
                     <li>JavaScript (ES6+)</li>
@@ -385,28 +382,41 @@
                     <li>UX</li>
                     <li>Inglés (intermedio)</li>
                 </ul>
-            </div>
+            </section>
+
+            <nav class="nav-pagination" aria-labelledby="Paginación">
+                <ul class="pager">
+                    <li style="grid-column-start: 2;">
+                        <a href="./Paginas/vibecode.html" class="alternative-navlink">
+                            Siguiente - Vibe Code
+                            <span><i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </main>
 
-    <footer role="contentinfo" class="desktop">
-        <ul class="social-iconos-on-desktop">
-            <li>
-                <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin" aria-label="LinkedIn de Facu Elorz en una nueva pestaña" title="ir a in/facundo-elorz">
-                    <i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/githubfacu" target="_blank" id="fa-github" aria-label="GitHub de Facu Elorz en una nueva pestaña" title="ir a github.com/githubfacu">
-                    <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li>
-                <span tabindex="0" title="elorzfacundo@gmail.com">
-                    <i class="fa-regular fa-envelope fa-lg" aria-label="Copiar en portapapeles la dirección de correo electrónico de Facundo Elorz" aria-hidden="true"></i>
-                </span>
-            </li>
-        </ul>
+    <footer class="desktop">
+        <nav aria-label="Redes sociales">
+            <ul class="social-iconos-on-desktop">
+                <li>
+                    <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin" aria-label="LinkedIn de Facu Elorz en una nueva pestaña" title="ir a in/facundo-elorz">
+                        <i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/githubfacu" target="_blank" id="fa-github" aria-label="GitHub de Facu Elorz en una nueva pestaña" title="ir a github.com/githubfacu">
+                        <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <span tabindex="0" title="elorzfacundo@gmail.com">
+                        <i class="fa-regular fa-envelope fa-lg" aria-label="Copiar en portapapeles la dirección de correo electrónico de Facundo Elorz" aria-hidden="true"></i>
+                    </span>
+                </li>
+            </ul>
+        </nav>
     </footer>
     
     <script type="module" src="./funciones.js"></script>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libros</title>
+    <title>Libros | Facundo Elorz | Portafolio</title>
     <link rel="stylesheet" href="../Estilos/index.css">
     <link rel="stylesheet" href="../Estilos/header.css">
     <link rel="stylesheet" href="../Estilos/pages.css">
@@ -27,29 +27,48 @@
             <p class="sobre-mi">Esta sección contiene información sobre los libros relacionados con mis intereses y estudios.</p>
         </div>
 
-        <section class="libros-section max-content-pages">
-            <article class="libro">
-                <img src="../Imagenes/arq-limpia-book.webp" alt="Portada del libro Arquitectura Limpia de Robert C. Martin">
-                <div class="libro-info">
-                    <h2>Arquitectura Limpia</h2>
-                    <p class="autor">Robert C. Martin</p>
-                    <p class="descripcion">
-                        Una guía esencial sobre cómo estructurar software mantenible y escalable. Presenta principios, patrones y reglas para diseñar sistemas robustos y desacoplados.
-                    </p>
-                </div>
-            </article>
+        <div class="max-content-pages">
+            <div class="libros-section">
+                <article class="libro">
+                    <img src="../Imagenes/arq-limpia-book.webp" alt="Portada del libro Arquitectura Limpia de Robert C. Martin">
+                    <div class="libro-info">
+                        <h2>Arquitectura Limpia</h2>
+                        <p class="autor">Robert C. Martin</p>
+                        <p class="descripcion">
+                            Una guía esencial sobre cómo estructurar software mantenible y escalable. Presenta principios, patrones y reglas para diseñar sistemas robustos y desacoplados.
+                        </p>
+                    </div>
+                </article>
 
-            <!-- <article class="libro">
-                <img src="../Imagenes/libro-negro-book.webp" alt="Portada del libro El Libro Negro del Programador de Rafael Gómez Blanes">
-                <div class="libro-info">
-                    <h2>El Libro Negro del Programador</h2>
-                    <p class="autor">Rafael Gómez Blanes</p>
-                    <p class="descripcion">
-                        Una guía práctica para evitar errores comunes en el desarrollo de software. Proporciona consejos claros y directos para mejorar la calidad, la productividad y la satisfacción como programador.
-                    </p>
-                </div>
-            </article> -->
-        </section>
+                <!-- <article class="libro">
+                    <img src="../Imagenes/libro-negro-book.webp" alt="Portada del libro El Libro Negro del Programador de Rafael Gómez Blanes">
+                    <div class="libro-info">
+                        <h2>El Libro Negro del Programador</h2>
+                        <p class="autor">Rafael Gómez Blanes</p>
+                        <p class="descripcion">
+                            Una guía práctica para evitar errores comunes en el desarrollo de software. Proporciona consejos claros y directos para mejorar la calidad, la productividad y la satisfacción como programador.
+                        </p>
+                    </div>
+                </article> -->
+            </div>
+
+            <nav class="nav-pagination" aria-labelledby="Paginación">
+                <ul class="pager">
+                    <li>
+                        <a href="./presentaciones.html" class="alternative-navlink">
+                            <span><i class="fa-solid fa-arrow-left fa-sm" aria-hidden="true"></i></span>
+                            Anterior - Presentaciones
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./accesibilidad.html" class="alternative-navlink">
+                            Siguiente - Accesibilidad
+                            <span><i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav> 
+        </div>
     </main>
 
     <script src="../header.js"></script>

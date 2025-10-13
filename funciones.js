@@ -11,13 +11,13 @@ function agregarSeccion(){
 
     material.forEach(materia => {
         return $lineadetiempo.innerHTML+=`
-        <section id='${materia.id}' class='lineaDeTiempo-section' aria-labelledby='titulo-${materia.id}' tabindex="0" role="region"></section>`
+        <article id='${materia.id}' class='lineaDeTiempo-section' aria-labelledby='titulo-${materia.id}'></article>`
     })
 }
 
 function agregarMaterial(){
 
-    const $sectionDiv = document.querySelectorAll('#lineaDeTiempo section')
+    const $sectionDiv = document.querySelectorAll('.lineaDeTiempo-section')
 
     $sectionDiv.forEach(sectionHTML=>{
 
@@ -97,13 +97,14 @@ function agregarProyectos(){
                         // }
 
                         const spanLink = document.createElement('span')
-                        spanLink.setAttribute('aria-hidden', 'true')
                         spanLink.innerHTML=`<i class="fa-solid fa-arrow-right fa-sm"></i>`
 
                         ancla.appendChild(spanLink)
                         anclaContainer.appendChild(ancla)
 
                         const practicaDiv = document.createElement('div')
+                        practicaDiv.setAttribute('aria-hidden', 'true')
+
                         const practicaDescripcion = document.createElement('p')
                         const practicaImg = document.createElement('img')
 
