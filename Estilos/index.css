@@ -596,20 +596,24 @@ main{
     justify-content: center;
     box-sizing: border-box;
     gap: 8px;
-    background-color: var(--bgNeutral);
+    background-color: var(--bgArticle);
     border: 1px solid var(--borderNeutral);
     border-radius: 6px;
     padding: 12px;
     color: var(--textColor);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 400;
     transition: background-color .07s ease, color .07s ease, box-shadow .07s ease;
 }
 
 .alternative-navlink:hover{
-    background-color: rgba(128, 128, 128, 0.25);
+    background-color: rgba(128, 128, 128, 0.5);
     /* box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1); */
+}
+
+body.dark .alternative-navlink:hover{
+    background-color: rgba(128, 128, 128, 0.3);
 }
 
 /* .alternative-navlink span{
