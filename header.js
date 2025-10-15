@@ -2,7 +2,7 @@ const pagesMobileNav = document.querySelector('.pages-nav');
 
 const htmlContent = `
     <div class="mobile-menu">
-        <button class="open-menu" tabindex="0" id="openMenu" aria-label="Menu" aria-expanded="false" style="view-transition-name: openMenu;">
+        <button class="open-menu" tabindex="0" id="openMenu" aria-label="Menu" aria-expanded="false">
             <div></div>
             <div></div>
         </button>
@@ -28,7 +28,7 @@ const htmlContent = `
                         </li>
                     </ul>
                 </nav>
-                <button class="mobile-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
+                <button class="mobile-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro">
                     Cambiar tema
                 </button>
                 <nav aria-label="Redes sociales">
@@ -73,7 +73,7 @@ const htmlContent = `
                 </li>
             </ul>
         </nav>
-        <button class="desktop-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro" style="view-transition-name: toggle;">
+        <button class="desktop-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro">
         </button>            
     </div>
 `;

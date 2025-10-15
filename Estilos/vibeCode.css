@@ -37,21 +37,16 @@
 .vibeCodeInfo h2 {
   font-size: 1.4rem;
   line-height: 1.75rem;
-  font-weight: 600;
   margin-bottom: 0.5rem;
-  font-family: 'Poppins', sans-serif;
 }
 
 .vibeCodeMeta {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin-bottom: 1rem;
-  font-family: 'Rubik', sans-serif;
 }
 
 .vibeCodeInfo p {
   font-size: .9rem;
-  opacity: 0.9;
-  font-family: 'Rubik', sans-serif;
   margin-bottom: 1rem;
   text-wrap: pretty;
 }
@@ -79,9 +74,7 @@
     font-size: 1.8rem;
     line-height: 2.25rem;
   }
-  .vibeCodeInfo p {
-    font-size: 1rem;
-  }
+
 }
 
 @media (min-width: 1024px) {

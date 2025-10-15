@@ -40,7 +40,7 @@ main{
     text-wrap: pretty;
     font-size: 1rem;
     color: var(--textColor);
-    opacity: .9;
+    line-height: 1.5;
 }
 
 @media (max-width: 1024px) {
