@@ -10,9 +10,11 @@ main{
 }
 
 .max-content-pages{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
     width: 100%;
     max-width: 997px;
-    gap: 60px;
 }
 
 .max-content-pages:last-child{
@@ -41,6 +43,7 @@ main{
     font-size: 1rem;
     color: var(--textColor);
     line-height: 1.5;
+    max-width: 1200px;
 }
 
 @media (max-width: 1024px) {

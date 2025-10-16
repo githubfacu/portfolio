@@ -1,10 +1,11 @@
-.libros-section {
-    display: grid;
+
+.arq-section {
     width: 100%;
     height: auto;
-    grid-template-columns: 1fr;
-    margin-bottom: 78px;
-    max-width: 977px;
+}
+
+.arq-section h2 {
+  margin-bottom: 0.5rem;
 }
 
 .libro {
@@ -21,7 +22,7 @@
 }
 
 .libro img {
-    max-width: 180px;
+    max-width: 150px;
     height: auto;
     display: block;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -31,7 +32,9 @@
     text-align: left;
 }
 
-.libro-info h2 {
+.libro-info h3 {
+    font-family: "Cormorant Garamond";
+    font-weight: 700;
     font-size: 1.4rem;
     margin-bottom: 0.3rem;
 }
@@ -42,8 +45,7 @@
 }
 
 .libro-info .descripcion {
-    font-size: 0.95rem;
-    opacity: 0.9;
+    font-size: 0.9rem;
 }
 
 @media (min-width: 768px) {

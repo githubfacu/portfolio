@@ -15,16 +15,16 @@ const htmlContent = `
                             <a href="../index.html">Inicio</a>
                         </li>
                         <li>
+                            <a href="./arquitectura.html">Arquitectura</a>
+                        </li>
+                        <li>
+                            <a href="./accesibilidad.html">Accesibilidad</a>
+                        </li>
+                        <li>
                             <a href="./vibecode.html">Vibe Code</a>
                         </li>
                         <li>
                             <a href="./presentaciones.html">Presentaciones</a>
-                        </li>
-                        <li>
-                            <a href="./libros.html">Libros</a>
-                        </li>
-                        <li>
-                            <a href="./accesibilidad.html">Accesibilidad</a>
                         </li>
                     </ul>
                 </nav>
@@ -60,16 +60,16 @@ const htmlContent = `
                     <a href="../index.html">Inicio</a>
                 </li>
                 <li>
+                    <a href="./arquitectura.html">Arquitectura</a>
+                </li>
+                <li>
+                    <a href="./accesibilidad.html">Accesibilidad</a>
+                </li>
+                <li>
                     <a href="./vibecode.html">Vibe Code</a>
                 </li>
                 <li>
                     <a href="./presentaciones.html">Presentaciones</a>
-                </li>
-                <li>
-                    <a href="./libros.html">Libros</a>
-                </li>
-                <li>
-                    <a href="./accesibilidad.html">Accesibilidad</a>
                 </li>
             </ul>
         </nav>

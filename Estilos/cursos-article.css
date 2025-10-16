@@ -1,0 +1,45 @@
+
+.lista-cursos {
+  list-style: none;
+  padding: 0;
+}
+
+.curso {
+  border: 1px solid var(--borderNeutral);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: var(--bgArticle);
+  color: var(--textColor);
+  transition: background-color .07s ease, color .07s ease;
+}
+
+.curso-titulo{
+    font-weight: 400;
+}
+
+.curso-institucion{
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.25rem 0;
+}
+
+.certificado-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: 400;
+  padding: 2px;
+  text-underline-offset: 2px;    
+  color: var(--textColor);
+}
+
+.certificado-link:visited{
+  color: var(--aVisited);
+}
+
+.certificado-link:hover, .certificado-link:focus {
+  color: var(--bgColor);
+  background-color: var(--textColor);
+}

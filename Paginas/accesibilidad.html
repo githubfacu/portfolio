@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="../Estilos/header.css">
   <link rel="stylesheet" href="../Estilos/pages.css">
   <link rel="stylesheet" href="../Estilos/accesibilidad.css">
+  <link rel="stylesheet" href="../Estilos/cursos-article.css">
   <link rel="stylesheet" href="../Estilos/scrollTop.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/661bc9cd16.js" crossorigin="anonymous"></script>
 </head>
 
@@ -26,16 +28,16 @@
       <p class="sobre-mi">Listado de cursos y certificaciones en accesibilidad web.</p>
     </div>
 
-    <div class="max-content-pages">
-      <section aria-labelledby="titulo-cursos" class="accesibilidad-div">
-        <h2 id="titulo-cursos" class="section-title">Cursos completados</h2>
+    <div class="max-content-pages accesibilidad-div">
 
+      <section aria-labelledby="for-developers">
+        <h2 id="for-developers" class="section-title">Cursos para desarrolladores</h2>
         <ul class="lista-cursos">
           <li class="curso">
               <h3 class="curso-titulo" lang="en">Introduction to WAI-ARIA for Beginners</h3>
               <p class="curso-institucion">Udemy | 2025</p>
               <a 
-                href="../Imagenes/accesibilidad/introduction-to-WAI-ARIA for-beginners.pdf" 
+                href="../Imagenes/docs/accesibilidad/introduction-to-WAI-ARIA for-beginners.pdf" 
                 class="certificado-link" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -47,7 +49,7 @@
               <h3 class="curso-titulo" lang="en">Practical Accessibility for Web Developers: Form Controls</h3>
               <p class="curso-institucion">Udemy | 2025</p>
               <a 
-                href="../Imagenes/accesibilidad/Practical-Accessibility-for-Web-Developers-Form-Controls.pdf" 
+                href="../Imagenes/docs/accesibilidad/Practical-Accessibility-for-Web-Developers-Form-Controls.pdf" 
                 class="certificado-link" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -55,11 +57,17 @@
                 <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Ver certificado
               </a>
           </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="wcag-standards">
+        <h2 id="wcag-standards" class="section-title" lang="en">Web Content Accessibility Guidelines (WCAG)</h2>
+        <ul class="lista-cursos">
           <li class="curso">
               <h3 class="curso-titulo" lang="en">WCAG 2.1 / 2.2 Simplified With Examples</h3>
               <p class="curso-institucion">Udemy | 2025</p>
               <a 
-                href="../Imagenes/accesibilidad/WCAG-2.1-2.2-Simplified-With-Examples.pdf" 
+                href="../Imagenes/docs/accesibilidad/WCAG-2.1-2.2-Simplified-With-Examples.pdf" 
                 class="certificado-link" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -68,22 +76,10 @@
               </a>
           </li>
           <li class="curso">
-              <h3 class="curso-titulo" lang="en">Accessible UX Writing</h3>
-              <p class="curso-institucion">Udemy | 2025</p>
-              <a 
-                href="../Imagenes/accesibilidad/Accessible-UX-Writing.pdf" 
-                class="certificado-link" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="Ver certificado del curso Accessible UX Writing (PDF)">
-                <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Ver certificado
-              </a>
-          </li>
-          <li class="curso">
             <h3 class="curso-titulo" lang="en">Master the 9 new WCAG 2.2 success criteria</h3>
             <p class="curso-institucion">Udemy | 2025</p>
             <a 
-              href="../Imagenes/accesibilidad/Master-the-9-new-WCAG-2.2-success-criteria.pdf" 
+              href="../Imagenes/docs/accesibilidad/Master-the-9-new-WCAG-2.2-success-criteria.pdf" 
               class="certificado-link" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -91,11 +87,29 @@
               <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Ver certificado
             </a>
           </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="for-designers">
+        <h2 id="for-designers" class="section-title">Cursos para diseñadores UX</h2>
+        <ul class="lista-cursos">
+          <li class="curso">
+            <h3 class="curso-titulo" lang="en">Accessible UX Writing</h3>
+            <p class="curso-institucion">Udemy | 2025</p>
+            <a 
+              href="../Imagenes/docs/accesibilidad/Accessible-UX-Writing.pdf" 
+              class="certificado-link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Ver certificado del curso Accessible UX Writing (PDF)">
+              <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Ver certificado
+            </a>
+          </li>
           <li class="curso">
             <h3 class="curso-titulo" lang="en">Web Design Accessibility Certificate</h3>
             <p class="curso-institucion">Udemy | 2025</p>
             <a 
-              href="../Imagenes/accesibilidad/Web-Design-Accessibility-Certificate.pdf" 
+              href="../Imagenes/docs/accesibilidad/Web-Design-Accessibility-Certificate.pdf" 
               class="certificado-link" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -105,13 +119,20 @@
           </li>
         </ul>
       </section>
+
       <nav class="nav-pagination" aria-label="Paginación">
         <ul class="pager">
           <li>
-              <a href="./libros.html" class="alternative-navlink">
-                  <span><i class="fa-solid fa-arrow-left fa-sm" aria-hidden="true"></i></span>
-                  Anterior - Libros
-              </a>
+            <a href="./arquitectura.html" class="alternative-navlink">
+              <span><i class="fa-solid fa-arrow-left fa-sm" aria-hidden="true"></i></span>
+              Anterior - Arquitectura
+            </a>            
+          </li>
+          <li>
+            <a href="./vibecode.html" class="alternative-navlink">
+              Siguiente - Vibe Code
+              <span><i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i></span>
+            </a>
           </li>
         </ul>
       </nav> 

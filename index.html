@@ -18,6 +18,7 @@
     <meta name="twitter:image" content="https://githubfacu.github.io/portfolio/Imagenes/img/code.svg">
     <link rel="stylesheet" href="./Estilos/index.css">
     <link rel="stylesheet" href="./Estilos/header.css">
+    <link rel="stylesheet" href="./Estilos/formacion-academica.css">
     <link rel="stylesheet" href="./Estilos/footer.css">
     <link rel="stylesheet" href="./Estilos/funciones.css">
     <link rel="stylesheet" href="./Estilos/scrollTop.css">
@@ -53,16 +54,16 @@
                                 <a href="./index.html">Inicio</a>
                             </li>
                             <li>
+                                <a href="./Paginas/arquitectura.html">Arquitectura</a>
+                            </li>
+                            <li>
+                                <a href="./Paginas/accesibilidad.html">Accesibilidad</a>
+                            </li>                            
+                            <li>
                                 <a href="./Paginas/vibecode.html">Vibe Code</a>
                             </li>
                             <li>
                                 <a href="./Paginas/presentaciones.html">Presentaciones</a>
-                            </li>
-                            <li>
-                                <a href="./Paginas/libros.html">Libros</a>
-                            </li>
-                            <li>
-                                <a href="./Paginas/accesibilidad.html">Accesibilidad</a>
                             </li>
                         </ul>                        
                     </nav>
@@ -100,16 +101,16 @@
                         <a href="./index.html">Inicio</a>
                     </li>
                     <li>
+                        <a href="./Paginas/arquitectura.html">Arquitectura</a>
+                    </li>
+                    <li>
+                        <a href="./Paginas/accesibilidad.html">Accesibilidad</a>
+                    </li>
+                    <li>
                         <a href="./Paginas/vibecode.html">Vibe Code</a>
                     </li>
                     <li>
                         <a href="./Paginas/presentaciones.html">Presentaciones</a>
-                    </li>
-                    <li>
-                        <a href="./Paginas/libros.html">Libros</a>
-                    </li>
-                    <li>
-                        <a href="./Paginas/accesibilidad.html">Accesibilidad</a>
                     </li>
                 </ul>
             </nav>
@@ -124,7 +125,7 @@
                 <h1 id="titulo-presentacion">Facundo Elorz</h1>
                 <span>Desarrollador Frontend | <mark lang="en">HTML CSS TypeScript React</mark></span>
                 <p class="sobre-mi">
-                    Incorporo IA como proceso creativo y técnico, me ayuda a probar ideas más rápido, resolver bugs y escribir mejor documentación; soy autodidacta y estoy profundizando en temas de Frontend, arquitectura y accesibilidad.
+                    Incorporo IA como proceso creativo y técnico, me ayuda a probar ideas más rápido, resolver bugs y escribir mejor documentación; soy autodidacta y estoy profundizando en temas de frontend, arquitectura y accesibilidad.
                 </p>
             </div>
         </div>
@@ -255,110 +256,120 @@
                 </div>
             </section>
 
-            <section class="formacionAcademica" aria-labelledby="titulo-formacion-academica">
+            <section 
+                class="formacionAcademica" 
+                aria-labelledby="titulo-formacion-academica"
+            >
                 <h2 id="titulo-formacion-academica">Formación académica</h2>
-                <ul>
+                <ul class="academias-list">
                     <li>
-                        <span>Certified Tech Developer (2022 - 2024)</span>
                         <a 
-                        href="https://www.digitalhouse.com/ar" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label="Digital House, se abre en una nueva pestaña">
-                        Digital House
+                            href="https://www.digitalhouse.com/ar" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Digital House, se abre en una nueva pestaña"
+                        >
+                            Digital House
                         </a>
-                        <small>Carrera de Professional Developer</small>
+                        <ul class="cursos-list">
+                            <li>
+                            <span>Certified Tech Developer (2022 - 2024)</span>
+                            <small>Carrera de Professional Developer</small>
+                            </li>
+                            <li>
+                            <span>Next.js (2024)</span>
+                            </li>
+                        </ul>
                     </li>
 
                     <li>
-                        <span>Simulación laboral (2024)</span>
                         <a 
-                        href="https://nocountry.tech/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label="No Country, se abre en una nueva pestaña">
-                        No Country
+                            href="https://nocountry.tech/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="No Country, se abre en una nueva pestaña"
+                        >
+                            No Country
                         </a>
+                        <ul class="cursos-list">
+                            <li><span>Simulación laboral (2024)</span></li>
+                        </ul>
                     </li>
 
                     <li>
-                        <span>Next.js (2024)</span>
                         <a 
-                        href="https://www.digitalhouse.com/ar" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label="Digital House, se abre en una nueva pestaña">
-                        Digital House
+                            href="https://web.rollingcodeschool.com/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Rolling Code School, se abre en una nueva pestaña"
+                        >
+                            Rolling Code School
                         </a>
+                        <ul class="cursos-list">
+                            <li><span>Especialización Frontend con React (2024)</span></li>
+                        </ul>
                     </li>
 
                     <li>
-                        <span>Especialización Frontend con React (2024)</span>
                         <a 
-                        href="https://web.rollingcodeschool.com/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label="Rolling Code School, se abre en una nueva pestaña">
-                        Rolling Code School
+                            href="https://www.udemy.com/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Udemy, se abre en una nueva pestaña"
+                        >
+                            Udemy
                         </a>
+                        <ul class="cursos-list">
+                            <li><span>Next.js: El framework de React para producción (2024)</span></li>
+                            <li><span>FULL Authentication WITH REACT JS NEXT JS TYPESCRIPT (2024)</span></li>
+                            <li><span>Micro-Frontend: Arquitectura de Aplicaciones Web Escalables (2025)</span></li>
+                        </ul>
                     </li>
 
                     <li>
-                        <span>Next.js: El framework de React para producción (2024)</span>
                         <a 
-                        href="https://www.udemy.com/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label="Udemy, se abre en una nueva pestaña">
-                        Udemy
+                            href="https://inkua.de/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="InkuA, se abre en una nueva pestaña"
+                        >
+                            InkuA
                         </a>
+                        <ul class="cursos-list">
+                            <li><span>Pasantía en área de Sistemas (2024 - 2025)</span></li>
+                        </ul>
                     </li>
 
                     <li>
-                        <span>Pasantía en área de Sistemas (2024 - 2025)</span>
                         <a 
-                        href="https://inkua.de/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label="InkuA, se abre en una nueva pestaña">
-                        InkuA
+                            href="https://levelup1.tiendup.com/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Level Up Tech Academy, se abre en una nueva pestaña"
+                        >
+                            Level Up Tech Academy
                         </a>
+                        <ul class="cursos-list">
+                            <li><span>Élite Frontend Developer (2025)</span></li>
+                        </ul>
                     </li>
 
                     <li>
-                        <span>Élite Frontend Developer (2025)</span>
                         <a 
-                        href="https://levelup1.tiendup.com/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label="Level Up Tech Academy, se abre en una nueva pestaña">
-                        Level Up Tech Academy
+                            href="https://www.upc.edu.ar/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Universidad Provincial de Córdoba, se abre en una nueva pestaña"
+                        >
+                            Universidad Provincial de Córdoba
                         </a>
-                    </li>
-
-                    <li>
-                        <span>Micro-Frontend: Arquitectura de Aplicaciones Web Escalables (2025)</span>
-                        <a 
-                        href="https://www.udemy.com/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label="Udemy, se abre en una nueva pestaña">
-                        Udemy
-                        </a>
-                    </li>
-
-                    <li>
-                        <span>Taller introducción a la inteligencia artificial (2025)</span>
-                        <a 
-                        href="https://www.upc.edu.ar/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label="Universidad Provincial de Córdoba, se abre en una nueva pestaña">
-                        Universidad Provincial de Córdoba
-                        </a>
+                        <ul class="cursos-list">
+                            <li><span>Taller introducción a la inteligencia artificial (2025)</span></li>
+                        </ul>
                     </li>
                 </ul>
             </section>
+
 
             <section class="habilidades" aria-labelledby="titulo-habilidades">
                 <h2 id="titulo-habilidades">Habilidades</h2>
@@ -385,9 +396,9 @@
 
             <nav class="nav-pagination" aria-label="Paginación">
                 <ul class="pager">
-                    <li style="grid-column-start: 2;">
-                        <a href="./Paginas/vibecode.html" class="alternative-navlink">
-                            Siguiente - Vibe Code
+                    <li class="first-home-pager-link">
+                        <a href="./Paginas/arquitectura.html" class="alternative-navlink">
+                            Siguiente - Arquitectura
                             <span><i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i></span>
                         </a>
                     </li>
