@@ -35,6 +35,7 @@ main{
 .presentacionesTituloDiv h1{
     font-size: 7.5rem;
     line-height: 8.8rem;
+    font-weight: 600;
 }
 
 .sobre-mi{

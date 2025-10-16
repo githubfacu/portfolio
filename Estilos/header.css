@@ -14,7 +14,7 @@ header{
     top: 0;
     z-index: 10;
     border-bottom: 1px solid var(--borderOpacity);
-    font-family: "Cormorant Garamond";
+    /* font-family: "Cormorant Garamond"; */
     backdrop-filter: blur(10px);
     /* background-color: var(--Fondo);*/
     /* transition: background-color .07s ease, color .07s ease; */
@@ -53,9 +53,9 @@ header{
 .desktop-nav a{
     text-decoration: none;
     color: var(--textColor);
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: .675rem .875rem;
     position: relative;
     z-index: 1;
     text-wrap: nowrap;
@@ -172,27 +172,12 @@ header{
         background: transparent;
         border: none;
         gap: .75rem;
-        scale: .95;
+        transform: scale(1.3);
+        color: var(--textColor);
     }
 
-    .open-menu div {
-        width: 100%;
-        height: 2.2px;
-        background: var(--textColor);
-        opacity: 0.8;
-        border-radius: 2px;
-        /* transition: all .250s ease; */
-        transform-origin: left;
-    }
-
-    .open-menu.x-icon div:first-child {
-        width: 30px;
-        transform: rotate(45deg) translateY(-5px);
-    }
-
-    .open-menu.x-icon div:last-child {
-        width: 30px;
-        transform: rotate(-45deg) translateY(5px);
+    .open-menu[aria-expanded='true']{
+        transform: scale(1.5);
     }
 
     .header-background{
@@ -268,15 +253,14 @@ header{
         color: var(--textColor);
         text-decoration: none;
         padding: 0.5rem 1rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .mobile-toggle {
-        font-family: "Cormorant Garamond", serif;
         color: var(--textColor);
         background-color: transparent;
         padding: 0.5rem 1rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
         border: none;
     }
 

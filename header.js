@@ -3,8 +3,6 @@ const pagesMobileNav = document.querySelector('.pages-nav');
 const htmlContent = `
     <div class="mobile-menu">
         <button class="open-menu" tabindex="0" id="openMenu" aria-label="Menu" aria-expanded="false">
-            <div></div>
-            <div></div>
         </button>
         <div class="mobile-menu-content">
             <div class="fadetop"></div>
@@ -133,13 +131,23 @@ $toggle.forEach(btn => {
     });
 });
 
+if ($openMenu) {
+  $openMenu.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+  `;
+}
+
 $openMenu.addEventListener('click', () => {
   const isOpen = $mobileMenuContent.classList.contains('open');
 
-  $openMenu.classList.toggle('x-icon', !isOpen);
+  // Alternar el menú
   $mobileMenuContent.classList.toggle('open');
-
   $openMenu.setAttribute('aria-expanded', String(!isOpen));
+
+  // Cambiar el ícono según el estado
+  $openMenu.innerHTML = !isOpen
+    ? `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`
+    : `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>`;
 });
 
 const currentUrl = window.location.href;
