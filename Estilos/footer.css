@@ -45,7 +45,6 @@ footer{
 .social-iconos-on-desktop i{
     position: absolute;
     margin: auto;
-    opacity: .9;
 }
 
 .social-iconos-on-desktop a:hover, .social-iconos-on-desktop span:hover{

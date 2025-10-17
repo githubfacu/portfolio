@@ -32,18 +32,18 @@ const htmlContent = `
                 <nav aria-label="Redes sociales">
                     <ul class="social-iconos">
                         <li>
-                            <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin" aria-label="LinkedIn de Facu Elorz en una nueva pestaña" title="ir a in/facundo-elorz">
+                            <a href="https://www.linkedin.com/in/facundo-elorz/" id="fa-linkedin" aria-label="Visita mi perfil de LinkedIn">
                                 <i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/githubfacu" target="_blank" id="fa-github" aria-label="GitHub de Facu Elorz en una nueva pestaña" title="ir a github.com/githubfacu">
+                            <a href="https://github.com/githubfacu" id="fa-github" aria-label="Visita mi perfil de GitHub">
                                 <i class="fa-brands fa-github fa-2xl"></i>
                             </a>
                         </li>
                         <li>
                             <span tabindex="0" title="elorzfacundo@gmail.com">
-                                <i class="fa-regular fa-envelope fa-2xl" aria-label="Copiar en portapapeles la dirección de correo electrónico de Facundo Elorz" aria-hidden="true"></i>
+                                <i class="fa-regular fa-envelope fa-2xl" aria-label="Copiar en portapapeles la dirección de correo electrónico" aria-hidden="true"></i>
                             </span>
                         </li>
                     </ul>
@@ -157,10 +157,8 @@ function setActiveNavItem() {
         const itemUrl = item.href;
 
         if (currentUrl === itemUrl) {
-            item.classList.add('onActive');
             item.setAttribute('aria-current', 'page');
         } else {
-            item.classList.remove('onActive');
             item.removeAttribute('aria-current')
         }
     });

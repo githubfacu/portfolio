@@ -18,6 +18,7 @@
     <meta name="twitter:image" content="https://githubfacu.github.io/portfolio/Imagenes/img/code.svg">
     <link rel="stylesheet" href="./Estilos/index.css">
     <link rel="stylesheet" href="./Estilos/header.css">
+    <link rel="stylesheet" href="./Estilos/home.css">
     <link rel="stylesheet" href="./Estilos/formacion-academica.css">
     <link rel="stylesheet" href="./Estilos/footer.css">
     <link rel="stylesheet" href="./Estilos/funciones.css">
@@ -33,7 +34,6 @@
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
     <header>
         <div class="header-background"></div>
-        
         <div class="mobile-menu">
             <button 
                 class="open-menu" 
@@ -71,23 +71,22 @@
                     <nav aria-label="Redes sociales">
                         <ul class="social-iconos">
                             <li>
-                                <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin" aria-label="LinkedIn de Facu Elorz en una nueva pestaña" title="ir a in/facundo-elorz">
+                                <a href="https://www.linkedin.com/in/facundo-elorz/" id="fa-linkedin" aria-label="Visita mi perfil de LinkedIn">
                                     <i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/githubfacu" target="_blank" id="fa-github" aria-label="GitHub de Facu Elorz en una nueva pestaña" title="ir a github.com/githubfacu">
+                                <a href="https://github.com/githubfacu" id="fa-github" aria-label="Visita mi perfil de GitHub">
                                     <i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
                                 <span tabindex="0" title="elorzfacundo@gmail.com">
-                                    <i class="fa-regular fa-envelope fa-2xl" aria-label="Copiar en portapapeles la dirección de correo electrónico de Facundo Elorz" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-envelope fa-2xl" aria-label="Copiar en portapapeles la dirección de correo electrónico" aria-hidden="true"></i>
                                 </span>
                             </li>
                         </ul>                        
                     </nav>
-
                 </div>
             </div>
         </div>
@@ -118,6 +117,32 @@
     </header>
 
     <main id="main-content">
+
+        <aside class="contenido-de-pagina">
+            <details>
+                <summary id="contenido-title" class="contenido-title">Contenido de página</summary>
+                <nav aria-labelledby="contenido-title">
+                    <ul>
+                        <li>
+                            <a href="#titulo-experiencia">Experiencia</a>
+                        </li>
+                        <li>
+                            <a href="#titulo-proyectos">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#titulo-cronologia">Prácticas</a>
+                        </li>
+                        <li>
+                            <a href="#titulo-formacion-academica">Formación académica</a>
+                        </li>
+                        <li>
+                            <a href="#titulo-habilidades">Habilidades</a>
+                        </li>
+                    </ul>
+                </nav>
+            </details>
+        </aside>
+
         <div class="divPresentacion">
             <div class="divMarcaPersonal">
                 <h1 id="titulo-presentacion">Facundo Elorz</h1>
@@ -129,12 +154,12 @@
         </div>
 
         <div class="max-content">
-            <section class="experiencia" aria-labelledby="titulo-experiencia">
+            <section id="ex" class="experiencia" aria-labelledby="titulo-experiencia">
                 <h2 id="titulo-experiencia">Experiencia</h2>
                 <article class="cardExperiencia" aria-labelledby="titulo-inkua">
                     <h3 id="titulo-inkua">Pasantía en área de Sistemas</h3>
                     <div class="cardExperienciaContent">
-                        <a href="https://inkua.de/" target="_blank">
+                        <a href="https://inkua.de/" rel="noopener noreferrer" target="_blank" aria-label="Sitio web de la empresa Inkua, se abre en una nueva pestaña">
                             <picture class="desktop">
                                 <img src="./Imagenes/img/InkuA-logo.png"
                                     width="120" height="100"
@@ -147,13 +172,14 @@
                             <p><strong>InkuA</strong> | Junio 2024 – Marzo 2025 (9 meses)</p>
                             <p>Participé en proceso de onboarding, talleres, eventos, desarrollo y mantenimiento de una aplicación interna y de un sitio web externo, aplicando las tecnologías Next.js, JavaScript, React y Tailwind CSS. También colaboré en la documentación y mejoras de accesibilidad.</p>
                             <div class="experienciaLinks">
-                                <a class="badge-blue" href="https://www.caballosenlibertad.org/" target="_blank" aria-label="Visitar sitio web Caballos en libertad en una nueva pestaña" title="Visitar sitio web Caballos en libertad">
+                                <a class="badge-blue" href="https://www.caballosenlibertad.org/" rel="noopener noreferrer" target="_blank" aria-label="Sitio web Caballos en libertad, se abre en una nueva pestaña">
                                     CaballosEnLibertad
-                                    <span><i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i></span>
+                                    <span><i class="fa-solid fa-arrow-up-right-from-square fa-sm" aria-hidden="true"></i>
+                                    </span>
                                 </a>
-                                <a class="badge-blue" href="https://github.com/inkua/conversor-v2" aria-label="Link al repositorio del proyecto de InkuA" title="Link al repositorio del proyecto" target="_blank">
+                                <a class="badge-blue" rel="noopener noreferrer" target="_blank" href="https://github.com/inkua/conversor-v2" aria-label="Repositorio del proyecto conversor-v2, se abre en una nueva pestaña">
                                     Conversor-v2
-                                    <span><i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i></span>
+                                    <span><i class="fa-solid fa-arrow-up-right-from-square fa-sm" aria-hidden="true"></i></span>
                                 </a>
                             </div>
                         </div>
@@ -212,7 +238,7 @@
                                 <img src="./Imagenes/img/budget-app-globe-icon.jpg"
                                 width="180" height="180"
                                 loading="lazy"
-                                alt="Vista miniatura de la pagina inicio de Budget Generator">
+                                alt="Globo terraqueo, logo del sitio Budget Generator">
                             </picture>
 
                             <div class="cardProyectoTextContent hover-none">
@@ -227,10 +253,10 @@
                                     </div>
                                 </div>
                                 <div class="cardLinksDiv">
-                                    <a class="cardLinksDivID" href="https://budget-generator-ten.vercel.app/" target="_blank" aria-label="Ir a la página Budget Generator en una nueva pestaña" title="Ir a la página Budget Generator en una nueva pestaña">
+                                    <a class="cardLinksDivID" rel="noopener noreferrer" target="_blank" href="https://budget-generator-ten.vercel.app/" aria-label="Budget Generator, se abre en una nueva pestaña">
                                         <h4>Ir al sitio</h4>
                                         <span>
-                                            <i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i>
+                                            <i class="fa-solid fa-arrow-up-right-from-square fa-sm" aria-hidden="true"></i>
                                         </span>
                                     </a>
                                 </div>
@@ -240,7 +266,7 @@
                                 <img src="./Imagenes/img/budget-app-globe-icon.jpg" 
                                 width="100" height="100"
                                 loading="lazy"
-                                alt="Vista miniatura de la pagina inicio de Budget Generator">
+                                alt="Globo terraqueo, logo del sitio Budget Generator">
                             </picture>
                         </div>
                     </article>
@@ -248,7 +274,7 @@
             </section>
 
             <section class="cronologia" aria-labelledby="titulo-cronologia">
-                <h2 id="titulo-cronologia">Progreso y prácticas</h2>
+                <h2 id="titulo-cronologia">Prácticas</h2>
 
                 <div id="lineaDeTiempo">
                 </div>
@@ -395,7 +421,7 @@
             <nav class="nav-pagination" aria-label="Paginación">
                 <ul class="pager">
                     <li class="first-home-pager-link">
-                        <a href="./Paginas/arquitectura.html" class="alternative-navlink">
+                        <a href="./Paginas/arquitectura.html" class="pager-navlink">
                             Siguiente - Arquitectura
                             <span><i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i></span>
                         </a>
@@ -409,18 +435,18 @@
         <nav aria-label="Redes sociales">
             <ul class="social-iconos-on-desktop">
                 <li>
-                    <a href="https://www.linkedin.com/in/facundo-elorz/" target="_blank" id="fa-linkedin" aria-label="LinkedIn de Facu Elorz en una nueva pestaña" title="ir a in/facundo-elorz">
+                    <a href="https://www.linkedin.com/in/facundo-elorz/" rel="noopener noreferrer" target="_blank" id="fa-linkedin" aria-label="Visita mi perfil de LinkedIn, se abre en una nueva pestaña">
                         <i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/githubfacu" target="_blank" id="fa-github" aria-label="GitHub de Facu Elorz en una nueva pestaña" title="ir a github.com/githubfacu">
+                    <a href="https://github.com/githubfacu" rel="noopener noreferrer" target="_blank" id="fa-github" aria-label="Visita mi perfil de GitHub, se abre en una nueva pestaña">
                         <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
                     <span tabindex="0" title="elorzfacundo@gmail.com">
-                        <i class="fa-regular fa-envelope fa-lg" aria-label="Copiar en portapapeles la dirección de correo electrónico de Facundo Elorz" aria-hidden="true"></i>
+                        <i class="fa-regular fa-envelope fa-lg" aria-label="Copiar en portapapeles la dirección de correo electrónico" aria-hidden="true"></i>
                     </span>
                 </li>
             </ul>

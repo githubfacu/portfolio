@@ -80,24 +80,15 @@ function agregarProyectos(){
                         ancla.id = proyecto.proyectoId
                         ancla.href = proyecto.ruta
                         ancla.target = '_blank'
+                        ancla.rel = 'noopener noreferrer'
                         anclaTextContent.innerText= proyecto.anclaTexto
                         ancla.setAttribute('aria-label', `Ver proyecto: ${proyecto.anclaTexto}`)
                         
                         ancla.appendChild(anclaTextContent)
-                        // ancla.style.color='#9EBC9E'
                         ancla.classList.add('badge-blue')
 
-                        // if (!proyecto.personal) {
-                        //     // ancla.style.color='#EFD0CA'
-                        //     ancla.classList.add('badge-yellow')
-                        // }
-                        // if(proyecto.typescript){
-                        //     // ancla.style.color='#6C91C2'
-                        //     ancla.classList.add('badge-blue')
-                        // }
-
                         const spanLink = document.createElement('span')
-                        spanLink.innerHTML=`<i class="fa-solid fa-arrow-right fa-sm"></i>`
+                        spanLink.innerHTML=`<i class="fa-solid fa-arrow-up-right-from-square fa-sm" aria-hidden="true"></i>`
 
                         ancla.appendChild(spanLink)
                         anclaContainer.appendChild(ancla)

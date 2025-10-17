@@ -14,7 +14,6 @@ header{
     top: 0;
     z-index: 10;
     border-bottom: 1px solid var(--borderOpacity);
-    /* font-family: "Cormorant Garamond"; */
     backdrop-filter: blur(10px);
     /* background-color: var(--Fondo);*/
     /* transition: background-color .07s ease, color .07s ease; */
@@ -61,7 +60,7 @@ header{
     text-wrap: nowrap;
 }
 
-.onActive{
+.desktop-nav a[aria-current='page']{
     border-bottom: 2px solid var(--borderOpacity);
     border-radius: 4px;
 }
@@ -198,7 +197,7 @@ header{
         justify-content: flex-start;
         transform: translateX(-100%);
         pointer-events: none;
-        transition: transform 0.6s ease, background-color 0.07 ease, color 0.07 ease;
+        transition: transform 0.4s ease, background-color 0.07s ease, color 0.07s ease;
         z-index: 10;
         overflow-y: auto;
     }
@@ -253,14 +252,14 @@ header{
         color: var(--textColor);
         text-decoration: none;
         padding: 0.5rem 1rem;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .mobile-toggle {
         color: var(--textColor);
         background-color: transparent;
         padding: 0.5rem 1rem;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         border: none;
     }
 
@@ -289,9 +288,9 @@ header{
         border: none;
         width: 50px;
         height: 50px;
-        border-radius: 0;
-        padding-bottom: 8px;
-        border-bottom: 1px solid var(--iconLight);
+        border-radius: 12px;
+        padding: 4px;
+        border-bottom: 2px solid var(--iconLight);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -303,7 +302,6 @@ header{
     .social-iconos i{
         position: absolute;
         margin: auto;
-        opacity: .9;
         scale: 1.25;
     }
 
@@ -314,8 +312,16 @@ header{
 
 @media (max-width: 768px) {
 
+    header{
+        height: 60px;
+    }
+
     .open-menu {
-        scale: .85;
+        scale: .9;
+    }
+
+    .mobile-menu-content{
+        top: 59px;
     }
 
     .mobile-menu-content .onScroll {
@@ -328,7 +334,7 @@ header{
     }
 
     .navUl a, .mobile-toggle{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .social-iconos{

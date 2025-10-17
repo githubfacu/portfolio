@@ -133,24 +133,18 @@
     background: rgba(21, 114, 182, 0.1);
     border: 1px inset var(--badgeBorderBlue);
 }
-
-.badge-red {
-    color: var(--badgeYellowColor);
-    background-color: rgba(247, 223, 30, 0.2);
-    border: 2px inset rgba(247, 223, 30, 0.4);
-}
   
 .linksDiv h4{
     font-weight: 400;
 }
 
-.linksDiv i{
+/* .linksDiv i{
     transition: transform .2s ease;
 }
 
 .anclaContainer a:hover i {
     transform: translateX(4px);
-}
+} */
 
 .practicaDiv{
     display: flex;
@@ -167,7 +161,7 @@
     box-shadow: 0 0 5px 3px rgb(0, 0, 0, .2);
     border-radius: 6px;
     overflow: hidden;
-    z-index: 2;
+    z-index: 10;
     opacity: 0;
     transition: opacity .07s ease-out;
 }
