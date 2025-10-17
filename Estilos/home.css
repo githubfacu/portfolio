@@ -57,6 +57,7 @@ main{
     display: block;
     padding: 2px;
     text-decoration: none;
+    color: var(--textColor);
 }
 
 .contenido-de-pagina a:visited{
