@@ -138,6 +138,10 @@
     font-weight: 400;
 }
 
+.linksDiv a:hover{
+    color: var(--textColorB);
+}
+
 /* .linksDiv i{
     transition: transform .2s ease;
 }

@@ -25,12 +25,13 @@ main{
 .contenido-de-pagina{
     display: flex;
     flex-direction: column;
-    border-radius: 12px;
+    border-radius: 8px;
     border: 1px solid var(--borderOpacity);
     background-color: var(--bgOpacity);
+    backdrop-filter: blur(10px);
     padding: 1rem;
     width: fit-content;
-    position: absolute;
+    position: fixed;
     right: 1.5rem;
     z-index: 9;
     transition: background-color .07s ease, color .07s ease;
@@ -40,22 +41,34 @@ main{
     cursor: default;
 }
 
+.contenido-title:hover{
+    background-color: var(--bgNeutral);
+    text-decoration: underline;
+}
+
 .contenido-de-pagina nav{
     margin-top: 1rem;
     border-top: 1px solid var(--borderOpacity);
 }
 
 .contenido-de-pagina ul{
-    list-style-type: disc;
-    padding-left: 1rem;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
+.contenido-de-pagina li{
+    /* border: 1px solid var(--borderOpacity); */
+    border-left: 4px solid var(--borderOpacity);
+    /* background-color: var(--bgNeutral); */
+}
+
 .contenido-de-pagina a{
     display: block;
-    padding: 2px;
+    padding: 4px 8px;
     text-decoration: none;
     color: var(--textColor);
 }
@@ -148,7 +161,7 @@ main{
 
 .cardExperienciaContent img:hover{
     padding-bottom: 4px;
-    border-bottom: 2px solid var(--badgeBlueColor);
+    border-bottom: 2px solid var(--lightBlue);
 }
 
 .cardExperienciaTextContent p {
@@ -181,6 +194,12 @@ main{
     font-size: 0.9rem;
     padding: 0.2rem 0.6rem;
     border-radius: .375rem;
+    color: var(--badgeBlueColor);
+    transition: color .07s ease;
+}
+
+.experienciaLinks a:hover{
+    color: var(--textColorB);
 }
 
 /************************* PROYECTOS *************************/
@@ -315,6 +334,11 @@ main{
     border-radius: .375rem;
     position: relative;
     color: var(--badgeBlueColor);
+    transition: color .07s ease;
+}
+
+.cardLinksDiv a:hover{
+    color: var(--textColorB);
 }
 
 .cardLinksDiv h4{

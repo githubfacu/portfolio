@@ -16,7 +16,7 @@
   --borderNeutral: rgba(128, 128, 128, 0.15);
   --textColor: #F7F7F7;
   --Fondo: #000000;
-  --lightBlue: #1572B6;
+  --lightBlue: #1572b6;
   --iconLight: rgba(244, 241, 255, .85);
   --green: #339933;
   --rose: #EFD0CA;
@@ -54,7 +54,7 @@ body.dark {
   --Fondo: #010409;
   --shadowColor: rgba(247, 247, 247, 0.15);
   --textColor: #F7F7F7;
-  --textColorB: #7DD3FC;
+  --textColorB: #49A3D9;
   --textColorC: #F7F7F7;
   --hover-blue: var(--lightBlue);
   --blueBadget: #F7F7F7;

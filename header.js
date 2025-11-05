@@ -2,7 +2,7 @@ const pagesMobileNav = document.querySelector('.pages-nav');
 
 const htmlContent = `
     <div class="mobile-menu">
-        <button class="open-menu" tabindex="0" id="openMenu" aria-label="Menu" aria-expanded="false">
+        <button class="open-menu" tabindex="0" id="openMenu" aria-label="Menu" aria-expanded="false" aria-haspopup="menu">
         </button>
         <div class="mobile-menu-content">
             <div class="fadetop"></div>
@@ -13,7 +13,7 @@ const htmlContent = `
                             <a href="../index.html">Inicio</a>
                         </li>
                         <li>
-                            <a href="./arquitectura.html">Arquitectura</a>
+                            <a href="./sistemas.html">Sistemas</a>
                         </li>
                         <li>
                             <a href="./accesibilidad.html">Accesibilidad</a>
@@ -23,6 +23,9 @@ const htmlContent = `
                         </li>
                         <li>
                             <a href="./presentaciones.html">Presentaciones</a>
+                        </li>
+                        <li>
+                            <a href="./anexo.html">Anexo</a>
                         </li>
                     </ul>
                 </nav>
@@ -58,7 +61,7 @@ const htmlContent = `
                     <a href="../index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="./arquitectura.html">Arquitectura</a>
+                    <a href="./sistemas.html">Sistemas</a>
                 </li>
                 <li>
                     <a href="./accesibilidad.html">Accesibilidad</a>
@@ -68,6 +71,9 @@ const htmlContent = `
                 </li>
                 <li>
                     <a href="./presentaciones.html">Presentaciones</a>
+                </li>
+                <li>
+                    <a href="./anexo.html">Anexo</a>
                 </li>
             </ul>
         </nav>

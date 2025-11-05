@@ -7,8 +7,8 @@ export const material = [
         proyectos: [
             {
                 proyectoId: 4,
-                ruta: 'https://www.npmjs.com/package/accessible-search-select',
-                anclaTexto: 'accessible-search-select',
+                ruta: 'https://www.npmjs.com/~facundoekl',
+                anclaTexto: 'npm-packages',
                 img: './Imagenes/capturas/npm-logo.jpg',
                 descripcion: 'Componente de selección accesible',
                 personal: true,

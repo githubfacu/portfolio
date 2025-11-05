@@ -1,10 +1,19 @@
 
-.arq-section {
+.course-section {
     width: 100%;
     height: auto;
 }
 
-.arq-section h2 {
+.course-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.book-section {
+    width: 100%;
+    height: auto;
+}
+
+.book-section h2 {
   margin-bottom: 0.5rem;
 }
 
@@ -17,6 +26,7 @@
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+    margin-top: 1rem;
     align-items: center;
     transition: background-color .07s ease, color .07s ease;
 }
