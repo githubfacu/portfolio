@@ -1,5 +1,5 @@
 const $divIcons = document.querySelector('.social-iconos-on-desktop')
-const $divIconsMobile = document.querySelector('.social-iconos')
+const $divsIconsMobile = document.querySelectorAll('.social-iconos')
 
 const $mailIcon = document.querySelector('.social-iconos-on-desktop span')
 const $mailIconMobile = document.querySelector('.social-iconos span')
@@ -15,7 +15,9 @@ copiedMessage.style.display = 'none'
 const copiedMessageMobile = copiedMessage.cloneNode(true)
 
 $divIcons.appendChild(copiedMessage)
-$divIconsMobile.appendChild(copiedMessageMobile)
+$divsIconsMobile.forEach(div =>{
+    div.appendChild(copiedMessageMobile)
+})
 
 function showCopiedMessage(element) {
     element.style.display = 'block'

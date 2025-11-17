@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros</title>
+    <link rel="stylesheet" href="../Estilos/index.css">
+    <link rel="stylesheet" href="../Estilos/header.css">
+    <link rel="stylesheet" href="../Estilos/pages.css">
+    <link rel="stylesheet" href="../Estilos/libros.css">
+    <link rel="stylesheet" href="../Estilos/scrollTop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/661bc9cd16.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <header>
+        <div class="header-background"></div>
+        <div class="pages-nav"></div>
+    </header>
+
+    <main>
+        <div role="region" aria-labelledby="titulo-presentacion" class="presentacionesTituloDiv">
+            <h1 class="presentacionesTitulo">Libros</h1>
+            <p>Esta sección contiene información sobre los libros relacionados con mis intereses y estudios.</p>
+        </div>
+
+        <div class="max-content-pages">
+
+            <section class="book-section" aria-labelledby="book-libros">
+                <h2 id="book-libros" class="presentacionesTitulo">Libros</h2>
+                <article class="libro">
+                    <img src="../Imagenes/arq-limpia-book.webp" alt="Portada del libro Arquitectura Limpia">
+                    <div class="libro-info">
+                        <h4>Arquitectura Limpia</h4>
+                        <p class="autor">Robert C. Martin</p>
+                        <p class="descripcion">
+                            Una guía esencial sobre cómo estructurar software mantenible y escalable. Presenta principios, patrones y reglas para diseñar sistemas robustos y desacoplados.
+                        </p>
+                    </div>
+                </article>
+                <article class="libro">
+                    <img src="../Imagenes/book-covers/Accesibilidad-Web-Diseño-de-Aplicaciones.jpg" alt="Portada del libro Accesibilidad Web">
+                    <div class="libro-info">
+                        <h4>Accesibilidad Web - Diseño de aplicaciones</h4>
+                        <p class="autor">Pablo E. Fernández Casado</p>
+                        <p class="descripcion">
+                            La importacia de la accesibilidad Web de una forma práctica y didáctica adentrándose de lleno en los principales estándares de WCAG 2.1, WAI-ARIA y SMIL.
+                        </p>
+                    </div>
+                </article>
+                <article class="libro">
+                    <img src="../Imagenes/book-covers/javascript-book-cover.webp" alt="Portada del libro Accesibilidad Web">
+                    <div class="libro-info">
+                        <h4>JavaScript Guía Completa</h4>
+                        <p class="autor">SALVAGGIO, Alessandra - TESTA, Gualtiero</p>
+                        <p class="descripcion">
+                            JavaScript en el contexto web; se abordan los conceptos básicos hasta la exposición de argumentos más avanzados. El contenido de sus páginas tiene el propósito de llevar de la mano al lector detalle a detalle con el fin de que más adelante sea autónomo y realice sus propios proyectos en JavaScript. Se pretende guiar al lector tomando como base ECMAScript 6, la versión de JavaScript más utilizada actualmente.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <nav class="nav-pagination" aria-label="Paginación">
+                <ul class="pager">
+                    <li>
+                        <a href="./presentaciones.html" class="pager-navlink">
+                            <span><i class="fa-solid fa-arrow-left fa-sm" aria-hidden="true"></i></span>
+                            Anterior - Presentaciones
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./anexo.html" class="pager-navlink">
+                            Siguiente - Anexo
+                            <span><i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+
+    <script src="../header.js"></script>
+    <script src="../scrollTop.js"></script>
+    <script src="../subMenu.js"></script>
+</body>
+</html>

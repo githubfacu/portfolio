@@ -49,8 +49,35 @@ header{
     gap: .75rem;
 }
 
-.desktop-nav a{
+.expanded-icon{
+    font-size: .8rem;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu-anexo[aria-hidden="true"] {
+    display: none;
+}
+
+.submenu-anexo[aria-hidden='false']{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    position: absolute;
+    top: 50px;
+    padding: .75rem .875rem;
+    border: 1px solid var(--borderOpacity);
+    border-radius: 8px;
+    background-color: var(--Fondo);
+}
+
+.desktop-nav a, .submenu-btn{
     text-decoration: none;
+    background-color: transparent;
+    border: none;
     color: var(--textColor);
     font-size: 1.1rem;
     font-weight: 400;
@@ -58,6 +85,24 @@ header{
     position: relative;
     z-index: 1;
     text-wrap: nowrap;
+    cursor: pointer;
+}
+
+.submenu-anexo li{
+    width: 100%;
+}
+
+.submenu-anexo a{
+    display: flex;
+    box-sizing: border-box;
+    padding: .375rem .8rem;
+    padding-right: calc(.675rem + 3px);
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:focus, .submenu-btn:hover, .submenu-btn:focus {
+    color: var(--borderOpacityHard);
+    transition: color .07s ease;
 }
 
 .desktop-nav a[aria-current='page']{
@@ -65,29 +110,13 @@ header{
     border-radius: 4px;
 }
 
-.desktop-nav a:hover,
-.desktop-nav a:focus {
-    color: white;
-    transition: color .07s ease;
+.submenu-anexo a {
+    border-left: 3px solid transparent;
 }
 
-.desktop-nav a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--blueGradient);
-    border-radius: 6px;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity .07s ease;
-}
-
-.desktop-nav a:hover::before,
-.desktop-nav a:focus::before {
-    opacity: 1;
+.submenu-anexo a[aria-current='page'] {
+    border-bottom: none;
+    border-left-color: var(--borderOpacity);
 }
 
 .desktop-toggle{
@@ -111,22 +140,6 @@ header{
 .lucide-sun, .lucide-moon, .fa-moon{
     color:var(--iconLight);
 }
-
-/* .icon-transition i, .icon-transition svg {
-    opacity: 0;
-    animation: iconFadeIn .07s forwards;
-}
-
-@keyframes iconFadeIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-8px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-} */
 
 .desktop-toggle:hover{
     background-color: rgba(128, 128, 128, 0.25);
@@ -252,14 +265,14 @@ header{
         color: var(--textColor);
         text-decoration: none;
         padding: 0.5rem 1rem;
-        font-size: 2.3rem;
+        font-size: 1.9rem;
     }
 
     .mobile-toggle {
         color: var(--textColor);
         background-color: transparent;
         padding: 0.5rem 1rem;
-        font-size: 2.3rem;
+        font-size: 1.9rem;
         border: none;
     }
 
@@ -285,12 +298,12 @@ header{
 
     .social-iconos a, .social-iconos span{
         background-color: transparent;
-        border: none;
         width: 50px;
         height: 50px;
         border-radius: 12px;
         padding: 4px;
-        border-bottom: 2px solid var(--iconLight);
+        border: 2px solid var(--iconLight);
+        box-shadow: 0 5px 7px -5px var(--iconLight);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -299,10 +312,14 @@ header{
         transition: background-color .07s ease, color .07s ease, box-shadow .07s ease;
     }
 
+    .social-iconos a:active, .social-iconos span:active{
+        border: 1px solid var(--iconLight);
+    }
+
     .social-iconos i{
         position: absolute;
         margin: auto;
-        scale: 1.25;
+        scale: 1.15;
     }
 
     .social-iconos p{
@@ -322,6 +339,7 @@ header{
 
     .mobile-menu-content{
         top: 59px;
+        height: calc(100vh - 59px);
     }
 
     .mobile-menu-content .onScroll {
@@ -334,7 +352,7 @@ header{
     }
 
     .navUl a, .mobile-toggle{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .social-iconos{
@@ -344,8 +362,8 @@ header{
     }
 
     .social-iconos a, .social-iconos span{
-        width: 44px;
-        height: 44px;
+        width: 40px;
+        height: 40px;
         padding-bottom: 4px;
     }
 

@@ -65,6 +65,9 @@
                                 <a href="./Paginas/presentaciones.html">Presentaciones</a>
                             </li>
                             <li>
+                                <a href="./Paginas/libros.html">Libros</a>
+                            </li>
+                            <li>
                                 <a href="./Paginas/anexo.html">Anexo</a>
                             </li>
                         </ul>                        
@@ -107,14 +110,31 @@
                     <li>
                         <a href="./Paginas/accesibilidad.html">Accesibilidad</a>
                     </li>
-                    <li>
-                        <a href="./Paginas/vibecode.html">Vibe Code</a>
-                    </li>
-                    <li>
-                        <a href="./Paginas/presentaciones.html">Presentaciones</a>
-                    </li>
-                    <li>
-                        <a href="./Paginas/anexo.html">Anexo</a>
+                    <li class="submenu">
+                        <button 
+                            class="submenu-btn"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-controls="submenu-anexo"
+                            aria-label="Anexo sección"
+                        >
+                            Anexo <span class="expanded-icon" aria-hidden="true"><i class="fa-solid fa-angle-down"></i></span>
+                        </button>
+
+                        <ul id="submenu-anexo" class="submenu-anexo" aria-hidden="true">
+                            <li>
+                                <a href="./Paginas/vibecode.html">Vibe Code</a>
+                            </li>
+                            <li>
+                                <a href="./Paginas/presentaciones.html">Presentaciones</a>
+                            </li>
+                            <li>
+                                <a href="./Paginas/libros.html">Libros</a>
+                            </li>
+                            <li>
+                                <a href="./Paginas/anexo.html">Anexo</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -463,5 +483,6 @@
     <script src="./contacto.js"></script>
     <script src="./header.js"></script>
     <script src="./scrollTop.js"></script>
+    <script src="./subMenu.js"></script>
 </body>
 </html>

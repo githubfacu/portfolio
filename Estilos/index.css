@@ -20,13 +20,12 @@
   --iconLight: rgba(244, 241, 255, .85);
   --green: #339933;
   --rose: #EFD0CA;
-  --yellow: #F7DF1E;
+  --yellow: #857500;
   --yellow-b: #FFD700;
   --blue: #066781;
   --blueBadget: #F7F7F7;
   --gradient: linear-gradient(135deg, #f5f5f5, #e0e0e0, #cccccc);
   --cardGradient:linear-gradient(135deg, rgba(86, 86, 86, 0.05), rgba(86, 86, 86, 0.1), rgba(86, 86, 86, 0.05));
-  --hover-blue: #7DD3FC;
   --arternative-hover: var(--lightBlue);
   --arternative-border: var(--lightBlue);
   --white-dark: #090909;
@@ -56,7 +55,6 @@ body.dark {
   --textColor: #F7F7F7;
   --textColorB: #49A3D9;
   --textColorC: #F7F7F7;
-  --hover-blue: var(--lightBlue);
   --blueBadget: #F7F7F7;
   --badgeGreenColor: var(--green);
   --badgeYellowColor: var(--yellow-b);
@@ -88,7 +86,6 @@ body.light {
   --textColor: #090909;
   --textColorB: var(--lightBlue);
   --textColorC: var(--lightBlue);
-  --hover-blue: var(--hover-blue);
   --blueBadget: #0D3B5E;
   --iconLight: rgba(9, 9, 9, .9);
   --badgeGreenColor: #1E4D1E;
@@ -132,6 +129,11 @@ h2{
 
 h3{
     font-size: 1.2rem;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 1.1rem;
     font-weight: 400;
 }
 

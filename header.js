@@ -25,6 +25,9 @@ const htmlContent = `
                             <a href="./presentaciones.html">Presentaciones</a>
                         </li>
                         <li>
+                            <a href="./libros.html">Libros</a>
+                        </li>
+                        <li>
                             <a href="./anexo.html">Anexo</a>
                         </li>
                     </ul>
@@ -66,14 +69,22 @@ const htmlContent = `
                 <li>
                     <a href="./accesibilidad.html">Accesibilidad</a>
                 </li>
-                <li>
-                    <a href="./vibecode.html">Vibe Code</a>
-                </li>
-                <li>
-                    <a href="./presentaciones.html">Presentaciones</a>
-                </li>
-                <li>
-                    <a href="./anexo.html">Anexo</a>
+                <li class="submenu">
+                    <button 
+                        class="submenu-btn"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        aria-controls="submenu-anexo"
+                    >
+                        Anexo <span class="expanded-icon" aria-hidden="true"><i class="fa-solid fa-angle-down"></i></span>
+                    </button>
+
+                    <ul id="submenu-anexo" class="submenu-anexo" aria-hidden="true">
+                        <li><a href="./vibecode.html">Vibe Code</a></li>
+                        <li><a href="./presentaciones.html">Presentaciones</a></li>
+                        <li><a href="./libros.html">Libros</a></li>
+                        <li><a href="./anexo.html">Anexo</a></li>
+                    </ul>
                 </li>
             </ul>
         </nav>
@@ -146,11 +157,9 @@ if ($openMenu) {
 $openMenu.addEventListener('click', () => {
   const isOpen = $mobileMenuContent.classList.contains('open');
 
-  // Alternar el menú
   $mobileMenuContent.classList.toggle('open');
   $openMenu.setAttribute('aria-expanded', String(!isOpen));
 
-  // Cambiar el ícono según el estado
   $openMenu.innerHTML = !isOpen
     ? `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`
     : `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>`;
