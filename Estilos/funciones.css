@@ -110,6 +110,11 @@
     border: 1px inset rgba(0, 0, 0, 0.2); */
 }
 
+.anclaProject{
+    font-weight: 500;
+
+}
+
 .badge-text {
     color: var(--textColor);
     background-color: rgba(126, 126, 126, 0.1);

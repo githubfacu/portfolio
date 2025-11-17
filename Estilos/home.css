@@ -192,6 +192,7 @@ main{
     box-sizing: border-box;
     gap: 5px;
     font-size: 0.9rem;
+    font-weight: 500;
     padding: 0.2rem 0.6rem;
     border-radius: .375rem;
     color: var(--badgeBlueColor);
@@ -330,6 +331,7 @@ main{
     box-sizing: border-box;
     gap: 5px;
     font-size: 0.9rem;
+    font-weight: 500;
     padding: 0.2rem 0.6rem;
     border-radius: .375rem;
     position: relative;
@@ -339,10 +341,6 @@ main{
 
 .cardLinksDiv a:hover{
     color: var(--textColorB);
-}
-
-.cardLinksDiv h4{
-    font-weight: 400;
 }
 
 /************************* CRONOLOGIA *************************/
