@@ -32,7 +32,7 @@ const htmlContent = `
                         </li>
                     </ul>
                 </nav>
-                <button class="mobile-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro">
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Cambiar entre modo claro y oscuro">
                     Cambiar tema
                 </button>
                 <nav aria-label="Redes sociales">
@@ -88,7 +88,7 @@ const htmlContent = `
                 </li>
             </ul>
         </nav>
-        <button class="desktop-toggle" id="toggle" aria-label="Cambiar entre modo claro y oscuro">
+        <button class="desktop-toggle" id="desktop-toggle" aria-label="Cambiar entre modo claro y oscuro">
         </button>            
     </div>
 `;
@@ -98,8 +98,8 @@ if (pagesMobileNav) {
 }
 
 const $body = document.body;
-const $toggle = document.querySelectorAll('#toggle');
-const $desktopToggle = document.querySelectorAll('.desktop-nav #toggle')
+const $mobileToggle = document.getElementById('mobile-toggle');
+const $desktopToggle = document.getElementById('desktop-toggle')
 const $openMenu = document.querySelector('.open-menu');
 const $mobileMenuContent = document.querySelector('.mobile-menu-content');
 const $navItemsMobileMenuContent = document.querySelectorAll('#mobileNavUl a');
@@ -107,10 +107,8 @@ const $navItems = document.querySelectorAll('.desktop-nav a')
 
 function setToggleIcon() {
     const isDark = $body.classList.contains('dark');
-    $desktopToggle.forEach(btn => {
-        btn.innerHTML = isDark 
+    $desktopToggle.innerHTML = isDark 
             ? '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>' : '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>';
-    });
 }
 
 const theme = localStorage.getItem('tema');
@@ -127,10 +125,6 @@ if (theme === 'light') {
 setToggleIcon();
 
 function toggleTema() {
-    $desktopToggle.forEach(btn => {
-        btn.classList.add('icon-transition');
-    });
-
     if ($body.classList.contains('dark')) {
         $body.classList.replace('dark', 'light');
         localStorage.setItem('tema', 'light');
@@ -141,11 +135,14 @@ function toggleTema() {
     setToggleIcon();
 }
 
-$toggle.forEach(btn => {
-    btn.addEventListener('click', toggleTema);
-    btn.addEventListener('keypress', e => {
-        if (e.key === 'Enter' || e.key === ' ') toggleTema();
-    });
+$mobileToggle.addEventListener('click', toggleTema);
+$mobileToggle.addEventListener('keypress', e => {
+    if (e.key === 'Enter' || e.key === ' ') toggleTema();
+});
+
+$desktopToggle.addEventListener('click', toggleTema);
+$desktopToggle.addEventListener('keypress', e => {
+    if (e.key === 'Enter' || e.key === ' ') toggleTema();
 });
 
 if ($openMenu) {

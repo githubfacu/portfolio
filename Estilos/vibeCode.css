@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--bgNeutral);
+  background-color: var(--bgArticle);
   padding: .5rem;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
