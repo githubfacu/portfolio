@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudios | Facundo Elorz | Portafolio</title>
+    <link rel="stylesheet" href="../Estilos/index.css">
+    <link rel="stylesheet" href="../Estilos/header.css">
+    <link rel="stylesheet" href="../Estilos/pages.css">
+    <link rel="stylesheet" href="../Estilos/tabla-contenidos.css">
+    <link rel="stylesheet" href="../Estilos/estudios.css">
+    <link rel="stylesheet" href="../Estilos/cursos-article.css">
+    <link rel="stylesheet" href="../Estilos/scrollTop.css">
+    <link rel="stylesheet" href="../Estilos/more-info.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/661bc9cd16.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <header>
+        <div class="header-background"></div>
+        <div class="pages-nav"></div>
+    </header>
+
+    <main id="main-content">
+        <aside class="tabla-contenidos">
+            <details>
+                <summary id="contenido-title" class="contenido-title">Contenido de página</summary>
+                <nav aria-labelledby="contenido-title">
+                    <ul>
+                        <li>
+                            <a href="#fullstack-cursos">Fullstack</a>
+                        </li>
+                        <li>
+                            <a href="#react-cursos">React</a>
+                        </li>
+                        <li>
+                            <a href="#next-cursos">Next.js</a>
+                        </li>
+                        <li>
+                            <a href="#mobile-cursos">Dispositivos móviles</a>
+                        </li>
+                        <li>
+                            <a href="#code-cursos">Para desarrolladores</a>
+                        </li>
+                        <li>
+                            <a href="#arq-cursos">Arquitectura</a>
+                        </li>
+                        <li>
+                            <a href="#for-accessibility">Accesibilidad</a>
+                        </li>
+                        <li>
+                            <a href="#moreInfo">Más contenido</a>
+                        </li>
+                    </ul>
+                </nav>
+            </details>
+        </aside>
+
+        <div class="presentacionesTituloDiv">
+            <h1 class="presentacionesTitulo">Estudios</h1>
+            <p class="sobre-mi">Esta sección contiene información sobre cursos y estudios realizados que incluyen contenido de sistemas, lenguajes de programación, desarrollo y aquitectura de software.</p>
+        </div>
+
+        <div class="max-content-pages">
+
+            <section class="course-section" aria-labelledby="fullstack-cursos">
+                <h2 id="fullstack-cursos" class="presentacionesTitulo">Fullstack</h2>
+                <ul class="lista-cursos" data-category="fullstack"></ul>
+            </section>
+
+            <section class="course-section" aria-labelledby="react-cursos">
+                <h2 id="react-cursos" class="presentacionesTitulo">React</h2>
+                <ul class="lista-cursos" data-category="react"></ul>
+            </section>
+
+            <section class="course-section" aria-labelledby="next-cursos">
+                <h2 id="next-cursos" class="presentacionesTitulo">Next.js</h2>
+                <ul class="lista-cursos" data-category="next"></ul>
+            </section>
+            
+            <section class="course-section" aria-labelledby="mobile-cursos">
+                <h2 id="mobile-cursos" class="presentacionesTitulo">Desarrollo de aplicaciónes móviles</h2>
+                <ul class="lista-cursos" data-category="mobile"></ul>
+            </section>
+
+            <section class="course-section" aria-labelledby="code-cursos">
+                <h2 id="code-cursos" class="presentacionesTitulo">Cursos para desarrolladores</h2>
+                <ul class="lista-cursos" data-category="code"></ul>
+            </section>
+
+            <section class="course-section" aria-labelledby="arq-cursos">
+                <h2 id="arq-cursos" class="presentacionesTitulo">Arquitectura de software</h2>
+                <ul class="lista-cursos" data-category="arq"></ul>
+            </section>
+
+            <section aria-labelledby="for-accessibility">
+                <h2 id="for-accessibility" class="section-title">Accesibilidad</h2>
+                <div class="subcategoria-cursos">
+                    <h3 class="subcategoria-titulo">Para desarrolladores</h3>
+                    <ul class="lista-cursos" data-category="developers"></ul>
+                </div>
+
+                <div class="subcategoria-cursos">
+                    <h3 class="subcategoria-titulo" lang="en">Web Content Accessibility Guidelines (WCAG)</h3>
+                    <ul class="lista-cursos" data-category="wcag"></ul>
+                </div>
+
+                <div class="subcategoria-cursos">
+                    <h3 class="subcategoria-titulo">Para diseñadores UX</h3>
+                    <ul class="lista-cursos" data-category="designers"></ul>
+                </div>
+            </section>
+
+            <section>
+                <nav class="nav-moreInfo" aria-labelledby="moreInfo">
+                    <h2 id="moreInfo">Más contenido</h2>
+                    <ul>
+                        <li>
+                            <a href="./libros.html" class="infoLink">
+                                Libros
+                                <span><i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav> 
+            </section>
+
+            <nav class="nav-pagination" aria-label="Paginación">
+                <ul class="pager">
+                    <li>
+                        <a href="../index.html" class="pager-navlink">
+                            <span><i class="fa-solid fa-arrow-left fa-sm" aria-hidden="true"></i></span>
+                            Anterior - Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./vibecode.html" class="pager-navlink">
+                            Siguiente - Vibe Code
+                            <span><i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav> 
+        </div>
+    </main>
+
+    <script type="module" src="./scripts/estudios.js"></script>
+</body>
+</html>

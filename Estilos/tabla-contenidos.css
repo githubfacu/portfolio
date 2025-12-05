@@ -1,0 +1,70 @@
+
+
+.tabla-contenidos{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid var(--borderOpacity);
+    background-color: var(--bgOpacity);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    width: fit-content;
+    position: fixed;
+    right: 1.5rem;
+    z-index: 9;
+    transition: background-color .07s ease, color .07s ease;
+}
+
+.contenido-title{
+    cursor: default;
+}
+
+.contenido-title:hover{
+    background-color: var(--bgNeutral);
+    text-decoration: underline;
+}
+
+.tabla-contenidos nav{
+    margin-top: 1rem;
+    border-top: 1px solid var(--borderOpacity);
+}
+
+.tabla-contenidos ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.tabla-contenidos li{
+    /* border: 1px solid var(--borderOpacity); */
+    border-left: 4px solid var(--borderOpacity);
+    /* background-color: var(--bgNeutral); */
+}
+
+.tabla-contenidos a{
+    display: block;
+    padding: 4px 8px;
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.tabla-contenidos a:visited{
+    color: var(--textColor);
+}
+
+.tabla-contenidos a:hover, .tabla-contenidos a:focus{
+    color: var(--bgColor);
+    background-color: var(--textColor);
+}
+
+
+@media (max-width: 1024px){
+    .tabla-contenidos{
+        position: relative;
+        left: 0;
+    }
+
+}

@@ -20,68 +20,6 @@ main{
 }
 
 
-/************************* CONTENIDO DE PAGINA *************************/
-
-.contenido-de-pagina{
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    border: 1px solid var(--borderOpacity);
-    background-color: var(--bgOpacity);
-    backdrop-filter: blur(10px);
-    padding: 1rem;
-    width: fit-content;
-    position: fixed;
-    right: 1.5rem;
-    z-index: 9;
-    transition: background-color .07s ease, color .07s ease;
-}
-
-.contenido-title{
-    cursor: default;
-}
-
-.contenido-title:hover{
-    background-color: var(--bgNeutral);
-    text-decoration: underline;
-}
-
-.contenido-de-pagina nav{
-    margin-top: 1rem;
-    border-top: 1px solid var(--borderOpacity);
-}
-
-.contenido-de-pagina ul{
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.contenido-de-pagina li{
-    /* border: 1px solid var(--borderOpacity); */
-    border-left: 4px solid var(--borderOpacity);
-    /* background-color: var(--bgNeutral); */
-}
-
-.contenido-de-pagina a{
-    display: block;
-    padding: 4px 8px;
-    text-decoration: none;
-    color: var(--textColor);
-}
-
-.contenido-de-pagina a:visited{
-    color: var(--textColor);
-}
-
-.contenido-de-pagina a:hover, .contenido-de-pagina a:focus{
-    color: var(--bgColor);
-    background-color: var(--textColor);
-}
-
 /************************* MARCA PERSONAL *************************/
 
 .divPresentacion{
@@ -121,14 +59,13 @@ main{
 }
 
 .sobre-mi{
-    max-width: 1280px;
     text-wrap: pretty;
     margin-top: 1.4rem;
     text-align: center;
     color: var(--textColor);
     font-size: 1rem;
     line-height: 1.5;
-    max-width: 1200px;
+    max-width: 997px;
 }
 
 .mobile{
@@ -239,14 +176,15 @@ main{
 .cardProyectoContent{
     width: 100%;
     height: 100%;
-    color: #F7F7F7;
+    color: var(--textColor);
     display: flex;
     align-items: start;
     justify-content: center;
     box-sizing: border-box;
     gap: 16px;
     padding: 10px;
-    background: linear-gradient(135deg, rgb(7, 76, 131), #0c0f1a, #090909);
+    background: var(--gradientB);
+    box-shadow: 0 0 12px 3px var(--shadowColor);
 }
 
 .cardProyectoContent picture{
@@ -280,7 +218,7 @@ main{
 .cardProyectoTextContent p{
     text-wrap: pretty;
     padding-bottom: .5rem;
-    border-bottom: 1px solid #F7F7F7;
+    border-bottom: 1px solid var(--textColor);
 }
 
 .tech-tools{
@@ -333,12 +271,12 @@ main{
     padding: 0.2rem 0.6rem;
     border-radius: .375rem;
     position: relative;
-    color: #7DD3FC;
+    color: var(--badgeBlueColor);
     transition: color .07s ease;
 }
 
 .cardLinksDiv a:hover{
-    color: #49A3D9;
+    color: var(--textColorB);
 }
 
 /************************* CRONOLOGIA *************************/
@@ -399,7 +337,7 @@ main{
         margin-bottom: 3rem;
     }
 
-    .contenido-de-pagina{
+    .tabla-contenidos{
         position: relative;
         left: 0;
     }

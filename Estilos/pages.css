@@ -4,7 +4,6 @@ body{
 
 main{
     width: 100%;
-    place-items: center;
     box-sizing: border-box;
     padding: 1.5rem;
 }
@@ -41,10 +40,11 @@ main{
 .sobre-mi{
     margin-top: .75rem;
     text-wrap: pretty;
+    text-align: center;
     font-size: 1rem;
     color: var(--textColor);
     line-height: 1.5;
-    max-width: 1200px;
+    max-width: 997px;
 }
 
 @media (max-width: 1024px) {
@@ -58,6 +58,7 @@ main{
         font-size: 5.5rem;
         line-height: 7.5rem;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -72,5 +73,6 @@ main{
     }
     .sobre-mi{
         font-size: .95rem;
+        text-align: start;
     }
 }

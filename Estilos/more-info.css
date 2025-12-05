@@ -1,0 +1,23 @@
+
+.nav-moreInfo ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.infoLink{
+    z-index: 1;
+    display: flex;
+    box-sizing: border-box;
+    gap: 5px;
+    padding: 0.2rem 0.6rem;
+    width: fit-content;
+    color: var(--textColor);
+}
+
+.infoLink:hover, .infoLink:focus{
+    color: var(--borderOpacityHard);
+}
+
+.nav-moreInfo .fa-arrow-right{
+    margin-left: 5px;
+}

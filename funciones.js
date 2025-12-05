@@ -1,3 +1,5 @@
+"use strict";
+
 import { material } from './Material/datos.js'
 
 const $lineadetiempo = document.getElementById('lineaDeTiempo')
@@ -181,6 +183,7 @@ function clasificarXIndex (){
 }
 
 function mostrarElemento(elemento) {
+    
     elemento.classList.remove('hidden');
     setTimeout(() => {
         elemento.style.opacity = '1';

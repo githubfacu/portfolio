@@ -13,10 +13,7 @@ const htmlContent = `
                             <a href="../index.html">Inicio</a>
                         </li>
                         <li>
-                            <a href="./sistemas.html">Sistemas</a>
-                        </li>
-                        <li>
-                            <a href="./accesibilidad.html">Accesibilidad</a>
+                            <a href="./estudios.html">Estudios</a>
                         </li>
                         <li>
                             <a href="./vibecode.html">Vibe Code</a>
@@ -26,9 +23,6 @@ const htmlContent = `
                         </li>
                         <li>
                             <a href="./libros.html">Libros</a>
-                        </li>
-                        <li>
-                            <a href="./anexo.html">Anexo</a>
                         </li>
                     </ul>
                 </nav>
@@ -64,10 +58,7 @@ const htmlContent = `
                     <a href="../index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="./sistemas.html">Sistemas</a>
-                </li>
-                <li>
-                    <a href="./accesibilidad.html">Accesibilidad</a>
+                    <a href="./estudios.html">Estudios</a>
                 </li>
                 <li class="submenu">
                     <button 
@@ -83,7 +74,6 @@ const htmlContent = `
                         <li><a href="./vibecode.html">Vibe Code</a></li>
                         <li><a href="./presentaciones.html">Presentaciones</a></li>
                         <li><a href="./libros.html">Libros</a></li>
-                        <li><a href="./anexo.html">Anexo</a></li>
                     </ul>
                 </li>
             </ul>
