@@ -78,7 +78,7 @@ main{
     display: flex;
     flex-direction: column;
     border-radius: 6px;
-    padding: 1.5rem;
+    padding: 1rem;
     gap: 1rem;    
     background-color: var(--bgNeutral);
     border: 1px solid var(--borderNeutral);
@@ -87,13 +87,15 @@ main{
 
 .cardExperienciaContent {
     display: flex;
-    gap: 1.5rem;
+    padding: 0 .5rem;
     align-items: flex-start;
 }
 
 .cardExperienciaContent img{
     width: 120px;
     height: auto;
+    padding: .5rem;
+    margin-right: 1rem;
 }
 
 .cardExperienciaContent img:hover{
@@ -117,7 +119,7 @@ main{
     box-sizing: border-box;
     width: 100%;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: .5rem;
     margin-top: 1rem;
 }
 
