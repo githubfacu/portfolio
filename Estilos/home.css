@@ -78,23 +78,22 @@ main{
     display: flex;
     flex-direction: column;
     border-radius: 6px;
-    padding: 1rem;
-    gap: 1rem;    
+    padding: 1.5rem;
+    gap: 1rem;
     background-color: var(--bgNeutral);
-    border: 1px solid var(--borderNeutral);
+    border: 2px solid var(--borderNeutral);
     transition: background-color .07s ease, color .07s ease;
 }
 
 .cardExperienciaContent {
     display: flex;
-    padding: 0 .5rem;
     align-items: flex-start;
 }
 
 .cardExperienciaContent img{
     width: 120px;
     height: auto;
-    padding: .5rem;
+    margin: .5rem;
     margin-right: 1rem;
 }
 
@@ -368,6 +367,10 @@ main{
 
     .sobre-mi{
         text-align: start;
+    }
+
+    .cardExperienciaContent{
+        padding-left: 0;
     }
 
     .cardProyectoContent picture{

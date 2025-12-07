@@ -10,11 +10,10 @@
     width: fit-content;
     background-color: var(--bgNeutral);
     color: var(--textColor);
-    padding: 45px 55px;
+    padding: 35px 55px 45px;
     border-radius: 6px;
-    border: 1px solid rgba(128, 128, 128, 0.15);
+    border: 2px solid var(--borderNeutral);
     transition: background-color .07s ease, color .07s ease;
-    /* border: 1px solid rgba(128, 128, 128, 0.25); */
 }
 
 .formacionAcademica h2{
