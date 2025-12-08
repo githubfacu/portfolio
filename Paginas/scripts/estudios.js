@@ -1,4 +1,5 @@
 import "../../header.js";
+import "../../theme.js";
 import "../../scrollTop.js";
 import "../../subMenu.js";
 
