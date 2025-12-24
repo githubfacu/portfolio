@@ -22,7 +22,7 @@ const htmlContent = `
                             <a href="./presentaciones.html">Presentaciones</a>
                         </li>
                         <li>
-                            <a href="./libros.html">Libros</a>
+                            <a href="./lectura.html">Lectura</a>
                         </li>
                     </ul>
                 </nav>
@@ -73,7 +73,7 @@ const htmlContent = `
                     <ul id="submenu-anexo" class="submenu-anexo" aria-hidden="true">
                         <li><a href="./vibecode.html">Vibe Code</a></li>
                         <li><a href="./presentaciones.html">Presentaciones</a></li>
-                        <li><a href="./libros.html">Libros</a></li>
+                        <li><a href="./lectura.html">Lectura</a></li>
                     </ul>
                 </li>
             </ul>

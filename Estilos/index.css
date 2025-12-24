@@ -14,7 +14,6 @@
     --bgArticle: #cccccc;
     --textColor: #090909;
     --textColorB: var(--lightBlue);
-    --textColorC: var(--lightBlue);
     --Fondo: #eef1f5;
     --white-dark: #ffffff;
     --morado: #3c0b6d;
@@ -24,7 +23,8 @@
     --borderNeutral: rgba(128, 128, 128, 0.15);
     --shadowColor: rgba(0, 0, 0, 0.15);
     --iconLight: rgba(9, 9, 9, .9);
-    --blueBadget: #0D3B5E;
+    --blueTitle: #0D3B5E;
+    --orangeTitle: #B45309;
     --badgeGreenColor: #1E4D1E;
     --badgeYellowColor: #6B5E00;
     --badgeBlueColor: #0D3B5E;
@@ -70,8 +70,8 @@ body.dark {
   --shadowColor: rgba(237, 237, 237, 0.1);
   --textColor: #F7F7F7;
   --textColorB: #49A3D9;
-  --textColorC: #F7F7F7;
-  --blueBadget: #F7F7F7;
+  --blueTitle: #b4c9d4;
+  --orangeTitle: #F59E0B;
   --iconLight: rgba(244, 241, 255, .85);
   --badgeGreenColor: var(--green);
   --badgeYellowColor: var(--yellow-b);
