@@ -2,8 +2,20 @@
 .course-section {
   width: 100%;
   height: auto;
+  margin-bottom: 2rem;
 }
 
 .course-section h2 {
   margin-bottom: 1rem;
+}
+
+.lista-cursos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 756px){
+  .lista-cursos{
+    grid-template-columns: 1fr;
+  }
 }

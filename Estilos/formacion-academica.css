@@ -10,7 +10,7 @@
     width: fit-content;
     background-color: var(--bgNeutral);
     color: var(--textColor);
-    padding: 35px 55px 45px;
+    padding: 36px 48px;
     border-radius: 6px;
     border: 2px solid var(--borderNeutral);
     transition: background-color .07s ease, color .07s ease;

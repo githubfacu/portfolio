@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-sizing: border-box;
     border: 1px solid var(--borderOpacityHard);
-    padding: 12px;
+    padding: 1rem;
     border-radius: 6px;
-    gap: 9px;
+    gap: .5rem;
     width: 100%;
     position: relative;
     height: 100%;
@@ -73,9 +73,7 @@
 .fecha{
     font-weight: 400;
     font-size: 1rem;
-    padding: 2px;
     margin-left: auto;
-    margin-bottom: 8px;
 }
 
 .linksDiv{
@@ -87,6 +85,8 @@
     gap: 7px;
     flex-wrap: wrap;
     min-height: 1.6rem;
+    margin-top: auto;
+
 }
 
 .anclaContainer{

@@ -1,5 +1,22 @@
 export const material = [
     {
+        id: 9,
+        titulo: 'React Native | <span>Udemy</span>',
+        fecha: 'Dic 2025',
+        enCurso: false,
+        proyectos: [
+            {
+                proyectoId: 1,
+                ruta: 'https://github.com/githubfacu/beacon-showcase-app',
+                anclaTexto: 'Balizas-app',
+                img: './Imagenes/capturas/github-white.jpg',
+                descripcion: 'Aplicación Demo en Expo con Nativewind y TypeScript',
+                personal: true,
+                typescript: false
+            },
+        ]
+    },
+    {
         id: 8,
         titulo: 'Élite Frontend Developer | <span>Level Up Tech Academy</span>',
         fecha: 'Feb 2025',
@@ -22,25 +39,7 @@ export const material = [
                 descripcion: 'Componentes UI demo',
                 personal: false,
                 typescript: true
-            },
-            // {
-            //     proyectoId: 2,
-            //     ruta: 'https://www.npmjs.com/package/react-hooks-lib-facuekl',
-            //     anclaTexto: 'hooks-lib',
-            //     img: './Imagenes/capturas/npm-logo.jpg',
-            //     descripcion: 'Libreria de hooks. React',
-            //     personal: false,
-            //     typescript: true
-            // },
-            // {
-            //     proyectoId: 1,
-            //     ruta: 'https://www.npmjs.com/package/lvlup-utils-lib',
-            //     anclaTexto: 'utils-lib',
-            //     img: './Imagenes/capturas/npm-logo.jpg',
-            //     descripcion: 'Libreria de utilidades.',
-            //     personal: false,
-            //     typescript: true
-            // },
+            }
         ]
     },
     {

@@ -78,8 +78,8 @@ main{
     display: flex;
     flex-direction: column;
     border-radius: 6px;
-    padding: 1.5rem;
-    gap: 1rem;
+    padding: 1.25rem;
+    gap: .5rem;
     background-color: var(--bgNeutral);
     border: 2px solid var(--borderNeutral);
     transition: background-color .07s ease, color .07s ease;
@@ -119,7 +119,6 @@ main{
     width: 100%;
     flex-wrap: wrap;
     gap: .5rem;
-    margin-top: 1rem;
 }
 
 .experienciaLinks a{
