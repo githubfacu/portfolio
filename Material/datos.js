@@ -1,7 +1,7 @@
 export const material = [
     {
         id: 9,
-        titulo: 'React Native | <span>Udemy</span>',
+        titulo: 'React Native',
         fecha: 'Dic 2025',
         enCurso: false,
         proyectos: [
@@ -18,7 +18,7 @@ export const material = [
     },
     {
         id: 8,
-        titulo: 'Élite Frontend Developer | <span>Level Up Tech Academy</span>',
+        titulo: 'Élite Frontend Developer',
         fecha: 'Feb 2025',
         enCurso: false,
         proyectos: [
@@ -44,7 +44,7 @@ export const material = [
     },
     {
         id: 7,
-        titulo: 'React Avanzado | <span>Rolling Code</span>',
+        titulo: 'React Avanzado',
         fecha: 'May 2024',
         enCurso: false,
         proyectos: [
@@ -61,7 +61,7 @@ export const material = [
     },
     {
         id: 6,
-        titulo: 'Next.js | <span>Digital House</span>',
+        titulo: 'Next.js',
         fecha: 'Abr 2024',
         enCurso: false,
         proyectos: [
@@ -78,7 +78,7 @@ export const material = [
     },
     {
         id: 5,
-        titulo: 'Simulación Laboral | <span>No Country</span>',
+        titulo: 'Simulación Laboral',
         fecha: 'Abr 2024',
         enCurso: false,
         proyectos: [
@@ -94,7 +94,7 @@ export const material = [
     },
     {
         id: 4,
-        titulo: 'Proyecto Integrador | <span>Digital House</span>',
+        titulo: 'Proyecto Integrador',
         fecha: 'Feb 2024',
         proyectos: [
             {
@@ -109,7 +109,7 @@ export const material = [
     },
     {
         id: 3,
-        titulo: 'React | <span>Digital House</span>',
+        titulo: 'React',
         fecha: 'Oct 2023',
         proyectos: [
             {
@@ -124,7 +124,7 @@ export const material = [
     },
     {
         id: 2,
-        titulo: 'JavaScript | <span>Digital House</span>',
+        titulo: 'JavaScript',
         fecha: 'Abr 2023',
         proyectos: [
             {
@@ -147,7 +147,7 @@ export const material = [
     },
     {
         id: 1,
-        titulo: 'HTML & CSS | <span>Digital House</span>',
+        titulo: 'HTML & CSS',
         fecha: 'Ago 2022',
         proyectos: [
             {

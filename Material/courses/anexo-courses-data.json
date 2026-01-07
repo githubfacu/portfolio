@@ -2,7 +2,7 @@
     "fullstack": [
         {
             "title": "Certified Tech Developer",
-            "institution": "Digital House | 2022 - 2024",
+            "institution": "Digital House",
             "pdf": "../Imagenes/docs/arquitectura/Diploma-CTD-1er-track-Facundo-Elorz.pdf",
             "aria": "Certificado del curso Certified Tech Developer (PDF)"
         }
@@ -10,19 +10,19 @@
     "mobile": [
         {
             "title": "Dart",
-            "institution": "Udemy | 2025",
+            "institution": "Udemy",
             "pdf": "../Imagenes/docs/lenguajes/Dart-De-cero-hasta-los-detalles.pdf",
             "aria": "Certificado del curso de Dart (PDF)"
         },
         {
             "title": "Flutter",
-            "institution": "Udemy | 2025",
+            "institution": "Udemy",
             "pdf": "../Imagenes/docs/lenguajes/Curso-completo-de-Flutter-y-Dart-Desarrollo-de-Apps-mobile.pdf",
             "aria": "Certificado del curso de Flutter (PDF)"
         },
         {
             "title": "React Native",
-            "institution": "Udemy | 2026",
+            "institution": "Udemy",
             "pdf": "../Imagenes/docs/programacion/React-Native-Expo-Aplicaciones-nativas-para-IOS-y-Android.pdf",
             "aria": "Certificado del curso de React native (PDF)"
         }
@@ -31,19 +31,19 @@
     "code": [
         {
             "title": "Patrones de Diseño en JavaScript y TypeScript",
-            "institution": "Udemy | 2025",
+            "institution": "Udemy",
             "pdf": "../Imagenes/docs/programacion/Patrones-de-Diseño-en-JavaScript-y-TypeScript.pdf",
             "aria": "Certificado del curso Patrones de Diseño (PDF)"
         },
         {
             "title": "Principios SOLID y Clean Code",
-            "institution": "Udemy | 2025",
+            "institution": "Udemy",
             "pdf": "../Imagenes/docs/programacion/Principios-SOLID-y-Clean-Code.pdf",
             "aria": "Certificado del curso Principios SOLID y Clean Code (PDF)"
         },
         {
             "title": "Docker - Guía práctica de uso para desarrolladores",
-            "institution": "Udemy | 2025",
+            "institution": "Udemy",
             "pdf": "../Imagenes/docs/programacion/Docker-Guia-practica-de-uso-para-desarrolladores.pdf",
             "aria": "Certificado del curso Docker (PDF)"
         }
@@ -51,19 +51,19 @@
     "arq": [
         {
             "title": "Diseño de Sistemas a Gran Escala y Arquitectura de Software",
-            "institution": "Udemy | 2025",
+            "institution": "Udemy",
             "pdf": "../Imagenes/docs/arquitectura/Diseño-de-Sistemas-a-Gran-Escala-y-Arquitectura-de-Software.pdf",
             "aria": "Certificado del curso Diseño de Sistemas a Gran Escala y Arquitectura de Software (PDF)"
         },
         {
             "title": "Arquitectura Software Moderna: DDD, Eventos, Microservicios",
-            "institution": "Udemy | 2025",
+            "institution": "Udemy",
             "pdf": "../Imagenes/docs/arquitectura/Arquitectura-Software-Moderna-DDD-Eventos-Microservicios.pdf",
             "aria": "Certificado del curso Arquitectura Software Moderna (PDF)"
         },
         {
             "title": "Arquitectura Software Avanzada: Más Allá de los Patrones",
-            "institution": "Udemy | 2025",
+            "institution": "Udemy",
             "pdf": "../Imagenes/docs/arquitectura/Arquitectura-Software-Avanzada-Mas-Alla-de-los-Patrones.pdf",
             "aria": "Certificado del curso Arquitectura Software Avanzada (PDF)"
         }
