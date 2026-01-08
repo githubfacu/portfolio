@@ -293,7 +293,6 @@ main{
     width: 100%;
     display: grid;
     box-sizing: border-box;
-    align-items: flex-end;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
     gap: 16px;
