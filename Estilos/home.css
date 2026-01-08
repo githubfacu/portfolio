@@ -168,7 +168,6 @@ main{
     justify-content: center;
     box-sizing: border-box;
     gap: 16px;
-    height: 100%;
 }
 
 .cardProyectoContent{
