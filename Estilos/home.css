@@ -156,9 +156,7 @@ main{
     width: 100%;
     display: grid;
     box-sizing: border-box;
-    align-items: flex-end;
     grid-template-columns: 1fr 1fr;
-    grid-row: auto;
     gap: 32px;
 }
 
@@ -219,6 +217,7 @@ main{
     text-wrap: pretty;
     padding-bottom: .5rem;
     border-bottom: 1px solid var(--textColor);
+    width: 100%;
 }
 
 .tech-tools{
@@ -372,22 +371,6 @@ main{
         padding-left: 0;
     }
 
-    .cardProyectoContent picture{
-        width: 100px;
-        height: 100px;
-    }
-
-    .cardProyectoContent img{
-        width: 100px;
-        height: 100px;
-    }
-
-    .tech-tools img,
-    .tech-tools .next {
-      width: 20px;
-      height: 20px;
-    }
-
     .habilidades ul{
         justify-content: center;
     }
@@ -411,26 +394,26 @@ main{
         margin-top: 1rem;
     }
 
-    .cardProyectoContent{
-        max-width: 600px;
-    }
-
     .proyectoPubliContainer{
         grid-template-columns: 1fr;
+    }
+
+    .cardProyecto{
+        height: fit-content;
     }
 
     .tech-tools{
         justify-content: flex-start;
     }
 
-    .cronologia{
-        margin-bottom: 4px;
+    .tech-tools img,
+    .tech-tools .next {
+      width: 20px;
+      height: 20px;
     }
 
-    #lineaDeTiempo{
-        gap: 16px;
-        column-gap: 8px;
-        grid-template-columns: 1fr;
+    .cronologia{
+        margin-bottom: 4px;
     }
 
     .first-home-pager-link{
@@ -438,9 +421,11 @@ main{
     }
 }
 
-@media (max-width: 355px) {
+@media (max-width: 640px) {
 
     #lineaDeTiempo{
+        gap: 16px;
+        column-gap: 8px;
         grid-template-columns: 1fr;
     }
 }

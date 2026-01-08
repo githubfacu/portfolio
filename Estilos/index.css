@@ -188,7 +188,7 @@ p{
     justify-content: center;
     box-sizing: border-box;
     gap: 8px;
-    background-color: var(--bgArticle);
+    /* background-color: var(--bgArticle); */
     border: 1px solid var(--borderOpacity);
     border-radius: 6px;
     padding: 12px;
@@ -200,7 +200,7 @@ p{
 }
 
 .pager-navlink:hover{
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: var(--bgArticle);
     /* box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1); */
 }
 
@@ -271,11 +271,7 @@ body.dark .pager-navlink:hover{
         scroll-margin-top: 4.5rem;
     }
 
-    .desktop{
-        display: none;
-    }
-
     .mobile{
-        display: flex;
+        display: block;
     }
 }
