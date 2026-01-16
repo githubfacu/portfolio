@@ -37,7 +37,7 @@
 .curso-content{
   position: relative;
   border: 1px solid var(--borderOpacityHard);
-  padding: 1rem;
+  padding: 1rem 1.25rem;
   border-radius: 6px;
   font-size: 1rem;
   background-color: var(--Fondo);
@@ -45,7 +45,6 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-
   flex: 1;
   height: 100%;
   transition: background-color .07s ease, color .07s ease;
@@ -54,7 +53,7 @@
 .curso-institucion{
   margin-top: 4px;
   font-size: .9rem;
-  color: var(--iconLight);
+  color: var(--borderOpacityHard);
 }
 
 .certificado-link {
@@ -93,3 +92,4 @@
     font-size: 1.4rem;
   }
 }
+
