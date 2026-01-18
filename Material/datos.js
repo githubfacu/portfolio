@@ -7,7 +7,7 @@ export const material = [
         proyectos: [
             {
                 proyectoId: 1,
-                ruta: 'https://github.com/githubfacu/beacon-showcase-app',
+                ruta: 'https://github.com/githubfacu/react-native-beacon-showcase-app',
                 anclaTexto: 'Balizas-app',
                 img: './Imagenes/capturas/github-white.jpg',
                 descripcion: 'Aplicación Demo en Expo con Nativewind y TypeScript',
