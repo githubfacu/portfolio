@@ -9,9 +9,20 @@
   margin-bottom: 1rem;
 }
 
+.lista-container{
+  padding-bottom: .5rem;
+  padding-right: .375rem;
+  background-color: var(--bgArticle);
+  transition: background-color .07s ease, color .07s ease;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+}
+
 .lista-cursos{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--borderOpacity);
+  background-color: var(--Fondo);
+  border-radius: 6px;
 }
 
 @media (max-width: 640px){

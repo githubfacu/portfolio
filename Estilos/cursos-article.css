@@ -7,14 +7,13 @@
   font-family: "Cormorant Garamond";
   font-size: 1.5rem;
   font-weight: 700;
-  margin-left: 1rem;
+  margin-left: .5rem;
 }
 
 .lista-cursos {
   list-style: none;
   padding: 0;
-  border-radius: 6px;
-  margin: .5rem 0 1rem;
+  margin: 0;
   overflow: hidden;
   gap: .5rem;
 }
@@ -22,32 +21,26 @@
 .curso {
   display: flex;
   height: 100%;
-  padding-bottom: .25rem;
-  padding-right: .25rem;
-  background-color: var(--bgArticle);
-  transition: background-color .07s ease, color .07s ease;
   box-sizing: border-box;
-  border-radius: 6px;
+  background-color: var(--bgNeutral);
+
 }
 
-.curso:last-child{
-  border-bottom-right-radius: 6px;
+.curso:nth-child(odd){
+  background-color: var(--Fondo);
+
 }
 
 .curso-content{
   position: relative;
-  border: 1px solid var(--borderOpacityHard);
   padding: 1rem 1.25rem;
-  border-radius: 6px;
   font-size: 1rem;
-  background-color: var(--Fondo);
   color: var(--textColor);
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   flex: 1;
   height: 100%;
-  transition: background-color .07s ease, color .07s ease;
 }
 
 .curso-institucion{

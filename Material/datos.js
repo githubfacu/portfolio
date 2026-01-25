@@ -1,4 +1,21 @@
 export const material = [
+    // {
+    //     id: 10,
+    //     titulo: 'Angular',
+    //     fecha: 'Ene 2026',
+    //     enCurso: false,
+    //     proyectos: [
+    //         {
+    //             proyectoId: 1,
+    //             ruta: 'https://aplicacion-de-paises.netlify.app/#/',
+    //             anclaTexto: 'app-paises',
+    //             img: './Imagenes/capturas/country-app.png',
+    //             descripcion: 'Aplicación Demo en Angular 19+',
+    //             personal: false,
+    //             typescript: true
+    //         },
+    //     ]
+    // },
     {
         id: 9,
         titulo: 'React Native',
