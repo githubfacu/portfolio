@@ -9,16 +9,10 @@
     ],
     "mobile": [
         {
-            "title": "Dart",
+            "title": "React Native Expo: Una Introducción Al SDK De Facebook",
             "institution": "Udemy",
-            "pdf": "../Imagenes/docs/lenguajes/Dart-De-cero-hasta-los-detalles.pdf",
-            "aria": "Certificado del curso de Dart (PDF)"
-        },
-        {
-            "title": "Flutter",
-            "institution": "Udemy",
-            "pdf": "../Imagenes/docs/lenguajes/Curso-completo-de-Flutter-y-Dart-Desarrollo-de-Apps-mobile.pdf",
-            "aria": "Certificado del curso de Flutter (PDF)"
+            "pdf": "../Imagenes/docs/programacion/React-Native-EXPO-Una-Introducción-Al-SDK-De-Facebook.pdf",
+            "aria": "Certificado del curso de React native (PDF)"
         },
         {
             "title": "React Native Expo: Aplicaciones nativas para IOS y Android",

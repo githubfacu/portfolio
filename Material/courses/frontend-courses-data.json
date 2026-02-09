@@ -7,6 +7,12 @@
             "aria": "Certificado del curso Especialización Frontend con React"
         },
         {
+            "title": "Frontend Elite",
+            "institution": "Level Up Tech Academy",
+            "pdf": "../Imagenes/docs/programacion/Facundo-Elorz-certificado-Frontend-Elite.png",
+            "aria": "Certificado del curso Especialización frontend elite"
+        }, 
+        {
             "title": "React PRO Lleva tus bases al siguiente nivel",
             "institution": "Udemy",
             "pdf": "../Imagenes/docs/programacion/React-PRO-Lleva-tus-bases-al-siguiente-nivel.pdf",
@@ -31,7 +37,7 @@
             "aria": "Certificado del curso React Advanced Concepts (PDF)"
         }
     ],
-    "next": [
+    "frameworks": [
         {
             "title": "Next.js",
             "institution": "Digital House",
@@ -43,6 +49,12 @@
             "institution": "Udemy",
             "pdf": "../Imagenes/docs/programacion/NEXT.js_Udemy.pdf",
             "aria": "Certificado del curso Next.js (PDF)"
+        },
+        {
+            "title": "Angular: De cero a experto",
+            "institution": "Udemy",
+            "pdf": "../Imagenes/docs/programacion/Angular-De-cero-a-experto.pdf",
+            "aria": "Certificado del curso Angular (PDF)"
         }
     ],
     "testing": [
@@ -53,13 +65,7 @@
             "aria": "Certificado del curso React Testing (PDF)"
         }
     ],
-    "sistemas": [
-        {
-            "title": "Frontend Elite",
-            "institution": "Level Up Tech Academy",
-            "pdf": "../Imagenes/docs/programacion/Facundo-Elorz-certificado-Frontend-Elite.png",
-            "aria": "Certificado del curso Especialización frontend elite"
-        }, 
+    "micro-frontend": [
         {
             "title": "Micro-Frontend: Arquitectura de Aplicaciones Web Escalables",
             "institution": "Udemy",
