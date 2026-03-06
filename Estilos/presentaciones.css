@@ -15,6 +15,8 @@
 .videoIframe, video{
     max-width: 977px;
     width: 100%;
+    max-height: 100dvh;
+
     margin: auto;
     border-radius: 4px;
 }
