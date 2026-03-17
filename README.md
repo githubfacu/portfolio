@@ -53,7 +53,7 @@ WCAG • WAI-ARIA
 
 ---
 
-## 💼 Experiencia relevante
+## Experiencia relevante
 
 **Frontend Developer Intern — InkuA**
 
@@ -65,41 +65,16 @@ WCAG • WAI-ARIA
 
 ---
 
-## 📂 Proyectos destacados
+## Enfoque profesional
 
-### 📄 Budget Generator
-Aplicación para generar presupuestos dinámicos y exportarlos en PDF.
-
-- Formularios dinámicos  
-- Renderizado tipo documento  
-- Descarga automatizada  
-- Manejo de estado  
-
-🔗 https://budget-generator-ten.vercel.app/
-
----
-
-### 🧠 Plataforma Mi Tratamiento
-Sistema integral de gestión de terapias de salud mental.
-
-- Arquitectura modular  
-- Manejo global de estado  
-- Routing avanzado  
-- Interfaces accesibles  
-
----
-
-## 🧱 Enfoque profesional
-
-- Desarrollo frontend escalable  
-- Accesibilidad como prioridad  
+- Desarrollo frontend escalable
 - Performance y optimización  
 - Arquitectura de componentes  
 - Buenas prácticas de UX  
 
 ---
 
-## 📬 Contacto
+## Contacto
 
 - 💼 LinkedIn: https://www.linkedin.com/in/facundo-elorz/  
 - 💻 GitHub: https://github.com/githubfacu  
