@@ -24,7 +24,7 @@ El portfolio funciona como una **plataforma de presentación profesional**, dond
 
 ## Stack Tecnológico
 
-### 🎨 Frontend Core
+### 🖥️ Frontend Core
 HTML5 • CSS3 • JavaScript • TypeScript
 
 ### ⚛️ React Ecosystem
