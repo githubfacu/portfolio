@@ -24,31 +24,31 @@ El portfolio funciona como una **plataforma de presentación profesional**, dond
 
 ## Stack Tecnológico
 
-### 🖥️ Frontend Core
+#### 🖥️ Frontend Core
 HTML5 • CSS3 • JavaScript • TypeScript
 
-### ⚛️ React Ecosystem
+#### ⚛️ Ecosistema React
 React • Next.js • Redux Toolkit • TanStack Query • Zustand
 
-### 📱 Mobile Development
+#### 📱 Desarrollo Mobile
 React Native
 
-### 🅰️ Other Frontend Frameworks
+#### 🅰️ Otros Frameworks Frontend
 Angular
 
-### 🎨 UI & Styling
+#### 🎨 UI y Estilos
 Tailwind CSS • Storybook
 
-### 🧪 Testing & Quality
+#### 🧪 Testing y Calidad
 Vitest • Jest • Yup
 
-### 🧩 Backend Fundamentals
+#### 🧩 Fundamentos Backend
 Node.js • Java • SQL
 
-### ⚙️ DevOps & Workflow
+#### ⚙️ DevOps y Flujo de Trabajo
 Git • GitHub • GitLab • Docker • CI/CD
 
-### ♿ Accesibilidad
+#### ♿ Accesibilidad
 WCAG • WAI-ARIA
 
 ---
