@@ -304,10 +304,14 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     box-sizing: border-box;
     gap: 8px;
+}
+
+.habilidades h3{
+    align-self: flex-start;
 }
 
 .habilidades ul{
@@ -367,10 +371,6 @@ main{
 
     .cardExperienciaContent{
         padding-left: 0;
-    }
-
-    .habilidades ul{
-        justify-content: center;
     }
 }
 
