@@ -9,7 +9,7 @@ Portfolio profesional.
 
 ## Sobre este repositorio
 
-Este repositorio contiene mi **portfolio personal web**, construido en HTML, CSS y JavaScript puro, organizado en múltiples páginas y orientado a demostrar:
+Este repositorio contiene mi **portfolio personal web**, construido en HTML, CSS y JavaScript puro, organizado en múltiples páginas y orientado a:
 
 - Buenas prácticas de accesibilidad (WCAG / WAI-ARIA)
 - Estructura semántica del HTML
@@ -18,7 +18,7 @@ Este repositorio contiene mi **portfolio personal web**, construido en HTML, CSS
 - Performance y optimización de recursos
 - Organización modular de estilos y scripts
 
-El portfolio funciona como una **plataforma de presentación profesional**, donde se muestran proyectos reales, experiencia laboral, formación académica y stack tecnológico.
+El portfolio presenta proyectos reales, experiencia laboral, formación académica y stack tecnológico.
 
 ---
 
@@ -58,8 +58,8 @@ WCAG • WAI-ARIA
 **Frontend Developer Intern — InkuA**
 
 - Desarrollo con Next.js y React  
-- Mantenimiento de aplicaciones internas  
-- Implementación de mejoras de accesibilidad  
+- Desarrollo de aplicaciones internas
+- Desarrollo Web
 - Documentación técnica  
 - Trabajo colaborativo en entornos ágiles  
 
@@ -68,8 +68,8 @@ WCAG • WAI-ARIA
 ## Enfoque profesional
 
 - Desarrollo frontend escalable
-- Performance y optimización  
-- Arquitectura de componentes  
+- Performance y optimización
+- Arquitectura de software
 - Buenas prácticas de UX  
 
 ---
