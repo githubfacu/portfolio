@@ -1,4 +1,4 @@
-.vibeCodeList{
+.iaCodeList{
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.vibeCodeItem {
+.iaCodeItem {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +19,7 @@
   transition: background-color .07s ease, color .07s ease;
 }
 
-.vibeCodeItem img {
+.iaCodeItem img {
   border-radius: 6px;
   width: 100%;
   height: 100%;
@@ -28,29 +28,29 @@
   aspect-ratio: 16 / 9;
 }
 
-.vibeCodeInfo {
+.iaCodeInfo {
   text-align: center;
   padding: .5rem .75rem;
 }
 
-.vibeCodeInfo h2 {
+.iaCodeInfo h2 {
   font-size: 1.4rem;
   line-height: 1.75rem;
   margin-bottom: 0.5rem;
 }
 
-.vibeCodeMeta {
+.iaCodeMeta {
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
 
-.vibeCodeInfo p {
+.iaCodeInfo p {
   font-size: .9rem;
   margin-bottom: 1rem;
   text-wrap: pretty;
 }
 
-.vibeCodeBadges {
+.iaCodeBadges {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
@@ -69,7 +69,7 @@
 }
 
 @media (min-width: 768px) {
-  .vibeCodeInfo h2{
+  .iaCodeInfo h2{
     font-size: 1.8rem;
     line-height: 2.25rem;
   }
@@ -77,24 +77,24 @@
 }
 
 @media (min-width: 1024px) {
-  .vibeCodeItem {
+  .iaCodeItem {
     flex-direction: row;
     align-items: flex-start;
     max-width: 977px;
   }
 
-  .vibeCodeItem a{
+  .iaCodeItem a{
     width: 70%;
     height: 100%;
   }
 
-  .vibeCodeInfo {
+  .iaCodeInfo {
     flex: 1;
     text-align: left;
     padding: .5rem 1rem;
   }
 
-  .vibeCodeInfo h2{
+  .iaCodeInfo h2{
     margin-bottom: 1rem;
   }
 }

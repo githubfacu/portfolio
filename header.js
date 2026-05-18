@@ -16,7 +16,7 @@ const htmlContent = `
                             <a href="./estudios.html">Estudios</a>
                         </li>
                         <li>
-                            <a href="./vibecode.html">Vibe Code</a>
+                            <a href="./ia-code.html">Desarrollo con IA</a>
                         </li>
                         <li>
                             <a href="./presentaciones.html">Presentaciones</a>
@@ -71,7 +71,7 @@ const htmlContent = `
                     </button>
 
                     <ul id="submenu-anexo" class="submenu-anexo" aria-hidden="true">
-                        <li><a href="./vibecode.html">Vibe Code</a></li>
+                        <li><a href="./ia-code.html">Desarrollo con IA</a></li>
                         <li><a href="./presentaciones.html">Presentaciones</a></li>
                         <li><a href="./lectura.html">Lectura</a></li>
                     </ul>
