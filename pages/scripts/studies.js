@@ -1,7 +1,6 @@
-import "../../header.js";
 import "../../theme.js";
 import "../../scrollTop.js";
-import "../../subMenu.js";
+import "../../nested-nav-menu.js";
 
 import { renderCourses } from "../../courses.js";
 
@@ -11,9 +10,9 @@ const BASE_PATH = isLocal
     ? ''
     : '/portfolio';
 
-const accesibilidadFile = `${BASE_PATH}/Material/courses/accesibilidad-courses.json`
-const anexoFile = `${BASE_PATH}/Material/courses/anexo-courses-data.json`
-const frontendFile =`${BASE_PATH}/Material/courses/frontend-courses-data.json`
+const accesibilidadFile = `${BASE_PATH}/courses-data/courses/accesibilidad-courses.json`
+const anexoFile = `${BASE_PATH}/courses-data/courses/anexo-courses-data.json`
+const frontendFile =`${BASE_PATH}/courses-data/courses/frontend-courses-data.json`
 
 fetch(anexoFile)
     .then(res => res.json())

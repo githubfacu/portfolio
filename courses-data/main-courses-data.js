@@ -1,4 +1,4 @@
-export const material = [
+export const MAIN_COURSES = [
     // {
     //     id: 10,
     //     titulo: 'Angular',
@@ -9,7 +9,7 @@ export const material = [
     //             proyectoId: 1,
     //             ruta: 'https://aplicacion-de-paises.netlify.app/#/',
     //             anclaTexto: 'app-paises',
-    //             img: './Imagenes/capturas/country-app.png',
+    //             img: './images/capturas/country-app.png',
     //             descripcion: 'Aplicación Demo en Angular 19+',
     //             personal: false,
     //             typescript: true
@@ -26,7 +26,7 @@ export const material = [
                 proyectoId: 1,
                 ruta: 'https://github.com/githubfacu/react-native-beacon-showcase-app',
                 anclaTexto: 'Balizas-app',
-                img: './Imagenes/capturas/github-white.jpg',
+                img: './images/capturas/github-white.jpg',
                 descripcion: 'Aplicación Demo en Expo con Nativewind y TypeScript',
                 personal: true,
                 typescript: false
@@ -43,7 +43,7 @@ export const material = [
                 proyectoId: 4,
                 ruta: 'https://www.npmjs.com/~facundoekl',
                 anclaTexto: 'npm-packages',
-                img: './Imagenes/capturas/npm-logo.jpg',
+                img: './images/capturas/npm-logo.jpg',
                 descripcion: 'Componente de selección accesible',
                 personal: true,
                 typescript: true
@@ -52,7 +52,7 @@ export const material = [
                 proyectoId: 3,
                 ruta: 'https://storybook-beige-eight.vercel.app',
                 anclaTexto: 'storybook-demo',
-                img: './Imagenes/capturas/storybook-icon.svg',
+                img: './images/capturas/storybook-icon.svg',
                 descripcion: 'Componentes UI demo',
                 personal: false,
                 typescript: true
@@ -69,7 +69,7 @@ export const material = [
                 proyectoId: 1,
                 ruta: 'https://foro-mania.vercel.app/',
                 anclaTexto: 'Foromanía',
-                img: './Imagenes/capturas/Captura_foro-mania.jpeg',
+                img: './images/capturas/Captura_foro-mania.jpeg',
                 descripcion: 'Foro interactivo. Trabajo final 4 integrantes. Redux + Firebase.',
                 personal: false,
                 typescript: false
@@ -86,7 +86,7 @@ export const material = [
                 proyectoId: 1,
                 ruta: 'https://github.com/githubfacu/Red_Social_Next.js',
                 anclaTexto: 'RedSocial',
-                img: './Imagenes/capturas/github-white.jpg',
+                img: './images/capturas/github-white.jpg',
                 descripcion: 'WebApp dictada.',
                 personal: false,
                 typescript: true
@@ -103,7 +103,7 @@ export const material = [
                 proyectoId: 1,
                 ruta: 'https://rrhh-n-country.vercel.app/',
                 anclaTexto: 'RRHH-WebApp',
-                img: './Imagenes/capturas/Captura_rrhh.jpeg',
+                img: './images/capturas/Captura_rrhh.jpeg',
                 descripcion: '4 sprints, 10 integrantes. Rol Frontend QA. React + Tailwind.',
                 personal: false
             }
@@ -118,7 +118,7 @@ export const material = [
                 proyectoId: 1,
                 ruta: 'https://gitlab.com/mtimoxenko/integrador',
                 anclaTexto: 'BookingApp',
-                img: './Imagenes/img/gitlab.webp',
+                img: './images/img/gitlab.webp',
                 descripcion: 'BookingApp, 8 integrantes. Rol Frontend con React.',
                 personal: false
             }
@@ -133,7 +133,7 @@ export const material = [
                 proyectoId: 2,
                 ruta: 'https://fe3-final-orpin.vercel.app/',
                 anclaTexto: 'TrabajoPráctico',
-                img: './Imagenes/capturas/Captura_psycho-pass.vercel.app.jpeg',
+                img: './images/capturas/Captura_psycho-pass.vercel.app.jpeg',
                 descripcion: 'Trabajo práctico en dupla. React.',
                 personal: false
             },
@@ -148,7 +148,7 @@ export const material = [
                 proyectoId: 2,
                 ruta: 'https://githubfacu.github.io/interactive_magazine/',
                 anclaTexto: 'InteractiveMagazine',
-                img: './Imagenes/capturas/Captura_magazine.jpeg',
+                img: './images/capturas/Captura_magazine.jpeg',
                 descripcion: 'Interactive Magazine, JavaScript vanilla.',
                 personal: true
             },
@@ -156,7 +156,7 @@ export const material = [
                 proyectoId: 1,
                 ruta: 'https://githubfacu.github.io/reproductor_de_musica_js/',
                 anclaTexto: 'ReproductorDeMúsica',
-                img: './Imagenes/capturas/Captura_reproductor_musica.jpeg',
+                img: './images/capturas/Captura_reproductor_musica.jpeg',
                 descripcion: 'Práctica con JavaScript vanilla.',
                 personal: true
             },
@@ -171,7 +171,7 @@ export const material = [
                 proyectoId: 1,
                 ruta: 'https://githubfacu.github.io/frontend_uno_page/',
                 anclaTexto: 'TrabajoPráctico',
-                img: './Imagenes/capturas/Captura_maquetacion_front1.jpeg',
+                img: './images/capturas/Captura_maquetacion_front1.jpeg',
                 descripcion: 'Maquetación básica sin funciones.',
                 personal: false
             }

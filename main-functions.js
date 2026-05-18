@@ -1,6 +1,4 @@
-"use strict";
-
-import { material } from './Material/datos.js'
+import { MAIN_COURSES as mainCourses } from './courses-data/main-courses-data.js'
 
 const $lineadetiempo = document.getElementById('lineaDeTiempo')
 
@@ -11,7 +9,7 @@ clasificarXIndex()
 
 function agregarSeccion(){
 
-    material.forEach(materia => {
+    mainCourses.forEach(materia => {
         return $lineadetiempo.innerHTML+=`
         <article id='${materia.id}' class='lineaDeTiempo-section' aria-labelledby='titulo-${materia.id}'></article>`
     })
@@ -23,7 +21,7 @@ function agregarMaterial(){
 
     $sectionDiv.forEach(sectionHTML=>{
 
-        material.forEach(materia => {
+        mainCourses.forEach(materia => {
             if (parseInt(sectionHTML.id) === materia.id) {
 
                 const tituloCard = document.createElement('div')
@@ -65,7 +63,7 @@ function agregarProyectos(){
     const $linksDiv = document.querySelectorAll('#lineaDeTiempo .linksDiv') 
 
     $linksDiv.forEach(linksDivHTML=>{
-        material.forEach(materia => {
+        mainCourses.forEach(materia => {
             if (materia.proyectos.length > 0) {
                 if (parseInt(linksDivHTML.id) === materia.id) {
                     materia.proyectos.slice().reverse().forEach(proyecto=>{

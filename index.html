@@ -8,22 +8,22 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta property="og:title" content="Facundo Elorz Portfolio" />
     <meta property="og:description" content="Desarrollador Web - HTML, CSS y JavaScript." />
-    <meta property="og:image" content="https://githubfacu.github.io/portfolio/Imagenes/img/code.svg" />
+    <meta property="og:image" content="https://githubfacu.github.io/portfolio/images/img/code.svg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="1200" />
     <meta property="og:url" content="https://githubfacu.github.io/portfolio/index.html" />
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Facundo Elorz Portfolio">
     <meta name="twitter:description" content="Desarrollador Web - HTML, CSS y JavaScript.">
-    <meta name="twitter:image" content="https://githubfacu.github.io/portfolio/Imagenes/img/code.svg">
-    <link rel="stylesheet" href="./Estilos/index.css">
-    <link rel="stylesheet" href="./Estilos/header.css">
-    <link rel="stylesheet" href="./Estilos/home.css">
-    <link rel="stylesheet" href="./Estilos/formacion-academica.css">
-    <link rel="stylesheet" href="./Estilos/footer.css">
-    <link rel="stylesheet" href="./Estilos/funciones.css">
-    <link rel="stylesheet" href="./Estilos/scrollTop.css">
-    <link rel="stylesheet" href="./Estilos/tabla-contenidos.css">
+    <meta name="twitter:image" content="https://githubfacu.github.io/portfolio/images/img/code.svg">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/formacion-academica.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/main-home.css">
+    <link rel="stylesheet" href="./styles/scrollTop.css">
+    <link rel="stylesheet" href="./styles/tabla-contenidos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -55,16 +55,16 @@
                                 <a href="./index.html">Inicio</a>
                             </li>
                             <li>
-                                <a href="./Paginas/estudios.html">Estudios</a>
+                                <a href="./pages/studies.html">Estudios</a>
                             </li>                          
                             <li>
-                                <a href="./Paginas/ia-code.html">Desarrollo con IA</a>
+                                <a href="./pages/ia-code.html">Desarrollo con IA</a>
                             </li>
                             <li>
-                                <a href="./Paginas/presentaciones.html">Presentaciones</a>
+                                <a href="./pages/presentaciones.html">Presentaciones</a>
                             </li>
                             <li>
-                                <a href="./Paginas/lectura.html">Lectura</a>
+                                <a href="./pages/lectura.html">Lectura</a>
                             </li>
                         </ul>                        
                     </nav>
@@ -101,28 +101,28 @@
                         <a href="./index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="./Paginas/estudios.html">Estudios</a>
+                        <a href="./pages/studies.html">Estudios</a>
                     </li>
-                    <li class="submenu">
+                    <li class="nested-menu">
                         <button 
-                            class="submenu-btn"
+                            class="nested-menu-btn"
                             aria-haspopup="true"
                             aria-expanded="false"
-                            aria-controls="submenu-anexo"
+                            aria-controls="nested-menu-anexo"
                             aria-label="Anexo sección"
                         >
                             Anexo <span class="expanded-icon" aria-hidden="true"><i class="fa-solid fa-angle-down"></i></span>
                         </button>
 
-                        <ul id="submenu-anexo" class="submenu-anexo" aria-hidden="true">
+                        <ul id="nested-menu-anexo" class="nested-menu-anexo" aria-hidden="true">
                             <li>
-                                <a href="./Paginas/ia-code.html">Desarrollo con IA</a>
+                                <a href="./pages/ia-code.html">Desarrollo con IA</a>
                             </li>
                             <li>
-                                <a href="./Paginas/presentaciones.html">Presentaciones</a>
+                                <a href="./pages/presentaciones.html">Presentaciones</a>
                             </li>
                             <li>
-                                <a href="./Paginas/lectura.html">Lectura</a>
+                                <a href="./pages/lectura.html">Lectura</a>
                             </li>
                         </ul>
                     </li>
@@ -178,7 +178,7 @@
                     <div class="cardExperienciaContent">
                         <a href="https://inkua.de/" rel="noopener noreferrer" target="_blank" aria-label="Sitio web de la empresa Inkua, se abre en una nueva pestaña">
                             <picture class="desktop">
-                                <img src="./Imagenes/img/InkuA-logo.png"
+                                <img src="./images/img/InkuA-logo.png"
                                     width="120" height="100"
                                     loading="lazy"
                                     alt="Logo de InkuA">
@@ -211,7 +211,7 @@
                         <h3 id="titulo-mi-tratamiento">Mi Tratamiento</h3>
                         <div class="cardProyectoContent">
                             <picture class="desktop">
-                                <img src="./Imagenes/img/MT-logoweb.webp"
+                                <img src="./images/img/MT-logoweb.webp"
                                 width="180" height="180"
                                 loading="lazy"
                                 alt="Vista miniatura del logo de la plataforma Mi Tratamiento">
@@ -221,14 +221,14 @@
                                 <p>Plataforma para la gestión de Tratamientos y Terapias de Salud Mental</p>
                                 <div class="tech-tools">
                                     <div class="next">
-                                        <img src="./Imagenes/tech-logos/Next.js.svg" title="NEXT.js" alt="" >
+                                        <img src="./images/tech-logos/Next.js.svg" title="NEXT.js" alt="" >
                                     </div>
-                                    <img src="./Imagenes/tech-logos/TypeScript.svg" title="TypeScript" alt="">
-                                    <img src="./Imagenes/tech-logos/TailwindCSS.svg" title="Tailwind CSS" alt="">
-                                    <img src="./Imagenes/tech-logos/HTML5.svg" title="HTML" alt="">
-                                    <img src="./Imagenes/tech-logos/Redux.svg" title="Redux" alt="">
-                                    <img src="./Imagenes/tech-logos/React.svg" title="React" alt="">
-                                    <img src="./Imagenes/tech-logos/GitLab.svg" title="GitLab" alt="">
+                                    <img src="./images/tech-logos/TypeScript.svg" title="TypeScript" alt="">
+                                    <img src="./images/tech-logos/TailwindCSS.svg" title="Tailwind CSS" alt="">
+                                    <img src="./images/tech-logos/HTML5.svg" title="HTML" alt="">
+                                    <img src="./images/tech-logos/Redux.svg" title="Redux" alt="">
+                                    <img src="./images/tech-logos/React.svg" title="React" alt="">
+                                    <img src="./images/tech-logos/GitLab.svg" title="GitLab" alt="">
                                 </div>
                                 <div class="cardLinksDiv">
                                     <a class="cardLinksDivID" href="https://gitlab.com/githubfacu/app-integral" target="_blank" aria-label="Ir a la página Mi Tratamiento en una nueva pestaña" title="Ir a la página Mi Tratamiento en una nueva pestaña">
@@ -245,7 +245,7 @@
                         <h3  id="titulo-budget-generator" lang="en">Budget Generator</h3>
                         <div class="cardProyectoContent">
                             <picture class="desktop">
-                                <img src="./Imagenes/img/budget-app-globe-icon.jpg"
+                                <img src="./images/img/budget-app-globe-icon.jpg"
                                 width="180" height="180"
                                 loading="lazy"
                                 alt="Globo terraqueo, logo del sitio Budget Generator">
@@ -254,12 +254,12 @@
                             <div class="cardProyectoTextContent hover-none">
                                 <p>Genera un Presupuesto de página simple y descarga el archivo en formato pdf.</p>
                                 <div class="tech-tools">
-                                    <img src="./Imagenes/tech-logos/TypeScript.svg" title="TypeScript" alt="TypeScript logo">
-                                    <img src="./Imagenes/tech-logos/CSS3.svg" title="CSS" alt="CSS logo">
-                                    <img src="./Imagenes/tech-logos/HTML5.svg" title="HTML" alt="HTML logo">
-                                    <img src="./Imagenes/tech-logos/React.svg" title="React" alt="React logo">
+                                    <img src="./images/tech-logos/TypeScript.svg" title="TypeScript" alt="TypeScript logo">
+                                    <img src="./images/tech-logos/CSS3.svg" title="CSS" alt="CSS logo">
+                                    <img src="./images/tech-logos/HTML5.svg" title="HTML" alt="HTML logo">
+                                    <img src="./images/tech-logos/React.svg" title="React" alt="React logo">
                                     <div class="next">
-                                    <img src="./Imagenes/tech-logos/GitHub.svg" title="GitHub" alt="GitHub logo" >
+                                    <img src="./images/tech-logos/GitHub.svg" title="GitHub" alt="GitHub logo" >
                                     </div>
                                 </div>
                                 <div class="cardLinksDiv">
@@ -441,7 +441,7 @@
             <nav class="nav-pagination" aria-label="Paginación">
                 <ul class="pager">
                     <li class="first-home-pager-link">
-                        <a href="./Paginas/estudios.html" class="pager-navlink">
+                        <a href="./pages/studies.html" class="pager-navlink">
                             Siguiente - Estudios
                             <span><i class="fa-solid fa-arrow-right fa-sm" aria-hidden="true"></i></span>
                         </a>
@@ -473,11 +473,11 @@
         </nav>
     </footer>
     
-    <script type="module" src="./funciones.js"></script>
-    <script src="./contacto.js"></script>
-    <script src="./header.js"></script>
     <script src="./theme.js"></script>
+    <script type="module" src="./header.js"></script>
+    <script type="module" src="./main-functions.js"></script>
+    <script src="./nested-nav-menu.js"></script>
     <script src="./scrollTop.js"></script>
-    <script src="./subMenu.js"></script>
+    <script src="./contact.js"></script>
 </body>
 </html>
