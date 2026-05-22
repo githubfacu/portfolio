@@ -17,10 +17,10 @@ export const NAV_MENU = `
                             <a href="./ia-code.html">Desarrollo con IA</a>
                         </li>
                         <li>
-                            <a href="./presentaciones.html">Presentaciones</a>
+                            <a href="./presentations.html">Presentaciones</a>
                         </li>
                         <li>
-                            <a href="./lectura.html">Lectura</a>
+                            <a href="./readings.html">Lectura</a>
                         </li>
                     </ul>
                 </nav>
@@ -70,8 +70,8 @@ export const NAV_MENU = `
 
                     <ul id="nested-menu-anexo" class="nested-menu-anexo" aria-hidden="true">
                         <li><a href="./ia-code.html">Desarrollo con IA</a></li>
-                        <li><a href="./presentaciones.html">Presentaciones</a></li>
-                        <li><a href="./lectura.html">Lectura</a></li>
+                        <li><a href="./presentations.html">Presentaciones</a></li>
+                        <li><a href="./readings.html">Lectura</a></li>
                     </ul>
                 </li>
             </ul>

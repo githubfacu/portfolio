@@ -21,7 +21,7 @@ main{
     margin-bottom: 1.5rem;
 }
 
-.presentacionesTituloDiv{
+.presentationsTitleDiv{
     min-height: calc(85vh - 85px);
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ main{
     margin-bottom: 4rem;
 }
 
-.presentacionesTituloDiv h1{
+.presentationsTitleDiv h1{
     font-size: 7.5rem;
     line-height: 8.8rem;
     font-weight: 600;
@@ -52,10 +52,10 @@ main{
     .max-content-pages:last-child{
         margin-bottom: 3rem;
     }
-    .presentacionesTituloDiv{
+    .presentationsTitleDiv{
         min-height: 30vh;
     }
-    .presentacionesTituloDiv h1{
+    .presentationsTitleDiv h1{
         font-size: 5.5rem;
         line-height: 7.5rem;
     }
@@ -63,12 +63,12 @@ main{
 }
 
 @media (max-width: 768px) {
-    .presentacionesTituloDiv{
+    .presentationsTitleDiv{
         min-height: 0;
         align-items: flex-start;
     }
     
-    .presentacionesTituloDiv h1{
+    .presentationsTitleDiv h1{
         font-size: 3rem;
         line-height: 3.75rem;
     }

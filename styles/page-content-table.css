@@ -1,6 +1,6 @@
 
 
-.tabla-contenidos{
+.page-content-table{
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -24,12 +24,12 @@
     text-decoration: underline;
 }
 
-.tabla-contenidos nav{
+.page-content-table nav{
     margin-top: 1rem;
     border-top: 1px solid var(--borderOpacity);
 }
 
-.tabla-contenidos ul{
+.page-content-table ul{
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 0;
@@ -38,31 +38,31 @@
     gap: 4px;
 }
 
-.tabla-contenidos li{
+.page-content-table li{
     /* border: 1px solid var(--borderOpacity); */
     border-left: 4px solid var(--borderOpacity);
     /* background-color: var(--bgNeutral); */
 }
 
-.tabla-contenidos a{
+.page-content-table a{
     display: block;
     padding: 4px 8px;
     text-decoration: none;
     color: var(--textColor);
 }
 
-.tabla-contenidos a:visited{
+.page-content-table a:visited{
     color: var(--textColor);
 }
 
-.tabla-contenidos a:hover, .tabla-contenidos a:focus{
+.page-content-table a:hover, .page-content-table a:focus{
     color: var(--bgColor);
     background-color: var(--textColor);
 }
 
 
 @media (max-width: 1024px){
-    .tabla-contenidos{
+    .page-content-table{
         position: relative;
         left: 0;
     }
