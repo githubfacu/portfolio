@@ -1,21 +1,38 @@
 export const MAIN_COURSES = [
-    // {
-    //     id: 10,
-    //     titulo: 'Angular',
-    //     fecha: 'Ene 2026',
-    //     enCurso: false,
-    //     proyectos: [
-    //         {
-    //             proyectoId: 1,
-    //             ruta: 'https://aplicacion-de-paises.netlify.app/#/',
-    //             anclaTexto: 'app-paises',
-    //             img: './images/capturas/country-app.png',
-    //             descripcion: 'Aplicación Demo en Angular 19+',
-    //             personal: false,
-    //             typescript: true
-    //         },
-    //     ]
-    // },
+    {
+        id: 11,
+        titulo: 'Máster Ingeniería de software',
+        fecha: 'Abr 2026',
+        enCurso: true,
+        proyectos: [
+            {
+                proyectoId: 1,
+                ruta: 'https://github.com/githubfacu/JavaScript-2026',
+                anclaTexto: 'JavaScript',
+                img: './images/capturas/github-white.jpg',
+                descripcion: 'Aplicaciones de consola con JavaScript',
+                personal: false,
+                typescript: true
+            },
+        ]
+    },
+    {
+        id: 10,
+        titulo: 'Angular',
+        fecha: 'Ene 2026',
+        enCurso: false,
+        proyectos: [
+            {
+                proyectoId: 1,
+                ruta: 'https://github.com/githubfacu/Angular-2026',
+                anclaTexto: 'AngularApps',
+                img: './images/capturas/country-app.png',
+                descripcion: 'Aplicaciones Demo en Angular 19+',
+                personal: false,
+                typescript: true
+            },
+        ]
+    },
     {
         id: 9,
         titulo: 'React Native',
@@ -25,7 +42,7 @@ export const MAIN_COURSES = [
             {
                 proyectoId: 1,
                 ruta: 'https://github.com/githubfacu/react-native-beacon-showcase-app',
-                anclaTexto: 'Balizas-app',
+                anclaTexto: 'BalizasApp',
                 img: './images/capturas/github-white.jpg',
                 descripcion: 'Aplicación Demo en Expo con Nativewind y TypeScript',
                 personal: true,

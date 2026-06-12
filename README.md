@@ -3,7 +3,7 @@
 Portfolio profesional.
 
 🌐 **Portfolio Online**  
-👉 https://githubfacu.github.io/portfolio/
+https://githubfacu.github.io/portfolio/
 
 ---
 
