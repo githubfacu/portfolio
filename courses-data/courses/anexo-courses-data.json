@@ -3,8 +3,7 @@
         {
             "title": "Certified Tech Developer",
             "institution": "Digital House",
-            "pdf": "../images/docs/arquitectura/Diploma-CTD-1er-track-Facundo-Elorz.pdf",
-            "aria": "Certificado del curso Certified Tech Developer (PDF)"
+            "pdf": "../images/docs/arquitectura/Diploma-CTD-1er-track-Facundo-Elorz.pdf"
         }
     ],
     "mobile": [
@@ -17,8 +16,7 @@
         {
             "title": "React Native Expo: Aplicaciones nativas para IOS y Android",
             "institution": "Udemy",
-            "pdf": "../images/docs/programacion/React-Native-Expo-Aplicaciones-nativas-para-IOS-y-Android.pdf",
-            "aria": "Certificado del curso de React native (PDF)"
+            "pdf": "../images/docs/programacion/React-Native-Expo-Aplicaciones-nativas-para-IOS-y-Android.pdf"
         }
     ],
 
@@ -26,40 +24,34 @@
         {
             "title": "Patrones de Diseño en JavaScript y TypeScript",
             "institution": "Udemy",
-            "pdf": "../images/docs/programacion/Patrones-de-Diseño-en-JavaScript-y-TypeScript.pdf",
-            "aria": "Certificado del curso Patrones de Diseño (PDF)"
+            "pdf": "../images/docs/programacion/Patrones-de-Diseño-en-JavaScript-y-TypeScript.pdf"
         },
         {
             "title": "Principios SOLID y Clean Code",
             "institution": "Udemy",
-            "pdf": "../images/docs/programacion/Principios-SOLID-y-Clean-Code.pdf",
-            "aria": "Certificado del curso Principios SOLID y Clean Code (PDF)"
+            "pdf": "../images/docs/programacion/Principios-SOLID-y-Clean-Code.pdf"
         },
         {
             "title": "Docker - Guía práctica de uso para desarrolladores",
             "institution": "Udemy",
-            "pdf": "../images/docs/programacion/Docker-Guia-practica-de-uso-para-desarrolladores.pdf",
-            "aria": "Certificado del curso Docker (PDF)"
+            "pdf": "../images/docs/programacion/Docker-Guia-practica-de-uso-para-desarrolladores.pdf"
         }
     ],
     "arq": [
         {
             "title": "Diseño de Sistemas a Gran Escala y Arquitectura de Software",
             "institution": "Udemy",
-            "pdf": "../images/docs/arquitectura/Diseño-de-Sistemas-a-Gran-Escala-y-Arquitectura-de-Software.pdf",
-            "aria": "Certificado del curso Diseño de Sistemas a Gran Escala y Arquitectura de Software (PDF)"
+            "pdf": "../images/docs/arquitectura/Diseño-de-Sistemas-a-Gran-Escala-y-Arquitectura-de-Software.pdf"
         },
         {
             "title": "Arquitectura Software Moderna: DDD, Eventos, Microservicios",
             "institution": "Udemy",
-            "pdf": "../images/docs/arquitectura/Arquitectura-Software-Moderna-DDD-Eventos-Microservicios.pdf",
-            "aria": "Certificado del curso Arquitectura Software Moderna (PDF)"
+            "pdf": "../images/docs/arquitectura/Arquitectura-Software-Moderna-DDD-Eventos-Microservicios.pdf"
         },
         {
             "title": "Arquitectura Software Avanzada: Más Allá de los Patrones",
             "institution": "Udemy",
-            "pdf": "../images/docs/arquitectura/Arquitectura-Software-Avanzada-Mas-Alla-de-los-Patrones.pdf",
-            "aria": "Certificado del curso Arquitectura Software Avanzada (PDF)"
+            "pdf": "../images/docs/arquitectura/Arquitectura-Software-Avanzada-Mas-Alla-de-los-Patrones.pdf"
         }
     ]
 }

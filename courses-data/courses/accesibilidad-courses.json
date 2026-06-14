@@ -3,50 +3,46 @@
         {
             "title": "Introduction to WAI-ARIA for Beginners",
             "institution": "Udemy",
-            "pdf": "../images/docs/accesibilidad/introduction-to-WAI-ARIA for-beginners.pdf",
-            "aria": "Certificado del curso Introduction to WAI-ARIA for Beginners (PDF)"
+            "pdf": "../images/docs/accesibilidad/introduction-to-WAI-ARIA for-beginners.pdf"
         },
         {
             "title": "Practical Accessibility for Web Developers: Form Controls",
             "institution": "Udemy",
-            "pdf": "../images/docs/accesibilidad/Practical-Accessibility-for-Web-Developers-Form-Controls.pdf",
-            "aria": "Certificado del curso Practical Accessibility for Web Developers: Form Controls (PDF)"
+            "pdf": "../images/docs/accesibilidad/Practical-Accessibility-for-Web-Developers-Form-Controls.pdf"        
         },
         {
             "title": "Creating Accessible Websites",
             "institution": "Udemy",
-            "pdf": "../images/docs/accesibilidad/Creating-Accessible-Websites.pdf",
-            "aria": "Certificado del curso Creating Accessible Websites (PDF)"
+            "pdf": "../images/docs/accesibilidad/Creating-Accessible-Websites.pdf"
         }
     ],
-
     "wcag": [
         {
             "title": "WCAG 2.1 / 2.2 Simplified With Examples",
             "institution": "Udemy",
-            "pdf": "../images/docs/accesibilidad/WCAG-2.1-2.2-Simplified-With-Examples.pdf",
-            "aria": "Certificado del curso WCAG 2.1 / 2.2 Simplified With Examples (PDF)"
+            "pdf": "../images/docs/accesibilidad/WCAG-2.1-2.2-Simplified-With-Examples.pdf"
         },
         {
             "title": "Master the 9 new WCAG 2.2 success criteria",
             "institution": "Udemy",
-            "pdf": "../images/docs/accesibilidad/Master-the-9-new-WCAG-2.2-success-criteria.pdf",
-            "aria": "Certificado del curso Master the 9 new WCAG 2.2 success criteria (PDF)"
+            "pdf": "../images/docs/accesibilidad/Master-the-9-new-WCAG-2.2-success-criteria.pdf"
         }
     ],
-
     "designers": [
         {
             "title": "Accessible UX Writing",
             "institution": "Udemy",
-            "pdf": "../images/docs/accesibilidad/Accessible-UX-Writing.pdf",
-            "aria": "Certificado del curso Accessible UX Writing (PDF)"
+            "pdf": "../images/docs/accesibilidad/Accessible-UX-Writing.pdf"
         },
         {
             "title": "Web Design Accessibility Certificate",
             "institution": "Udemy",
-            "pdf": "../images/docs/accesibilidad/Web-Design-Accessibility-Certificate.pdf",
-            "aria": "Certificado del curso Web Design Accessibility Certificate (PDF)"
+            "pdf": "../images/docs/accesibilidad/Web-Design-Accessibility-Certificate.pdf"
+        },
+        {
+            "title": "Usabilidad e Interfaces de Usuario",
+            "institution": "Escuela IT",
+            "pdf": "../images/docs/escuelaIt/certificado_usabilidad-e-interfaces-de-usuario_CERT-HIBz62UT.pdf"
         }
     ]
 }

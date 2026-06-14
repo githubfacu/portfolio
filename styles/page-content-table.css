@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    border: 1px solid var(--borderOpacity);
+    border: 1px solid var(--borderOpacityHard);
     background-color: var(--bgOpacity);
     backdrop-filter: blur(10px);
     padding: 1rem;
@@ -26,7 +26,7 @@
 
 .page-content-table nav{
     margin-top: 1rem;
-    border-top: 1px solid var(--borderOpacity);
+    border-top: 1px solid var(--borderOpacityHard);
 }
 
 .page-content-table ul{
@@ -39,9 +39,7 @@
 }
 
 .page-content-table li{
-    /* border: 1px solid var(--borderOpacity); */
-    border-left: 4px solid var(--borderOpacity);
-    /* background-color: var(--bgNeutral); */
+    border-left: 4px solid var(--borderOpacityHard);
 }
 
 .page-content-table a{

@@ -18,12 +18,11 @@ export function renderCourses(coursesData) {
                         <span class="curso-titulo">${course.title}</span>
                         <p class="curso-institucion">${course.institution}</p>
                     </div>
-                    <a href="${course.pdf}" target="_blank" rel="noopener noreferrer" class="certificado-link" aria-label="${course.aria}">
+                    <a href="${course.pdf}" target="_blank" rel="noopener noreferrer" class="certificado-link" aria-label="Certificado del curso ${course.title} (PDF)">
                         Ver certificado
                         <i class="fa-solid fa-arrow-up-right-from-square fa-sm" aria-hidden="true"></i>
                     </a>
                 </div>
-
             `;
 
             list.appendChild(li);

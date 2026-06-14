@@ -23,17 +23,17 @@
   height: 100%;
   box-sizing: border-box;
   background-color: var(--bgNeutral);
-
+  transition: background-color .07s ease, color .07s ease;
 }
 
 .curso:nth-child(odd){
   background-color: var(--Fondo);
-
+  transition: background-color .07s ease, color .07s ease;
 }
 
 .curso-content{
   position: relative;
-  padding: 1rem 1.25rem;
+  padding: .9rem;
   font-size: 1rem;
   color: var(--textColor);
   display: flex;
@@ -46,7 +46,7 @@
 .curso-institucion{
   margin-top: 4px;
   font-size: .9rem;
-  color: var(--borderOpacityHard);
+  opacity: .8;
 }
 
 .certificado-link {

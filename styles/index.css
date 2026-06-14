@@ -122,7 +122,6 @@ p{
 }
 
 .skip-link {
-  /* Ocultar visualmente pero mantener accesible */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -157,7 +156,6 @@ p{
   scroll-margin-top: 6rem;
 }
 
-
 /************************** Pager ****************************/
 
 .nav-pagination{
@@ -188,8 +186,7 @@ p{
     justify-content: center;
     box-sizing: border-box;
     gap: 8px;
-    /* background-color: var(--bgArticle); */
-    border: 1px solid var(--borderOpacity);
+    border: 1px solid var(--borderOpacityHard);
     border-radius: 6px;
     padding: 12px;
     color: var(--textColor);
@@ -201,20 +198,11 @@ p{
 
 .pager-navlink:hover{
     background-color: var(--bgArticle);
-    /* box-shadow: 0px 0px 3px 1px rgba(167, 139, 250, 1); */
 }
 
 body.dark .pager-navlink:hover{
     background-color: rgba(128, 128, 128, 0.3);
 }
-
-/* .pager-navlink span{
-    transition: transform .2s ease;
-}
-
-.pager-navlink:hover span {
-    transform: translateX(4px);
-} */
 
 /************************ Queries **************************/
 

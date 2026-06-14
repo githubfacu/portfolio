@@ -4,29 +4,10 @@ import "../../nested-nav-menu.js";
 
 import { renderCourses } from "../../courses.js";
 
-const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+import accesibilidadFile from "../../courses-data/courses/accesibilidad-courses.json" with { type: 'json' };
+import anexoFile from "../../courses-data/courses/anexo-courses-data.json" with { type: 'json' };
+import frontendFile from "../../courses-data/courses/frontend-courses-data.json" with { type: 'json' };
 
-const BASE_PATH = isLocal
-    ? ''
-    : '/portfolio';
-
-const accesibilidadFile = `${BASE_PATH}/courses-data/courses/accesibilidad-courses.json`
-const anexoFile = `${BASE_PATH}/courses-data/courses/anexo-courses-data.json`
-const frontendFile =`${BASE_PATH}/courses-data/courses/frontend-courses-data.json`
-
-fetch(anexoFile)
-    .then(res => res.json())
-    .then(renderCourses)
-    .catch(console.error);
-
-fetch(frontendFile)
-    .then(res => res.json())
-    .then(renderCourses)
-    .catch(console.error);
-
-fetch(accesibilidadFile)
-    .then(res => res.json())
-    .then(renderCourses)
-    .catch(console.error);
-
-
+renderCourses(accesibilidadFile)
+renderCourses(anexoFile)
+renderCourses(frontendFile)

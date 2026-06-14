@@ -3,80 +3,73 @@
         {
             "title": "Especialización Frontend con React",
             "institution": "Rolling Code School",
-            "pdf": "../images/docs/programacion/RollingCode-Frontend-ReactAdv.png",
-            "aria": "Certificado del curso Especialización Frontend con React"
+            "pdf": "../images/docs/programacion/RollingCode-Frontend-ReactAdv.png"
         },
         {
             "title": "Frontend Elite",
             "institution": "Level Up Tech Academy",
-            "pdf": "../images/docs/programacion/Facundo-Elorz-certificado-Frontend-Elite.png",
-            "aria": "Certificado del curso Especialización frontend elite"
+            "pdf": "../images/docs/programacion/Facundo-Elorz-certificado-Frontend-Elite.png"
         }, 
         {
             "title": "React PRO Lleva tus bases al siguiente nivel",
             "institution": "Udemy",
-            "pdf": "../images/docs/programacion/React-PRO-Lleva-tus-bases-al-siguiente-nivel.pdf",
-            "aria": "Certificado del curso React PRO (PDF)"
+            "pdf": "../images/docs/programacion/React-PRO-Lleva-tus-bases-al-siguiente-nivel.pdf"
         },
         {
             "title": "Build Polymorphic Components with React and Typescript",
             "institution": "Udemy",
-            "pdf": "../images/docs/programacion/Build-Polymorphic-Components-with-React-and-Typescript.pdf",
-            "aria": "Certificado del curso Polymorphic Components (PDF)"
+            "pdf": "../images/docs/programacion/Build-Polymorphic-Components-with-React-and-Typescript.pdf"
         },
         {
             "title": "React Query / TanStack Query: React Server State Management",
             "institution": "Udemy",
-            "pdf": "../images/docs/programacion/React-Query-TanStack-Query-React-Server-State-Management.pdf",
-            "aria": "Certificado del curso React Query / TanStack Query (PDF)"
+            "pdf": "../images/docs/programacion/React-Query-TanStack-Query-React-Server-State-Management.pdf"
         },
         {
             "title": "React Advanced Concepts: Re-Rendering, Performance & More",
             "institution": "Udemy",
-            "pdf": "../images/docs/programacion/React-Advanced-Concepts-Re-Rendering-Performance-&-More.pdf",
-            "aria": "Certificado del curso React Advanced Concepts (PDF)"
+            "pdf": "../images/docs/programacion/React-Advanced-Concepts-Re-Rendering-Performance-&-More.pdf"
+        },
+        {
+            "title": "Arquitectura de aplicaciones frontend con React",
+            "institution": "Udemy",
+            "pdf": "../images/docs/escuelaIt/certificado_arquitectura-de-aplicaciones-frontend-con-react_CERT-nLsX8v9w.pdf"
         }
     ],
     "frameworks": [
         {
             "title": "Next.js",
             "institution": "Digital House",
-            "pdf": "../images/docs/programacion/Certificado-Next.js.pdf",
-            "aria": "Certificado del curso Next.js (PDF)"
+            "pdf": "../images/docs/programacion/Certificado-Next.js.pdf"
         },
         {
             "title": "Next.js: El framework de React para producción",
             "institution": "Udemy",
-            "pdf": "../images/docs/programacion/NEXT.js_Udemy.pdf",
-            "aria": "Certificado del curso Next.js (PDF)"
+            "pdf": "../images/docs/programacion/NEXT.js_Udemy.pdf"
         },
         {
             "title": "Angular: De cero a experto",
             "institution": "Udemy",
-            "pdf": "../images/docs/programacion/Angular-De-cero-a-experto.pdf",
-            "aria": "Certificado del curso Angular (PDF)"
+            "pdf": "../images/docs/programacion/Angular-De-cero-a-experto.pdf"
         }
     ],
     "testing": [
         {
             "title": "React Testing with Jest / Vitest - TypeScript - 2025",
             "institution": "Udemy",
-            "pdf": "../images/docs/programacion/React-Testing-with-Jest-Vitest-TypeScript-2025.pdf",
-            "aria": "Certificado del curso React Testing (PDF)"
+            "pdf": "../images/docs/programacion/React-Testing-with-Jest-Vitest-TypeScript-2025.pdf"
+        },
+        {
+            "title": "Testing con JavaScript y Componentes Web",
+            "institution": "Escuela IT",
+            "pdf": "../images/docs/escuelaIt/certificado_testing-con-javascript-y-componentes-web_CERT-1ahSwLju.pdf"
         }
     ],
     "micro-frontend": [
         {
             "title": "Micro-Frontend: Arquitectura de Aplicaciones Web Escalables",
             "institution": "Udemy",
-            "pdf": "../images/docs/arquitectura/Micro-Frontend-Arquitectura-de-Aplicaciones-Web-Escalables.pdf",
-            "aria": "Certificado del curso Micro-Frontend (PDF)"
-        },
-        {
-            "title": "Microfrontends with React: A Complete Developer's Guide",
-            "institution": "Udemy",
-            "pdf": "../../images/docs/programacion/Microfrontends-with-React-A-Complete-Developer's-Guide.pdf",
-            "aria": "Certificado del curso Micro-Frontend (PDF)"
+            "pdf": "../images/docs/arquitectura/Micro-Frontend-Arquitectura-de-Aplicaciones-Web-Escalables.pdf"
         }
     ]
 }
