@@ -8,7 +8,7 @@
     align-self: center;
     box-sizing: border-box;
     width: fit-content;
-    background-color: var(--bgArticle);
+    background-color: var(--bgNeutral);
     color: var(--textColor);
     padding: 36px 48px;
     border-radius: 6px;

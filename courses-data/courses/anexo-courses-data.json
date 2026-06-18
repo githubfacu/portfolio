@@ -15,11 +15,10 @@
         },
         {
             "title": "React Native Expo: Aplicaciones nativas para IOS y Android",
-            "institution": "Udemy",
+            "institution": "Fernado Herrera - Udemy",
             "pdf": "../images/docs/programacion/React-Native-Expo-Aplicaciones-nativas-para-IOS-y-Android.pdf"
         }
     ],
-
     "code": [
         {
             "title": "Patrones de Diseño en JavaScript y TypeScript",
