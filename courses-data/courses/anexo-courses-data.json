@@ -15,8 +15,13 @@
         },
         {
             "title": "React Native Expo: Aplicaciones nativas para IOS y Android",
-            "institution": "Fernado Herrera - Udemy",
+            "institution": "Udemy - DevTalles",
             "pdf": "../images/docs/programacion/React-Native-Expo-Aplicaciones-nativas-para-IOS-y-Android.pdf"
+        },
+        {
+            "title": "React Native",
+            "institution": "Escuela IT",
+            "pdf": "../images/docs/escuelaIt/certificado_react-native_CERT-CW2NZ0T5.pdf"
         }
     ],
     "code": [
@@ -34,6 +39,11 @@
             "title": "Docker - Guía práctica de uso para desarrolladores",
             "institution": "Udemy",
             "pdf": "../images/docs/programacion/Docker-Guia-practica-de-uso-para-desarrolladores.pdf"
+        },
+        {
+            "title": "CI/CD - Fundamentos, métricas DORA, estrategias de branching y versionado",
+            "institution": "Escuela IT",
+            "pdf": "../images/docs/escuelaIt/certificado_CICD_CERT-smWrHvD6.pdf"
         }
     ],
     "arq": [
