@@ -51,6 +51,11 @@
             "title": "Angular: De cero a experto",
             "institution": "Udemy - DevTalles",
             "pdf": "../images/docs/programacion/Angular-De-cero-a-experto.pdf"
+        },
+        {
+            "title": "Curso de Angular: Iniciación completa y detallada al framework Javascript Angular",
+            "institution": "Escuela IT",
+            "pdf": "../images/docs/escuelaIt/certificado_iniciacion-a-angular_CERT-ohaKTq5J.pdf"
         }
     ],
     "testing": [
@@ -70,6 +75,13 @@
             "title": "Micro-Frontend: Arquitectura de Aplicaciones Web Escalables",
             "institution": "Udemy",
             "pdf": "../images/docs/arquitectura/Micro-Frontend-Arquitectura-de-Aplicaciones-Web-Escalables.pdf"
+        }
+    ],
+    "maquetacion": [
+        {
+            "title": "Curso de técnicas modernas de CSS",
+            "institution": "Escuela IT",
+            "pdf": "../images/docs/escuelaIt/certificado_tecnicas-css_CERT-7U9Pbeul.pdf"
         }
     ]
 }

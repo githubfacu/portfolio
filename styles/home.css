@@ -298,9 +298,9 @@ main{
     gap: 16px;
 }
 
-/************************ Habilidades ****************************/
+/************************ tecnologias ****************************/
 
-.habilidades{
+.tecnologias{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -310,11 +310,11 @@ main{
     gap: 8px;
 }
 
-.habilidades h3{
+.tecnologias h3{
     align-self: flex-start;
 }
 
-.habilidades ul{
+.tecnologias ul{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -322,7 +322,7 @@ main{
     padding: 0;
 }
 
-.habilidades ul li{
+.tecnologias ul li{
     background: var(--bgNeutral);
     border: var(--borderOpacity);
     border-radius: 4px;

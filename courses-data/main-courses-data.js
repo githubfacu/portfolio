@@ -84,7 +84,7 @@ export const MAIN_COURSES = [
         proyectos: [
             {
                 proyectoId: 1,
-                ruta: 'https://foro-mania.vercel.app/',
+                ruta: 'https://github.com/githubfacu/foro-mania',
                 anclaTexto: 'Foromanía',
                 img: './images/capturas/Captura_foro-mania.jpeg',
                 descripcion: 'Foro interactivo. Trabajo final 4 integrantes. Redux + Firebase.',
