@@ -82,6 +82,11 @@
             "title": "Curso de técnicas modernas de CSS",
             "institution": "Escuela IT",
             "pdf": "../images/docs/escuelaIt/certificado_tecnicas-css_CERT-7U9Pbeul.pdf"
+        },
+        {
+            "title": "Taller de CSS Grid Layout",
+            "institution": "Escuela IT",
+            "pdf": "../images/docs/escuelaIt/certificado_taller-de-css-grid-layout_CERT-zVQG0MIc.pdf"
         }
     ]
 }
